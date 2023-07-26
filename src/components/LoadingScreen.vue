@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>{{ msg }}</h1>
+    <h1>{{ header }}</h1>
+    <h2>{{ subHeader }}</h2>
   </div>
 </template>
 
@@ -8,7 +9,8 @@
 export default {
   name: "LoadingScreen",
   props: {
-    msg: String,
+    header: String,
+    subHeader: String,
   },
 };
 </script>
