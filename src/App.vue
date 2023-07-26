@@ -4,6 +4,11 @@
 </template>
 
 <style>
+/* temp */
+body {
+  background-color: #999;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
