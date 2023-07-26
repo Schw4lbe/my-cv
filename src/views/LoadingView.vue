@@ -1,18 +1,21 @@
 <template>
   <div class="loading">
-    <img alt="picture" src="../assets/jph.jpg" />
+    <MenuMain></MenuMain>
+    <img alt="picture" src="../assets/dummy.png" />
     <LoadingScreen header="Lebenslauf" subHeader="Jean-Pierre Häussler" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import MenuMain from "@/components/MenuMain.vue";
 import LoadingScreen from "@/components/LoadingScreen.vue";
 
 export default {
   name: "LoadingView",
   components: {
     LoadingScreen,
+    MenuMain,
   },
 };
 </script>

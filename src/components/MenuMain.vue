@@ -17,4 +17,17 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.menu-container {
+  position: absolute;
+  margin: 25px;
+  top: 0;
+  right: 150px;
+}
+.menu-item {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+}
+</style>
