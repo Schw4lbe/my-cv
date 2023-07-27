@@ -1,3 +1,9 @@
+:root {
+  --slide-distance: 60px;
+  --menu-item-positionY-1: calc(var(--slide-distance) * 0);
+  --menu-item-positionY-2: calc(var(--slide-distance) * 1);
+}
+
 .menu-header {
   position: absolute;
   display: flex;
@@ -26,7 +32,6 @@
 
 .menu-container {
   position: absolute;
-  //   margin: 50px;
   top: 0;
   left: 0;
   opacity: 0;
@@ -38,30 +43,103 @@
   animation-duration: 0.1s;
   animation-delay: 3s;
 
-  .menu-item {
-    position: absolute;
-    height: 50px;
-    width: 200px;
-    border: 1px solid black;
+  .menu-image-frame {
+    z-index: 1;
+
+    .menu-image {
+      height: 180px;
+      width: 180px;
+      border-radius: 100%;
+      margin: 10px;
+      z-index: 1;
+    }
   }
+
+  .menu-item {
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    height: 50px;
+    width: 180px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background: #333;
+
+    transform: translateY(-125px);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+    transition: left 0.2s ease-in;
+
+    &:hover {
+      background-color: #555;
+      left: 20px;
+    }
+
+    a {
+      position: relative;
+      top: 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
   #item1 {
-    transform: translateY(200px);
+    animation-name: slideOutMenu1;
+    animation-delay: 4.1s;
   }
   #item2 {
-    transform: translateY(250px);
+    animation-name: slideOutMenu2;
+    animation-delay: 4.2s;
   }
   #item3 {
-    transform: translateY(300px);
+    animation-name: slideOutMenu3;
+    animation-delay: 4.3s;
   }
   #item4 {
-    transform: translateY(350px);
+    animation-name: slideOutMenu4;
+    animation-delay: 4.4s;
   }
   #item5 {
-    transform: translateY(400px);
+    animation-name: slideOutMenu5;
+    animation-delay: 4.5s;
   }
 }
 
 // Animations:
+@keyframes slideOutMenu1 {
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideOutMenu2 {
+  100% {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes slideOutMenu3 {
+  100% {
+    transform: translateY(120px);
+  }
+}
+
+@keyframes slideOutMenu4 {
+  100% {
+    transform: translateY(180px);
+  }
+}
+
+@keyframes slideOutMenu5 {
+  100% {
+    transform: translateY(240px);
+  }
+}
+
 @keyframes makeVissible {
   0% {
     opacity: 0;
