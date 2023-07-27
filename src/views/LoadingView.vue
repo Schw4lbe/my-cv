@@ -1,6 +1,5 @@
 <template>
   <div class="loading-container">
-    <MenuMain></MenuMain>
     <div class="image-frame">
       <img class="img-animation" alt="picture" src="../assets/dummy.png" />
     </div>
@@ -13,14 +12,12 @@
 </template>
 
 <script>
-import MenuMain from "@/components/MenuMain.vue";
 import LoadingScreen from "@/components/LoadingScreen.vue";
 
 export default {
   name: "LoadingView",
   components: {
     LoadingScreen,
-    MenuMain,
   },
 };
 </script>
