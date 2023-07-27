@@ -29,14 +29,10 @@ nav a.router-link-exact-active {
   --menu-item-positionY-2: calc(var(--slide-distance) * 1);
 }
 
-.menu-header {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  width: 100%;
+.menu-frame {
+  background-color: tomato;
+  width: 200px;
+  height: 100vh;
   opacity: 0;
   animation-name: makeVissible;
   animation-iteration-count: 1;
@@ -45,15 +41,30 @@ nav a.router-link-exact-active {
   animation-duration: 0.1s;
   animation-delay: 3s;
 }
-.menu-header h3 {
+.menu-frame .menu-header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  transform: translateX(-100%);
+  animation-name: slideOutHeader;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 5s;
+}
+.menu-frame .menu-header h3 {
   font-size: 2rem;
   margin: 0;
   padding: 10px;
-  width: 80%;
+  width: 70%;
   background-color: white;
 }
-
-.menu-container {
+.menu-frame .menu-item-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -65,17 +76,17 @@ nav a.router-link-exact-active {
   animation-duration: 0.1s;
   animation-delay: 3s;
 }
-.menu-container .menu-image-frame {
+.menu-frame .menu-item-container .menu-image-frame {
   z-index: 1;
 }
-.menu-container .menu-image-frame .menu-image {
+.menu-frame .menu-item-container .menu-image-frame .menu-image {
   height: 180px;
   width: 180px;
   border-radius: 100%;
   margin: 10px;
   z-index: 1;
 }
-.menu-container .menu-item {
+.menu-frame .menu-item-container .menu-item {
   z-index: -1;
   position: absolute;
   left: 0px;
@@ -91,34 +102,34 @@ nav a.router-link-exact-active {
   animation-duration: 0.3s;
   transition: left 0.2s ease-in;
 }
-.menu-container .menu-item:hover {
+.menu-frame .menu-item-container .menu-item:hover {
   background-color: #555;
   left: 20px;
 }
-.menu-container .menu-item a {
+.menu-frame .menu-item-container .menu-item a {
   position: relative;
   top: 1rem;
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
-.menu-container #item1 {
+.menu-frame .menu-item-container #item1 {
   animation-name: slideOutMenu1;
   animation-delay: 4.5s;
 }
-.menu-container #item2 {
+.menu-frame .menu-item-container #item2 {
   animation-name: slideOutMenu2;
   animation-delay: 4.4s;
 }
-.menu-container #item3 {
+.menu-frame .menu-item-container #item3 {
   animation-name: slideOutMenu3;
   animation-delay: 4.3s;
 }
-.menu-container #item4 {
+.menu-frame .menu-item-container #item4 {
   animation-name: slideOutMenu4;
   animation-delay: 4.2s;
 }
-.menu-container #item5 {
+.menu-frame .menu-item-container #item5 {
   animation-name: slideOutMenu5;
   animation-delay: 4.1s;
 }
@@ -148,6 +159,14 @@ nav a.router-link-exact-active {
     transform: translateY(240px);
   }
 }
+@keyframes slideOutHeader {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 @keyframes makeVissible {
   0% {
     opacity: 0;
@@ -171,8 +190,11 @@ nav a.router-link-exact-active {
 }
 .loading-container .image-frame img {
   position: relative;
+  margin-top: 100px;
   height: 65%;
+  max-height: 500px;
   width: 65%;
+  max-width: 500px;
 }
 .loading-container .image-frame .img-animation {
   border-radius: 0%;
@@ -216,10 +238,17 @@ nav a.router-link-exact-active {
     border-radius: 0%;
     height: 65%;
     width: 65%;
+    margin-top: 100px;
   }
   100% {
     border-radius: 100%;
     height: 0%;
     width: 0%;
+    margin-top: 0px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */

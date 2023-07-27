@@ -3,15 +3,10 @@
   --menu-item-positionY-1: calc(var(--slide-distance) * 0);
   --menu-item-positionY-2: calc(var(--slide-distance) * 1);
 }
-
-.menu-header {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  width: 100%;
+.menu-frame {
+  background-color: tomato;
+  width: 200px;
+  height: 100vh;
   opacity: 0;
 
   animation-name: makeVissible;
@@ -21,91 +16,109 @@
   animation-duration: 0.1s;
   animation-delay: 3s;
 
-  h3 {
-    font-size: 2rem;
-    margin: 0;
-    padding: 10px;
-    width: 80%;
-    background-color: white;
-  }
-}
-
-.menu-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-
-  animation-name: makeVissible;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-duration: 0.1s;
-  animation-delay: 3s;
-
-  .menu-image-frame {
-    z-index: 1;
-
-    .menu-image {
-      height: 180px;
-      width: 180px;
-      border-radius: 100%;
-      margin: 10px;
-      z-index: 1;
-    }
-  }
-
-  .menu-item {
-    z-index: -1;
+  .menu-header {
     position: absolute;
-    left: 0px;
-    height: 50px;
-    width: 180px;
-    margin: 0 10px;
-    border-radius: 5px;
-    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    transform: translateX(-100%);
 
-    transform: translateY(-125px);
-
+    animation-name: slideOutHeader;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    animation-duration: 0.3s;
-    transition: left 0.2s ease-in;
+    animation-duration: 0.5s;
+    animation-delay: 5s;
 
-    &:hover {
-      background-color: #555;
-      left: 20px;
-    }
-
-    a {
-      position: relative;
-      top: 1rem;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
+    h3 {
+      font-size: 2rem;
+      margin: 0;
+      padding: 10px;
+      width: 70%;
+      background-color: white;
     }
   }
 
-  #item1 {
-    animation-name: slideOutMenu1;
-    animation-delay: 4.5s;
-  }
-  #item2 {
-    animation-name: slideOutMenu2;
-    animation-delay: 4.4s;
-  }
-  #item3 {
-    animation-name: slideOutMenu3;
-    animation-delay: 4.3s;
-  }
-  #item4 {
-    animation-name: slideOutMenu4;
-    animation-delay: 4.2s;
-  }
-  #item5 {
-    animation-name: slideOutMenu5;
-    animation-delay: 4.1s;
+  .menu-item-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    animation-name: makeVissible;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.1s;
+    animation-delay: 3s;
+
+    .menu-image-frame {
+      z-index: 1;
+
+      .menu-image {
+        height: 180px;
+        width: 180px;
+        border-radius: 100%;
+        margin: 10px;
+        z-index: 1;
+      }
+    }
+
+    .menu-item {
+      z-index: -1;
+      position: absolute;
+      left: 0px;
+      height: 50px;
+      width: 180px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background: #333;
+
+      transform: translateY(-125px);
+
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in;
+      animation-duration: 0.3s;
+      transition: left 0.2s ease-in;
+
+      &:hover {
+        background-color: #555;
+        left: 20px;
+      }
+
+      a {
+        position: relative;
+        top: 1rem;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    #item1 {
+      animation-name: slideOutMenu1;
+      animation-delay: 4.5s;
+    }
+    #item2 {
+      animation-name: slideOutMenu2;
+      animation-delay: 4.4s;
+    }
+    #item3 {
+      animation-name: slideOutMenu3;
+      animation-delay: 4.3s;
+    }
+    #item4 {
+      animation-name: slideOutMenu4;
+      animation-delay: 4.2s;
+    }
+    #item5 {
+      animation-name: slideOutMenu5;
+      animation-delay: 4.1s;
+    }
   }
 }
 
@@ -137,6 +150,15 @@
 @keyframes slideOutMenu5 {
   100% {
     transform: translateY(240px);
+  }
+}
+
+@keyframes slideOutHeader {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
