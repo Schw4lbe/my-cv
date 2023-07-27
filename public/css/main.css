@@ -104,11 +104,11 @@ nav a.router-link-exact-active {
 }
 .menu-container #item1 {
   animation-name: slideOutMenu1;
-  animation-delay: 4.1s;
+  animation-delay: 4.5s;
 }
 .menu-container #item2 {
   animation-name: slideOutMenu2;
-  animation-delay: 4.2s;
+  animation-delay: 4.4s;
 }
 .menu-container #item3 {
   animation-name: slideOutMenu3;
@@ -116,11 +116,11 @@ nav a.router-link-exact-active {
 }
 .menu-container #item4 {
   animation-name: slideOutMenu4;
-  animation-delay: 4.4s;
+  animation-delay: 4.2s;
 }
 .menu-container #item5 {
   animation-name: slideOutMenu5;
-  animation-delay: 4.5s;
+  animation-delay: 4.1s;
 }
 
 @keyframes slideOutMenu1 {
@@ -208,7 +208,7 @@ nav a.router-link-exact-active {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-37%);
+    transform: translateX(-50%);
   }
 }
 @keyframes profile {
