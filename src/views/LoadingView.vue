@@ -4,7 +4,11 @@
     <div class="image-frame">
       <img class="img-animation" alt="picture" src="../assets/dummy.png" />
     </div>
-    <LoadingScreen header="Lebenslauf" subHeader="Jean-Pierre Häussler" />
+    <LoadingScreen
+      class="loading-header"
+      header="Lebenslauf"
+      subHeader="Jean-Pierre Häussler"
+    />
   </div>
 </template>
 
@@ -22,11 +26,38 @@ export default {
 };
 </script>
 <style scoped>
-/* .image-frame {
-  height: 500px;
-} */
+.loading-header {
+  position: absolute;
+  width: 100%;
+  top: 65%;
+}
+.image-frame {
+  position: absolute;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  animation-name: imageSlide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 10s;
+}
+
+@keyframes imageSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-35%);
+  }
+}
 
 img {
+  position: relative;
   height: 65%;
   width: 65%;
 }
@@ -36,20 +67,10 @@ img {
     height: 65%;
     width: 65%;
   }
-  25% {
-    border-radius: 10%;
-    height: 65%;
-    width: 65%;
-  }
-  75% {
-    border-radius: 50%;
-    height: 55%;
-    width: 55%;
-  }
   100% {
     border-radius: 100%;
-    height: 20%;
-    width: 20%;
+    height: 30%;
+    width: 30%;
   }
 }
 .img-animation {
@@ -59,5 +80,6 @@ img {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-duration: 2s;
+  animation-delay: 10s;
 }
 </style>

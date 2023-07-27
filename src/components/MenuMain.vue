@@ -20,9 +20,9 @@ export default {
 <style scoped>
 .menu-container {
   position: absolute;
-  margin: 25px;
+  margin: 50px;
   top: 0;
-  right: 150px;
+  left: 0;
 }
 .menu-item {
   position: absolute;
