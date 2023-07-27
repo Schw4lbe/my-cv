@@ -1,3 +1,42 @@
+body {
+  background-color: #999;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+.menu-container {
+  position: absolute;
+  margin: 50px;
+  top: 0;
+  left: 0;
+}
+
+.menu-item {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+}
+
 .loading-header {
   position: absolute;
   width: 100%;
