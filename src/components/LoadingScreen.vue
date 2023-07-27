@@ -1,7 +1,12 @@
 <template>
-  <div>
-    <h1>{{ header }}</h1>
-    <h2>{{ subHeader }}</h2>
+  <div class="loading-container">
+    <div class="image-frame">
+      <img class="img-animation" alt="picture" src="../assets/dummy.png" />
+    </div>
+    <div class="loading-header">
+      <h1>{{ header }}</h1>
+      <h2>{{ subHeader }}</h2>
+    </div>
   </div>
 </template>
 
