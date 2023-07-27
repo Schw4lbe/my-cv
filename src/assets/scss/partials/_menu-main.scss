@@ -1,13 +1,72 @@
+.menu-header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  opacity: 0;
+
+  animation-name: makeVissible;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-duration: 0.1s;
+  animation-delay: 3s;
+
+  h3 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+    width: 80%;
+    background-color: white;
+  }
+}
+
 .menu-container {
   position: absolute;
   margin: 50px;
   top: 0;
   left: 0;
+  opacity: 0;
+
+  animation-name: makeVissible;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-duration: 0.1s;
+  animation-delay: 3s;
 
   .menu-item {
     position: absolute;
     height: 150px;
     width: 150px;
     border: 1px solid black;
+  }
+  #item1 {
+    transform: translateY(150px);
+  }
+  #item2 {
+    transform: translateY(300px);
+  }
+  #item3 {
+    transform: translateY(450px);
+  }
+  #item4 {
+    transform: translateY(600px);
+  }
+  #item5 {
+    transform: translateY(750px);
+  }
+}
+
+// Animations:
+@keyframes makeVissible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

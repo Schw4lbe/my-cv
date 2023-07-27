@@ -12,7 +12,7 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
     animation-duration: 2s;
-    animation-delay: 10s;
+    animation-delay: 1s;
 
     img {
       position: relative;
@@ -27,7 +27,7 @@
       animation-fill-mode: forwards;
       animation-timing-function: ease-in;
       animation-duration: 2s;
-      animation-delay: 10s;
+      animation-delay: 1s;
     }
   }
 
@@ -35,16 +35,33 @@
     position: absolute;
     width: 100%;
     top: 65%;
+
+    // TEMP
+    animation-name: placeholderBlur;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
   }
 }
 
 // Animations
+@keyframes placeholderBlur {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes imageSlide {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-35%);
+    transform: translateX(-37%);
   }
 }
 
@@ -56,7 +73,7 @@
   }
   100% {
     border-radius: 100%;
-    height: 30%;
-    width: 30%;
+    height: 20%;
+    width: 20%;
   }
 }
