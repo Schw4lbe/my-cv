@@ -247,6 +247,14 @@ nav a.router-link-exact-active {
     margin-top: 0px;
   }
 }
+.personal-data-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
