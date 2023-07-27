@@ -37,13 +37,7 @@ nav a.router-link-exact-active {
   border: 1px solid black;
 }
 
-.loading-header {
-  position: absolute;
-  width: 100%;
-  top: 65%;
-}
-
-.image-frame {
+.loading-container .image-frame {
   position: absolute;
   width: 100%;
   display: flex;
@@ -56,6 +50,25 @@ nav a.router-link-exact-active {
   animation-duration: 2s;
   animation-delay: 10s;
 }
+.loading-container .image-frame img {
+  position: relative;
+  height: 65%;
+  width: 65%;
+}
+.loading-container .image-frame .img-animation {
+  border-radius: 0%;
+  animation-name: profile;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 10s;
+}
+.loading-container .loading-header {
+  position: absolute;
+  width: 100%;
+  top: 65%;
+}
 
 @keyframes imageSlide {
   0% {
@@ -65,12 +78,6 @@ nav a.router-link-exact-active {
     transform: translateX(-35%);
   }
 }
-img {
-  position: relative;
-  height: 65%;
-  width: 65%;
-}
-
 @keyframes profile {
   0% {
     border-radius: 0%;
@@ -82,13 +89,4 @@ img {
     height: 30%;
     width: 30%;
   }
-}
-.img-animation {
-  border-radius: 0%;
-  animation-name: profile;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 10s;
 }/*# sourceMappingURL=main.css.map */

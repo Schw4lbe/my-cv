@@ -1,24 +1,44 @@
-.loading-header {
-  position: absolute;
-  width: 100%;
-  top: 65%;
+.loading-container {
+  .image-frame {
+    position: absolute;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    animation-name: imageSlide;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 10s;
+
+    img {
+      position: relative;
+      height: 65%;
+      width: 65%;
+    }
+
+    .img-animation {
+      border-radius: 0%;
+      animation-name: profile;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in;
+      animation-duration: 2s;
+      animation-delay: 10s;
+    }
+  }
+
+  .loading-header {
+    position: absolute;
+    width: 100%;
+    top: 65%;
+  }
 }
-.image-frame {
-  position: absolute;
-  width: 100%;
-  display: flex;
 
-  justify-content: center;
-  align-items: center;
-
-  animation-name: imageSlide;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 10s;
-}
-
+// Animations
 @keyframes imageSlide {
   0% {
     transform: translateX(0);
@@ -28,11 +48,6 @@
   }
 }
 
-img {
-  position: relative;
-  height: 65%;
-  width: 65%;
-}
 @keyframes profile {
   0% {
     border-radius: 0%;
@@ -44,13 +59,4 @@ img {
     height: 30%;
     width: 30%;
   }
-}
-.img-animation {
-  border-radius: 0%;
-  animation-name: profile;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 10s;
 }
