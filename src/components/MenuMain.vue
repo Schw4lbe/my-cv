@@ -1,6 +1,6 @@
 <template>
   <div class="menu-frame">
-    <div class="menu-header"><h3>Persönliches</h3></div>
+    <!-- <div class="menu-header"><h3>Persönliches</h3></div> -->
     <div class="menu-item-container">
       <div class="menu-image-frame">
         <img class="menu-image" alt="picture" src="../assets/dummy.png" />
@@ -11,6 +11,7 @@
         :id="item.id"
         class="menu-item"
       >
+        <i class="menu-icon" :class="item.icon"></i>
         <a href="#">{{ item.name }}</a>
       </div>
     </div>

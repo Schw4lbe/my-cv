@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <LoadingScreen header="Lebenslauf" subHeader="Jean-Pierre Häussler" />
     <PersonalData
       :properties="propertiesArray"
@@ -39,3 +39,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.container {
+  display: grid;
+}
+</style>

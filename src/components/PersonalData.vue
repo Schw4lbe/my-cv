@@ -1,24 +1,26 @@
 <template>
-  <div class="personal-data-container">
-    <div class="propertie-container">
-      <ul>
-        <li v-for="prop in properties" :key="prop.id">{{ prop.name }}</li>
-      </ul>
+  <div class="data-container">
+    <div class="personal-data-container">
+      <div class="propertie-container">
+        <ul>
+          <li v-for="prop in properties" :key="prop.id">{{ prop.name }}</li>
+        </ul>
+      </div>
+      <div class="hobby-container">
+        <ul>
+          <li v-for="hobby in hobbies" :key="hobby.id">{{ hobby.name }}</li>
+        </ul>
+      </div>
     </div>
-    <div class="hobby-container">
-      <ul>
-        <li v-for="hobby in hobbies" :key="hobby.id">{{ hobby.name }}</li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="container">
-    <div v-for="skill in skills" :key="skill.id" class="skillbox">
-      <div :class="skill.name">
-        <h3>{{ skill.name }}</h3>
-        <span class="percentage">{{ skill.value }}%</span>
-        <div class="cover">
-          <div class="progressbar"></div>
+    <div class="skill-data-container">
+      <div v-for="skill in skills" :key="skill.id" class="skillbox">
+        <div :class="skill.name">
+          <h3>{{ skill.name }}</h3>
+          <span class="percentage">{{ skill.value }}%</span>
+          <div class="cover">
+            <div class="progressbar"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -37,18 +39,21 @@ export default {
 </script>
 
 <style scoped>
-body {
-  margin: 0;
-  padding: 0;
+.data-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
 }
-.container {
-  width: 40%;
-  position: absolute;
+.skill-data-container {
+  width: 100%;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; */
   padding: 10px 20px 20px 20px;
   box-sizing: border-box;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   background-color: #333;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }

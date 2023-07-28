@@ -1,12 +1,7 @@
-:root {
-  --slide-distance: 60px;
-  --menu-item-positionY-1: calc(var(--slide-distance) * 0);
-  --menu-item-positionY-2: calc(var(--slide-distance) * 1);
-}
 .menu-frame {
   background-color: tomato;
-  width: 200px;
-  height: 100vh;
+  width: 100%;
+  height: 140px;
   opacity: 0;
 
   animation-name: makeVissible;
@@ -43,9 +38,10 @@
   }
 
   .menu-item-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 140px;
     opacity: 0;
 
     animation-name: makeVissible;
@@ -59,25 +55,29 @@
       z-index: 1;
 
       .menu-image {
-        height: 180px;
-        width: 180px;
+        height: 120px;
+        width: 120px;
         border-radius: 100%;
-        margin: 10px;
+        margin: 10px 25px 10px 10px;
         z-index: 1;
       }
     }
 
     .menu-item {
       z-index: -1;
-      position: absolute;
-      left: 0px;
-      height: 50px;
-      width: 180px;
-      margin: 0 10px;
+      position: relative;
+      margin: 20px 5px 20px 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      height: 100px;
+      width: 150px;
       border-radius: 5px;
       background: #333;
 
-      transform: translateY(-125px);
+      transform: translateX(-200px);
 
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
@@ -87,69 +87,55 @@
 
       &:hover {
         background-color: #555;
-        left: 20px;
+        top: 20px;
       }
 
       a {
-        position: relative;
-        top: 1rem;
         text-decoration: none;
         color: white;
         font-weight: bold;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      .menu-icon {
+        color: white;
+        font-size: 3rem;
       }
     }
 
     #item1 {
-      animation-name: slideOutMenu1;
+      transform: translateX(-400px);
+      animation-name: slideOutMenu;
       animation-delay: 4.5s;
     }
     #item2 {
-      animation-name: slideOutMenu2;
+      transform: translateX(-600px);
+      animation-name: slideOutMenu;
       animation-delay: 4.4s;
     }
     #item3 {
-      animation-name: slideOutMenu3;
+      transform: translateX(-800px);
+      animation-name: slideOutMenu;
       animation-delay: 4.3s;
     }
     #item4 {
-      animation-name: slideOutMenu4;
+      transform: translateX(-1000px);
+      animation-name: slideOutMenu;
       animation-delay: 4.2s;
     }
     #item5 {
-      animation-name: slideOutMenu5;
+      transform: translateX(-1200px);
+      animation-name: slideOutMenu;
       animation-delay: 4.1s;
     }
   }
 }
 
 // Animations:
-@keyframes slideOutMenu1 {
+@keyframes slideOutMenu {
   100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes slideOutMenu2 {
-  100% {
-    transform: translateY(60px);
-  }
-}
-
-@keyframes slideOutMenu3 {
-  100% {
-    transform: translateY(120px);
-  }
-}
-
-@keyframes slideOutMenu4 {
-  100% {
-    transform: translateY(180px);
-  }
-}
-
-@keyframes slideOutMenu5 {
-  100% {
-    transform: translateY(240px);
+    transform: translateX(0px);
   }
 }
 

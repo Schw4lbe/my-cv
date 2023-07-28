@@ -1,6 +1,6 @@
 <template>
-  <router-view />
   <MenuMain :menuItems="menuItemsArray"></MenuMain>
+  <router-view />
 </template>
 
 <script>
@@ -13,11 +13,19 @@ export default {
   data() {
     return {
       menuItemsArray: [
-        { id: "item1", name: "Persönliches" },
-        { id: "item2", name: "Menu Item" },
-        { id: "item3", name: "Menu Item" },
-        { id: "item4", name: "Menu Item" },
-        { id: "item5", name: "Menu Item" },
+        { id: "item1", name: "Persönliches", icon: "fa-solid fa-person" },
+        {
+          id: "item2",
+          name: "Sales Erfahrung",
+          icon: "fa-solid fa-comments-dollar",
+        },
+        { id: "item3", name: "Coding Erfahrung", icon: "fa-solid fa-code" },
+        { id: "item4", name: "Referenzen", icon: "fa-solid fa-photo-film" },
+        {
+          id: "item5",
+          name: "Selbstständigkeit",
+          icon: "fa-solid fa-shoe-prints",
+        },
       ],
     };
   },
