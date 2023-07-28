@@ -8,4 +8,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+h1 {
+  margin: 2rem;
+}
+</style>

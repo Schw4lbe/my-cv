@@ -1,22 +1,14 @@
 <template>
-  <div class="row">
-    <div class="col">
-      <div class="tabs">
-        <div class="tab">
-          <input type="checkbox" id="chck1" />
-          <label class="tab-label" for="chck1">Item 1</label>
-          <div class="tab-content">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
-            reiciendis!
-          </div>
-        </div>
-        <div class="tab">
-          <input type="checkbox" id="chck2" />
-          <label class="tab-label" for="chck2">Item 2</label>
-          <div class="tab-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
-          </div>
-        </div>
+  <div class="accordion-container">
+    <div v-for="item in items" :key="item.id" class="tab">
+      <input type="checkbox" :id="item.id" />
+      <label class="tab-label" :for="item.id">{{ item.header }}</label>
+      <div class="tab-content">
+        <ul>
+          <li v-for="subtopic in item.subtopics" :key="subtopic">
+            {{ subtopic }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -26,9 +18,7 @@
 export default {
   name: "AccordionInfo",
   props: {
-    header: String,
     items: Array,
-    media: String,
   },
 };
 </script>
