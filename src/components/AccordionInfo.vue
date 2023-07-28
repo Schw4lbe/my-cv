@@ -9,6 +9,12 @@
             {{ subtopic }}
           </li>
         </ul>
+        <div
+          v-if="item.logo.length > 0 || item.media.length > 0"
+          class="tab-media"
+        >
+          <img :src="item.logo" alt="test" />
+        </div>
       </div>
     </div>
   </div>
