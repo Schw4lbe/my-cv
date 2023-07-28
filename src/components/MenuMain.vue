@@ -11,8 +11,10 @@
         :id="item.id"
         class="menu-item"
       >
-        <i class="menu-icon" :class="item.icon"></i>
-        <a href="#">{{ item.name }}</a>
+        <router-link :to="item.path">
+          <i class="menu-icon" :class="item.icon"></i>
+          <span>{{ item.name }}</span>
+        </router-link>
       </div>
     </div>
   </div>

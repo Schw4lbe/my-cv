@@ -1,9 +1,11 @@
 <template>
-  <PersonalData
-    :properties="propertiesArray"
-    :hobbies="hobbiesArray"
-    :skills="skillsArray"
-  ></PersonalData>
+  <div class="person-data-container">
+    <PersonalData
+      :properties="propertiesArray"
+      :hobbies="hobbiesArray"
+      :skills="skillsArray"
+    ></PersonalData>
+  </div>
 </template>
 
 <script>
