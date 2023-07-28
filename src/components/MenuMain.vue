@@ -1,9 +1,10 @@
 <template>
   <div class="menu-frame">
-    <!-- <div class="menu-header"><h3>Persönliches</h3></div> -->
     <div class="menu-item-container">
       <div class="menu-image-frame">
-        <img class="menu-image" alt="picture" src="../assets/dummy.png" />
+        <router-link :to="homeLink">
+          <img class="menu-image" alt="picture" src="../assets/dummy.png"
+        /></router-link>
       </div>
       <div
         v-for="item in menuItems"
@@ -21,10 +22,17 @@
 </template>
 
 <script>
+import router from "@/router";
+
 export default {
   name: "MenuMain",
   props: {
     menuItems: Array,
+  },
+  data() {
+    return {
+      homeLink: router.options.routes[0],
+    };
   },
 };
 </script>
