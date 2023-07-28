@@ -2,60 +2,23 @@
   <div class="personal-data-container">
     <div class="propertie-container">
       <ul>
-        <li>Eigenschaft</li>
-        <li>Eigenschaft</li>
-        <li>Eigenschaft</li>
+        <li v-for="prop in properties" :key="prop.id">{{ prop.name }}</li>
       </ul>
     </div>
     <div class="hobby-container">
       <ul>
-        <li>Hobby</li>
-        <li>Hobby</li>
-        <li>Hobby</li>
+        <li v-for="hobby in hobbies" :key="hobby.id">{{ hobby.name }}</li>
       </ul>
     </div>
   </div>
+
   <div class="container">
-    <div class="skillbox">
-      <div class="html">
-        <h3>Html</h3>
-        <span class="percentage">90%</span>
+    <div v-for="skill in skills" :key="skill.id" class="skillbox">
+      <div :class="skill.name">
+        <h3>{{ skill.name }}</h3>
+        <span class="percentage">{{ skill.value }}%</span>
         <div class="cover">
           <div class="progressbar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="skillbox">
-      <div class="css">
-        <h3>Css</h3>
-        <span class="percentage">85%</span>
-        <div class="cover">
-          <div class="progressbar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="skillbox">
-      <div class="javascript">
-        <h3>Javascript</h3>
-        <span class="percentage">20%</span>
-        <div class="cover">
-          <div class="progressbar"></div>
-        </div>
-      </div>
-      <div class="skillbox">
-        <div class="photoshop">
-          <h3>Photoshop</h3>
-          <span class="percentage">95%</span>
-          <div class="cover">
-            <div class="progressbar"></div>
-          </div>
-        </div>
-        <div class="designing">
-          <h3>Designing</h3>
-          <span class="percentage">40%</span>
-          <div class="cover">
-            <div class="progressbar"></div>
-          </div>
         </div>
       </div>
     </div>
@@ -77,8 +40,6 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  /*   		background-color: #262626; */
-  /*   		font-family: sans-serif; */
 }
 .container {
   width: 40%;
@@ -118,7 +79,6 @@ body {
   border-radius: 2px;
 }
 .html .progressbar {
-  width: 90%;
   animation: animatehtml 2s linear;
 }
 .css .progressbar {

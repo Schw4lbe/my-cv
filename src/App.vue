@@ -1,6 +1,6 @@
 <template>
   <router-view />
-  <MenuMain :menuItems="youtMenuItemsArray"></MenuMain>
+  <MenuMain :menuItems="menuItemsArray"></MenuMain>
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      youtMenuItemsArray: [
+      menuItemsArray: [
         { id: "item1", name: "Persönliches" },
         { id: "item2", name: "Menu Item" },
         { id: "item3", name: "Menu Item" },
