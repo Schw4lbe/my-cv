@@ -1,11 +1,14 @@
 <template>
   <div class="loading-container">
     <div class="image-frame">
-      <img class="img-animation" alt="picture" src="../assets/dummy.png" />
+      <img class="portrait" alt="picture" src="../assets/dummy.png" />
     </div>
     <div class="loading-header">
       <h1>{{ header }}</h1>
       <h2>{{ subHeader }}</h2>
+      <p>
+        Hier kommt die info rein, warum und wie ich diese Seite erstellt habe
+      </p>
     </div>
   </div>
 </template>
