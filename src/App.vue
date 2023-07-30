@@ -1,5 +1,5 @@
 <template>
-  <div class="cv-readycheck">
+  <div class="cv-readycheck" id="test">
     <ReadyCheck :inputs="startInputs"></ReadyCheck>
   </div>
   <div class="cv-main">

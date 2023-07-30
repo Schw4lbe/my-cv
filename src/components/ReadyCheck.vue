@@ -1,6 +1,6 @@
 <template>
   <div class="readycheck-container">
-    <form action="">
+    <form action="" @submit.prevent="onFormSubmit">
       <div
         v-for="(input, index) in inputs"
         :key="index"
@@ -33,6 +33,12 @@ export default {
       return this.inputs.every((input) => input.checked);
     },
   },
+  methods: {
+    onFormSubmit() {
+      const div = document.querySelector("#test");
+      div.style.display = "none";
+    },
+  },
 };
 </script>
 
@@ -60,5 +66,9 @@ export default {
 button {
   padding: 1rem;
   margin: 2rem;
+}
+
+.hide {
+  display: none !important;
 }
 </style>
