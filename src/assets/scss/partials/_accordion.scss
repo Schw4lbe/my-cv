@@ -42,6 +42,20 @@ input {
     color: $midnight;
     background: white;
     transition: all 0.35s;
+
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    .tab-media {
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
   }
   &-close {
     display: flex;

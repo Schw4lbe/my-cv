@@ -1,7 +1,7 @@
 <template>
   <div class="accordion-container">
-    <div v-for="item in items" :key="item.id" class="tab">
-      <input type="checkbox" :id="item.id" />
+    <div v-for="(item, index) in items" :key="item.id" class="tab">
+      <input type="checkbox" :id="item.id" :checked="index === checkedIndex" />
       <label class="tab-label" :for="item.id">{{ item.header }}</label>
       <div class="tab-content">
         <ul>
@@ -9,11 +9,15 @@
             {{ subtopic }}
           </li>
         </ul>
-        <div
-          v-if="item.logo.length > 0 || item.media.length > 0"
-          class="tab-media"
-        >
-          <img :src="item.logo" alt="test" />
+        <div class="tab-media">
+          <img
+            v-if="
+              (item.logo != undefined && item.logo.length > 0) ||
+              (item.media != undefined && item.media.length > 0)
+            "
+            :src="item.logo"
+            alt="test"
+          />
         </div>
       </div>
     </div>
@@ -25,6 +29,11 @@ export default {
   name: "AccordionInfo",
   props: {
     items: Array,
+  },
+  data() {
+    return {
+      checkedIndex: 0,
+    };
   },
 };
 </script>

@@ -5,6 +5,7 @@
 
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
+import Logo1 from "../assets/logo.png";
 
 export default {
   name: "SalesView",
@@ -18,7 +19,7 @@ export default {
           id: "1",
           header: "Header 1",
           subtopics: ["Subtopic 1", "Subtopic 2", "Subtopic 3"],
-          logo: "../assets/logo.png",
+          logo: Logo1,
           media: "",
         },
         {
@@ -26,7 +27,7 @@ export default {
           header: "Header2",
           subtopics: ["Subtopic 1", "Subtopic 2", "Subtopic 3"],
           logo: "",
-          media: "../assets/logo.png",
+          media: "",
         },
       ],
     };

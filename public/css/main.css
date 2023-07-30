@@ -269,6 +269,15 @@ input {
   color: #2c3e50;
   background: white;
   transition: all 0.35s;
+  display: flex;
+  justify-content: space-between;
+}
+.tab-content ul {
+  padding-left: 1rem;
+}
+.tab-content .tab-media img {
+  height: 100px;
+  width: 100px;
 }
 .tab-close {
   display: flex;
