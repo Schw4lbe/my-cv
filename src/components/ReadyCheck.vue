@@ -35,8 +35,7 @@ export default {
   },
   methods: {
     onFormSubmit() {
-      const div = document.querySelector("#test");
-      div.style.display = "none";
+      this.$emit("form-submitted");
     },
   },
 };

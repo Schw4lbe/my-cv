@@ -1,6 +1,6 @@
 <template>
-  <div class="cv-readycheck" id="test">
-    <ReadyCheck :inputs="startInputs"></ReadyCheck>
+  <div class="cv-readycheck" :class="{ hide: elementHidden }" id="test">
+    <ReadyCheck :inputs="startInputs" @form-submitted="hideElement" />
   </div>
   <div class="cv-main">
     <MenuMain :menuItems="menuItemsArray"></MenuMain>
@@ -19,6 +19,7 @@ export default {
   },
   data() {
     return {
+      elementHidden: false,
       menuItemsArray: [
         {
           id: "item1",
@@ -58,6 +59,11 @@ export default {
       ],
     };
   },
+  methods: {
+    hideElement() {
+      this.elementHidden = true;
+    },
+  },
 };
 </script>
 
@@ -71,5 +77,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hide {
+  display: none !important;
 }
 </style>
