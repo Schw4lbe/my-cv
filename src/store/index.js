@@ -2,16 +2,16 @@ import { createStore } from "vuex";
 
 const store = createStore({
   state: {
-    styleAttribute: "",
+    elementHidden: false,
   },
   mutations: {
-    updateStyleAttribute(state, newValue) {
-      state.styleAttribute = newValue;
+    hideElement(state) {
+      state.elementHidden = true;
     },
   },
   actions: {},
   getters: {
-    styleAttribute: (state) => state.styleAttribute,
+    isElementHidden: (state) => state.elementHidden,
   },
 });
 

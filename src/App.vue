@@ -1,6 +1,6 @@
 <template>
-  <div class="cv-readycheck" :class="{ hide: elementHidden }" id="test">
-    <ReadyCheck :inputs="startInputs" @form-submitted="hideElement" />
+  <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
+    <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
   </div>
   <div class="cv-main">
     <MenuMain :menuItems="menuItemsArray"></MenuMain>
@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations } from "vuex";
 import MenuMain from "@/components/MenuMain.vue";
 import ReadyCheck from "@/components/ReadyCheck.vue";
 
@@ -59,9 +60,13 @@ export default {
       ],
     };
   },
+  computed: {
+    ...mapGetters(["isElementHidden"]),
+  },
   methods: {
-    hideElement() {
-      this.elementHidden = true;
+    ...mapMutations(["hideElement"]),
+    onFormSubmitted() {
+      this.hideElement();
     },
   },
 };

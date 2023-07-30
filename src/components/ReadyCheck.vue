@@ -1,6 +1,6 @@
 <template>
   <div class="readycheck-container">
-    <form action="" @submit.prevent="onFormSubmit">
+    <form action="" @submit.prevent="$emit('form-submitted')">
       <div
         v-for="(input, index) in inputs"
         :key="index"
@@ -35,6 +35,7 @@ export default {
   },
   methods: {
     onFormSubmit() {
+      this.$store.commit("hideElement");
       this.$emit("form-submitted");
     },
   },
