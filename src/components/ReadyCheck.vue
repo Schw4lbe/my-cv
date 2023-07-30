@@ -6,12 +6,17 @@
         :key="index"
         class="input-container"
       >
-        <input class="input-checkbox" type="checkbox" :id="input.label" />
+        <input
+          class="input-checkbox"
+          type="checkbox"
+          :id="input.label"
+          v-model="input.checked"
+        />
         <label class="input-label" :for="input.label">{{ input.label }}</label>
       </div>
 
       <div class="button-container">
-        <button type="submit">Los geht's!</button>
+        <button type="submit" :disabled="!allInputsChecked">Los geht's!</button>
       </div>
     </form>
   </div>
@@ -22,6 +27,11 @@ export default {
   name: "ReadyCheck",
   props: {
     inputs: Array,
+  },
+  computed: {
+    allInputsChecked() {
+      return this.inputs.every((input) => input.checked);
+    },
   },
 };
 </script>
@@ -45,5 +55,10 @@ export default {
   height: 20px;
   opacity: 1;
   z-index: 1;
+}
+
+button {
+  padding: 1rem;
+  margin: 2rem;
 }
 </style>
