@@ -85,7 +85,7 @@ export default {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #444;
+  background: #222;
   z-index: 1;
   display: flex;
   justify-content: center;
