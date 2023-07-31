@@ -33,12 +33,6 @@ export default {
       return this.inputs.every((input) => input.checked);
     },
   },
-  methods: {
-    onFormSubmit() {
-      this.$store.commit("hideElement");
-      this.$emit("form-submitted");
-    },
-  },
 };
 </script>
 

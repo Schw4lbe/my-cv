@@ -60,11 +60,19 @@ export default {
       ],
     };
   },
+  created() {
+    const elementHidden = localStorage.getItem("elementHidden");
+    if (elementHidden === "true") {
+      this.hideElement();
+    } else {
+      this.showElement();
+    }
+  },
   computed: {
     ...mapGetters(["isElementHidden"]),
   },
   methods: {
-    ...mapMutations(["hideElement"]),
+    ...mapMutations(["hideElement", "showElement"]),
     onFormSubmitted() {
       this.hideElement();
     },
