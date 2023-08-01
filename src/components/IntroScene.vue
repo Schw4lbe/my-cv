@@ -23,7 +23,7 @@ h3 {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-  animation-duration: 10s;
+  animation-duration: 1s;
 }
 
 #intro02 {
@@ -31,8 +31,8 @@ h3 {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-  animation-duration: 10s;
-  animation-delay: 11s;
+  animation-duration: 1s;
+  animation-delay: 1s;
 }
 
 @keyframes fadeInOutIntro {

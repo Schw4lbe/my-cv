@@ -54,9 +54,18 @@ export default {
         },
       ],
       startInputs: [
-        { label: "Tee oder Kaffee frisch aufgebrüht?" },
-        { label: "Notizblock bereit?" },
-        { label: "Die wichtigsten Personen sind anwesend?" },
+        {
+          label: "Tee oder Kaffee frisch aufgebrüht?",
+          icon: "fa-solid fa-mug-hot",
+        },
+        {
+          label: "Notizblock bereit?",
+          icon: "fa-sharp fa-solid fa-pen-to-square",
+        },
+        {
+          label: "Die wichtigsten Personen sind anwesend?",
+          icon: "fa-solid fa-people-group",
+        },
       ],
     };
   },
