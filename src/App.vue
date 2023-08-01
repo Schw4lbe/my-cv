@@ -88,20 +88,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.cv-readycheck {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #222;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hide {
-  display: none !important;
-}
-</style>

@@ -8,20 +8,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.cv-readycheck {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #222;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.hide {
+  display: none !important;
 }
 
 .menu-frame {
@@ -198,6 +199,13 @@ nav a.router-link-exact-active {
   display: grid;
 }
 
+.data-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+}
 input {
   position: absolute;
   opacity: 0;
@@ -282,7 +290,7 @@ input:checked ~ .tab-content {
 .readycheck-container {
   display: flex;
   justify-content: center;
-  padding-top: 30%;
+  padding-top: 40%;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -363,6 +371,50 @@ input:checked ~ .tab-content {
   display: none !important;
 }
 
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.intro-container h3 {
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  font-weight: 300;
+  width: 90%;
+}
+.intro-container #intro01 {
+  animation-name: fadeInOutIntro;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+.intro-container #intro02 {
+  animation-name: fadeInOutIntro;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInOutIntro {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;

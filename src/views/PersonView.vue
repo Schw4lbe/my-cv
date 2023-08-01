@@ -18,10 +18,7 @@ export default {
   },
   data() {
     return {
-      skillsArray: [
-        { id: "1", name: "html", value: "90" },
-        { id: "2", name: "css", value: "80" },
-      ],
+      skillsArray: [{ id: "1", name: "html", value: "90", rating: "9" }],
       propertiesArray: [
         { id: "1", name: "Eigenmotivation" },
         { id: "2", name: "Verantwortungsbewustsein" },
