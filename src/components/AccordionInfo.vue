@@ -3,8 +3,9 @@
     <div v-for="(item, index) in items" :key="item.id" class="tab">
       <input type="checkbox" :id="item.id" :checked="index === checkedIndex" />
       <label class="tab-label" :for="item.id"
-        >{{ item.header }} / {{ item.period }}</label
-      >
+        ><span>{{ item.header }}</span
+        ><span>{{ item.period }}</span>
+      </label>
       <div class="tab-content">
         <ul>
           <li v-for="subtopic in item.subtopics" :key="subtopic">
