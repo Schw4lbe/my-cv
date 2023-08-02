@@ -2,12 +2,18 @@
   <div class="accordion-container">
     <div v-for="(item, index) in items" :key="item.id" class="tab">
       <input type="checkbox" :id="item.id" :checked="index === checkedIndex" />
-      <label class="tab-label" :for="item.id">{{ item.header }}</label>
+      <label class="tab-label" :for="item.id"
+        >{{ item.header }} / {{ item.period }}</label
+      >
       <div class="tab-content">
         <ul>
           <li v-for="subtopic in item.subtopics" :key="subtopic">
             {{ subtopic }}
           </li>
+          <br />
+          <span
+            ><i>Größter Erfolg: {{ item.success }}</i></span
+          >
         </ul>
         <div class="tab-media">
           <img
