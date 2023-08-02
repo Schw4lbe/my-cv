@@ -6,39 +6,81 @@
   padding: 2rem;
 
   .personal-data-container {
-    .propertie-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+
+    h2 {
+      margin-bottom: 20px;
     }
+
+    .propertie-container,
     .hobby-container {
+      text-align: left;
+      background-color: #333;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 45%;
+      margin-bottom: 20px;
+
+      li {
+        font-size: 0.9rem;
+      }
     }
   }
 
   .skill-data-container {
     height: auto;
     width: 100%;
+    padding: 1rem;
+    background: #333;
+    border-radius: 10px;
+
+    h2 {
+      color: white;
+      padding: 2rem;
+    }
 
     .skill-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      flex-wrap: nowrap;
 
-      .skill-icon {
-        font-size: 1.5rem;
-        padding-right: 10px;
+      &:last-child {
+        margin-bottom: 0;
       }
 
+      .skill-icon {
+        font-size: 1.7rem;
+        padding-right: 10px;
+        color: white;
+        width: 10%;
+      }
       .skill-name {
         text-transform: uppercase;
-        width: 10%;
+        width: 20%;
+        min-width: 150px;
+        color: white;
+        text-align: left;
       }
 
       .skill-rating {
-        width: 10%;
+        width: 15%;
+        color: white;
+        margin-right: 10px;
+        padding-left: 10px;
+        border-left: 1px solid white;
       }
 
       .progress-bar {
         width: 100%;
-        height: 20px;
+        height: 10px;
         background-color: #f0f0f0;
         border-radius: 10px;
         overflow: hidden;
@@ -47,6 +89,7 @@
           height: 100%;
           background-color: #007bff;
           animation: progressAnimation 1s linear;
+          border-right: 3px solid black;
         }
       }
     }

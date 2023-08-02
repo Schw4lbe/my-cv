@@ -206,30 +206,75 @@ body {
   justify-content: center;
   padding: 2rem;
 }
+.data-container .personal-data-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+.data-container .personal-data-container h2 {
+  margin-bottom: 20px;
+}
+.data-container .personal-data-container .propertie-container,
+.data-container .personal-data-container .hobby-container {
+  text-align: left;
+  background-color: #333;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+.data-container .personal-data-container .propertie-container li,
+.data-container .personal-data-container .hobby-container li {
+  font-size: 0.9rem;
+}
 .data-container .skill-data-container {
   height: auto;
   width: 100%;
+  padding: 1rem;
+  background: #333;
+  border-radius: 10px;
+}
+.data-container .skill-data-container h2 {
+  color: white;
+  padding: 2rem;
 }
 .data-container .skill-data-container .skill-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+.data-container .skill-data-container .skill-container:last-child {
+  margin-bottom: 0;
 }
 .data-container .skill-data-container .skill-container .skill-icon {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding-right: 10px;
+  color: white;
+  width: 10%;
 }
 .data-container .skill-data-container .skill-container .skill-name {
   text-transform: uppercase;
-  width: 10%;
+  width: 20%;
+  min-width: 150px;
+  color: white;
+  text-align: left;
 }
 .data-container .skill-data-container .skill-container .skill-rating {
-  width: 10%;
+  width: 15%;
+  color: white;
+  margin-right: 10px;
+  padding-left: 10px;
+  border-left: 1px solid white;
 }
 .data-container .skill-data-container .skill-container .progress-bar {
   width: 100%;
-  height: 20px;
+  height: 10px;
   background-color: #f0f0f0;
   border-radius: 10px;
   overflow: hidden;
@@ -238,6 +283,7 @@ body {
   height: 100%;
   background-color: #007bff;
   animation: progressAnimation 1s linear;
+  border-right: 3px solid black;
 }
 
 @keyframes progressAnimation {
