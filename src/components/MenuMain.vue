@@ -3,7 +3,7 @@
     <div class="menu-item-container">
       <div class="menu-image-frame">
         <router-link :to="homeLink">
-          <img class="menu-image" alt="picture" src="../assets/dummy.png"
+          <img class="menu-image" alt="picture" src="../assets/jph.jpg"
         /></router-link>
       </div>
       <div

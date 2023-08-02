@@ -1,7 +1,7 @@
 <template>
   <div class="loading-container">
     <div class="image-frame">
-      <img class="portrait" alt="picture" src="../assets/dummy.png" />
+      <img class="portrait" alt="picture" src="../assets/jph.jpg" />
     </div>
     <div class="loading-header">
       <h1>{{ header }}</h1>

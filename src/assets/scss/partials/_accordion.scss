@@ -24,6 +24,7 @@ input {
     background: $midnight;
     font-weight: bold;
     cursor: pointer;
+    border-bottom: 1px solid white;
     /* Icon */
     &:hover {
       background: darken($midnight, 10%);
@@ -34,6 +35,11 @@ input {
       height: 1em;
       text-align: center;
       transition: all 0.35s;
+      margin-left: 10px;
+    }
+
+    span:nth-child(2) {
+      margin-left: auto;
     }
   }
   &-content {
@@ -48,6 +54,12 @@ input {
 
     ul {
       padding-left: 1rem;
+
+      li {
+        text-align: left;
+        margin-left: 1rem;
+        line-height: 1.3rem;
+      }
     }
 
     .tab-media {
