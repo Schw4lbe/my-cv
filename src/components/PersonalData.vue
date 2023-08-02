@@ -15,9 +15,15 @@
 
     <div class="skill-data-container">
       <div v-for="skill in skills" :key="skill.id" class="skill-container">
-        <span>{{ skill.name }}</span>
-        <progress :value="animateSkillValue(skill.value)" max="100"></progress>
-        <span>{{ skill.rating }} / 10</span>
+        <i :class="skill.icon" class="skill-icon"></i>
+        <span class="skill-name">{{ skill.name }}</span>
+        <div class="progress-bar">
+          <div
+            :style="{ width: getProgressWidth(skill.rating) + '%' }"
+            class="progress"
+          ></div>
+        </div>
+        <span class="skill-rating">{{ skill.rating }} / 10</span>
       </div>
     </div>
   </div>
@@ -31,8 +37,12 @@ export default {
     hobbies: Array,
     skills: Array,
   },
-  methods: {
-    animateSkillValue() {},
+  computed: {
+    getProgressWidth() {
+      return (rating) => {
+        return (rating / 10) * 100;
+      };
+    },
   },
 };
 </script>

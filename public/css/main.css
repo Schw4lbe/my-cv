@@ -206,6 +206,45 @@ body {
   justify-content: center;
   padding: 2rem;
 }
+.data-container .skill-data-container {
+  height: auto;
+  width: 100%;
+}
+.data-container .skill-data-container .skill-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.data-container .skill-data-container .skill-container .skill-icon {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+.data-container .skill-data-container .skill-container .skill-name {
+  text-transform: uppercase;
+  width: 10%;
+}
+.data-container .skill-data-container .skill-container .skill-rating {
+  width: 10%;
+}
+.data-container .skill-data-container .skill-container .progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.data-container .skill-data-container .skill-container .progress-bar .progress {
+  height: 100%;
+  background-color: #007bff;
+  animation: progressAnimation 1s linear;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+}
 input {
   position: absolute;
   opacity: 0;
