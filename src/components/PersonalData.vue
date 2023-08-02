@@ -47,15 +47,15 @@ export default {
   data() {
     return {
       colors: [
-        { id: "0", code: "#025bff" },
+        { id: "0", code: "#0145ff" },
         { id: "1", code: "#1571ff" },
         { id: "2", code: "#2797ff" },
         { id: "3", code: "#3abeff" },
-        { id: "4", code: "#4fd4ff" },
-        { id: "5", code: "#66eaff" },
-        { id: "6", code: "#7cffff" },
-        { id: "7", code: "#93ffff" },
-        { id: "8", code: "#aaffff" },
+        { id: "4", code: "#47b4fd" },
+        { id: "5", code: "#58bcff" },
+        { id: "6", code: "#72c7ff" },
+        { id: "7", code: "#91d3ff" },
+        { id: "8", code: "#b4ddff" },
         { id: "10", code: "#ffffff" },
       ],
     };
