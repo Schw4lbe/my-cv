@@ -16,7 +16,7 @@
       animation-fill-mode: forwards;
       animation-timing-function: linear;
       animation-duration: 0.5s;
-      animation-delay: 2s;
+      animation-delay: 6s;
     }
   }
 
@@ -31,7 +31,7 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-duration: 0.5s;
-    animation-delay: 2s;
+    animation-delay: 6s;
   }
 }
 
@@ -40,28 +40,28 @@
 }
 
 // Animations
-// @keyframes slideOutPortrait {
-//   0% {
-//     transform: translateX(0%);
-//   }
-//   25% {
-//     border-radius: 100%;
-//   }
-//   100% {
-//     transform: translateX(-200%);
-//     opacity: 0.1;
-//     height: 0%;
-//     width: 0%;
-//     border-radius: 100%;
-//     // transform: translateY(-50%);
-//   }
-// }
+@keyframes slideOutPortrait {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    border-radius: 100%;
+  }
+  100% {
+    transform: translateX(-200%);
+    opacity: 0.1;
+    height: 0%;
+    width: 0%;
+    border-radius: 100%;
+    // transform: translateY(-50%);
+  }
+}
 
-// @keyframes headerBlur {
-//   0% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 0;
-//   }
-// }
+@keyframes headerBlur {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
