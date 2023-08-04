@@ -4,7 +4,7 @@
       <p id="text01">Warum eigentlich ein online Lebenslauf?</p>
     </div>
     <div class="text-container" id="intro02">
-      <p id="text02">Weil ich zeigen möchte was ich kann.</p>
+      <p id="text02">Weil ich zeigen möchte, was ich kann.</p>
     </div>
   </div>
 </template>
@@ -17,23 +17,23 @@ export default {
 
 <style scoped>
 p {
-  /* border-right: solid 3px white; */
   white-space: nowrap;
   overflow: hidden;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
 }
 
-/* Animation */
 #text01 {
   animation: animated-text 2s steps(22, end) 1s 1 normal both,
     animated-cursor 600ms steps(22, end) infinite;
+  animation-delay: 5s;
 }
 
 #text02 {
   animation: animated-text 2s steps(22, end) 1s 1 normal both,
     animated-cursor 600ms steps(22, end) infinite;
-  animation-delay: 10s;
+  animation-delay: 15s;
 }
 
 #intro01 {
@@ -41,7 +41,7 @@ p {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 2s;
-  animation-delay: 8s;
+  animation-delay: 13s;
 }
 
 #intro02 {
@@ -49,7 +49,7 @@ p {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 2s;
-  animation-delay: 18s;
+  animation-delay: 23s;
 }
 
 @keyframes animated-text {
