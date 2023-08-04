@@ -37,22 +37,6 @@ body {
   animation-duration: 0.1s;
   animation-delay: 7s;
 }
-.menu-frame .menu-header {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  width: 100%;
-  transform: translateX(-100%);
-  animation-name: slideOutHeader;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 0.5s;
-  animation-delay: 9s;
-}
 .menu-frame .menu-header h3 {
   font-size: 2rem;
   margin: 0;

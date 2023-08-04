@@ -1,6 +1,6 @@
 <template>
   <div class="loading-container">
-    <div class="loading-header">
+    <div id="loading-header" class="">
       <h1>{{ header }}</h1>
       <h2>{{ subHeader }}</h2>
       <p>
@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="image-frame">
-      <img class="portrait" alt="picture" src="../assets/jph.jpg" />
+      <img id="portrait" class="" alt="picture" src="../assets/jph.jpg" />
     </div>
   </div>
 </template>

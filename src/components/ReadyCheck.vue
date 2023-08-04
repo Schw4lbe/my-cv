@@ -22,7 +22,13 @@
       </div>
 
       <div class="button-container">
-        <button type="submit" :disabled="!allInputsChecked">Los geht's!</button>
+        <button
+          type="submit"
+          :disabled="!allInputsChecked"
+          @click="checkInputs"
+        >
+          Los geht's!
+        </button>
       </div>
     </form>
   </div>
@@ -41,6 +47,12 @@ export default {
   computed: {
     allInputsChecked() {
       return this.inputs.every((input) => input.checked);
+    },
+  },
+  methods: {
+    checkInputs() {
+      console.log("inputs checked.");
+      this.$emit("inputsChecked");
     },
   },
 };

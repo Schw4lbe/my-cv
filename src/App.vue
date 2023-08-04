@@ -1,6 +1,10 @@
 <template>
   <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
-    <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
+    <ReadyCheck
+      :inputs="startInputs"
+      @form-submitted="onFormSubmitted"
+      @inputsChecked="handleClassAssigment"
+    />
   </div>
   <div class="cv-main">
     <MenuMain :menuItems="menuItemsArray"></MenuMain>
@@ -21,6 +25,7 @@ export default {
   data() {
     return {
       elementHidden: false,
+      isVissible: false,
       menuItemsArray: [
         {
           id: "item1",
@@ -84,6 +89,30 @@ export default {
     ...mapMutations(["hideElement", "showElement"]),
     onFormSubmitted() {
       this.hideElement();
+    },
+
+    handleClassAssigment() {
+      this.isVissible = true;
+
+      // home view elements:
+      const portrait = document.querySelector("#portrait");
+      const loadingHeader = document.querySelector("#loading-header");
+
+      // main menu elements:
+      const menuFrame = document.querySelector("#menu-frame");
+      const menuItemContainer = document.querySelector("#menu-item-container");
+      const menuItem = document.querySelectorAll(".menu-item-selector");
+
+      if (this.isVissible === true) {
+        portrait.classList.add("portrait");
+        loadingHeader.classList.add("loading-header");
+
+        menuFrame.classList.add("menu-frame");
+        menuItemContainer.classList.add("menu-item-container");
+        menuItem.forEach((element) => {
+          element.classList.add("menu-item");
+        });
+      }
     },
   },
 };
