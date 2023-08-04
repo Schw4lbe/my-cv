@@ -377,7 +377,7 @@ input:checked ~ .tab-content {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-  animation-delay: 2s;
+  animation-delay: 20s;
 }
 .readycheck-container form {
   border: 1px solid white;
@@ -456,43 +456,7 @@ input:checked ~ .tab-content {
   flex-wrap: wrap;
   width: 100%;
 }
-.intro-container h3 {
-  color: white;
-  font-size: 1.5rem;
-  opacity: 0;
-  font-weight: 300;
-  width: 90%;
-}
-.intro-container #intro01 {
-  animation-name: fadeInOutIntro;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-}
-.intro-container #intro02 {
-  animation-name: fadeInOutIntro;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 1s;
-}
 
-@keyframes fadeInOutIntro {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 * {
   margin: 0;
   padding: 0;
