@@ -4,6 +4,7 @@
   </div>
   <div class="readycheck-container">
     <form action="" @submit.prevent="$emit('form-submitted')">
+      <h3>Alle Vorbereitungen getroffen?</h3>
       <div
         v-for="(input, index) in inputs"
         :key="index"

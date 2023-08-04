@@ -4,8 +4,13 @@ const store = createStore({
   state: {
     elementHidden: localStorage.getItem("elementHidden") === "true" || false,
     cvMainVisible: localStorage.getItem("cvMainVisible") === "true" || false,
+    hideAnimation: localStorage.getItem("hideAnimation") === "true" || false,
   },
   mutations: {
+    hideAnimation(state) {
+      state.hideAnimation = true;
+      localStorage.setItem("hideAnimation", "true");
+    },
     hideElement(state) {
       state.elementHidden = true;
       localStorage.setItem("elementHidden", "true");
@@ -21,6 +26,7 @@ const store = createStore({
   },
   actions: {},
   getters: {
+    isAnimationHidden: (state) => state.hideAnimation,
     isElementHidden: (state) => state.elementHidden,
     isCvMainVisible: (state) => state.cvMainVisible,
   },

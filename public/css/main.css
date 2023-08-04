@@ -376,8 +376,8 @@ input:checked ~ .tab-content {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 20s;
+  animation-duration: 0.5s;
+  animation-delay: 25s;
 }
 .readycheck-container form {
   border: 1px solid white;
@@ -387,9 +387,20 @@ input:checked ~ .tab-content {
   height: max-content;
   background: #333;
 }
+.readycheck-container form h3 {
+  color: white;
+  padding: 2rem;
+}
 .readycheck-container form .input-container {
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  animation-name: fadeInReadyCheck;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+  animation-delay: 26s;
 }
 .readycheck-container form .input-container .input-checkbox {
   display: block;
