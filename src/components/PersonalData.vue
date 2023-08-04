@@ -32,6 +32,9 @@
           ></div>
         </div>
       </div>
+      <h3>
+        Skala von 1 (Grundwissen) bis 10 (Experte). Bemessen an Praxiserfahrung.
+      </h3>
     </div>
   </div>
 </template>

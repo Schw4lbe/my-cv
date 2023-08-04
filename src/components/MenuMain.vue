@@ -1,6 +1,6 @@
 <template>
-  <div id="menu-frame">
-    <div id="menu-item-container">
+  <div class="menu-frame">
+    <div class="menu-item-container">
       <div class="menu-image-frame">
         <router-link :to="homeLink">
           <img class="menu-image" alt="picture" src="../assets/jph.jpg"
@@ -10,7 +10,7 @@
         v-for="item in menuItems"
         :key="item.id"
         :id="item.id"
-        class="menu-item-selector"
+        class="menu-item"
       >
         <router-link :to="item.path">
           <i class="menu-icon" :class="item.icon"></i>

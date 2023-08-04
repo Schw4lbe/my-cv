@@ -35,7 +35,6 @@ body {
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-duration: 0.1s;
-  animation-delay: 7s;
 }
 .menu-frame .menu-header h3 {
   font-size: 2rem;
@@ -55,7 +54,6 @@ body {
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-duration: 0.1s;
-  animation-delay: 7s;
 }
 .menu-frame .menu-item-container .menu-image-frame {
   z-index: 1;
@@ -113,27 +111,27 @@ body {
 .menu-frame .menu-item-container #item1 {
   transform: translateX(-400px);
   animation-name: slideOutMenu;
-  animation-delay: 8.5s;
+  animation-delay: 0.5s;
 }
 .menu-frame .menu-item-container #item2 {
   transform: translateX(-600px);
   animation-name: slideOutMenu;
-  animation-delay: 8.4s;
+  animation-delay: 0.4s;
 }
 .menu-frame .menu-item-container #item3 {
   transform: translateX(-800px);
   animation-name: slideOutMenu;
-  animation-delay: 8.3s;
+  animation-delay: 0.3s;
 }
 .menu-frame .menu-item-container #item4 {
   transform: translateX(-1000px);
   animation-name: slideOutMenu;
-  animation-delay: 8.2s;
+  animation-delay: 0.2s;
 }
 .menu-frame .menu-item-container #item5 {
   transform: translateX(-1200px);
   animation-name: slideOutMenu;
-  animation-delay: 8.1s;
+  animation-delay: 0.1s;
 }
 
 @keyframes slideOutMenu {
@@ -168,52 +166,15 @@ body {
   max-height: 500px;
   width: 65%;
   max-width: 500px;
-  animation-name: slideOutPortrait;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-duration: 0.5s;
-  animation-delay: 6s;
 }
 .loading-container .loading-header {
-  position: absolute;
   width: 100%;
-  top: 65%;
-  animation-name: headerBlur;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-duration: 0.5s;
-  animation-delay: 6s;
 }
 
 .container {
   display: grid;
 }
 
-@keyframes slideOutPortrait {
-  0% {
-    transform: translateX(0%);
-  }
-  25% {
-    border-radius: 100%;
-  }
-  100% {
-    transform: translateX(-200%);
-    opacity: 0.1;
-    height: 0%;
-    width: 0%;
-    border-radius: 100%;
-  }
-}
-@keyframes headerBlur {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .data-container {
   display: flex;
   flex-wrap: wrap;
@@ -257,6 +218,12 @@ body {
 .data-container .skill-data-container h2 {
   color: white;
   padding: 2rem;
+}
+.data-container .skill-data-container h3 {
+  padding-top: 20px;
+  color: white;
+  font-weight: 300;
+  text-align: left;
 }
 .data-container .skill-data-container .skill-container {
   display: flex;

@@ -1,12 +1,8 @@
 <template>
   <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
-    <ReadyCheck
-      :inputs="startInputs"
-      @form-submitted="onFormSubmitted"
-      @inputsChecked="handleClassAssigment"
-    />
+    <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
   </div>
-  <div class="cv-main">
+  <div class="cv-main" v-if="isCvMainVisible">
     <MenuMain :menuItems="menuItemsArray"></MenuMain>
     <router-view />
   </div>
@@ -24,8 +20,6 @@ export default {
   },
   data() {
     return {
-      elementHidden: false,
-      isVissible: false,
       menuItemsArray: [
         {
           id: "item1",
@@ -75,6 +69,13 @@ export default {
     };
   },
   created() {
+    const cvMainVisible = localStorage.getItem("cvMainVisible");
+    if (cvMainVisible === "true") {
+      this.showCvMain();
+    } else {
+      return;
+    }
+
     const elementHidden = localStorage.getItem("elementHidden");
     if (elementHidden === "true") {
       this.hideElement();
@@ -83,36 +84,13 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(["isElementHidden"]),
+    ...mapGetters(["isElementHidden", "isCvMainVisible"]),
   },
   methods: {
-    ...mapMutations(["hideElement", "showElement"]),
+    ...mapMutations(["hideElement", "showElement", "showCvMain"]),
     onFormSubmitted() {
       this.hideElement();
-    },
-
-    handleClassAssigment() {
-      this.isVissible = true;
-
-      // home view elements:
-      const portrait = document.querySelector("#portrait");
-      const loadingHeader = document.querySelector("#loading-header");
-
-      // main menu elements:
-      const menuFrame = document.querySelector("#menu-frame");
-      const menuItemContainer = document.querySelector("#menu-item-container");
-      const menuItem = document.querySelectorAll(".menu-item-selector");
-
-      if (this.isVissible === true) {
-        portrait.classList.add("portrait");
-        loadingHeader.classList.add("loading-header");
-
-        menuFrame.classList.add("menu-frame");
-        menuItemContainer.classList.add("menu-item-container");
-        menuItem.forEach((element) => {
-          element.classList.add("menu-item");
-        });
-      }
+      this.showCvMain();
     },
   },
 };
