@@ -29,8 +29,18 @@ export default {
           name: "bootstrap",
           rating: "7",
         },
-        { id: "5", icon: "fa-brands fa-code", name: "quasar", rating: "3" },
-        { id: "6", icon: "fa-brands fa-uikit", name: "ux / ui", rating: "5" },
+        {
+          id: "5",
+          icon: "fa-solid fa-q",
+          name: "quasar",
+          rating: "3",
+        },
+        {
+          id: "6",
+          icon: "fa-brands fa-uikit",
+          name: "ux / ui design",
+          rating: "5",
+        },
         {
           id: "7",
           icon: "fa-brands fa-js",
@@ -45,7 +55,7 @@ export default {
         },
         {
           id: "9",
-          icon: "fa-sharp fa-light fa-superscript",
+          icon: "fa-solid fa-t",
           name: "typescript",
           rating: "2",
         },
@@ -65,6 +75,12 @@ export default {
         },
         {
           id: "14",
+          icon: "fa-brands fa-vuejs",
+          name: "vuex",
+          rating: "1",
+        },
+        {
+          id: "15",
           icon: "fa-regular fa-window-restore",
           name: "browserstack",
           rating: "6",
