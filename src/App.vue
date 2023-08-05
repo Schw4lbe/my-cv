@@ -46,15 +46,15 @@ export default {
         },
         {
           id: "item4",
-          name: "Referenzen",
-          icon: "fa-solid fa-photo-film",
-          path: "/reference",
-        },
-        {
-          id: "item5",
           name: "Selbstständigkeit",
           icon: "fa-solid fa-shoe-prints",
           path: "/freelance",
+        },
+        {
+          id: "item5",
+          name: "Referenzen",
+          icon: "fa-solid fa-photo-film",
+          path: "/reference",
         },
       ],
       startInputs: [

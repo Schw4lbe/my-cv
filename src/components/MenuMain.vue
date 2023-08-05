@@ -1,21 +1,23 @@
 <template>
-  <div class="menu-frame">
-    <div class="menu-item-container">
-      <div class="menu-image-frame">
-        <router-link :to="homeLink">
-          <img class="menu-image" alt="picture" src="../assets/jph.jpg"
-        /></router-link>
-      </div>
-      <div
-        v-for="item in menuItems"
-        :key="item.id"
-        :id="item.id"
-        class="menu-item"
-      >
-        <router-link :to="item.path">
-          <i class="menu-icon" :class="item.icon"></i>
-          <span>{{ item.name }}</span>
-        </router-link>
+  <div class="menu-wrapper">
+    <div class="menu-frame">
+      <div class="menu-item-container">
+        <div class="menu-image-frame">
+          <router-link :to="homeLink">
+            <img class="menu-image" alt="picture" src="../assets/jph.jpg"
+          /></router-link>
+        </div>
+        <div
+          v-for="item in menuItems"
+          :key="item.id"
+          :id="item.id"
+          class="menu-item"
+        >
+          <router-link :to="item.path">
+            <i class="menu-icon" :class="item.icon"></i>
+            <span>{{ item.name }}</span>
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -36,3 +38,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #666;
+}
+.menu-frame {
+  width: 100%;
+  max-width: 1920px;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="person-data-container">
+  <div class="personal-data-wrapper">
     <PersonalData
       :properties="propertiesArray"
       :hobbies="hobbiesArray"
@@ -84,4 +84,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.personal-data-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #666;
+}
+</style>

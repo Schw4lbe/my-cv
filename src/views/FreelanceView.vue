@@ -1,6 +1,10 @@
 <template>
-  <h1>Selbstständigkeit</h1>
-  <AccordionInfo :items="freelanceItems"></AccordionInfo>
+  <div class="freelance-wrapper">
+    <div class="freelance-data-container">
+      <h1>Selbstständigkeit</h1>
+      <AccordionInfo :items="freelanceItems" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -53,6 +57,19 @@ export default {
 </script>
 
 <style scoped>
+.freelance-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #666;
+}
+
+.freelance-data-container {
+  width: 100%;
+  max-width: 1920px;
+}
+
 h1 {
   margin: 2rem;
 }

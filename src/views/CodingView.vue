@@ -1,6 +1,10 @@
 <template>
-  <h1>Coding Erfahrung</h1>
-  <AccordionInfo :items="codingItems"></AccordionInfo>
+  <div class="coding-wrapper">
+    <div class="coding-data-container">
+      <h1>Coding Erfahrung</h1>
+      <AccordionInfo :items="codingItems"></AccordionInfo>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -71,6 +75,19 @@ export default {
 </script>
 
 <style scoped>
+.coding-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #666;
+}
+
+.coding-data-container {
+  width: 100%;
+  max-width: 1920px;
+}
+
 h1 {
   margin: 2rem;
 }
