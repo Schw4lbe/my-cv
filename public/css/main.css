@@ -716,8 +716,7 @@ input:checked ~ .tab-content {
   display: grid;
   grid-template-columns: 1fr;
 }
-.reference-grid-container .reference-container,
-.reference-grid-container .reference-container-reverse {
+.reference-grid-container .reference-container {
   display: grid;
   grid-template-columns: 4fr 8fr;
   padding: 1rem;
@@ -727,23 +726,16 @@ input:checked ~ .tab-content {
   background: #333;
   color: white;
 }
-.reference-grid-container .reference-container-reverse {
-  grid-template-columns: 7fr 5fr;
-}
 .reference-grid-container .description-container {
   padding: 1rem;
 }
 .reference-grid-container .reference-info {
   text-align: left;
 }
-.reference-grid-container .media-container,
-.reference-grid-container .media-container-reverse {
+.reference-grid-container .media-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-.reference-grid-container .media-container-reverse {
-  justify-content: flex-start;
 }
 .reference-grid-container p {
   display: inline-block;

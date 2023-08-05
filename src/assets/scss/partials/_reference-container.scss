@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
 
-  .reference-container,
-  .reference-container-reverse {
+  .reference-container {
     display: grid;
     grid-template-columns: 4fr 8fr;
     padding: 1rem;
@@ -14,10 +13,6 @@
     color: white;
   }
 
-  .reference-container-reverse {
-    grid-template-columns: 7fr 5fr;
-  }
-
   .description-container {
     padding: 1rem;
   }
@@ -26,15 +21,10 @@
     text-align: left;
   }
 
-  .media-container,
-  .media-container-reverse {
+  .media-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-
-  .media-container-reverse {
-    justify-content: flex-start;
   }
 
   p {
@@ -68,7 +58,6 @@
   img {
     height: auto;
     width: 100%;
-    // max-width: 100%;
     object-fit: cover;
   }
 }
