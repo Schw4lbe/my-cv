@@ -164,18 +164,22 @@ body {
     opacity: 1;
   }
 }
-.loading-container {
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.home-wrapper .loading-container {
   background: #e4e4e4;
-  height: 100%;
+  height: 100vh;
   max-width: 1920px;
   width: 100%;
 }
-.loading-container .loading-header {
+.home-wrapper .loading-container .loading-header {
   width: 100%;
   padding: 20px 0;
 }
-.loading-container .loading-header h1,
-.loading-container .loading-header h2 {
+.home-wrapper .loading-container .loading-header h1,
+.home-wrapper .loading-container .loading-header h2 {
   padding: 20px;
 }
 

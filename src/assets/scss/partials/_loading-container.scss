@@ -1,20 +1,20 @@
-.loading-container {
-  background: $color-secondary-dark;
-  height: 100%;
-  max-width: 1920px;
-  width: 100%;
-
-  .loading-header {
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  .loading-container {
+    background: $color-secondary-dark;
+    height: 100vh;
+    max-width: 1920px;
     width: 100%;
-    padding: 20px 0;
 
-    h1,
-    h2 {
-      padding: 20px;
+    .loading-header {
+      width: 100%;
+      padding: 20px 0;
+
+      h1,
+      h2 {
+        padding: 20px;
+      }
     }
   }
 }
-
-// .container {
-//   display: grid;
-// }
