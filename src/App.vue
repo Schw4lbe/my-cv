@@ -28,7 +28,7 @@ export default {
       menuItemsArray: [
         {
           id: "item1",
-          name: "Persönliches",
+          name: "Skill Matrix",
           icon: "fa-solid fa-person",
           path: "/person",
         },

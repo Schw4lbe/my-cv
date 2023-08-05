@@ -1,23 +1,20 @@
 .loading-container {
-  .image-frame {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .portrait {
-      height: 65%;
-      max-height: 500px;
-      width: 65%;
-      max-width: 500px;
-    }
-  }
+  background: $color-secondary-dark;
+  height: 100%;
+  max-width: 1920px;
+  width: 100%;
 
   .loading-header {
     width: 100%;
+    padding: 20px 0;
+
+    h1,
+    h2 {
+      padding: 20px;
+    }
   }
 }
 
-.container {
-  display: grid;
-}
+// .container {
+//   display: grid;
+// }

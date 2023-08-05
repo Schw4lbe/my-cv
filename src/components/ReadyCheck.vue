@@ -3,35 +3,39 @@
     <IntroScene />
   </div>
   <div class="readycheck-container">
-    <form action="" @submit.prevent="$emit('form-submitted')">
-      <h3>Alle Vorbereitungen getroffen?</h3>
-      <div
-        v-for="(input, index) in inputs"
-        :key="index"
-        class="input-container"
-      >
-        <input
-          class="input-checkbox"
-          type="checkbox"
-          :id="input.label"
-          v-model="input.checked"
-        />
-        <label class="input-label" :for="input.label">{{ input.label }}</label>
-        <div class="icon-container">
-          <i :class="input.icon" class="input-icon"></i>
-        </div>
-      </div>
-
-      <div class="button-container">
-        <button
-          type="submit"
-          :disabled="!allInputsChecked"
-          @click="checkInputs"
+    <div class="form-wrapper">
+      <form action="" @submit.prevent="$emit('form-submitted')">
+        <h3>Alle Vorbereitungen getroffen?</h3>
+        <div
+          v-for="(input, index) in inputs"
+          :key="index"
+          class="input-container"
         >
-          Los geht's!
-        </button>
-      </div>
-    </form>
+          <input
+            class="input-checkbox"
+            type="checkbox"
+            :id="input.label"
+            v-model="input.checked"
+          />
+          <label class="input-label" :for="input.label">{{
+            input.label
+          }}</label>
+          <div class="icon-container">
+            <i :class="input.icon" class="input-icon"></i>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button
+            type="submit"
+            :disabled="!allInputsChecked"
+            @click="checkInputs"
+          >
+            Los geht's!
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 <script>

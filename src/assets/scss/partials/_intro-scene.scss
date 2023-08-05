@@ -9,8 +9,7 @@
     white-space: nowrap;
     overflow: hidden;
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
+    color: $color-secondary;
   }
 
   #text01 {
@@ -53,12 +52,12 @@
 
 @keyframes animated-cursor {
   from {
-    border-right: solid 3px lightskyblue;
+    border-right: solid 5px $color-accent-a;
 
-    border-right-color: lightskyblue;
+    border-right-color: $color-accent-a;
   }
   to {
-    border-right: solid 3px lightskyblue;
+    border-right: solid 5px $color-accent-a;
 
     border-right-color: transparent;
   }

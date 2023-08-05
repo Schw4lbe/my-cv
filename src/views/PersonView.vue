@@ -1,6 +1,6 @@
 <template>
   <div class="personal-data-wrapper">
-    <h1>Persönliches</h1>
+    <h1>Skill Matrix</h1>
     <PersonalData
       :properties="propertiesArray"
       :hobbies="hobbiesArray"

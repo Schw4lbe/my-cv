@@ -5,7 +5,7 @@
 .readycheck-container {
   display: flex;
   justify-content: center;
-  padding-top: 40%;
+  align-items: center;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -17,82 +17,103 @@
   animation-duration: 0.5s;
   animation-delay: 25s;
 
-  form {
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 50%;
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: max-content;
-    background: #333;
+    background: $color-primary-light2;
+    border-top: 1px solid $color-secondary-dark;
+    border-bottom: 1px solid $color-secondary-dark;
 
-    h3 {
-      color: white;
-      padding: 2rem;
-    }
+    form {
+      padding: 1rem;
+      min-width: 50%;
+      height: max-content;
 
-    .input-container {
-      display: flex;
-      justify-content: space-between;
-      opacity: 0;
-
-      animation-name: fadeInReadyCheck;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-in;
-      animation-duration: 0.3s;
-      animation-delay: 26s;
-
-      .input-checkbox {
-        display: block;
-        margin: 1rem 2rem 1rem 0;
-        background: white;
-        width: 20px;
-        height: 20px;
-        opacity: 1;
-        z-index: 1;
+      h3 {
+        color: $color-secondary;
+        padding: 2rem;
+        font-size: 1.5rem;
       }
 
-      .input-label {
-        color: lightblue;
-        padding: 1rem;
-        margin-left: 30px;
-      }
+      .input-container {
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
 
-      .icon-container {
-        .input-icon {
-          color: #222;
+        animation-name: fadeInReadyCheck;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-duration: 0.3s;
+        animation-delay: 26s;
+
+        .input-checkbox {
+          display: block;
+          margin: 1rem 2rem 1rem 0;
+          background: $color-secondary;
+          width: 20px;
+          height: 20px;
+          opacity: 1;
+          z-index: 1;
+        }
+
+        .input-label {
+          color: $color-accent-c;
+          padding: 1rem;
+          margin-left: 30px;
+          font-size: 1.2rem;
+        }
+
+        .icon-container {
+          .input-icon {
+            color: $color-accent-d;
+            font-size: 1.5rem;
+          }
+        }
+        input:checked ~ .icon-container .input-icon,
+        input:checked ~ .input-label {
+          transition: 0.6s;
+          color: $color-secondary;
+        }
+        input:checked ~ .icon-container .input-icon {
+          transition: 0.6s;
           font-size: 2rem;
         }
       }
-      input:checked ~ .icon-container .input-icon,
-      input:checked ~ .input-label {
-        transition: 0.6s;
-        color: white;
-      }
-    }
 
-    .button-container {
-      display: flex;
-      justify-content: flex-start;
+      .button-container {
+        display: flex;
+        justify-content: flex-start;
 
-      button {
-        background-color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 1rem;
-        min-width: 100%;
-        margin-top: 25px;
-        transition: 0.8s;
-        font-weight: 600;
+        button {
+          background-color: $color-primary-light2;
+          color: $color-secondary;
+          border: none;
+          border-radius: 5px;
+          border: 1px solid $color-secondary;
+          padding: 1rem;
+          width: 50%;
+          margin-top: 25px;
+          transition: 0.4s;
+          font-weight: 600;
+          font-size: 1.2rem;
 
-        &:disabled {
-          transition: 0.8s;
-          color: #777;
-          background: #555;
-        }
+          &:disabled {
+            transition: 0.4s;
+            width: 25%;
+            color: $color-primary-light2;
+            background: $color-primary-light2;
+            border: 1px solid $color-primary-light2;
+            &:hover {
+              background: $color-primary-light2;
+            }
+          }
 
-        &:hover {
-          background: lightblue;
+          &:hover {
+            background: $color-primary;
+          }
         }
       }
     }
