@@ -3,10 +3,36 @@
     <div class="row">
       <div class="col">
         <div class="tabs">
-          <div class="tab">
-            <input type="radio" id="rd1" name="rd" />
-            <label class="tab-label" for="rd1">Item 1</label>
-            <div class="tab-content">Text</div>
+          <div v-for="(item, index) in items" :key="index" class="tab">
+            <input
+              type="radio"
+              :id="item.id"
+              name="rd"
+              :checked="index === checkedIndex"
+            />
+            <label class="tab-label" :for="item.id">{{ item.name }}</label>
+            <div class="tab-content">
+              <div class="reference-grid-container">
+                <div class="reference-container">
+                  <div class="description-container">
+                    <p class="reference-info">{{ item.content.text }}</p>
+                    <br />
+                    <h3>{{ item.content.subheader }}</h3>
+                    <ul>
+                      <li
+                        v-for="(note, index) in item.content.notes"
+                        :key="index"
+                      >
+                        {{ note }}
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="media-container">
+                    <img :src="item.content.img" alt="picture" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tab">
             <input type="radio" id="rd3" name="rd" />
@@ -21,5 +47,14 @@
 <script>
 export default {
   name: "AccordionReference",
+  props: {
+    items: Array,
+    images: Array,
+  },
+  data() {
+    return {
+      checkedIndex: 0,
+    };
+  },
 };
 </script>

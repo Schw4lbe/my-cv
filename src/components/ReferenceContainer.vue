@@ -28,13 +28,13 @@
 
     <div class="reference-container">
       <div class="description-container">
-        <h2 class="reference-header">{{ referenceData.header }}</h2>
-        <p class="reference-info">{{ referenceData.content }}</p>
+        <h2 class="reference-header">{{ data.header }}</h2>
+        <p class="reference-info">{{ data.content }}</p>
         <br />
-        <h3>{{ referenceData.subheader }}</h3>
+        <h3>{{ data.subheader }}</h3>
         <ul>
-          <li v-for="(note, index) in referenceData.notes" :key="index">
-            {{ note.text }}
+          <li v-for="(note, index) in data.notes" :key="index">
+            {{ note }}
           </li>
         </ul>
       </div>
@@ -49,7 +49,7 @@
 export default {
   name: "ReferenceContainer",
   props: {
-    referenceData: Array,
+    data: Array,
   },
 };
 </script>
