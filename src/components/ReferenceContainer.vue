@@ -1,6 +1,6 @@
 <template>
   <div class="reference-grid-container">
-    <div class="reference-container">
+    <!-- <div class="reference-container">
       <div class="description-container">
         <h2 class="reference-header">Game Development in Unity & C#</h2>
         <p class="reference-info">
@@ -19,6 +19,23 @@
           <li>C# in Microsoft Visual Studio 2022</li>
           <li>Gameconcept in Markdown</li>
           <li>Item & Crafting Sprites samt Table</li>
+        </ul>
+      </div>
+      <div class="media-container">
+        <img src="../assets/unity-demo.gif" alt="dummy" />
+      </div>
+    </div> -->
+
+    <div class="reference-container">
+      <div class="description-container">
+        <h2 class="reference-header">{{ referenceData.header }}</h2>
+        <p class="reference-info">{{ referenceData.content }}</p>
+        <br />
+        <h3>{{ referenceData.subheader }}</h3>
+        <ul>
+          <li v-for="(note, index) in referenceData.notes" :key="index">
+            {{ note.text }}
+          </li>
         </ul>
       </div>
       <div class="media-container">
