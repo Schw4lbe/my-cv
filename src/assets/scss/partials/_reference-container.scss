@@ -5,14 +5,21 @@
   .reference-container,
   .reference-container-reverse {
     display: grid;
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 4fr 8fr;
     padding: 1rem;
     border-top: 1px solid black;
     margin-bottom: 30px;
+    align-items: center;
+    background: #333;
+    color: white;
   }
 
   .reference-container-reverse {
     grid-template-columns: 7fr 5fr;
+  }
+
+  .description-container {
+    padding: 1rem;
   }
 
   .reference-info {
@@ -30,13 +37,38 @@
     justify-content: flex-start;
   }
 
+  p {
+    display: inline-block;
+    padding-bottom: 2rem;
+    hyphens: auto;
+    word-wrap: break-word;
+    line-height: 1.4;
+    border-bottom: 1px solid white;
+  }
+
+  h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
   h3 {
     padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  h3,
+  ul {
+    text-align: left;
+    li {
+      margin-left: 20px;
+      line-height: 1.4;
+    }
   }
 
   img {
     height: auto;
     width: 100%;
-    max-width: 90%;
+    // max-width: 100%;
+    object-fit: cover;
   }
 }

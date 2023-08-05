@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #666;
+  background: lightsteelblue;
 
   .menu-frame {
     width: 100%;
@@ -55,7 +55,7 @@
         height: 100px;
         width: 150px;
         border-radius: 5px;
-        background: #333;
+        background: rgb(62, 92, 190);
 
         transform: translateX(-200px);
 
@@ -66,7 +66,7 @@
         transition: top 0.2s ease-out;
 
         &:hover {
-          background-color: #555;
+          background-color: rgb(45, 65, 133);
           top: 20px;
         }
 

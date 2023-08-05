@@ -1,5 +1,6 @@
 <template>
   <div class="personal-data-wrapper">
+    <h1>Persönliches</h1>
     <PersonalData
       :properties="propertiesArray"
       :hobbies="hobbiesArray"
