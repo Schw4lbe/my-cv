@@ -55,22 +55,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.freelance-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #666;
-}
-
-.freelance-data-container {
-  width: 100%;
-  max-width: 1920px;
-}
-
-h1 {
-  margin: 2rem;
-}
-</style>

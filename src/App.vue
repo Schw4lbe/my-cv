@@ -1,12 +1,12 @@
 <template>
   <div class="loading-animation-container">
-    <LoadingAnimatin :class="{ hide: isAnimationHidden }"></LoadingAnimatin>
+    <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
   </div>
   <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
     <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
   </div>
   <div class="cv-main" v-if="isCvMainVisible">
-    <MenuMain :menuItems="menuItemsArray"></MenuMain>
+    <MenuMain :menuItems="menuItemsArray" />
     <router-view />
   </div>
 </template>
@@ -111,20 +111,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.loading-animation-container {
-  animation-name: hideContainer;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-duration: 4.5s;
-}
-
-@keyframes hideContainer {
-  0% {
-    display: block;
-  }
-  100% {
-    display: none;
-  }
-}
-</style>

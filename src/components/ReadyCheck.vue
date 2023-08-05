@@ -1,6 +1,6 @@
 <template>
   <div class="intro-container">
-    <IntroScene></IntroScene>
+    <IntroScene />
   </div>
   <div class="readycheck-container">
     <form action="" @submit.prevent="$emit('form-submitted')">

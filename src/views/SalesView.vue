@@ -2,7 +2,7 @@
   <div class="sales-wrapper">
     <div class="sales-data-container">
       <h1>Sales Erfahrung</h1>
-      <AccordionInfo :items="salesItems"></AccordionInfo>
+      <AccordionInfo :items="salesItems" />
     </div>
   </div>
 </template>
@@ -100,22 +100,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.sales-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #666;
-}
-
-.sales-data-container {
-  width: 100%;
-  max-width: 1920px;
-}
-
-h1 {
-  margin: 2rem;
-}
-</style>

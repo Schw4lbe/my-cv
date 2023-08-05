@@ -4,7 +4,7 @@
       :properties="propertiesArray"
       :hobbies="hobbiesArray"
       :skills="skillsArray"
-    ></PersonalData>
+    />
   </div>
 </template>
 
@@ -83,12 +83,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.personal-data-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #666;
-}
-</style>

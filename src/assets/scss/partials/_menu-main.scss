@@ -1,46 +1,12 @@
-.menu-frame {
-  // background-color: #555;
-  width: 100%;
-  height: 140px;
-  opacity: 0;
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #666;
 
-  animation-name: makeVissible;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-duration: 0.1s;
-  // animation-delay: 7s;
-
-  .menu-header {
-    // position: absolute;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // padding-top: 4rem;
-    // padding-bottom: 4rem;
-    // width: 100%;
-    // transform: translateX(-100%);
-
-    // animation-name: slideOutHeader;
-    // animation-iteration-count: 1;
-    // animation-fill-mode: forwards;
-    // animation-timing-function: ease-in;
-    // animation-duration: 0.5s;
-    // animation-delay: 9s;
-
-    h3 {
-      font-size: 2rem;
-      margin: 0;
-      padding: 10px;
-      width: 70%;
-      background-color: white;
-    }
-  }
-
-  .menu-item-container {
-    display: flex;
-    flex-direction: row;
+  .menu-frame {
     width: 100%;
+    max-width: 1920px;
     height: 140px;
     opacity: 0;
 
@@ -49,96 +15,109 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-duration: 0.1s;
-    // animation-delay: 7s;
 
-    .menu-image-frame {
-      z-index: 1;
-
-      .menu-image {
-        height: 120px;
-        width: 120px;
-        border-radius: 100%;
-        margin: 10px 25px 10px 10px;
-        z-index: 1;
-      }
-    }
-
-    .menu-item {
-      z-index: -1;
-      position: relative;
-      top: 0;
-      margin: 20px 5px 20px 0;
+    .menu-item-container {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-      cursor: pointer;
+      flex-direction: row;
+      width: 100%;
+      height: 140px;
+      opacity: 0;
 
-      height: 100px;
-      width: 150px;
-      border-radius: 5px;
-      background: #333;
-
-      transform: translateX(-200px);
-
+      animation-name: makeVissible;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
-      animation-timing-function: ease-in;
-      animation-duration: 0.3s;
-      transition: top 0.2s ease-out;
+      animation-timing-function: linear;
+      animation-duration: 0.1s;
 
-      &:hover {
-        background-color: #555;
-        top: 20px;
+      .menu-image-frame {
+        z-index: 1;
+
+        .menu-image {
+          height: 120px;
+          width: 120px;
+          border-radius: 100%;
+          margin: 10px 25px 10px 10px;
+          z-index: 1;
+        }
       }
 
-      &:active {
-        background-color: red;
+      .menu-item {
+        z-index: -1;
+        position: relative;
+        top: 0;
+        margin: 20px 5px 20px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        cursor: pointer;
+
+        height: 100px;
+        width: 150px;
+        border-radius: 5px;
+        background: #333;
+
+        transform: translateX(-200px);
+
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-duration: 0.3s;
+        transition: top 0.2s ease-out;
+
+        &:hover {
+          background-color: #555;
+          top: 20px;
+        }
+
+        &:active {
+          background-color: red;
+        }
+
+        span {
+          display: block;
+        }
+
+        a,
+        span {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          font-size: 12px;
+          margin-top: 10px;
+        }
+
+        .menu-icon {
+          color: white;
+          font-size: 3rem;
+        }
       }
 
-      span {
-        display: block;
+      #item1 {
+        transform: translateX(-400px);
+        animation-name: slideOutMenu;
+        animation-delay: 0.5s;
       }
-
-      a,
-      span {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        font-size: 12px;
-        margin-top: 10px;
+      #item2 {
+        transform: translateX(-600px);
+        animation-name: slideOutMenu;
+        animation-delay: 0.4s;
       }
-
-      .menu-icon {
-        color: white;
-        font-size: 3rem;
+      #item3 {
+        transform: translateX(-800px);
+        animation-name: slideOutMenu;
+        animation-delay: 0.3s;
       }
-    }
-
-    #item1 {
-      transform: translateX(-400px);
-      animation-name: slideOutMenu;
-      animation-delay: 0.5s;
-    }
-    #item2 {
-      transform: translateX(-600px);
-      animation-name: slideOutMenu;
-      animation-delay: 0.4s;
-    }
-    #item3 {
-      transform: translateX(-800px);
-      animation-name: slideOutMenu;
-      animation-delay: 0.3s;
-    }
-    #item4 {
-      transform: translateX(-1000px);
-      animation-name: slideOutMenu;
-      animation-delay: 0.2s;
-    }
-    #item5 {
-      transform: translateX(-1200px);
-      animation-name: slideOutMenu;
-      animation-delay: 0.1s;
+      #item4 {
+        transform: translateX(-1000px);
+        animation-name: slideOutMenu;
+        animation-delay: 0.2s;
+      }
+      #item5 {
+        transform: translateX(-1200px);
+        animation-name: slideOutMenu;
+        animation-delay: 0.1s;
+      }
     }
   }
 }
