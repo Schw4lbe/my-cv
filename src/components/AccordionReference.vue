@@ -29,8 +29,10 @@
                       </ul>
                     </div>
                     <div class="media-container">
-                      <!-- <img :src="item.content.img" alt="picture" /> -->
-                      <VueModal :image="item.content.img" />
+                      <VueModal
+                        :image="item.content.img"
+                        :modalHeader="item.name"
+                      />
                     </div>
                   </div>
                 </div>
