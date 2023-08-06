@@ -11,16 +11,27 @@
           <img src="../assets/jph.jpg" alt="" />
         </div>
       </div>
-      <div class="home-content">
-        <h2>Präambel</h2>
-        <p>
-          Dieser online Lebenslauf ist mit der Intention enstanden, meinen
-          aktuellen Leistungsstand in der Frontend Entwicklung dar zu stellen.
-          Zusammengefasst habe ich 6 Monate Weiterbildung und ein gutes Jahr
-          Berufserfahrung sammeln können. Da dies ein recht überschaubarer
-          Rahmen an Praxiserfahrung ist, möchte ich die Gelegenheit nutzen, mich
-          mit bewegten Inhalten zu präsentieren.
-        </p>
+      <div class="home-intro">
+        <h2>{{ intro[0].header }}</h2>
+        <p>{{ intro[0].text }}</p>
+      </div>
+      <div class="home-data-container">
+        <div class="home-props">
+          <div class="properties">
+            <h3 class="prop-header">Stärken:</h3>
+            <ul>
+              <li v-for="(prop, index) in props" :key="index">{{ prop }}</li>
+            </ul>
+          </div>
+          <div class="hobbies">
+            <h3 class="hobby-header">Hobbies:</h3>
+            <ul>
+              <li v-for="(hobby, index) in hobbies" :key="index">
+                {{ hobby }}
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -32,6 +43,9 @@ export default {
   props: {
     header: String,
     subHeader: String,
+    intro: Array,
+    props: Array,
+    hobbies: Array,
   },
 };
 </script>

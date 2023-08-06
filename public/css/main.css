@@ -66,7 +66,7 @@ body {
   color: #a0bed9;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 1px solid #f2f2f2;
+  font-size: 3rem;
 }
 .home-wrapper .home-container {
   background: #e4e4e4;
@@ -98,11 +98,25 @@ body {
   width: 100%;
   height: auto;
 }
-.home-wrapper .home-container .home-content {
+.home-wrapper .home-container .home-intro {
   padding: 2rem;
 }
-.home-wrapper .home-container .home-content p {
+.home-wrapper .home-container .home-intro p {
   font-size: 1.2rem;
+}
+.home-wrapper .home-container .home-data-container {
+  padding: 2rem;
+}
+.home-wrapper .home-container .home-data-container .home-props {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-wrapper .home-container .home-data-container .home-props ul {
+  padding-left: 1rem;
+}
+.home-wrapper .home-container .home-data-container .home-props ul li {
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 .data-container {

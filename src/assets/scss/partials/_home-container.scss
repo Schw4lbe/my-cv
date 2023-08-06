@@ -8,7 +8,7 @@
     color: $clr-accent-b;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 1px solid $clr-secondary;
+    font-size: 3rem;
   }
 
   .home-container {
@@ -45,11 +45,25 @@
       }
     }
 
-    .home-content {
+    .home-intro {
       padding: 2rem;
-
       p {
         font-size: 1.2rem;
+      }
+    }
+
+    .home-data-container {
+      padding: 2rem;
+      .home-props {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        ul {
+          padding-left: 1rem;
+          li {
+            line-height: 1.6;
+            font-size: 1.1rem;
+          }
+        }
       }
     }
   }

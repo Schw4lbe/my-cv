@@ -1,21 +1,5 @@
 <template>
   <div class="data-container">
-    <!-- <div class="personal-data-container">
-      <div class="propertie-container">
-        <h2>Stärken</h2>
-        <ul>
-          <li v-for="prop in properties" :key="prop.id">{{ prop.name }}</li>
-        </ul>
-      </div>
-
-      <div class="hobby-container">
-        <h2>Hobbies</h2>
-        <ul>
-          <li v-for="hobby in hobbies" :key="hobby.id">{{ hobby.name }}</li>
-        </ul>
-      </div>
-    </div> -->
-
     <div class="skill-data-container">
       <h2>Skill Matrix Web-Development:</h2>
       <div v-for="skill in skills" :key="skill.id" class="skill-container">

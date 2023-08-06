@@ -82,16 +82,6 @@ export default {
           rating: "6",
         },
       ],
-      // propertiesArray: [
-      //   { id: "1", name: "Eigenmotivation" },
-      //   { id: "2", name: "Verantwortungsbewustsein" },
-      //   { id: "3", name: "Authentizität" },
-      // ],
-      // hobbiesArray: [
-      //   { id: "1", name: "Sport, fernöstliche Kampf- & Körperkunst" },
-      //   { id: "2", name: "Musik Produktion, DJ-ing & Livestreams" },
-      //   { id: "3", name: "E-Sport, Game Development (C# + Unity)" },
-      // ],
     };
   },
 };
