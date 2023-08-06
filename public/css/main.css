@@ -33,6 +33,10 @@ body {
   align-items: center;
 }
 
+.cv-main {
+  background-color: #e4e4e4;
+}
+
 .hide {
   display: none !important;
 }
@@ -55,20 +59,50 @@ body {
 .home-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+.home-wrapper .home-title {
+  margin: 2rem 0;
+  color: #a0bed9;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
 }
 .home-wrapper .home-container {
   background: #e4e4e4;
-  height: 100vh;
+  height: 100%;
   max-width: 1920px;
   width: 100%;
 }
-.home-wrapper .home-container .home-header {
+.home-wrapper .home-container .home-header-container {
   width: 100%;
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #0d0d0d;
 }
-.home-wrapper .home-container .home-header h1,
-.home-wrapper .home-container .home-header h2 {
-  padding: 20px;
+.home-wrapper .home-container .home-header-container .home-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.home-wrapper .home-container .home-header-container .home-image {
+  width: 15%;
+  height: auto;
+  padding: 1rem;
+}
+.home-wrapper .home-container .home-header-container .home-image img {
+  object-fit: cover;
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+.home-wrapper .home-container .home-content {
+  padding: 2rem;
+}
+.home-wrapper .home-container .home-content p {
+  font-size: 1.2rem;
 }
 
 .data-container {
@@ -80,31 +114,6 @@ body {
   max-width: 1920px;
   padding: 2rem;
   color: #0145ff;
-}
-.data-container .personal-data-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  color: white;
-}
-.data-container .personal-data-container h2 {
-  margin-bottom: 20px;
-}
-.data-container .personal-data-container .propertie-container,
-.data-container .personal-data-container .hobby-container {
-  text-align: left;
-  background-color: #333;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 45%;
-  margin-bottom: 20px;
-}
-.data-container .personal-data-container .propertie-container li,
-.data-container .personal-data-container .hobby-container li {
-  font-size: 0.9rem;
 }
 .data-container .skill-data-container {
   height: auto;

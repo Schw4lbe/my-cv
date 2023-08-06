@@ -1,24 +1,25 @@
 <template>
   <div class="home-wrapper">
+    <h1 class="home-title">Home</h1>
     <div class="home-container">
-      <div class="home-header">
-        <h1>{{ header }}</h1>
-        <h2>{{ subHeader }}</h2>
+      <div class="home-header-container">
+        <div class="home-header">
+          <h1>{{ header }}</h1>
+          <h2>{{ subHeader }}</h2>
+        </div>
+        <div class="home-image">
+          <img src="../assets/jph.jpg" alt="" />
+        </div>
+      </div>
+      <div class="home-content">
+        <h2>Präambel</h2>
         <p>
-          Hier kommt die info rein, warum und wie ich diese Seite erstellt habe
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-          aspernatur porro veritatis. Aliquid ad quaerat quae quis deleniti
-          dolorem eligendi vero illum sunt, reiciendis officiis quam corrupti
-          quos. Sed, unde. Non possimus ex libero sapiente fugiat doloremque?
-          Perferendis eveniet quaerat labore eos, obcaecati tenetur? Ex
-          accusamus porro ipsum iste illum nobis maxime accusantium optio
-          repudiandae aliquam omnis, non distinctio aut? Delectus laborum,
-          facilis deleniti nam fugiat omnis non soluta aperiam aliquid nesciunt
-          error libero veniam enim commodi animi tenetur. Fuga commodi quidem ab
-          recusandae praesentium ipsum ipsa voluptatum, magni libero!
+          Dieser online Lebenslauf ist mit der Intention enstanden, meinen
+          aktuellen Leistungsstand in der Frontend Entwicklung dar zu stellen.
+          Zusammengefasst habe ich 6 Monate Weiterbildung und ein gutes Jahr
+          Berufserfahrung sammeln können. Da dies ein recht überschaubarer
+          Rahmen an Praxiserfahrung ist, möchte ich die Gelegenheit nutzen, mich
+          mit bewegten Inhalten zu präsentieren.
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="data-container">
-    <div class="personal-data-container">
+    <!-- <div class="personal-data-container">
       <div class="propertie-container">
         <h2>Stärken</h2>
         <ul>
@@ -14,7 +14,7 @@
           <li v-for="hobby in hobbies" :key="hobby.id">{{ hobby.name }}</li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <div class="skill-data-container">
       <h2>Skill Matrix Web-Development:</h2>
@@ -43,8 +43,6 @@
 export default {
   name: "PersonalData",
   props: {
-    properties: Array,
-    hobbies: Array,
     skills: Array,
   },
   data() {

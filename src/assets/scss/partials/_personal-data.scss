@@ -8,34 +8,6 @@
   padding: 2rem;
   color: #0145ff;
 
-  .personal-data-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    .propertie-container,
-    .hobby-container {
-      text-align: left;
-      background-color: #333;
-      padding: 2rem;
-      border-radius: 10px;
-      width: 45%;
-      margin-bottom: 20px;
-
-      li {
-        font-size: 0.9rem;
-      }
-    }
-  }
-
   .skill-data-container {
     height: auto;
     width: 100%;
