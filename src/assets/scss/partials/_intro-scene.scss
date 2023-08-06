@@ -9,7 +9,7 @@
     white-space: nowrap;
     overflow: hidden;
     font-size: 20px;
-    color: $color-secondary;
+    color: $clr-secondary;
   }
 
   #text01 {
@@ -52,12 +52,12 @@
 
 @keyframes animated-cursor {
   from {
-    border-right: solid 5px $color-accent-a;
+    border-right: solid 5px $clr-accent-a;
 
-    border-right-color: $color-accent-a;
+    border-right-color: $clr-accent-a;
   }
   to {
-    border-right: solid 5px $color-accent-a;
+    border-right: solid 5px $clr-accent-a;
 
     border-right-color: transparent;
   }

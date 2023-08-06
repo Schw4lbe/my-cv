@@ -1,5 +1,5 @@
 body {
-  background-color: $color-primary;
+  background-color: $clr-primary;
 }
 
 .navbar-wrapper {
@@ -9,15 +9,15 @@ body {
   width: 100%;
   flex-direction: column;
 
-  background: $color-primary-light2;
-  border-bottom: 1px solid $color-secondary;
+  background: $clr-primary-light2;
+  border-bottom: 1px solid $clr-secondary;
 }
 
 .cv-readycheck {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: $color-primary;
+  background: $clr-primary;
   z-index: 1;
   display: flex;
   justify-content: center;

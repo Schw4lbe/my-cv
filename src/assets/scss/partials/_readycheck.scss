@@ -22,9 +22,7 @@
     justify-content: center;
     width: 100%;
     height: max-content;
-    background: $color-primary-light2;
-    border-top: 1px solid $color-secondary-dark;
-    border-bottom: 1px solid $color-secondary-dark;
+    background: $clr-primary-light2;
 
     form {
       padding: 1rem;
@@ -32,15 +30,17 @@
       height: max-content;
 
       h3 {
-        color: $color-secondary;
+        color: $clr-secondary;
         padding: 2rem;
         font-size: 1.5rem;
+        text-align: center;
       }
 
       .input-container {
         display: flex;
         justify-content: space-between;
-        opacity: 0;
+        align-items: center;
+        opacity: 1;
 
         animation-name: fadeInReadyCheck;
         animation-iteration-count: 1;
@@ -51,31 +51,32 @@
 
         .input-checkbox {
           display: block;
-          margin: 1rem 2rem 1rem 0;
-          background: $color-secondary;
-          width: 20px;
-          height: 20px;
+          background: $clr-secondary;
+          width: 30px;
+          height: 30px;
           opacity: 1;
           z-index: 1;
         }
 
         .input-label {
-          color: $color-accent-c;
+          color: $clr-accent-c;
           padding: 1rem;
-          margin-left: 30px;
+          margin-left: 10px;
           font-size: 1.2rem;
+          text-align: left;
+          width: 100%;
         }
 
         .icon-container {
           .input-icon {
-            color: $color-accent-d;
+            color: $clr-accent-d;
             font-size: 1.5rem;
           }
         }
         input:checked ~ .icon-container .input-icon,
         input:checked ~ .input-label {
           transition: 0.6s;
-          color: $color-secondary;
+          color: $clr-secondary;
         }
         input:checked ~ .icon-container .input-icon {
           transition: 0.6s;
@@ -88,11 +89,11 @@
         justify-content: flex-start;
 
         button {
-          background-color: $color-primary-light2;
-          color: $color-secondary;
+          background-color: $clr-primary-light2;
+          color: $clr-secondary;
           border: none;
           border-radius: 5px;
-          border: 1px solid $color-secondary;
+          border: 1px solid $clr-secondary;
           padding: 1rem;
           width: 100%;
           margin-top: 25px;
@@ -102,16 +103,16 @@
 
           &:disabled {
             transition: 1s;
-            color: $color-primary-light2;
-            background: $color-primary-light2;
-            border: 1px solid $color-primary-light2;
+            color: $clr-primary-light2;
+            background: $clr-primary-light2;
+            border: 1px solid $clr-primary-light2;
             &:hover {
-              background: $color-primary-light2;
+              background: $clr-primary-light2;
             }
           }
 
           &:hover {
-            background: $color-primary;
+            background: $clr-primary;
           }
         }
       }

@@ -1,4 +1,4 @@
-$midnight: $color-secondary-dark2;
+$midnight: $clr-secondary-dark2;
 $clouds: white;
 
 .accordion-wrapper {
@@ -22,7 +22,7 @@ $clouds: white;
   }
   .tab {
     width: 100%;
-    color: $color-primary-light2;
+    color: $clr-primary-light2;
     overflow: hidden;
     &-label {
       display: flex;
@@ -53,7 +53,7 @@ $clouds: white;
     &-content {
       max-height: 0;
       padding: 0 1em;
-      color: $color-primary;
+      color: $clr-primary;
       background: white;
       transition: all 0.35s;
 
