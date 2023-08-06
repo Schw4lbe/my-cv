@@ -25,18 +25,16 @@ export default {
       itemData: [
         {
           id: "01",
-          name: "Kundenprojekt - Stadtwerke Lauterbach / Design Bestellstrecke",
+          name: "Wetter APP - Youtube Tutorial aufgewertet mit eigenen Animationen",
           content: {
-            text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
-            subheader: "Tech Stack & Herausforderungen:",
+            text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
+            subheader: "Tech Stack:",
             notes: [
-              "VUE.JS 2.x, TypeScript, JSON-Schema",
-              "EDI: Visual Studio Code & PHP Storm",
-              "genannte Technologien waren Neuland",
-              "Kompatibilität für Geräte der letzten 6 Jahre",
-              "Komplette Anwendung läuft in einem IFrame",
+              "VUE.JS 3, HTML, CSS, JavaScript ES6, Node.js, Express",
+              "VUE Router, ESLint, Prettier, Visual Studio Code",
+              "OpenWeatherAPI: https://openweathermap.org",
             ],
-            img: img01,
+            img: img04,
           },
         },
         {
@@ -71,16 +69,18 @@ export default {
         },
         {
           id: "04",
-          name: "Wetter APP - Youtube Tutorial aufgewertet mit eigenen Animationen",
+          name: "Kundenprojekt - Stadtwerke Lauterbach / Design Bestellstrecke",
           content: {
-            text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
-            subheader: "Tech Stack:",
+            text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
+            subheader: "Tech Stack & Herausforderungen:",
             notes: [
-              "VUE.JS 3, HTML, CSS, JavaScript ES6, Node.js, Express",
-              "VUE Router, ESLint, Prettier, Visual Studio Code",
-              "OpenWeatherAPI: https://openweathermap.org",
+              "VUE.JS 2.x, TypeScript, JSON-Schema",
+              "EDI: Visual Studio Code & PHP Storm",
+              "genannte Technologien waren Neuland",
+              "Kompatibilität für Geräte der letzten 6 Jahre",
+              "Komplette Anwendung läuft in einem IFrame",
             ],
-            img: img04,
+            img: img01,
           },
         },
         {

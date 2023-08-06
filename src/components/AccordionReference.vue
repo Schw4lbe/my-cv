@@ -29,7 +29,8 @@
                       </ul>
                     </div>
                     <div class="media-container">
-                      <img :src="item.content.img" alt="picture" />
+                      <!-- <img :src="item.content.img" alt="picture" /> -->
+                      <VueModal :image="item.content.img" />
                     </div>
                   </div>
                 </div>
@@ -47,11 +48,16 @@
 </template>
 
 <script>
+import VueModal from "./VueModal.vue";
+
 export default {
   name: "AccordionReference",
   props: {
     items: Array,
     images: Array,
+  },
+  components: {
+    VueModal,
   },
   data() {
     return {

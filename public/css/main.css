@@ -278,6 +278,7 @@ body,
   min-width: 150px;
   color: #0d0d0d;
   text-align: left;
+  font-weight: bold;
 }
 .data-container .skill-data-container .skill-container .skill-rating {
   width: 10%;
