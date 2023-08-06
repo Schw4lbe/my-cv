@@ -10,10 +10,12 @@
 .navbar a {
   color: #f2f2f2;
   font-size: 1.2rem;
+  transition: 0.5s;
 }
 .navbar a:hover {
   color: #0d0d0d !important;
   background: #ff6347;
+  transition: 0.5s;
 }
 
 .footer-main {
@@ -57,7 +59,6 @@
   transition: 0.5s;
 }
 .footer-main .footer-contact ul li a:hover i {
-  font-size: 2.1rem;
   transition: 0.5s;
   color: #f2f2f2;
 }
@@ -83,7 +84,7 @@ body,
 }
 
 .page-title {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   color: #79acd9;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
@@ -150,7 +151,7 @@ body,
 .home-wrapper .home-container .home-header-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 1px solid #79acd9;
 }
 .home-wrapper .home-container .home-header-container .home-header {
@@ -235,31 +236,29 @@ body,
   justify-content: center;
   width: 100%;
   max-width: 1920px;
-  padding: 2rem;
-  color: #0145ff;
 }
 .data-container .skill-data-container {
   height: auto;
   width: 100%;
+  max-width: 1250px;
   padding: 1rem;
-  background: #333;
-  border-radius: 10px;
 }
 .data-container .skill-data-container h2 {
-  color: white;
-  padding: 2rem;
+  color: #0d0d0d;
+  padding: 1rem 0;
 }
 .data-container .skill-data-container h3 {
   padding-top: 20px;
-  color: white;
+  color: #0d0d0d;
   font-weight: 300;
-  text-align: left;
+  font-size: 1.2rem;
+  text-align: center;
 }
 .data-container .skill-data-container .skill-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   flex-wrap: nowrap;
 }
 .data-container .skill-data-container .skill-container:last-child {
@@ -269,34 +268,34 @@ body,
   font-size: 1.7rem;
   padding-right: 10px;
   color: #a68365;
-  width: 10%;
+  width: 5%;
 }
 .data-container .skill-data-container .skill-container .skill-name {
   text-transform: uppercase;
-  width: 20%;
+  width: 25%;
   min-width: 150px;
-  color: white;
+  color: #0d0d0d;
   text-align: left;
 }
 .data-container .skill-data-container .skill-container .skill-rating {
-  width: 15%;
-  color: white;
-  margin-right: 10px;
+  width: 10%;
+  color: #0d0d0d;
   padding-left: 10px;
-  border-left: 1px solid white;
+  font-weight: bold;
 }
 .data-container .skill-data-container .skill-container .progress-bar {
   width: 100%;
-  height: 12px;
+  height: 20px;
   background-color: #f0f0f0;
   border-radius: 10px;
   overflow: hidden;
 }
 .data-container .skill-data-container .skill-container .progress-bar .progress {
   height: 100%;
-  background-color: #007bff;
+  background-color: #ff6347;
   animation: progressAnimation 1s linear;
-  border-right: 3px solid black;
+  border-right: 1px solid black;
+  border-radius: 0;
 }
 
 @keyframes progressAnimation {

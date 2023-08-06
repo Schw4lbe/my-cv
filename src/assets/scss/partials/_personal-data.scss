@@ -5,33 +5,31 @@
   justify-content: center;
   width: 100%;
   max-width: 1920px;
-  padding: 2rem;
-  color: #0145ff;
 
   .skill-data-container {
     height: auto;
     width: 100%;
+    max-width: 1250px;
     padding: 1rem;
-    background: #333;
-    border-radius: 10px;
 
     h2 {
-      color: white;
-      padding: 2rem;
+      color: $clr-primary;
+      padding: 1rem 0;
     }
 
     h3 {
       padding-top: 20px;
-      color: white;
+      color: $clr-primary;
       font-weight: 300;
-      text-align: left;
+      font-size: 1.2rem;
+      text-align: center;
     }
 
     .skill-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
       flex-wrap: nowrap;
 
       &:last-child {
@@ -42,36 +40,36 @@
         font-size: 1.7rem;
         padding-right: 10px;
         color: $clr-accent-c;
-        width: 10%;
+        width: 5%;
       }
       .skill-name {
         text-transform: uppercase;
-        width: 20%;
+        width: 25%;
         min-width: 150px;
-        color: white;
+        color: $clr-primary;
         text-align: left;
       }
 
       .skill-rating {
-        width: 15%;
-        color: white;
-        margin-right: 10px;
+        width: 10%;
+        color: $clr-primary;
         padding-left: 10px;
-        border-left: 1px solid white;
+        font-weight: bold;
       }
 
       .progress-bar {
         width: 100%;
-        height: 12px;
+        height: 20px;
         background-color: #f0f0f0;
         border-radius: 10px;
         overflow: hidden;
 
         .progress {
           height: 100%;
-          background-color: #007bff;
+          background-color: $clr-accent-e;
           animation: progressAnimation 1s linear;
-          border-right: 3px solid black;
+          border-right: 1px solid black;
+          border-radius: 0;
         }
       }
     }

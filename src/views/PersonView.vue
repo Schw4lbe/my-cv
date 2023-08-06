@@ -47,7 +47,7 @@ export default {
           id: "8",
           icon: "fa-brands fa-js",
           name: "javascript dom",
-          rating: "8",
+          rating: "7",
         },
         {
           id: "9",
@@ -67,7 +67,7 @@ export default {
           id: "13",
           icon: "fa-brands fa-vuejs",
           name: "vue js 2 & 3",
-          rating: "6",
+          rating: "7",
         },
         {
           id: "14",
@@ -80,6 +80,24 @@ export default {
           icon: "fa-regular fa-window-restore",
           name: "browserstack",
           rating: "6",
+        },
+        {
+          id: "16",
+          icon: "fa-brands fa-microsoft",
+          name: "visual studio code",
+          rating: "8",
+        },
+        {
+          id: "17",
+          icon: "fa-brands fa-microsoft",
+          name: "visual studio 2022",
+          rating: "4",
+        },
+        {
+          id: "18",
+          icon: "fa-solid fa-code",
+          name: "phpstorm",
+          rating: "5",
         },
         // VS CODE + PHP Storm mit aufnehmen
       ],

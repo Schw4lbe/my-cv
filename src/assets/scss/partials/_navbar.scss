@@ -10,9 +10,11 @@
   a {
     color: $clr-secondary;
     font-size: 1.2rem;
+    transition: 0.5s;
     &:hover {
       color: $clr-primary !important;
       background: $clr-accent-e;
+      transition: 0.5s;
     }
   }
 }
