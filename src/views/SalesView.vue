@@ -1,7 +1,7 @@
 <template>
   <div class="sales-wrapper">
     <div class="sales-data-container">
-      <h1>Sales Erfahrung</h1>
+      <h1 class="page-title">Sales Erfahrung</h1>
       <AccordionInfo :items="salesItems" />
     </div>
   </div>

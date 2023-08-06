@@ -6,6 +6,7 @@
       :intro="introData"
       :props="propsData"
       :hobbies="hobbiesData"
+      :technologies="techData"
     />
   </div>
 </template>
@@ -35,6 +36,22 @@ export default {
         "Sport, fernöstliche Kampf- & Körperkunst",
         "Musik Produktion, DJ-ing & Livestreams",
         "E-Sport, Game Development (C# + Unity)",
+      ],
+      techData: [
+        { name: "VUE.JS 3", icon: "fa-brands fa-vuejs" },
+        {
+          name: "VUEX",
+          icon: "fa-brands fa-vuejs",
+        },
+        { name: "VUE Router", icon: "fa-brands fa-vuejs" },
+        {
+          name: "JavaScript ES6",
+          icon: "fa-brands fa-square-js",
+        },
+        { name: "SCSS", icon: "fa-brands fa-sass" },
+        { name: "HTML 5", icon: "fa-brands fa-html5" },
+        { name: "Bootstrap 5.2", icon: "fa-brands fa-bootstrap" },
+        { name: "Visual Studio Code", icon: "fa-brands fa-microsoft" },
       ],
     };
   },

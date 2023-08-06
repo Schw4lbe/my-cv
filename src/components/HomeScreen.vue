@@ -1,6 +1,6 @@
 <template>
   <div class="home-wrapper">
-    <h1 class="home-title">Home</h1>
+    <h1 class="page-title">Home</h1>
     <div class="home-container">
       <div class="home-header-container">
         <div class="home-header">
@@ -14,6 +14,16 @@
       <div class="home-intro">
         <h2>{{ intro[0].header }}</h2>
         <p>{{ intro[0].text }}</p>
+      </div>
+      <div class="home-tech">
+        <h3 class="tech-header">Online-CV Tech Stack:</h3>
+        <div class="tech-container">
+          <ul class="tech-list">
+            <li v-for="(tech, index) in technologies" :key="index">
+              {{ tech.name }}<i :class="tech.icon"></i>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="home-data-container">
         <div class="home-props">
@@ -46,6 +56,7 @@ export default {
     intro: Array,
     props: Array,
     hobbies: Array,
+    technologies: Array,
   },
 };
 </script>

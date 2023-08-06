@@ -1,7 +1,7 @@
 <template>
   <div class="reference-wrapper">
     <div class="reference-data-container">
-      <h1>Referenzen</h1>
+      <h1 class="page-title">Referenzen</h1>
       <AccordionReference :items="itemData" />
     </div>
   </div>

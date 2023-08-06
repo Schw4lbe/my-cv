@@ -3,14 +3,6 @@
   justify-content: center;
   flex-direction: column;
 
-  .home-title {
-    margin: 2rem 0;
-    color: $clr-accent-b;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 3rem;
-  }
-
   .home-container {
     background: $clr-secondary-dark;
     height: 100%;
@@ -21,7 +13,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid $clr-primary;
+      border-bottom: 1px solid $clr-accent-a;
 
       .home-header {
         display: flex;
@@ -32,7 +24,7 @@
       }
 
       .home-image {
-        width: 15%;
+        width: 150px;
         height: auto;
         padding: 1rem;
 
@@ -47,8 +39,41 @@
 
     .home-intro {
       padding: 2rem;
+      border-bottom: 1px solid $clr-accent-a;
       p {
         font-size: 1.2rem;
+      }
+    }
+
+    .home-tech {
+      padding: 2rem;
+      border-bottom: 1px solid $clr-accent-a;
+      .tech-header {
+        padding-bottom: 1rem;
+      }
+
+      .tech-container {
+        .tech-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          padding-left: 8px;
+          list-style: none;
+          align-items: center;
+
+          li {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: $clr-primary-light2;
+            font-weight: bold;
+            width: 100%;
+
+            i {
+              padding-left: 1rem;
+              font-size: 1.5rem;
+              color: darken($clr-accent-a, 20%);
+            }
+          }
+        }
       }
     }
 
@@ -59,10 +84,20 @@
         grid-template-columns: 1fr 1fr;
         ul {
           padding-left: 1rem;
+          list-style: none;
           li {
-            line-height: 1.6;
+            line-height: 2;
             font-size: 1.1rem;
           }
+        }
+
+        ul li::before {
+          content: "\2666";
+          color: $clr-accent-c;
+          font-weight: bold;
+          display: inline-block;
+          width: 1rem;
+          margin-left: -1rem;
         }
       }
     }

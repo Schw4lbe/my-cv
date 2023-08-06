@@ -1,6 +1,6 @@
 <template>
   <div class="personal-data-wrapper">
-    <h1>Skill Matrix</h1>
+    <h1 class="page-title">Skill Matrix</h1>
     <PersonalData :skills="skillsArray" />
   </div>
 </template>
@@ -81,6 +81,7 @@ export default {
           name: "browserstack",
           rating: "6",
         },
+        // VS CODE + PHP Storm mit aufnehmen
       ],
     };
   },

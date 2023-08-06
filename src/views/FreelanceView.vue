@@ -1,7 +1,7 @@
 <template>
   <div class="freelance-wrapper">
     <div class="freelance-data-container">
-      <h1>Selbstständigkeit</h1>
+      <h1 class="page-title">Selbstständigkeit</h1>
       <AccordionInfo :items="freelanceItems" />
     </div>
   </div>
