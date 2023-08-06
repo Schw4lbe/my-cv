@@ -12,7 +12,7 @@
   }
 
   .description-container {
-    padding: 1rem;
+    padding-right: 1rem;
   }
 
   .reference-info {
@@ -43,16 +43,18 @@
   }
 
   h3 {
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
+    font-weight: bold;
     font-size: 1.2rem;
   }
 
   h3,
   ul {
     text-align: left;
+    padding-left: 1rem;
     li {
       font-size: 1.1rem;
-      line-height: 1.4;
+      line-height: 1.8;
     }
   }
 

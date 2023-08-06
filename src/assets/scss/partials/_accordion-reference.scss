@@ -1,4 +1,4 @@
-$midnight: $clr-accent-b;
+$midnight: $clr-primary-light3;
 $clouds: $clr-secondary;
 
 .accordion-reference-wrapper {
@@ -6,6 +6,19 @@ $clouds: $clr-secondary;
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
+
+  ul {
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2666";
+    color: $clr-accent-e;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+  }
 
   .accordion-reference-container {
     max-width: 1250px;
@@ -33,10 +46,9 @@ $clouds: $clr-secondary;
     }
     .tab {
       width: 100%;
-      color: $clr-primary;
+      color: $clr-secondary;
       overflow: hidden;
-      font-size: 1.2rem;
-      border-bottom: 1px solid $clr-secondary;
+      border-bottom: 1px solid $clr-accent-e;
 
       &-label {
         display: flex;
@@ -52,6 +64,7 @@ $clouds: $clr-secondary;
 
         &::after {
           content: "\276F";
+          color: $clr-accent-e;
           width: 1em;
           height: 1em;
           text-align: center;
@@ -81,7 +94,7 @@ $clouds: $clr-secondary;
     // :checked
     input:checked {
       + .tab-label {
-        background: darken($midnight, 10%);
+        background: darken($midnight, 20%);
         &::after {
           transform: rotate(90deg);
         }
