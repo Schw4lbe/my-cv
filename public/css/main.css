@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .navbar {
   align-items: center;
+  max-width: 1920px;
 }
 .navbar .router-link-active,
 .navbar .router-link-exact-active {
@@ -308,6 +309,7 @@ body,
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 .accordion-wrapper input {
   position: absolute;
@@ -330,15 +332,14 @@ body,
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background: #b8b8b8;
+  background: #e4e4e4;
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
-  border-bottom: 1px solid white;
-  /* Icon */
+  border-bottom: 1px solid #f2f2f2;
 }
 .accordion-wrapper .tab-label:hover {
-  background: #9f9f9f;
+  background: #cbcbcb;
 }
 .accordion-wrapper .tab-label::after {
   content: "❯";
@@ -355,7 +356,7 @@ body,
   max-height: 0;
   padding: 0 1em;
   color: #0d0d0d;
-  background: white;
+  background: #f2f2f2;
   transition: all 0.35s;
   display: flex;
   justify-content: space-between;
@@ -381,14 +382,14 @@ body,
   justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
-  background: #b8b8b8;
+  background: #e4e4e4;
   cursor: pointer;
 }
 .accordion-wrapper .tab-close:hover {
-  background: #858585;
+  background: #b1b1b1;
 }
 .accordion-wrapper input:checked + .tab-label {
-  background: #858585;
+  background: #b1b1b1;
 }
 .accordion-wrapper input:checked + .tab-label::after {
   transform: rotate(90deg);
@@ -398,91 +399,84 @@ body,
   padding: 1em;
 }
 
-.accordion-reference-container {
-  /* Accordion styles */
+.accordion-reference-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
 }
-.accordion-reference-container body {
-  color: #2c3e50;
-  background: #ecf0f1;
-  padding: 0 1em 1em;
+.accordion-reference-wrapper .accordion-reference-container {
+  max-width: 1250px;
 }
-.accordion-reference-container h1 {
-  margin: 0;
-  line-height: 2;
-  text-align: center;
-}
-.accordion-reference-container h2 {
-  margin: 0 0 0.5em;
-  font-weight: normal;
-}
-.accordion-reference-container input {
+.accordion-reference-wrapper .accordion-reference-container input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-.accordion-reference-container .row {
+.accordion-reference-wrapper .accordion-reference-container .row {
   display: flex;
 }
-.accordion-reference-container .row .col {
+.accordion-reference-wrapper .accordion-reference-container .row .col {
   flex: 1;
 }
-.accordion-reference-container .row .col:last-child {
+.accordion-reference-wrapper .accordion-reference-container .row .col:last-child {
   margin-left: 1em;
 }
-.accordion-reference-container .tabs {
+.accordion-reference-wrapper .accordion-reference-container .tabs {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
-.accordion-reference-container .tab {
+.accordion-reference-wrapper .accordion-reference-container .tab {
   width: 100%;
-  color: white;
+  color: #0d0d0d;
   overflow: hidden;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #f2f2f2;
 }
-.accordion-reference-container .tab-label {
+.accordion-reference-wrapper .accordion-reference-container .tab-label {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background: #2c3e50;
+  background: #a0bed9;
   font-weight: bold;
   cursor: pointer;
-  /* Icon */
 }
-.accordion-reference-container .tab-label:hover {
-  background: #1a252f;
+.accordion-reference-wrapper .accordion-reference-container .tab-label:hover {
+  background: #7ca5ca;
 }
-.accordion-reference-container .tab-label::after {
+.accordion-reference-wrapper .accordion-reference-container .tab-label::after {
   content: "❯";
   width: 1em;
   height: 1em;
   text-align: center;
   transition: all 0.35s;
 }
-.accordion-reference-container .tab-content {
+.accordion-reference-wrapper .accordion-reference-container .tab-content {
   max-height: 0;
   padding: 0 1em;
-  color: #2c3e50;
-  background: white;
+  color: #a0bed9;
+  background: #f2f2f2;
   transition: all 0.35s;
 }
-.accordion-reference-container .tab-close {
+.accordion-reference-wrapper .accordion-reference-container .tab-close {
   display: flex;
   justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
-  background: #2c3e50;
+  background: #a0bed9;
   cursor: pointer;
 }
-.accordion-reference-container .tab-close:hover {
-  background: #1a252f;
+.accordion-reference-wrapper .accordion-reference-container .tab-close:hover {
+  background: #7ca5ca;
 }
-.accordion-reference-container input:checked + .tab-label {
-  background: #1a252f;
+.accordion-reference-wrapper .accordion-reference-container input:checked + .tab-label {
+  background: #7ca5ca;
 }
-.accordion-reference-container input:checked + .tab-label::after {
+.accordion-reference-wrapper .accordion-reference-container input:checked + .tab-label::after {
   transform: rotate(90deg);
 }
-.accordion-reference-container input:checked ~ .tab-content {
+.accordion-reference-wrapper .accordion-reference-container input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
@@ -844,13 +838,11 @@ body,
 }
 .reference-grid-container .reference-container {
   display: grid;
-  grid-template-columns: 4fr 8fr;
+  grid-template-columns: 5fr 7fr;
   padding: 1rem;
-  border-top: 1px solid black;
-  margin-bottom: 30px;
   align-items: center;
-  background: #333;
-  color: white;
+  border-radius: 10px;
+  color: #0d0d0d;
 }
 .reference-grid-container .description-container {
   padding: 1rem;
@@ -862,6 +854,7 @@ body,
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  box-shadow: 4px 10px 10px -2px rgba(0, 0, 0, 0.3);
 }
 .reference-grid-container p {
   width: 100%;
@@ -870,7 +863,8 @@ body,
   hyphens: auto;
   word-wrap: break-word;
   line-height: 1.4;
-  border-bottom: 1px solid white;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #0d0d0d;
 }
 .reference-grid-container h2 {
   padding-bottom: 1rem;
@@ -886,14 +880,13 @@ body,
 }
 .reference-grid-container h3 li,
 .reference-grid-container ul li {
-  margin-left: 20px;
+  font-size: 1.1rem;
   line-height: 1.4;
 }
 .reference-grid-container img {
   height: auto;
   width: 100%;
   object-fit: cover;
-  border-radius: 25px;
 }
 
 .coding-wrapper {

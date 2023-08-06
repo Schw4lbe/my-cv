@@ -27,12 +27,12 @@ export default {
           id: "01",
           name: "Kundenprojekt - Stadtwerke Lauterbach / Design Bestellstrecke",
           content: {
-            text: "Im Rahmen eines Kundenprojektes wurde ich damit beauftragt, a uf Basis von SCSS und VUE.JS 2.x ein dynamisches Styling für VUE Webcomponents zu erstellen. Die Webcomponents sind über ein JSON-Schema mittels VUE JS Frontend im Shadow DOM gerendert.",
+            text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
             subheader: "Tech Stack & Herausforderungen:",
             notes: [
-              "VUE.JS 2.x, TypeScript, JSON-Schema, PHP Backend",
-              "Editoren / EDI: Visual Studio Code & PHP Storm",
-              "Beinahe alle Technologien waren Neuland für mich",
+              "VUE.JS 2.x, TypeScript, JSON-Schema",
+              "EDI: Visual Studio Code & PHP Storm",
+              "genannte Technologien waren Neuland",
               "Kompatibilität für Geräte der letzten 6 Jahre",
               "Komplette Anwendung läuft in einem IFrame",
             ],
