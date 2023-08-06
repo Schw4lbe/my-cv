@@ -1,22 +1,12 @@
 <template>
   <footer class="footer-main">
-    <div class="footer-grid-container">
-      <div class="footer-content">
-        <h5></h5>
-        <ul>
-          <li>
-            <a href=""><i></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h5></h5>
-        <ul>
-          <li>
-            <a href=""><i></i></a>
-          </li>
-        </ul>
-      </div>
+    <div class="footer-contact">
+      <h5>Kontakt:</h5>
+      <ul>
+        <li v-for="(item, index) in contact" :key="index">
+          <a :href="item.link"><i :class="item.icon"></i></a>
+        </li>
+      </ul>
     </div>
   </footer>
 </template>

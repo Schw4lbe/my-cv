@@ -13,7 +13,7 @@
       <router-view />
     </div>
   </div>
-  <FooterMain />
+  <FooterMain :content="contentData" :contact="contactData" />
 </template>
 
 <script>
@@ -71,6 +71,25 @@ export default {
         {
           label: "Die wichtigsten Personen sind anwesend?",
           icon: "fa-solid fa-people-group",
+        },
+      ],
+      contentData: [],
+      contactData: [
+        {
+          link: "https://www.linkedin.com/in/jean-pierre-h%C3%A4ussler-66019118a/",
+          icon: "fa-brands fa-linkedin",
+        },
+        {
+          link: "https://www.xing.com/profile/JeanPierre_Haeussler/cv",
+          icon: "fa-brands fa-square-xing",
+        },
+        {
+          link: "https://github.com/TapeMate",
+          icon: "fa-brands fa-square-github",
+        },
+        {
+          link: "https://soundcloud.com/tape-mate",
+          icon: "fa-brands fa-soundcloud",
         },
       ],
     };
