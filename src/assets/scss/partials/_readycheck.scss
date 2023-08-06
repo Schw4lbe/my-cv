@@ -26,7 +26,8 @@
 
     form {
       padding: 1rem;
-      min-width: 50%;
+      min-width: 500px;
+      max-width: 1250px;
       height: max-content;
 
       h3 {
@@ -61,15 +62,20 @@
 
         .icon-container {
           .input-icon {
-            color: $clr-accent-d;
+            color: $clr-primary-light;
             font-size: 1.5rem;
           }
         }
-        input:checked ~ .icon-container .input-icon,
-        input:checked ~ .input-label {
+        input:checked ~ .icon-container .input-icon {
           transition: 0.6s;
           color: $clr-secondary;
         }
+
+        input:checked ~ .input-label {
+          transition: 0.6s;
+          color: $clr-accent-e;
+        }
+
         input:checked ~ .icon-container .input-icon {
           transition: 0.6s;
           font-size: 2rem;
