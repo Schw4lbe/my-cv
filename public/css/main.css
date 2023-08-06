@@ -142,6 +142,7 @@ body,
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 .home-wrapper .home-container {
   background: #e4e4e4;
