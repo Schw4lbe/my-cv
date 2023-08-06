@@ -100,3 +100,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.sales-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+</style>

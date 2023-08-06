@@ -1,0 +1,13 @@
+.navbar {
+  //   background: $color-primary-light2;
+  //   border-bottom: 1px solid $color-secondary;
+
+  a {
+    color: $color-secondary;
+    font-size: 1.2rem;
+    &:hover {
+      color: $color-primary !important;
+      background: $color-accent-a;
+    }
+  }
+}

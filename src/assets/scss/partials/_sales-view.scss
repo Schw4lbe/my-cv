@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #666;
+  background: $color-secondary;
 
   .sales-data-container {
     width: 100%;
@@ -11,7 +11,7 @@
 
     h1 {
       margin: 2rem;
-      color: white;
+      color: $color-accent-b;
       text-transform: uppercase;
     }
   }

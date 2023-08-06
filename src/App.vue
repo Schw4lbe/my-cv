@@ -6,20 +6,22 @@
     <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
   </div>
   <div class="cv-main" v-if="isCvMainVisible">
-    <MenuMain :menuItems="menuItemsArray" />
+    <div class="navbar-wrapper">
+      <NavbarMain :menuItems="menuItemsArray" />
+    </div>
     <router-view />
   </div>
 </template>
 
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import MenuMain from "@/components/MenuMain.vue";
+import NavbarMain from "@/components/NavbarMain.vue";
 import ReadyCheck from "@/components/ReadyCheck.vue";
 import LoadingAnimatin from "./components/LoadingAnimation.vue";
 
 export default {
   components: {
-    MenuMain,
+    NavbarMain,
     ReadyCheck,
     LoadingAnimatin,
   },
@@ -29,31 +31,26 @@ export default {
         {
           id: "item1",
           name: "Skill Matrix",
-          icon: "fa-solid fa-person",
           path: "/person",
         },
         {
           id: "item2",
           name: "Sales Erfahrung",
-          icon: "fa-solid fa-comments-dollar",
           path: "/sales",
         },
         {
           id: "item3",
           name: "Coding Erfahrung",
-          icon: "fa-solid fa-code",
           path: "/coding",
         },
         {
           id: "item4",
           name: "Selbstständigkeit",
-          icon: "fa-solid fa-shoe-prints",
           path: "/freelance",
         },
         {
           id: "item5",
           name: "Referenzen",
-          icon: "fa-solid fa-photo-film",
           path: "/reference",
         },
       ],
@@ -111,3 +108,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>
