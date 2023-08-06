@@ -1,16 +1,19 @@
 <template>
-  <div class="loading-animation-container">
-    <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
-  </div>
-  <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
-    <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
-  </div>
-  <div class="cv-main" v-if="isCvMainVisible">
-    <div class="navbar-wrapper">
-      <NavbarMain :menuItems="menuItemsArray" />
+  <div class="page-wrapper">
+    <div class="loading-animation-container">
+      <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
     </div>
-    <router-view />
+    <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
+      <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
+    </div>
+    <div class="cv-main" v-if="isCvMainVisible">
+      <div class="navbar-wrapper">
+        <NavbarMain :menuItems="menuItemsArray" />
+      </div>
+      <router-view />
+    </div>
   </div>
+  <FooterMain />
 </template>
 
 <script>
@@ -18,12 +21,14 @@ import { mapGetters, mapMutations } from "vuex";
 import NavbarMain from "@/components/NavbarMain.vue";
 import ReadyCheck from "@/components/ReadyCheck.vue";
 import LoadingAnimatin from "./components/LoadingAnimation.vue";
+import FooterMain from "./components/FooterMain.vue";
 
 export default {
   components: {
     NavbarMain,
     ReadyCheck,
     LoadingAnimatin,
+    FooterMain,
   },
   data() {
     return {

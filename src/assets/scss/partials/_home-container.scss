@@ -68,9 +68,9 @@
             width: 100%;
 
             i {
-              padding-left: 1rem;
-              font-size: 1.5rem;
-              color: darken($clr-accent-a, 20%);
+              padding-right: 1rem;
+              font-size: 1.1rem;
+              color: darken($clr-accent-e, 20%);
             }
           }
         }
@@ -93,7 +93,7 @@
 
         ul li::before {
           content: "\2666";
-          color: $clr-accent-c;
+          color: $clr-accent-e;
           font-weight: bold;
           display: inline-block;
           width: 1rem;

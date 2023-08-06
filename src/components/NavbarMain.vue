@@ -15,11 +15,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link
-              :to="homeLink"
-              class="nav-link active"
-              aria-current="page"
-            >
+            <router-link :to="homeLink" class="nav-link" aria-current="page">
               Home
             </router-link>
           </li>

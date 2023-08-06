@@ -1,13 +1,18 @@
 .navbar {
-  //   background: $clr-primary-light2;
-  //   border-bottom: 1px solid $clr-secondary;
+  align-items: center;
+
+  .router-link-active,
+  .router-link-exact-active {
+    color: $clr-accent-e;
+    border-bottom: 1px solid $clr-accent-e;
+  }
 
   a {
     color: $clr-secondary;
     font-size: 1.2rem;
     &:hover {
       color: $clr-primary !important;
-      background: $clr-accent-a;
+      background: $clr-accent-e;
     }
   }
 }

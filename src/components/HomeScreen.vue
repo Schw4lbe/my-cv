@@ -20,7 +20,7 @@
         <div class="tech-container">
           <ul class="tech-list">
             <li v-for="(tech, index) in technologies" :key="index">
-              {{ tech.name }}<i :class="tech.icon"></i>
+              <i :class="tech.icon"></i>{{ tech.name }}
             </li>
           </ul>
         </div>

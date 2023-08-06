@@ -1,0 +1,19 @@
+.footer-main {
+  position: fixed;
+  bottom: 0;
+  height: max-content;
+  width: 100%;
+  background: $clr-primary-light2;
+
+  .footer-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .footer-content,
+    .footer-contact {
+      width: 100%;
+      height: 100%;
+      border: 1px solid $clr-accent-e;
+    }
+  }
+}
