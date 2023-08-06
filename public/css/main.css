@@ -56,18 +56,18 @@ body {
   display: flex;
   justify-content: center;
 }
-.home-wrapper .loading-container {
+.home-wrapper .home-container {
   background: #e4e4e4;
   height: 100vh;
   max-width: 1920px;
   width: 100%;
 }
-.home-wrapper .loading-container .loading-header {
+.home-wrapper .home-container .home-header {
   width: 100%;
   padding: 20px 0;
 }
-.home-wrapper .loading-container .loading-header h1,
-.home-wrapper .loading-container .loading-header h2 {
+.home-wrapper .home-container .home-header h1,
+.home-wrapper .home-container .home-header h2 {
   padding: 20px;
 }
 
@@ -371,7 +371,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-delay: 25s;
 }
 .readycheck-container .form-wrapper {
@@ -396,13 +396,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 1;
-  animation-name: fadeInReadyCheck;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 0.3s;
-  animation-delay: 26s;
 }
 .readycheck-container .form-wrapper form .input-container .input-checkbox {
   display: block;

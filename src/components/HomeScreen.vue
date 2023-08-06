@@ -1,7 +1,7 @@
 <template>
   <div class="home-wrapper">
-    <div class="loading-container">
-      <div class="loading-header">
+    <div class="home-container">
+      <div class="home-header">
         <h1>{{ header }}</h1>
         <h2>{{ subHeader }}</h2>
         <p>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "LoadingScreen",
+  name: "HomeScreen",
   props: {
     header: String,
     subHeader: String,
