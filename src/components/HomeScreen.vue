@@ -4,7 +4,7 @@
     <div class="home-container">
       <div class="home-header-container">
         <div class="home-image">
-          <img src="../assets/jph.jpg" alt="" />
+          <img src="@/assets/jph.jpg" alt="" />
         </div>
         <div class="home-header">
           <h1>{{ header }}</h1>

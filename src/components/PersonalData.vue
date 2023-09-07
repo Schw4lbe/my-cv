@@ -31,11 +31,7 @@ export default {
   },
   data() {
     return {
-      colors: [
-        { id: "0", code: "#ffac9d" },
-        { id: "1", code: "#ff836d" },
-        { id: "2", code: "#ff6347" },
-      ],
+      colors: ["#ffac9d", "#ff836d", "#ff836d"],
     };
   },
   computed: {
@@ -45,13 +41,13 @@ export default {
       };
     },
     setProgressBarColor() {
-      return function (rating) {
-        if (rating <= "4") {
-          return this.colors[0].code;
-        } else if (rating > "4" && rating <= "7") {
-          return this.colors[1].code;
-        } else if (rating > "7" && rating <= "10") {
-          return this.colors[2].code;
+      return (rating) => {
+        if (rating <= 4) {
+          return this.colors[0];
+        } else if (rating > 4 && rating <= 7) {
+          return this.colors[1];
+        } else if (rating > 7 && rating <= 10) {
+          return this.colors[2];
         }
       };
     },
