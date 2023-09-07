@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="home-wrapper">
     <HomeScreen
       header="Lebenslauf"
       subHeader="Jean-Pierre Häussler"
