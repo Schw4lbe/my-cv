@@ -10,6 +10,7 @@
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
 import Logo1 from "@/assets/logo-straight.jpg";
+import Logo2 from "@/assets/logo-sycor.svg";
 
 export default {
   name: "SalesView",
@@ -79,9 +80,9 @@ export default {
           ],
           success:
             "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
-          logo: "",
+          logo: Logo2,
           media: "",
-          link: "",
+          link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
         },
         {
           id: "5",
@@ -96,9 +97,9 @@ export default {
           ],
           success:
             "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
-          logo: "",
+          logo: Logo2,
           media: "",
-          link: "",
+          link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
         },
       ],
     };

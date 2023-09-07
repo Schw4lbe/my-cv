@@ -1,5 +1,20 @@
 @import "breakpoint-variables";
 
+@media (max-width: $bp-xl) {
+  .reference-container {
+    grid-template-columns: 1fr 1fr !important;
+
+    .description-container {
+      grid-column: 1 / end;
+    }
+
+    .media-container {
+      grid-column: 1 / end;
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: $bp-lg) {
   .accordion-container,
   .accordion-reference-container {
@@ -17,6 +32,29 @@
           width: 100%;
           text-align: center;
         }
+
+        span:nth-of-type(2) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .modal {
+    .modal-header {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media (max-width: $bp-md) {
+  .accordion-container {
+    .tab-content {
+      ul {
+        width: 100%;
+      }
+      .tab-media {
+        display: none;
       }
     }
   }
@@ -33,6 +71,15 @@
       ul,
       .tab-media {
         margin-top: 1rem !important;
+
+        li {
+          border-bottom: 1px solid $clr-secondary-dark;
+          margin-bottom: 5px;
+        }
+      }
+
+      .tab-link-container {
+        margin-bottom: 20px;
       }
     }
   }

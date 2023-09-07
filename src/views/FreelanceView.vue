@@ -9,6 +9,8 @@
 
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
+import Logo5 from "@/assets/logo-tapemate.png";
+import Logo6 from "@/assets/logo-grammophon.png";
 
 export default {
   name: "FreelanceView",
@@ -31,8 +33,9 @@ export default {
           ],
           success:
             "Twitch Livestream vor knapp 1000 Viewern mit Schallplatten - Hosting durch bekannten Künstler",
-          logo: "",
+          logo: Logo5,
           media: "",
+          link: "https://soundcloud.com/tape-mate",
         },
         {
           id: "2",
@@ -47,8 +50,9 @@ export default {
           ],
           success:
             "Drei Fragezeichen Festival Feierwerk München (ca. 1.200 Besucher)",
-          logo: "",
+          logo: Logo6,
           media: "",
+          link: "https://soundcloud.com/muenchner-grammophon",
         },
       ],
     };

@@ -25,7 +25,7 @@ export default {
       itemData: [
         {
           id: "01",
-          name: "Wetter APP - Youtube Tutorial aufgewertet mit eigenen Animationen",
+          name: "Wetter APP",
           content: {
             text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
             subheader: "Tech Stack:",
@@ -39,7 +39,7 @@ export default {
         },
         {
           id: "02",
-          name: "Dummy Homepage - private Spielwiese zum Lernen & Testen",
+          name: "Dummy Homepage",
           content: {
             text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
             subheader: "Tech Stack:",
@@ -54,7 +54,7 @@ export default {
         },
         {
           id: "03",
-          name: "Kontakt Formular - Bestandteil der Dummy Homepage",
+          name: "Kontakt Formular",
           content: {
             text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
             subheader: "Tech Stack & Details:",
@@ -69,7 +69,7 @@ export default {
         },
         {
           id: "04",
-          name: "Kundenprojekt - Stadtwerke Lauterbach / Design Bestellstrecke",
+          name: "Kundenprojekt",
           content: {
             text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
             subheader: "Tech Stack & Herausforderungen:",
@@ -85,7 +85,7 @@ export default {
         },
         {
           id: "05",
-          name: "Game Development in Unity & C#",
+          name: "Game Development",
           content: {
             text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst bei zu bringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiter entwickelt.",
             subheader: "Randnotizen & Tech Stack:",

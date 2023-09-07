@@ -9,6 +9,8 @@
 
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
+import Logo3 from "@/assets/logo-vivax-solution.jpg";
+import Logo4 from "@/assets/logo-gfn.svg";
 
 export default {
   name: "CodingView",
@@ -33,8 +35,9 @@ export default {
           ],
           success:
             "Erstellung Responsive Design & eigener Web Components für Online Bestellstrecke",
-          logo: "",
+          logo: Logo3,
           media: "",
+          link: "https://www.vivax-solution.de/",
         },
         {
           id: "2",
@@ -49,8 +52,9 @@ export default {
           ],
           success:
             "Erfolgeicher Abschluss 11.03.2022 (88 / 100 Punkten - “gut”)",
-          logo: "",
+          logo: Logo4,
           media: "",
+          link: "https://www.gfn.de/",
         },
         {
           id: "3",
@@ -65,8 +69,9 @@ export default {
           ],
           success:
             "Erfolgeicher Abschluss 10.12.2021 (90 / 100 Punkten - “sehr gut”)",
-          logo: "",
+          logo: Logo4,
           media: "",
+          link: "https://www.gfn.de/",
         },
       ],
     };
