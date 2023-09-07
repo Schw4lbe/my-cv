@@ -367,10 +367,13 @@ body,
   transition: all 0.35s;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .accordion-wrapper .tab-content ul {
   padding-left: 1rem;
   list-style: none;
+  margin-bottom: 10px;
+  width: 80%;
 }
 .accordion-wrapper .tab-content ul li {
   text-align: left;
@@ -389,9 +392,31 @@ body,
   width: 1rem;
   margin-left: -1rem;
 }
+.accordion-wrapper .tab-content .tab-media {
+  width: 10%;
+}
 .accordion-wrapper .tab-content .tab-media img {
-  height: 100px;
-  width: 100px;
+  height: auto;
+  width: 100%;
+}
+.accordion-wrapper .tab-link-container {
+  background: #222222;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  transition: 0.4s;
+}
+.accordion-wrapper .tab-link-container a {
+  text-decoration: none;
+  color: #ff6347;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.accordion-wrapper .tab-link-container:hover {
+  background: #ff6347;
+}
+.accordion-wrapper .tab-link-container:hover a {
+  color: #0d0d0d;
 }
 .accordion-wrapper .tab-close {
   display: flex;
@@ -1133,6 +1158,41 @@ body,
   .personal-data-wrapper .skill-container .skill-rating {
     width: 15% !important;
     padding-left: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .accordion-container,
+  .accordion-reference-container {
+    min-width: 0px !important;
+  }
+  .accordion-container .tab .tab-label,
+  .accordion-reference-container .tab .tab-label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .accordion-container .tab .tab-label span,
+  .accordion-reference-container .tab .tab-label span {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .accordion-container,
+  .accordion-reference-container {
+    margin: 0 !important;
+  }
+  .accordion-container .tab-content,
+  .accordion-reference-container .tab-content {
+    padding: 0 5px !important;
+  }
+  .accordion-container .tab-content ul,
+  .accordion-container .tab-content .tab-media,
+  .accordion-reference-container .tab-content ul,
+  .accordion-reference-container .tab-content .tab-media {
+    margin-top: 1rem !important;
   }
 }
 * {

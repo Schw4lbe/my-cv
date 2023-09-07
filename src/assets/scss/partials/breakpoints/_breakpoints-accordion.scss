@@ -1,6 +1,39 @@
 @import "breakpoint-variables";
 
 @media (max-width: $bp-lg) {
-  .accordion-container {
+  .accordion-container,
+  .accordion-reference-container {
+    min-width: 0px !important;
+
+    .tab {
+      .tab-label {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        span {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-sm) {
+  .accordion-container,
+  .accordion-reference-container {
+    margin: 0 !important;
+
+    .tab-content {
+      padding: 0 5px !important;
+
+      ul,
+      .tab-media {
+        margin-top: 1rem !important;
+      }
+    }
   }
 }

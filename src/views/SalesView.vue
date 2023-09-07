@@ -9,7 +9,7 @@
 
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
-import Logo1 from "../assets/logo.png";
+import Logo1 from "@/assets/logo-straight.jpg";
 
 export default {
   name: "SalesView",
@@ -33,6 +33,7 @@ export default {
             "Einführung Microsoft Teams Telefonie Lösung (Niederlassungen in USA & Deutschland)",
           logo: Logo1,
           media: "",
+          link: "https://www.straight-solutions.com/",
         },
         {
           id: "2",
@@ -45,8 +46,9 @@ export default {
           ],
           success:
             "Teilprojektleitung Windows 10 Deployment 27 Standorten / 500 Arbeitsplätzen",
-          logo: "",
+          logo: Logo1,
           media: "",
+          link: "https://www.straight-solutions.com/",
         },
         {
           id: "3",
@@ -60,8 +62,9 @@ export default {
           ],
           success:
             "Aufnahme in Microsoft managed Partner Programm (unternehmensweit)",
-          logo: "",
+          logo: Logo1,
           media: "",
+          link: "https://www.straight-solutions.com/",
         },
         {
           id: "4",
@@ -78,6 +81,7 @@ export default {
             "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
           logo: "",
           media: "",
+          link: "",
         },
         {
           id: "5",
@@ -94,6 +98,7 @@ export default {
             "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
           logo: "",
           media: "",
+          link: "",
         },
       ],
     };
