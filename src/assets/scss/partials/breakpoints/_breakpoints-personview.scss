@@ -1,0 +1,31 @@
+@import "breakpoint-variables";
+
+@media (max-width: $bp-md) {
+  .personal-data-wrapper {
+    .skill-container {
+      flex-wrap: wrap !important;
+      justify-content: flex-start !important;
+      border-bottom: 1px solid $clr-secondary-dark2;
+      margin-bottom: 15px !important;
+
+      .skill-icon {
+        width: 50px !important;
+        padding-left: 10px !important;
+      }
+
+      .skill-name {
+        width: auto !important;
+      }
+
+      .progress-bar {
+        width: 80% !important;
+        margin: 5px 10px 5px 0 !important;
+      }
+
+      .skill-rating {
+        width: 15% !important;
+        padding-left: 0 !important;
+      }
+    }
+  }
+}

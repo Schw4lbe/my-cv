@@ -41,13 +41,13 @@ export default {
           id: "7",
           icon: "fa-brands fa-js",
           name: "javascript es6",
-          rating: "6",
+          rating: "7",
         },
         {
           id: "8",
           icon: "fa-brands fa-js",
           name: "javascript dom",
-          rating: "7",
+          rating: "6",
         },
         {
           id: "9",
