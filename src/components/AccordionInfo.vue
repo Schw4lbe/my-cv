@@ -28,8 +28,13 @@
                 (item.media != undefined && item.media.length > 0)
               "
               :src="item.logo"
-              alt="test"
+              alt="logo"
             />
+          </div>
+          <div v-if="item.link.length > 0" class="tab-link-container">
+            <a class="tab-link" :href="item.link" target="_blank"
+              >Homepage des Unternehmens</a
+            >
           </div>
         </div>
       </div>
