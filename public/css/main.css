@@ -1115,8 +1115,11 @@ body,
   }
 }
 @media (max-width: 576px) {
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
   .home-container .home-header-container {
-    margin-top: 2rem;
     justify-content: space-between !important;
     border-top: 1px solid #79acd9;
   }

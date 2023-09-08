@@ -1,5 +1,5 @@
 <template>
-  <div class="login-container">
+  <div v-if="loginSuccess === false" class="login-container">
     <LoginView @login-clicked="handleLogin" />
   </div>
   <div v-if="loginSuccess === true" class="page-wrapper">
