@@ -1,5 +1,8 @@
 <template>
-  <div class="page-wrapper">
+  <div class="login-container">
+    <LoginView @login-clicked="handleLogin" />
+  </div>
+  <div v-if="loginSuccess === true" class="page-wrapper">
     <div class="loading-animation-container">
       <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
     </div>
@@ -20,8 +23,9 @@
 import { mapGetters, mapMutations } from "vuex";
 import NavbarMain from "@/components/NavbarMain.vue";
 import ReadyCheck from "@/components/ReadyCheck.vue";
-import LoadingAnimatin from "./components/LoadingAnimation.vue";
-import FooterMain from "./components/FooterMain.vue";
+import LoadingAnimatin from "@/components/LoadingAnimation.vue";
+import FooterMain from "@/components/FooterMain.vue";
+import LoginView from "@/views/LoginView.vue";
 
 export default {
   components: {
@@ -29,9 +33,11 @@ export default {
     ReadyCheck,
     LoadingAnimatin,
     FooterMain,
+    LoginView,
   },
   data() {
     return {
+      loginSuccess: false,
       menuItemsArray: [
         {
           id: "item1",
@@ -113,6 +119,12 @@ export default {
     ...mapGetters(["isElementHidden", "isCvMainVisible", "isAnimationHidden"]),
   },
   methods: {
+    handleLogin() {
+      console.log("handle Login.");
+      this.loginSuccess = true;
+      console.log(this.loginSuccess);
+    },
+
     hideLoadingAnimation() {
       this.hideAnimation();
       console.log("hide Loading now.");
