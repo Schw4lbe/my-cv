@@ -52,6 +52,12 @@ export default {
         { name: "HTML 5", icon: "fa-brands fa-html5" },
         { name: "Bootstrap 5.2", icon: "fa-brands fa-bootstrap" },
         { name: "Visual Studio Code", icon: "fa-brands fa-microsoft" },
+        { name: "Apache", icon: "" },
+        { name: "FileZilla", icon: "" },
+        { name: "Express", icon: "" },
+        { name: "JSON Web Tokens", icon: "" },
+        { name: "Postman", icon: "" },
+        { name: "HashiCorp Vault", icon: "" },
       ],
     };
   },
