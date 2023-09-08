@@ -2,29 +2,34 @@
 
 @media (max-width: $bp-md) {
   .personal-data-wrapper {
-    .skill-container {
-      flex-wrap: wrap !important;
-      justify-content: flex-start !important;
-      border-bottom: 1px solid $clr-secondary-dark2;
-      margin-bottom: 15px !important;
+    .skill-data-container {
+      padding: 2rem 1rem !important;
 
-      .skill-icon {
-        width: 50px !important;
-        padding-left: 10px !important;
-      }
+      .skill-container {
+        flex-wrap: wrap !important;
+        justify-content: flex-start !important;
+        border-bottom: 1px solid $clr-secondary-dark2;
+        margin-bottom: 15px !important;
 
-      .skill-name {
-        width: auto !important;
-      }
+        .skill-icon {
+          width: 50px !important;
+          padding-left: 10px !important;
+        }
 
-      .progress-bar {
-        width: 80% !important;
-        margin: 5px 10px 5px 0 !important;
-      }
+        .skill-name {
+          width: auto !important;
+        }
 
-      .skill-rating {
-        width: 15% !important;
-        padding-left: 0 !important;
+        .progress-bar {
+          height: 10px !important;
+          width: 80% !important;
+          margin: 5px 10px 5px 0 !important;
+        }
+
+        .skill-rating {
+          width: 15% !important;
+          padding-left: 0 !important;
+        }
       }
     }
   }

@@ -41,12 +41,23 @@
 
 @media (max-width: $bp-sm) {
   .home-container {
-    .home-header {
-      padding: 5px !important;
+    .home-header-container {
+      margin-top: 2rem;
+      justify-content: space-between !important;
+      border-top: 1px solid $clr-accent-a;
+
+      .home-header {
+        padding: 2rem 1rem !important;
+
+        h1,
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
     }
 
     .home-intro {
-      padding: 2rem 0.5rem !important;
+      padding: 2rem 1rem !important;
 
       p {
         margin: 0 !important;
@@ -61,7 +72,11 @@
 
       .tech-list {
         grid-template-columns: 1fr !important;
-        gap: 10px;
+        padding-left: 0 !important;
+
+        li {
+          line-height: 1.5 !important;
+        }
       }
     }
 

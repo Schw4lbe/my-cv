@@ -1,0 +1,49 @@
+@import "breakpoint-variables";
+
+@media (max-width: $bp-sm) {
+  .intro-container {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 300px;
+    }
+  }
+
+  .readycheck-container {
+    .form-wrapper {
+      form {
+        min-width: 0 !important;
+
+        h3 {
+          font-size: 1.4rem !important;
+          padding: 2rem 0.5rem;
+        }
+
+        .input-container {
+          margin-bottom: 20px;
+
+          .input-checkbox {
+            height: 20px;
+            width: 20px;
+          }
+
+          .input-label {
+            padding: 0 !important;
+            font-size: 0.8rem !important;
+          }
+
+          input:checked ~ .icon-container .input-icon {
+            font-size: 1.7rem !important;
+          }
+        }
+      }
+    }
+  }
+}

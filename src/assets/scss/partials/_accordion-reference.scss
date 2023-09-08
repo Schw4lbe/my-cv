@@ -23,6 +23,7 @@ $clouds: $clr-secondary;
   .accordion-reference-container {
     max-width: 1250px;
     min-width: 850px;
+    margin: 1rem;
 
     input {
       position: absolute;
@@ -32,11 +33,11 @@ $clouds: $clr-secondary;
 
     .row {
       display: flex;
+      --bs-gutter-x: 0 !important;
+      margin: 0 !important;
+
       .col {
         flex: 1;
-        &:last-child {
-          margin-left: 1em;
-        }
       }
     }
 

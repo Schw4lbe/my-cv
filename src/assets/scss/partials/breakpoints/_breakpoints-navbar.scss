@@ -1,0 +1,19 @@
+@import "breakpoint-variables";
+
+@media (max-width: $bp-lg) {
+  .navbar-wrapper {
+    .container-fluid {
+      justify-content: center;
+
+      button {
+        margin-bottom: 5px;
+      }
+
+      .navbar-nav li {
+        a {
+          padding-left: 15px !important;
+        }
+      }
+    }
+  }
+}

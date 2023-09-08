@@ -461,6 +461,7 @@ body,
 .accordion-reference-wrapper .accordion-reference-container {
   max-width: 1250px;
   min-width: 850px;
+  margin: 1rem;
 }
 .accordion-reference-wrapper .accordion-reference-container input {
   position: absolute;
@@ -469,12 +470,11 @@ body,
 }
 .accordion-reference-wrapper .accordion-reference-container .row {
   display: flex;
+  --bs-gutter-x: 0 !important;
+  margin: 0 !important;
 }
 .accordion-reference-wrapper .accordion-reference-container .row .col {
   flex: 1;
-}
-.accordion-reference-wrapper .accordion-reference-container .row .col:last-child {
-  margin-left: 1em;
 }
 .accordion-reference-wrapper .accordion-reference-container .tabs {
   border-radius: 8px;
@@ -1115,11 +1115,20 @@ body,
   }
 }
 @media (max-width: 576px) {
-  .home-container .home-header {
-    padding: 5px !important;
+  .home-container .home-header-container {
+    margin-top: 2rem;
+    justify-content: space-between !important;
+    border-top: 1px solid #79acd9;
+  }
+  .home-container .home-header-container .home-header {
+    padding: 2rem 1rem !important;
+  }
+  .home-container .home-header-container .home-header h1,
+  .home-container .home-header-container .home-header h2 {
+    font-size: 1.5rem;
   }
   .home-container .home-intro {
-    padding: 2rem 0.5rem !important;
+    padding: 2rem 1rem !important;
   }
   .home-container .home-intro p {
     margin: 0 !important;
@@ -1132,31 +1141,38 @@ body,
   }
   .home-container .home-tech .tech-list {
     grid-template-columns: 1fr !important;
-    gap: 10px;
+    padding-left: 0 !important;
+  }
+  .home-container .home-tech .tech-list li {
+    line-height: 1.5 !important;
   }
   .home-container .home-data-container {
     padding: 2rem 0.5rem !important;
   }
 }
 @media (max-width: 768px) {
-  .personal-data-wrapper .skill-container {
+  .personal-data-wrapper .skill-data-container {
+    padding: 2rem 1rem !important;
+  }
+  .personal-data-wrapper .skill-data-container .skill-container {
     flex-wrap: wrap !important;
     justify-content: flex-start !important;
     border-bottom: 1px solid #b8b8b8;
     margin-bottom: 15px !important;
   }
-  .personal-data-wrapper .skill-container .skill-icon {
+  .personal-data-wrapper .skill-data-container .skill-container .skill-icon {
     width: 50px !important;
     padding-left: 10px !important;
   }
-  .personal-data-wrapper .skill-container .skill-name {
+  .personal-data-wrapper .skill-data-container .skill-container .skill-name {
     width: auto !important;
   }
-  .personal-data-wrapper .skill-container .progress-bar {
+  .personal-data-wrapper .skill-data-container .skill-container .progress-bar {
+    height: 10px !important;
     width: 80% !important;
     margin: 5px 10px 5px 0 !important;
   }
-  .personal-data-wrapper .skill-container .skill-rating {
+  .personal-data-wrapper .skill-data-container .skill-container .skill-rating {
     width: 15% !important;
     padding-left: 0 !important;
   }
@@ -1232,6 +1248,51 @@ body,
   .accordion-container .tab-content .tab-link-container,
   .accordion-reference-container .tab-content .tab-link-container {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-wrapper .container-fluid {
+    justify-content: center;
+  }
+  .navbar-wrapper .container-fluid button {
+    margin-bottom: 5px;
+  }
+  .navbar-wrapper .container-fluid .navbar-nav li a {
+    padding-left: 15px !important;
+  }
+}
+@media (max-width: 576px) {
+  .intro-container p {
+    font-size: 1rem;
+  }
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 300px;
+    }
+  }
+  .readycheck-container .form-wrapper form {
+    min-width: 0 !important;
+  }
+  .readycheck-container .form-wrapper form h3 {
+    font-size: 1.4rem !important;
+    padding: 2rem 0.5rem;
+  }
+  .readycheck-container .form-wrapper form .input-container {
+    margin-bottom: 20px;
+  }
+  .readycheck-container .form-wrapper form .input-container .input-checkbox {
+    height: 20px;
+    width: 20px;
+  }
+  .readycheck-container .form-wrapper form .input-container .input-label {
+    padding: 0 !important;
+    font-size: 0.8rem !important;
+  }
+  .readycheck-container .form-wrapper form .input-container input:checked ~ .icon-container .input-icon {
+    font-size: 1.7rem !important;
   }
 }
 * {
