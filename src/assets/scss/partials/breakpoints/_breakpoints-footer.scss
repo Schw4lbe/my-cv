@@ -1,0 +1,13 @@
+@import "breakpoint-variables";
+
+@media (max-width: $bp-sm) {
+  .footer-main {
+    h5 {
+      display: none;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+  }
+}
