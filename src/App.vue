@@ -127,14 +127,19 @@ export default {
 
       try {
         const apiUrl = "http://20.218.146.83:3000/login";
-
         const response = await axios.post(apiUrl, credentials);
-
         console.log("Login successful:", response.data);
         this.loginSuccess = true;
       } catch (error) {
         console.error("Error during login:", error);
         this.loginSuccess = false;
+
+        if (error.response.status === 401) {
+          setTimeout(() => {
+            console.log("Clearing login message");
+            this.loginSuccess = null;
+          }, 5000);
+        }
       }
 
       console.log(this.loginSuccess);
