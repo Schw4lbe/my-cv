@@ -1,6 +1,18 @@
 <template>
   <form action="">
     <h1>Login Dummy</h1>
+    <input
+      id="username"
+      type="text"
+      v-model="username"
+      placeholder="Username"
+    />
+    <input
+      id="password"
+      type="text"
+      v-model="password"
+      placeholder="Password"
+    />
     <button @click="onLoginClick()">Login</button>
   </form>
 </template>
@@ -9,10 +21,19 @@
 export default {
   name: "LoginView",
 
+  data() {
+    return {
+      username: "",
+      password: "",
+    };
+  },
+
   methods: {
     onLoginClick() {
-      console.log("clicked on Login.");
-      this.$emit("login-clicked");
+      const username = this.username;
+      const password = this.password;
+
+      this.$emit("login-clicked", { username, password });
     },
   },
 };

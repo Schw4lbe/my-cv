@@ -27,6 +27,8 @@ import LoadingAnimatin from "@/components/LoadingAnimation.vue";
 import FooterMain from "@/components/FooterMain.vue";
 import LoginView from "@/views/LoginView.vue";
 
+import axios from "axios";
+
 export default {
   components: {
     NavbarMain,
@@ -119,9 +121,26 @@ export default {
     ...mapGetters(["isElementHidden", "isCvMainVisible", "isAnimationHidden"]),
   },
   methods: {
-    handleLogin() {
+    handleLogin(credentials) {
       console.log("handle Login.");
-      this.loginSuccess = true;
+      console.log("credentials:", credentials);
+
+      const apiUrl = "http://20.218.146.83:3000/login";
+
+      axios
+        .post(apiUrl, credentials)
+        .then((response) => {
+          // handle successfull response here
+          console.log("Login successfull:", response.data);
+          this.loginSuccess = true;
+        })
+
+        .catch((error) => {
+          // handle error
+          console.error("Error during login:", error);
+          this.loginSuccess = false;
+        });
+
       console.log(this.loginSuccess);
     },
 
