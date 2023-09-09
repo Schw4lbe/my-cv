@@ -121,25 +121,21 @@ export default {
     ...mapGetters(["isElementHidden", "isCvMainVisible", "isAnimationHidden"]),
   },
   methods: {
-    handleLogin(credentials) {
+    async handleLogin(credentials) {
       console.log("handle Login.");
       console.log("credentials:", credentials);
 
-      const apiUrl = "http://20.218.146.83:3000/login";
+      try {
+        const apiUrl = "http://20.218.146.83:3000/login";
 
-      axios
-        .post(apiUrl, credentials)
-        .then((response) => {
-          // handle successfull response here
-          console.log("Login successfull:", response.data);
-          this.loginSuccess = true;
-        })
+        const response = await axios.post(apiUrl, credentials);
 
-        .catch((error) => {
-          // handle error
-          console.error("Error during login:", error);
-          this.loginSuccess = false;
-        });
+        console.log("Login successful:", response.data);
+        this.loginSuccess = true;
+      } catch (error) {
+        console.error("Error during login:", error);
+        this.loginSuccess = false;
+      }
 
       console.log(this.loginSuccess);
     },
