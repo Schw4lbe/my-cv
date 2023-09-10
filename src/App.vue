@@ -162,9 +162,12 @@ export default {
     async handleLogin(credentials) {
       try {
         const apiUrl = "http://20.218.146.83:3000/login";
-        const response = await axios.post(apiUrl, credentials);
-        console.log("Login successful:", response.data);
 
+        const response = await axios.post(apiUrl, credentials, {
+          timeout: 10000,
+        });
+
+        console.log("Login successful:", response.data);
         this.$store.commit("loginSuccess");
         this.hideLogin();
       } catch (error) {
@@ -172,9 +175,9 @@ export default {
 
         if (!error.response) {
           console.error("Server not available.");
-          alert(
-            "Login Server ist nicht verfügbar. Bitte nehmen Sie Kontakt mit Ihrem Ansprechpartner auf."
-          );
+          console.log(error.response);
+          this.serverErrorTrue();
+          this.notWaitingForServerResponse();
         } else if (error.response.status === 401) {
           this.enableTimeout();
           setTimeout(() => {
@@ -224,6 +227,8 @@ export default {
       "showCvMain",
       "hideLogin",
       "loginSuccess",
+      "serverErrorTrue",
+      "notWaitingForServerResponse",
     ]),
     onFormSubmitted() {
       this.hideElement();
