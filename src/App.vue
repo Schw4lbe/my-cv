@@ -6,7 +6,7 @@
   >
     <div class="login-color-lighten">
       <div
-        v-if="loginSuccessTemp === false && loginFailed === false"
+        v-if="!isLoginSuccess && loginFailed === false"
         class="login-container"
       >
         <LoginView @login-clicked="handleLogin" />
@@ -66,9 +66,7 @@ export default {
   },
   data() {
     return {
-      loginSuccessTemp: false,
       loginFailed: false,
-
       loginButton: null,
 
       menuItemsArray: [
@@ -162,20 +160,15 @@ export default {
   },
   methods: {
     async handleLogin(credentials) {
-      console.log("handle Login.");
-      console.log("credentials:", credentials);
-
       try {
         const apiUrl = "http://20.218.146.83:3000/login";
         const response = await axios.post(apiUrl, credentials);
         console.log("Login successful:", response.data);
-        this.loginSuccessTemp = true;
 
         this.$store.commit("loginSuccess");
         this.hideLogin();
       } catch (error) {
         console.error("Error during login:", error);
-        this.loginSuccessTemp = false;
 
         if (!error.response) {
           console.error("Server not available.");
@@ -190,8 +183,6 @@ export default {
           }, 10000);
         }
       }
-
-      console.log(this.loginSuccessTemp);
     },
 
     enableTimeout() {
@@ -210,7 +201,6 @@ export default {
 
         if (seconds <= 0) {
           clearInterval(timer);
-          console.log("time is up.");
         }
       }, 1000);
     },
@@ -225,7 +215,6 @@ export default {
 
     hideLoadingAnimation() {
       this.hideAnimation();
-      console.log("hide Loading now.");
     },
 
     ...mapMutations([
@@ -234,7 +223,7 @@ export default {
       "showElement",
       "showCvMain",
       "hideLogin",
-      "loginSuccessTemp",
+      "loginSuccess",
     ]),
     onFormSubmitted() {
       this.hideElement();
