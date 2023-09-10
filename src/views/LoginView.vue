@@ -1,6 +1,6 @@
 <template>
-  <form action="">
-    <h1>Login Dummy</h1>
+  <form class="login-form">
+    <h3>Login</h3>
     <input
       id="username"
       type="text"
@@ -9,7 +9,7 @@
     />
     <input
       id="password"
-      type="text"
+      type="password"
       v-model="password"
       placeholder="Password"
     />
@@ -38,9 +38,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-h1 {
-  color: tomato;
-}
-</style>

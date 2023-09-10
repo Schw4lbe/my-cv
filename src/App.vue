@@ -1,10 +1,16 @@
 <template>
-  <div v-if="loginSuccess === false" class="login-container">
-    <LoginView @login-clicked="handleLogin" />
-  </div>
+  <div class="login-wrapper">
+    <div class="login-color-lighten">
+      <div v-if="loginSuccess === false" class="login-container">
+        <LoginView @login-clicked="handleLogin" />
+      </div>
 
-  <div v-if="loginFailed === true" class="timeout">
-    <h3>Timeout</h3>
+      <div v-if="loginFailed === true" class="timeout-container">
+        <div class="timeout-frame">
+          <h3>Timeout</h3>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div v-if="loginSuccess === true" class="page-wrapper">
