@@ -58,6 +58,7 @@ export default {
         { name: "JSON Web Token", icon: "fa-solid fa-hashtag" },
         { name: "Postman", icon: "fa-solid fa-code-pull-request" },
         { name: "Ubuntu on Azure", icon: "fa-brands fa-ubuntu" },
+        { name: "PM2 Manager", icon: "fa-solid fa-server" },
         { name: "Axios", icon: "fa-solid fa-a" },
       ],
     };

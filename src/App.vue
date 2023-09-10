@@ -180,6 +180,7 @@ export default {
           this.notWaitingForServerResponse();
         } else if (error.response.status === 401) {
           this.enableTimeout();
+          this.notWaitingForServerResponse();
           setTimeout(() => {
             this.loginFailed = false;
             this.enableLoginButton();
