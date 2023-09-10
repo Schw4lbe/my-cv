@@ -1,8 +1,12 @@
 <template>
-  <div v-if="loginSuccess === false" class="login-wrapper">
+  <div
+    v-if="!isLoginSuccess"
+    class="login-wrapper"
+    :class="{ hide: isLoginHidden }"
+  >
     <div class="login-color-lighten">
       <div
-        v-if="loginSuccess === false && loginFailed === false"
+        v-if="loginSuccessTemp === false && loginFailed === false"
         class="login-container"
       >
         <LoginView @login-clicked="handleLogin" />
@@ -21,7 +25,7 @@
     </div>
   </div>
 
-  <div v-if="loginSuccess === true" class="page-wrapper">
+  <div v-if="loginSuccessTemp === true" class="page-wrapper">
     <div class="loading-animation-container">
       <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
     </div>
@@ -36,7 +40,7 @@
     </div>
   </div>
   <FooterMain
-    v-if="loginSuccess === true"
+    v-if="loginSuccessTemp === true"
     :content="contentData"
     :contact="contactData"
   />
@@ -62,7 +66,7 @@ export default {
   },
   data() {
     return {
-      loginSuccess: false,
+      loginSuccessTemp: false,
       loginFailed: false,
 
       loginButton: null,
@@ -145,7 +149,13 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(["isElementHidden", "isCvMainVisible", "isAnimationHidden"]),
+    ...mapGetters([
+      "isElementHidden",
+      "isCvMainVisible",
+      "isAnimationHidden",
+      "isLoginHidden",
+      "isLoginSuccess",
+    ]),
   },
   mounted() {
     this.loginButton = document.querySelector("#login-button");
@@ -159,10 +169,13 @@ export default {
         const apiUrl = "http://20.218.146.83:3000/login";
         const response = await axios.post(apiUrl, credentials);
         console.log("Login successful:", response.data);
-        this.loginSuccess = true;
+        this.loginSuccessTemp = true;
+
+        this.$store.commit("loginSuccess");
+        this.hideLogin();
       } catch (error) {
         console.error("Error during login:", error);
-        this.loginSuccess = false;
+        this.loginSuccessTemp = false;
 
         if (!error.response) {
           console.error("Server not available.");
@@ -178,7 +191,7 @@ export default {
         }
       }
 
-      console.log(this.loginSuccess);
+      console.log(this.loginSuccessTemp);
     },
 
     enableTimeout() {
@@ -220,6 +233,8 @@ export default {
       "hideAnimation",
       "showElement",
       "showCvMain",
+      "hideLogin",
+      "loginSuccessTemp",
     ]),
     onFormSubmitted() {
       this.hideElement();
