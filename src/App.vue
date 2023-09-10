@@ -21,7 +21,11 @@
       <router-view />
     </div>
   </div>
-  <FooterMain :content="contentData" :contact="contactData" />
+  <FooterMain
+    v-if="loginSuccess === true"
+    :content="contentData"
+    :contact="contactData"
+  />
 </template>
 
 <script>
