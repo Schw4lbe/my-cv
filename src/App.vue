@@ -14,9 +14,9 @@
 
       <div v-if="loginFailed === true" class="timeout-container">
         <div class="timeout-frame">
-          <h3>Timeout<i class="fa-solid fa-ban"></i></h3>
+          <h3>Ein Fehler ist aufgetreten!<i class="fa-solid fa-ban"></i></h3>
           <div class="countdown-container">
-            Die Anmeldeinformationen sind falsch. Bitte probier sie es in
+            Die Anmeldeinformationen sind falsch. Bitte versuchen sie es in
             <span id="countdown">10</span>
             Sekunden erneut.
           </div>
@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div v-if="loginSuccessTemp === true" class="page-wrapper">
+  <div v-if="isLoginSuccess" class="page-wrapper">
     <div class="loading-animation-container">
       <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
     </div>
@@ -40,7 +40,7 @@
     </div>
   </div>
   <FooterMain
-    v-if="loginSuccessTemp === true"
+    v-if="isLoginSuccess"
     :content="contentData"
     :contact="contactData"
   />
