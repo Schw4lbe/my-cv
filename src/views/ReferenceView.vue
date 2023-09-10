@@ -9,11 +9,11 @@
 
 <script>
 import AccordionReference from "@/components/AccordionReference.vue";
-import img01 from "@/assets/kundenprojekt-demo.gif";
-import img02 from "@/assets/homepage-demo.gif";
-import img03 from "@/assets/contactform-demo.gif";
-import img04 from "@/assets/weatherapp-demo.gif";
-import img05 from "@/assets/unity-demo.gif";
+import img01 from "@/assets/img/kundenprojekt-demo.gif";
+import img02 from "@/assets/img/homepage-demo.gif";
+import img03 from "@/assets/img/contactform-demo.gif";
+import img04 from "@/assets/img/weatherapp-demo.gif";
+import img05 from "@/assets/img/unity-demo.gif";
 
 export default {
   name: "ReferenceView",

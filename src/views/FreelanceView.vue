@@ -9,8 +9,8 @@
 
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
-import Logo5 from "@/assets/logo-tapemate.png";
-import Logo6 from "@/assets/logo-grammophon.png";
+import Logo5 from "@/assets/img/logo-tapemate.png";
+import Logo6 from "@/assets/img/logo-grammophon.png";
 
 export default {
   name: "FreelanceView",

@@ -9,8 +9,8 @@
 
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
-import Logo3 from "@/assets/logo-vivax-solution.jpg";
-import Logo4 from "@/assets/logo-gfn.svg";
+import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
+import Logo4 from "@/assets/img/logo-gfn.svg";
 
 export default {
   name: "CodingView",

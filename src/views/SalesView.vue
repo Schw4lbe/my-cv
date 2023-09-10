@@ -9,8 +9,8 @@
 
 <script>
 import AccordionInfo from "@/components/AccordionInfo.vue";
-import Logo1 from "@/assets/logo-straight.jpg";
-import Logo2 from "@/assets/logo-sycor.svg";
+import Logo1 from "@/assets/img/logo-straight.jpg";
+import Logo2 from "@/assets/img/logo-sycor.svg";
 
 export default {
   name: "SalesView",
