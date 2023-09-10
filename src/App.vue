@@ -1,13 +1,21 @@
 <template>
-  <div class="login-wrapper">
+  <div v-if="loginSuccess === false" class="login-wrapper">
     <div class="login-color-lighten">
-      <div v-if="loginSuccess === false" class="login-container">
+      <div
+        v-if="loginSuccess === false && loginFailed === false"
+        class="login-container"
+      >
         <LoginView @login-clicked="handleLogin" />
       </div>
 
       <div v-if="loginFailed === true" class="timeout-container">
         <div class="timeout-frame">
-          <h3>Timeout</h3>
+          <h3>Timeout<i class="fa-solid fa-ban"></i></h3>
+          <div class="countdown-container">
+            Die Anmeldeinformationen sind falsch. Bitte probier sie es in
+            <span id="countdown">10</span>
+            Sekunden erneut.
+          </div>
         </div>
       </div>
     </div>
@@ -156,13 +164,17 @@ export default {
         console.error("Error during login:", error);
         this.loginSuccess = false;
 
-        if (error.response.status === 401) {
+        if (!error.response) {
+          console.error("Server not available.");
+          alert(
+            "Login Server ist nicht verfügbar. Bitte nehmen Sie Kontakt mit Ihrem Ansprechpartner auf."
+          );
+        } else if (error.response.status === 401) {
           this.enableTimeout();
           setTimeout(() => {
-            console.log("Clearing login message");
             this.loginFailed = false;
             this.enableLoginButton();
-          }, 2000);
+          }, 10000);
         }
       }
 
@@ -171,8 +183,23 @@ export default {
 
     enableTimeout() {
       this.disableLoginButton();
-      console.log("enabled Timeout.");
       this.loginFailed = true;
+      this.startCountdown();
+    },
+
+    startCountdown() {
+      let seconds = 10;
+      const timer = setInterval(function () {
+        seconds--;
+
+        const counter = document.querySelector("#countdown");
+        counter.innerHTML = seconds;
+
+        if (seconds <= 0) {
+          clearInterval(timer);
+          console.log("time is up.");
+        }
+      }, 1000);
     },
 
     disableLoginButton() {

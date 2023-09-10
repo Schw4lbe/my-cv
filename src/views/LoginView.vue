@@ -13,7 +13,13 @@
       v-model="password"
       placeholder="Password"
     />
-    <button id="login-button" @click="onLoginClick()">Login</button>
+    <button
+      id="login-button"
+      @click="onLoginClick()"
+      :disabled="isButtonDisabled"
+    >
+      Login
+    </button>
   </form>
 </template>
 
@@ -28,12 +34,21 @@ export default {
     };
   },
 
+  computed: {
+    isButtonDisabled() {
+      return !(this.username && this.password);
+    },
+  },
+
   methods: {
     onLoginClick() {
       const username = this.username;
       const password = this.password;
 
       this.$emit("login-clicked", { username, password });
+
+      this.username = "";
+      this.password = "";
     },
   },
 };
