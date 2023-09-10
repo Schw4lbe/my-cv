@@ -13,7 +13,7 @@
       v-model="password"
       placeholder="Password"
     />
-    <button @click="onLoginClick()">Login</button>
+    <button id="login-button" @click="onLoginClick()">Login</button>
   </form>
 </template>
 

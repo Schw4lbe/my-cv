@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="home-wrapper"> -->
   <h1 class="page-title">Home</h1>
   <div class="home-container">
     <div class="home-header-container">
@@ -44,7 +43,6 @@
       </div>
     </div>
   </div>
-  <!-- </div> -->
 </template>
 
 <script>

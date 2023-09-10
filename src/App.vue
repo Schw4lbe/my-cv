@@ -2,6 +2,11 @@
   <div v-if="loginSuccess === false" class="login-container">
     <LoginView @login-clicked="handleLogin" />
   </div>
+
+  <div v-if="loginFailed === true" class="timeout">
+    <h3>Timeout</h3>
+  </div>
+
   <div v-if="loginSuccess === true" class="page-wrapper">
     <div class="loading-animation-container">
       <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
@@ -40,6 +45,10 @@ export default {
   data() {
     return {
       loginSuccess: false,
+      loginFailed: false,
+
+      loginButton: null,
+
       menuItemsArray: [
         {
           id: "item1",
@@ -120,6 +129,9 @@ export default {
   computed: {
     ...mapGetters(["isElementHidden", "isCvMainVisible", "isAnimationHidden"]),
   },
+  mounted() {
+    this.loginButton = document.querySelector("#login-button");
+  },
   methods: {
     async handleLogin(credentials) {
       console.log("handle Login.");
@@ -135,14 +147,30 @@ export default {
         this.loginSuccess = false;
 
         if (error.response.status === 401) {
+          this.enableTimeout();
           setTimeout(() => {
             console.log("Clearing login message");
-            this.loginSuccess = null;
-          }, 5000);
+            this.loginFailed = false;
+            this.enableLoginButton();
+          }, 2000);
         }
       }
 
       console.log(this.loginSuccess);
+    },
+
+    enableTimeout() {
+      this.disableLoginButton();
+      console.log("enabled Timeout.");
+      this.loginFailed = true;
+    },
+
+    disableLoginButton() {
+      this.loginButton.disabled = true;
+    },
+
+    enableLoginButton() {
+      this.loginButton.disabled = false;
     },
 
     hideLoadingAnimation() {
