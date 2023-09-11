@@ -11,7 +11,9 @@
                 name="rd"
                 :checked="index === checkedIndex"
               />
-              <label class="tab-label" :for="item.id">{{ item.name }}</label>
+              <label @click="focusOnClick" class="tab-label" :for="item.id">{{
+                item.name
+              }}</label>
               <div class="tab-content">
                 <div class="reference-grid-container">
                   <div class="reference-container">
@@ -65,6 +67,15 @@ export default {
     return {
       checkedIndex: 0,
     };
+  },
+
+  methods: {
+    focusOnClick(e) {
+      console.log(e.target);
+      setTimeout(function () {
+        e.target.scrollIntoView({ behavior: "smooth" });
+      }, 700);
+    },
   },
 };
 </script>
