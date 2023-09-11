@@ -15,7 +15,7 @@
       <p>{{ intro[0].text }}</p>
     </div>
     <div class="home-tech">
-      <h3 class="tech-header">Online-CV Tech Stack:</h3>
+      <h3 class="tech-header">Online-CV Tech Stack</h3>
       <div class="tech-container">
         <ul class="tech-list">
           <li v-for="(tech, index) in technologies" :key="index">
@@ -24,16 +24,37 @@
         </ul>
       </div>
     </div>
+    <div class="home-testing">
+      <h3 class="testing-header">Online-CV Kompatibilität</h3>
+      <div class="testing-container">
+        <ul class="testing-list">
+          <li
+            class="testing-list-item"
+            v-for="(prop, index) in testing"
+            :key="index"
+          >
+            <div class="testing-os-container">
+              <i :class="prop.icon"></i>
+              <span class="testing-os">{{ prop.os }} </span>
+            </div>
+            <div class="testing-browser-container">
+              <i class="testing-browser-icon" :class="prop.iconbrowser"></i>
+              <span class="testing-browser">{{ prop.browser }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="home-data-container">
       <div class="home-props">
         <div class="properties">
-          <h3 class="prop-header">Stärken:</h3>
+          <h3 class="prop-header">Stärken</h3>
           <ul>
             <li v-for="(prop, index) in props" :key="index">{{ prop }}</li>
           </ul>
         </div>
         <div class="hobbies">
-          <h3 class="hobby-header">Hobbies:</h3>
+          <h3 class="hobby-header">Hobbies</h3>
           <ul>
             <li v-for="(hobby, index) in hobbies" :key="index">
               {{ hobby }}
@@ -53,6 +74,7 @@ export default {
     subHeader: String,
     intro: Array,
     props: Array,
+    testing: Array,
     hobbies: Array,
     technologies: Array,
   },

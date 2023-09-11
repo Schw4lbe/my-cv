@@ -22,7 +22,7 @@
     justify-content: center;
     width: 100%;
     height: max-content;
-    background: $clr-primary-light2;
+    background: $clr-primary-light3;
 
     form {
       padding: 1rem;
@@ -52,7 +52,7 @@
         }
 
         .input-label {
-          color: $clr-accent-c;
+          color: $clr-secondary;
           padding: 1rem;
           margin-left: 10px;
           font-size: 1.2rem;
@@ -62,7 +62,7 @@
 
         .icon-container {
           .input-icon {
-            color: $clr-primary-light;
+            color: $clr-primary-light2;
             font-size: 1.5rem;
           }
         }
@@ -95,22 +95,23 @@
           padding: 1rem;
           width: 100%;
           margin-top: 25px;
-          transition: 1s;
+          transition: 0.5s;
           font-weight: 600;
           font-size: 1.2rem;
 
           &:disabled {
             transition: 1s;
-            color: $clr-primary-light2;
-            background: $clr-primary-light2;
-            border: 1px solid $clr-primary-light2;
+            color: $clr-primary-light3;
+            background: $clr-primary-light3;
+            border: 1px solid $clr-primary-light3;
             &:hover {
-              background: $clr-primary-light2;
+              background: $clr-primary-light3;
             }
           }
 
           &:hover {
-            background: $clr-primary;
+            background: $clr-secondary;
+            color: $clr-accent-e;
           }
         }
       }

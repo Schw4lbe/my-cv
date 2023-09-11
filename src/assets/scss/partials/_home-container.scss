@@ -70,9 +70,48 @@
             width: 100%;
 
             i {
-              padding-right: 1rem;
+              width: 30px;
               font-size: 1.1rem;
               color: darken($clr-accent-e, 20%);
+            }
+          }
+        }
+      }
+    }
+
+    .home-testing {
+      padding: 2rem;
+      border-bottom: 1px solid $clr-accent-a;
+
+      .testing-header {
+        padding-bottom: 1rem;
+      }
+
+      .testing-container {
+        .testing-list {
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-left: 8px;
+          list-style: none;
+          align-items: center;
+
+          li {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            font-size: 1.1rem;
+            line-height: 2;
+            color: $clr-primary-light2;
+            font-weight: bold;
+            width: 100%;
+
+            i {
+              width: 30px;
+              font-size: 1.1rem;
+              color: darken($clr-accent-e, 20%);
+            }
+
+            .testing-browser-icon {
+              margin-left: 20px;
             }
           }
         }

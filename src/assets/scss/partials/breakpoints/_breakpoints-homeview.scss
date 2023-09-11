@@ -12,6 +12,12 @@
       grid-template-columns: 1fr 1fr 1fr !important;
     }
   }
+
+  .home-testing {
+    li {
+      grid-template-columns: 1fr 2fr !important;
+    }
+  }
 }
 
 @media (max-width: $bp-md) {
@@ -25,6 +31,22 @@
       .tech-list {
         grid-template-columns: 1fr 1fr !important;
         gap: 10px;
+      }
+    }
+
+    .home-testing {
+      .testing-header {
+        text-align: center;
+      }
+      li {
+        grid-template-columns: 1fr 1fr !important;
+
+        .testing-os-container,
+        .testing-browser-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
 
@@ -81,6 +103,28 @@
 
         li {
           line-height: 1.5 !important;
+        }
+      }
+    }
+
+    .home-testing {
+      padding: 2rem 2rem 2rem 0 !important;
+
+      .testing-header {
+        text-align: center;
+      }
+      .testing-container {
+        .testing-list {
+          li {
+            grid-template-columns: 1fr !important;
+            margin-bottom: 20px;
+
+            .testing-browser-container {
+              .testing-browser {
+                border-bottom: 1px solid $clr-accent-b;
+              }
+            }
+          }
         }
       }
     }

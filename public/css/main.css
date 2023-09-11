@@ -107,7 +107,7 @@ body,
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #0d0d0d;
+  background: #f2f2f2;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -204,9 +204,40 @@ body,
   width: 100%;
 }
 .home-wrapper .home-container .home-tech .tech-container .tech-list li i {
-  padding-right: 1rem;
+  width: 30px;
   font-size: 1.1rem;
   color: #e02200;
+}
+.home-wrapper .home-container .home-testing {
+  padding: 2rem;
+  border-bottom: 1px solid #79acd9;
+}
+.home-wrapper .home-container .home-testing .testing-header {
+  padding-bottom: 1rem;
+}
+.home-wrapper .home-container .home-testing .testing-container .testing-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 8px;
+  list-style: none;
+  align-items: center;
+}
+.home-wrapper .home-container .home-testing .testing-container .testing-list li {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #222222;
+  font-weight: bold;
+  width: 100%;
+}
+.home-wrapper .home-container .home-testing .testing-container .testing-list li i {
+  width: 30px;
+  font-size: 1.1rem;
+  color: #e02200;
+}
+.home-wrapper .home-container .home-testing .testing-container .testing-list li .testing-browser-icon {
+  margin-left: 20px;
 }
 .home-wrapper .home-container .home-data-container {
   padding: 2rem;
@@ -558,7 +589,7 @@ body,
   justify-content: center;
   width: 100%;
   height: max-content;
-  background: #222222;
+  background: #4b4b4b;
 }
 .readycheck-container .form-wrapper form {
   padding: 1rem;
@@ -586,7 +617,7 @@ body,
   z-index: 1;
 }
 .readycheck-container .form-wrapper form .input-container .input-label {
-  color: #a68365;
+  color: #f2f2f2;
   padding: 1rem;
   margin-left: 10px;
   font-size: 1.2rem;
@@ -594,7 +625,7 @@ body,
   width: 100%;
 }
 .readycheck-container .form-wrapper form .input-container .icon-container .input-icon {
-  color: #1a1a1a;
+  color: #222222;
   font-size: 1.5rem;
 }
 .readycheck-container .form-wrapper form .input-container input:checked ~ .icon-container .input-icon {
@@ -622,21 +653,22 @@ body,
   padding: 1rem;
   width: 100%;
   margin-top: 25px;
-  transition: 1s;
+  transition: 0.5s;
   font-weight: 600;
   font-size: 1.2rem;
 }
 .readycheck-container .form-wrapper form .button-container button:disabled {
   transition: 1s;
-  color: #222222;
-  background: #222222;
-  border: 1px solid #222222;
+  color: #4b4b4b;
+  background: #4b4b4b;
+  border: 1px solid #4b4b4b;
 }
 .readycheck-container .form-wrapper form .button-container button:disabled:hover {
-  background: #222222;
+  background: #4b4b4b;
 }
 .readycheck-container .form-wrapper form .button-container button:hover {
-  background: #0d0d0d;
+  background: #f2f2f2;
+  color: #ff6347;
 }
 
 @keyframes fadeInReadyCheck {
@@ -662,7 +694,7 @@ body,
   white-space: nowrap;
   overflow: hidden;
   font-size: 25px;
-  color: #f2f2f2;
+  color: #0d0d0d;
 }
 .intro-container #text01 {
   animation: animated-text 2s steps(22, end) 1s 1 normal both, animated-cursor 600ms steps(22, end) infinite;
@@ -1087,7 +1119,7 @@ body,
 .login-wrapper {
   height: 100%;
   width: 100%;
-  background-image: url("https://superultrawidewallpaper.com/wp-content/uploads/2018/10/purple-cloud-3840x1080-1860x523.jpg");
+  background-image: url("https://i.imgur.com/pFFEJDg.jpg");
   background-size: cover;
   background-repeat: repeat-x; /* Repeat horizontally */
   animation: moveBackground 200s linear infinite; /* Adjust speed (10s) as needed */
@@ -1251,6 +1283,9 @@ body,
   .home-container .tech-list {
     grid-template-columns: 1fr 1fr 1fr !important;
   }
+  .home-testing li {
+    grid-template-columns: 1fr 2fr !important;
+  }
 }
 @media (max-width: 768px) {
   .home-container .home-tech {
@@ -1262,6 +1297,18 @@ body,
   .home-container .home-tech .tech-list {
     grid-template-columns: 1fr 1fr !important;
     gap: 10px;
+  }
+  .home-container .home-testing .testing-header {
+    text-align: center;
+  }
+  .home-container .home-testing li {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .home-container .home-testing li .testing-os-container,
+  .home-container .home-testing li .testing-browser-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .home-container .home-data-container {
     display: flex;
@@ -1305,6 +1352,19 @@ body,
   }
   .home-container .home-tech .tech-list li {
     line-height: 1.5 !important;
+  }
+  .home-container .home-testing {
+    padding: 2rem 2rem 2rem 0 !important;
+  }
+  .home-container .home-testing .testing-header {
+    text-align: center;
+  }
+  .home-container .home-testing .testing-container .testing-list li {
+    grid-template-columns: 1fr !important;
+    margin-bottom: 20px;
+  }
+  .home-container .home-testing .testing-container .testing-list li .testing-browser-container .testing-browser {
+    border-bottom: 1px solid #a0bed9;
   }
   .home-container .home-data-container {
     padding: 2rem 0.5rem !important;

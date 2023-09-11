@@ -5,6 +5,7 @@
       subHeader="Jean-Pierre Häussler"
       :intro="introData"
       :props="propsData"
+      :testing="testingData"
       :hobbies="hobbiesData"
       :technologies="techData"
     />
@@ -31,6 +32,26 @@ export default {
         "Eigenmotivation",
         "Verantwortungsbewustsein",
         "Authentizität",
+      ],
+      testingData: [
+        {
+          icon: "fa-brands fa-windows",
+          os: "Windows 10 22H2",
+          browser: "Google Chrome v.116",
+          iconbrowser: "fa-brands fa-chrome",
+        },
+        {
+          icon: "fa-brands fa-windows",
+          os: "Windows 10 22H2",
+          browser: "Microsoft Edge v.116",
+          iconbrowser: "fa-brands fa-edge",
+        },
+        {
+          icon: "fa-brands fa-windows",
+          os: "Windows 10 22H2",
+          browser: "Mozilla Firefox v.117",
+          iconbrowser: "fa-brands fa-firefox-browser",
+        },
       ],
       hobbiesData: [
         "Sport, fernöstliche Kampf- & Körperkunst",
