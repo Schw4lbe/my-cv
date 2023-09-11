@@ -71,10 +71,9 @@ export default {
 
   methods: {
     focusOnClick(e) {
-      console.log(e.target);
       setTimeout(function () {
         e.target.scrollIntoView({ behavior: "smooth" });
-      }, 700);
+      }, 100);
     },
   },
 };

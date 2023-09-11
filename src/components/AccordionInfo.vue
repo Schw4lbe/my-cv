@@ -1,7 +1,12 @@
 <template>
   <div class="accordion-wrapper">
     <div class="accordion-container">
-      <div v-for="(item, index) in items" :key="item.id" class="tab">
+      <div
+        @click="focusOnClick"
+        v-for="(item, index) in items"
+        :key="item.id"
+        class="tab"
+      >
         <input
           type="checkbox"
           :id="item.id"
@@ -52,6 +57,14 @@ export default {
     return {
       checkedIndex: 0,
     };
+  },
+
+  methods: {
+    focusOnClick(e) {
+      setTimeout(function () {
+        e.target.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    },
   },
 };
 </script>
