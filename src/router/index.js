@@ -5,7 +5,6 @@ import SalesView from "@/views/SalesView.vue";
 import CodingView from "@/views/CodingView.vue";
 import ReferenceView from "@/views/ReferenceView.vue";
 import FreelanceView from "@/views/FreelanceView.vue";
-// import LoginView from "@/views/LoginView.vue";
 
 const routes = [
   {
@@ -13,11 +12,6 @@ const routes = [
     name: "home",
     component: HomeView,
   },
-  // {
-  //   path: "/login",
-  //   name: "login",
-  //   component: LoginView,
-  // },
   {
     path: "/person",
     name: "person",

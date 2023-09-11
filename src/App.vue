@@ -26,11 +26,8 @@
   </div>
 
   <div v-if="isLoginSuccess" class="page-wrapper">
-    <div class="loading-animation-container">
-      <LoadingAnimatin :class="{ hide: isAnimationHidden }" />
-    </div>
     <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
-      <ReadyCheck :inputs="startInputs" @form-submitted="onFormSubmitted" />
+      <ReadyCheck :inputs="startInputs" @form-submit="onFormSubmitted" />
     </div>
     <div class="cv-main" v-if="isCvMainVisible">
       <div class="navbar-wrapper">
@@ -50,7 +47,6 @@
 import { mapGetters, mapMutations } from "vuex";
 import NavbarMain from "@/components/NavbarMain.vue";
 import ReadyCheck from "@/components/ReadyCheck.vue";
-import LoadingAnimatin from "@/components/LoadingAnimation.vue";
 import FooterMain from "@/components/FooterMain.vue";
 import LoginView from "@/views/LoginView.vue";
 
@@ -60,7 +56,6 @@ export default {
   components: {
     NavbarMain,
     ReadyCheck,
-    LoadingAnimatin,
     FooterMain,
     LoginView,
   },
@@ -150,7 +145,6 @@ export default {
     ...mapGetters([
       "isElementHidden",
       "isCvMainVisible",
-      "isAnimationHidden",
       "isLoginHidden",
       "isLoginSuccess",
     ]),
@@ -217,13 +211,8 @@ export default {
       this.loginButton.disabled = false;
     },
 
-    hideLoadingAnimation() {
-      this.hideAnimation();
-    },
-
     ...mapMutations([
       "hideElement",
-      "hideAnimation",
       "showElement",
       "showCvMain",
       "hideLogin",
@@ -231,10 +220,11 @@ export default {
       "serverErrorTrue",
       "notWaitingForServerResponse",
     ]),
+
     onFormSubmitted() {
       this.hideElement();
       this.showCvMain();
-      this.hideAnimation();
+      // this.hideAnimation();
     },
   },
 };

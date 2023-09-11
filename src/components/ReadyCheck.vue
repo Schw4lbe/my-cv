@@ -4,7 +4,7 @@
   </div>
   <div class="readycheck-container">
     <div class="form-wrapper">
-      <form action="" @submit.prevent="$emit('form-submitted')">
+      <form action="" @submit="formSubmit">
         <h3>Alle Vorbereitungen getroffen?</h3>
         <div
           v-for="(input, index) in inputs"
@@ -42,6 +42,7 @@
 import IntroScene from "@/components/IntroScene.vue";
 
 export default {
+  emits: ["form-submit", "inputsChecked"], // to stop warning in webbrowser
   name: "ReadyCheck",
   components: {
     IntroScene,
@@ -56,8 +57,12 @@ export default {
   },
   methods: {
     checkInputs() {
-      console.log("inputs checked.");
       this.$emit("inputsChecked");
+    },
+
+    formSubmit(event) {
+      event.preventDefault();
+      this.$emit("form-submit");
     },
   },
 };

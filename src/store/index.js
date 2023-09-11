@@ -6,7 +6,6 @@ const store = createStore({
     hideLogin: localStorage.getItem("hideLogin") === "true" || false,
     elementHidden: localStorage.getItem("elementHidden") === "true" || false,
     cvMainVisible: localStorage.getItem("cvMainVisible") === "true" || false,
-    hideAnimation: localStorage.getItem("hideAnimation") === "true" || false,
     serverError: localStorage.getItem("serverError") === "true" || false,
     waitingForServer:
       localStorage.getItem("waitingForServer") === "true" || false,
@@ -37,10 +36,6 @@ const store = createStore({
       state.hideLogin = true;
       localStorage.setItem("hideLogin", "true");
     },
-    hideAnimation(state) {
-      state.hideAnimation = true;
-      localStorage.setItem("hideAnimation", "true");
-    },
     hideElement(state) {
       state.elementHidden = true;
       localStorage.setItem("elementHidden", "true");
@@ -62,7 +57,6 @@ const store = createStore({
     hasServerError: (state) => state.serverError,
     isLoginSuccess: (state) => state.loginSuccess,
     isLoginHidden: (state) => state.hideLogin,
-    isAnimationHidden: (state) => state.hideAnimation,
     isElementHidden: (state) => state.elementHidden,
     isCvMainVisible: (state) => state.cvMainVisible,
   },
