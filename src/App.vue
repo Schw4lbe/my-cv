@@ -17,7 +17,7 @@
           <h3>Ein Fehler ist aufgetreten!<i class="fa-solid fa-ban"></i></h3>
           <div class="countdown-container">
             Die Anmeldeinformationen sind falsch. Bitte versuchen sie es in
-            <span id="countdown">10</span>
+            <span id="countdown">9</span>
             Sekunden erneut.
           </div>
         </div>
@@ -165,8 +165,6 @@ export default {
         this.$store.commit("loginSuccess");
         this.hideLogin();
       } catch (error) {
-        console.error("Error during login:", error);
-
         if (!error.response) {
           console.error("Server not available.");
           console.log(error.response);
@@ -190,7 +188,7 @@ export default {
     },
 
     startCountdown() {
-      let seconds = 10;
+      let seconds = 9;
       const timer = setInterval(function () {
         seconds--;
 

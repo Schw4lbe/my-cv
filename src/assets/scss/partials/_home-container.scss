@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 50px;
+  background: $clr-secondary-dark;
 
   .home-container {
     background: $clr-secondary-dark;
@@ -120,6 +121,7 @@
 
     .home-data-container {
       padding: 2rem;
+      margin-bottom: 50px;
       .home-props {
         display: grid;
         grid-template-columns: 1fr 1fr;
