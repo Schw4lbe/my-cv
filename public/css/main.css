@@ -928,14 +928,14 @@ body,
 }
 .reference-grid-container .reference-container {
   display: grid;
-  grid-template-columns: 5fr 7fr;
+  grid-template-columns: 1fr 1fr;
   padding: 1rem;
   align-items: center;
   border-radius: 10px;
   color: #0d0d0d;
 }
 .reference-grid-container .description-container {
-  padding-right: 1rem;
+  padding: 0 2rem 0 0;
 }
 .reference-grid-container .reference-info {
   text-align: left;
@@ -952,7 +952,7 @@ body,
   padding-bottom: 2rem;
   hyphens: auto;
   word-wrap: break-word;
-  line-height: 1.4;
+  line-height: 2;
   font-size: 1.1rem;
   border-bottom: 1px solid #0d0d0d;
 }
@@ -973,7 +973,7 @@ body,
 .reference-grid-container h3 li,
 .reference-grid-container ul li {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 2;
 }
 .reference-grid-container img {
   height: auto;
@@ -1401,12 +1401,11 @@ body,
   .reference-container {
     grid-template-columns: 1fr 1fr !important;
   }
-  .reference-container .description-container {
-    grid-column: 1/end;
+  .reference-container .description-container p {
+    line-height: 1.4;
   }
-  .reference-container .media-container {
-    grid-column: 1/end;
-    width: 100%;
+  .reference-container .description-container ul li {
+    line-height: 1.4;
   }
 }
 @media (max-width: 992px) {
@@ -1430,6 +1429,12 @@ body,
   .accordion-container .tab .tab-label span:nth-of-type(2),
   .accordion-reference-container .tab .tab-label span:nth-of-type(2) {
     margin-top: 10px;
+  }
+  .reference-container {
+    grid-template-columns: 1fr !important;
+  }
+  .reference-container .description-container {
+    padding: 0;
   }
   .modal .modal-header {
     font-size: 1rem !important;

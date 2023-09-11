@@ -4,7 +4,7 @@
 
   .reference-container {
     display: grid;
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 1fr 1fr;
     padding: 1rem;
     align-items: center;
     border-radius: 10px;
@@ -12,7 +12,7 @@
   }
 
   .description-container {
-    padding-right: 1rem;
+    padding: 0 2rem 0 0;
   }
 
   .reference-info {
@@ -32,7 +32,7 @@
     padding-bottom: 2rem;
     hyphens: auto;
     word-wrap: break-word;
-    line-height: 1.4;
+    line-height: 2;
     font-size: 1.1rem;
     border-bottom: 1px solid $clr-primary;
   }
@@ -54,7 +54,7 @@
     padding-left: 1rem;
     li {
       font-size: 1.1rem;
-      line-height: 1.8;
+      line-height: 2;
     }
   }
 

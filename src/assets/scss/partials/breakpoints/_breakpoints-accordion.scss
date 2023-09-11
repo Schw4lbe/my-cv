@@ -5,12 +5,13 @@
     grid-template-columns: 1fr 1fr !important;
 
     .description-container {
-      grid-column: 1 / end;
-    }
+      p {
+        line-height: 1.4;
+      }
 
-    .media-container {
-      grid-column: 1 / end;
-      width: 100%;
+      ul li {
+        line-height: 1.4;
+      }
     }
   }
 }
@@ -37,6 +38,14 @@
           margin-top: 10px;
         }
       }
+    }
+  }
+
+  .reference-container {
+    grid-template-columns: 1fr !important;
+
+    .description-container {
+      padding: 0;
     }
   }
 
