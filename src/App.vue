@@ -155,7 +155,7 @@ export default {
   methods: {
     async handleLogin(credentials) {
       try {
-        const apiUrl = "http://20.218.146.83:3000/login";
+        const apiUrl = "https://sandbox-coding.de/login";
 
         const response = await axios.post(apiUrl, credentials, {
           timeout: 10000,

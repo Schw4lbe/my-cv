@@ -84,6 +84,8 @@ export default {
         { name: "Ubuntu on Azure", icon: "fa-brands fa-ubuntu" },
         { name: "PM2 Manager", icon: "fa-solid fa-server" },
         { name: "Axios", icon: "fa-solid fa-a" },
+        { name: "NGINX", icon: "fa-solid fa-server" },
+        { name: "Let's Encrypt", icon: "fa-brands fa-expeditedssl" },
       ],
     };
   },
