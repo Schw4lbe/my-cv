@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      colors: ["#ffac9d", "#ff836d", "#ff836d"],
+      colors: ["#adffad", "#6beb6b", "#00ca00"],
     };
   },
   computed: {

@@ -26,6 +26,11 @@ $clouds: $clr-secondary;
     width: 100%;
     color: $clr-secondary;
     overflow: hidden;
+
+    input:checked + .tab-label {
+      border-bottom: 10px solid $clr-accent-g;
+    }
+
     &-label {
       display: flex;
       justify-content: space-between;
@@ -33,7 +38,7 @@ $clouds: $clr-secondary;
       background: $midnight;
       font-weight: bold;
       cursor: pointer;
-      border-bottom: 1px solid $clr-accent-e;
+      border-bottom: 1px solid $clr-accent-g;
 
       &:hover {
         background: darken($midnight, 10%);
@@ -41,7 +46,7 @@ $clouds: $clr-secondary;
 
       &::after {
         content: "\276F";
-        color: $clr-accent-e;
+        color: $clr-accent-g;
         width: 1em;
         height: 1em;
         text-align: center;
@@ -105,21 +110,20 @@ $clouds: $clr-secondary;
       width: 100%;
       padding: 0.5rem;
       margin-top: 1rem;
-      transition: 0.4s;
 
-      a {
-        background: $clr-primary-light2;
+      .tab-link {
+        width: max-content;
+        background: $clr-secondary-dark;
+        color: $clr-accent-e;
         border-radius: 5px;
         text-decoration: none;
-        color: $clr-accent-e;
         font-weight: bold;
         transition: 0.4s;
         padding: 1rem;
-      }
+        border: 1px solid $clr-accent-e;
 
-      &:hover {
-        a {
-          background: $clr-accent-e;
+        &:hover {
+          background: $clr-accent-g;
           color: $clr-primary;
         }
       }
@@ -133,14 +137,14 @@ $clouds: $clr-secondary;
       background: $midnight;
       cursor: pointer;
       &:hover {
-        background: darken($midnight, 20%);
+        background: darken($midnight, 10%);
       }
     }
   }
 
   input:checked {
     + .tab-label {
-      background: darken($midnight, 20%);
+      background: darken($midnight, 10%);
       &::after {
         transform: rotate(90deg);
       }

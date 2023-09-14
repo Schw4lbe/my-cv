@@ -4,8 +4,8 @@
 
   .router-link-active,
   .router-link-exact-active {
-    color: $clr-accent-e;
-    border-bottom: 1px solid $clr-accent-e;
+    color: $clr-accent-g;
+    border-bottom: 1px solid $clr-accent-g;
   }
 
   a {
@@ -14,7 +14,7 @@
     transition: 0.5s;
     &:hover {
       color: $clr-primary !important;
-      background: $clr-accent-e;
+      background: $clr-accent-g;
       transition: 0.5s;
     }
   }

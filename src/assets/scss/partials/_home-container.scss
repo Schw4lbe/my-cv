@@ -73,7 +73,7 @@
             i {
               width: 30px;
               font-size: 1.1rem;
-              color: darken($clr-accent-e, 20%);
+              color: $clr-accent-e;
             }
           }
         }
@@ -108,7 +108,7 @@
             i {
               width: 30px;
               font-size: 1.1rem;
-              color: darken($clr-accent-e, 20%);
+              color: $clr-accent-e;
             }
 
             .testing-browser-icon {

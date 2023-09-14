@@ -22,7 +22,9 @@
     justify-content: center;
     width: 100%;
     height: max-content;
-    background: $clr-primary-light3;
+    background: $clr-secondary-dark;
+    border-top: 10px solid $clr-accent-g;
+    border-bottom: 10px solid $clr-accent-g;
 
     form {
       padding: 1rem;
@@ -31,9 +33,9 @@
       height: max-content;
 
       h3 {
-        color: $clr-secondary;
-        padding: 2rem;
-        font-size: 1.5rem;
+        color: $clr-primary;
+        padding: 2rem 0;
+        font-size: 2rem;
         text-align: center;
       }
 
@@ -52,7 +54,7 @@
         }
 
         .input-label {
-          color: $clr-secondary;
+          color: $clr-primary-light3;
           padding: 1rem;
           margin-left: 10px;
           font-size: 1.2rem;
@@ -62,18 +64,18 @@
 
         .icon-container {
           .input-icon {
-            color: $clr-primary-light2;
+            color: $clr-primary-light3;
             font-size: 1.5rem;
           }
         }
         input:checked ~ .icon-container .input-icon {
           transition: 0.6s;
-          color: $clr-secondary;
+          color: $clr-accent-e;
         }
 
         input:checked ~ .input-label {
           transition: 0.6s;
-          color: $clr-accent-e;
+          color: $clr-primary;
         }
 
         input:checked ~ .icon-container .input-icon {
@@ -84,16 +86,15 @@
 
       .button-container {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
 
         button {
-          background-color: $clr-primary-light2;
-          color: $clr-secondary;
+          background-color: $clr-secondary;
+          color: $clr-accent-e;
           border: none;
           border-radius: 5px;
-          border: 1px solid $clr-secondary;
-          padding: 1rem;
-          width: 100%;
+          padding: 1rem 3rem;
+          width: max-content;
           margin-top: 25px;
           transition: 0.5s;
           font-weight: 600;
@@ -101,17 +102,17 @@
 
           &:disabled {
             transition: 1s;
-            color: $clr-primary-light3;
-            background: $clr-primary-light3;
-            border: 1px solid $clr-primary-light3;
+            color: $clr-secondary-dark;
+            background: $clr-secondary-dark;
+            border: 1px solid $clr-secondary-dark;
             &:hover {
-              background: $clr-primary-light3;
+              background: $clr-secondary-dark;
             }
           }
 
           &:hover {
-            background: $clr-secondary;
-            color: $clr-accent-e;
+            background: $clr-accent-g;
+            color: $clr-secondary;
           }
         }
       }
