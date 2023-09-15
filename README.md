@@ -34,5 +34,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Alle öffnen Button in Reference
 - Refference pot. vereinheitlichen
 - alle schließen Accordion x und . weg
-- neue color variable $clr-error
 - JWT Funktion und Umfang im Backend verifizieren
+- Login logisch von App.vue trennen (eigene Komponente und logic für request verschieben)

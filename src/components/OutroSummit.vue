@@ -7,6 +7,7 @@
       meisten Spaß gemacht hat, sowie eine Quellenangabe der genutzen foren,
       informationsplattformen und co.
     </p>
+    <p>Login logisch von app.vue trennen</p>
   </div>
 </template>
 
