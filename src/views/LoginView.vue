@@ -20,7 +20,7 @@
     <div class="language-container">
       <div class="language-option">
         <input
-          v-model="deSelected"
+          @click="catchSelectecLanguage"
           type="radio"
           id="de"
           name="drone"
@@ -31,7 +31,7 @@
 
       <div class="language-option">
         <input
-          v-model="enSelected"
+          @click="catchSelectecLanguage"
           type="radio"
           id="en"
           name="drone"
@@ -71,8 +71,7 @@ export default {
     return {
       username: "",
       password: "",
-      deSelected: "",
-      enSelected: "",
+      selectedLanguage: "",
     };
   },
 
@@ -80,20 +79,22 @@ export default {
     ...mapGetters(["hasServerError", "isWaitingForServer"]),
 
     isButtonDisabled() {
-      return !(
-        this.username &&
-        this.password &&
-        (this.deSelected || this.enSelected)
-      );
+      return !(this.username && this.password && this.selectedLanguage);
     },
   },
 
   methods: {
+    catchSelectecLanguage(e) {
+      this.selectedLanguage = e.currentTarget.id;
+      console.log(this.selectedLanguage);
+    },
+
     onLoginClick() {
       const username = this.username;
       const password = this.password;
+      const language = this.selectedLanguage;
 
-      this.$emit("login-clicked", { username, password });
+      this.$emit("login-clicked", { username, password, language });
 
       this.username = "";
       this.password = "";

@@ -161,6 +161,8 @@ export default {
     // dev only:
     handleLogin() {
       this.loginSuccess();
+
+      // for later transfer to prod. function:
     },
 
     // async handleLogin(credentials) {
