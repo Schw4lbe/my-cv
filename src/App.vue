@@ -153,6 +153,7 @@ export default {
     this.loginButton = document.querySelector("#login-button");
   },
   methods: {
+    // dev only:
     handleLogin() {
       this.loginSuccess();
     },

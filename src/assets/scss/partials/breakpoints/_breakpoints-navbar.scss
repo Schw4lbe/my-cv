@@ -1,7 +1,12 @@
 @import "breakpoint-variables";
 
 @media (max-width: $bp-lg) {
+  .page-title {
+    padding-top: 0 !important;
+  }
+
   .navbar-wrapper {
+    position: static;
     .container-fluid {
       justify-content: center;
 
