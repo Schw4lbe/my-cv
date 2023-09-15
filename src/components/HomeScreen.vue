@@ -1,5 +1,5 @@
 <template>
-  <h1 class="page-title">Home</h1>
+  <h3 class="page-title">Home</h3>
   <div class="home-container">
     <div class="home-header-container">
       <div class="home-image">

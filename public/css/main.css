@@ -1115,6 +1115,18 @@ body,
     transform: rotate(360deg);
   }
 }
+.outro-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.outro-wrapper .outro-container {
+  width: 100%;
+  max-width: 1920px;
+  background: #e4e4e4;
+}
+
 @media (max-width: 1400px) {
   .home-container {
     margin-bottom: 50px;

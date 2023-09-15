@@ -1,7 +1,7 @@
 <template>
   <div class="coding-wrapper">
     <div class="coding-data-container">
-      <h1 class="page-title">Coding Erfahrung</h1>
+      <h3 class="page-title">Coding Erfahrung</h3>
       <AccordionInfo :items="codingItems" />
     </div>
   </div>

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="outro-wrapper">
+    <h3 class="page-title">Schlusswort</h3>
     <OutroSummit />
   </div>
 </template>
