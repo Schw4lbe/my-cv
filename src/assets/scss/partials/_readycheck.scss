@@ -90,7 +90,7 @@
 
         button {
           background-color: $clr-secondary;
-          color: $clr-accent-e;
+          color: $clr-accent;
           border: none;
           border-radius: 5px;
           padding: 1rem 3rem;
@@ -104,15 +104,15 @@
             transition: 1s;
             color: $clr-secondary-dark;
             background: $clr-secondary-dark;
-            border: 1px solid $clr-secondary-dark;
             &:hover {
               background: $clr-secondary-dark;
+              color: $clr-secondary-dark;
             }
           }
 
           &:hover {
-            background: $clr-accent-g;
-            color: $clr-secondary;
+            background: $clr-secondary-dark2;
+            color: $clr-primary-light2;
           }
         }
       }
