@@ -63,39 +63,6 @@ export default {
     return {
       loginFailed: false,
       loginButton: null,
-
-      menuItemsArray: [
-        {
-          id: "item1",
-          name: "Fachwissen",
-          path: "/person",
-        },
-        {
-          id: "item2",
-          name: "Vertrieb",
-          path: "/sales",
-        },
-        {
-          id: "item3",
-          name: "Webentwicklung",
-          path: "/coding",
-        },
-        {
-          id: "item4",
-          name: "Selbstständigkeit",
-          path: "/freelance",
-        },
-        {
-          id: "item5",
-          name: "Referenzen",
-          path: "/reference",
-        },
-        {
-          id: "item6",
-          name: "Schlusswort",
-          path: "/outro",
-        },
-      ],
       startInputs: [
         {
           label: "Tee oder Kaffee frisch aufgebrüht?",
@@ -156,9 +123,12 @@ export default {
       "selectedLanguage",
     ]),
 
-    //dev testing:
     selectedLanguage() {
       return this.$store.getters.selectedLanguage;
+    },
+
+    menuItemsArray() {
+      return this.$store.state.contentData[this.selectedLanguage].menuItems;
     },
   },
   mounted() {

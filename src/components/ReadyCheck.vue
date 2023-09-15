@@ -1,6 +1,6 @@
 <template>
   <div class="intro-container">
-    <IntroScene />
+    <IntroScene :content="contentArray" />
   </div>
   <div class="readycheck-container">
     <div class="form-wrapper">
@@ -39,6 +39,7 @@
   </div>
 </template>
 <script>
+import { mapGetters } from "vuex";
 import IntroScene from "@/components/IntroScene.vue";
 
 export default {
@@ -51,8 +52,14 @@ export default {
     inputs: Array,
   },
   computed: {
+    ...mapGetters(["selectedLanguage"]),
+
     allInputsChecked() {
       return this.inputs.every((input) => input.checked);
+    },
+
+    contentArray() {
+      return this.$store.state.contentData[this.selectedLanguage].introContent;
     },
   },
   methods: {

@@ -1,3 +1,5 @@
+import { data } from "./data";
+
 export default {
   loginSuccess: localStorage.getItem("loginSuccess") === "true" || false,
   hideLogin: localStorage.getItem("hideLogin") === "true" || false,
@@ -7,4 +9,5 @@ export default {
   waitingForServer:
     localStorage.getItem("waitingForServer") === "true" || false,
   languageSelected: localStorage.getItem("languageSelected") === "de" || "en",
+  contentData: data,
 };
