@@ -39,8 +39,8 @@ export const data = {
   },
   en: {
     introContent: [
-      "What’s the Reason for the online CV? ",
-      "Because I want to prove my skills. ",
+      "What's the purpose of the online CV?",
+      "Because I want to prove my skills.",
     ],
     menuItems: [
       {
