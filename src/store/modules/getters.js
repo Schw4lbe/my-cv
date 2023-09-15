@@ -5,4 +5,6 @@ export default {
   isLoginHidden: (state) => state.hideLogin,
   isElementHidden: (state) => state.elementHidden,
   isCvMainVisible: (state) => state.cvMainVisible,
+
+  selectedLanguage: (state) => state.languageSelected,
 };

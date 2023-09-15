@@ -35,4 +35,14 @@ export default {
     state.cvMainVisible = true;
     localStorage.setItem("cvMainVisible", "true");
   },
+
+  // select Language:
+  setLanguageDE(state) {
+    state.languageSelected = "de";
+    localStorage.setItem("languageSelected", "de");
+  },
+  setLanguageEN(state) {
+    state.languageSelected = "en";
+    localStorage.setItem("languageSelected", "en");
+  },
 };

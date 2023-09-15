@@ -6,4 +6,5 @@ export default {
   serverError: localStorage.getItem("serverError") === "true" || false,
   waitingForServer:
     localStorage.getItem("waitingForServer") === "true" || false,
+  languageSelected: localStorage.getItem("languageSelected") === "de" || "en",
 };

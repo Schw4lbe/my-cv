@@ -152,17 +152,36 @@ export default {
       "isCvMainVisible",
       "isLoginHidden",
       "isLoginSuccess",
+
+      "selectedLanguage",
     ]),
+
+    //dev testing:
+    selectedLanguage() {
+      return this.$store.getters.selectedLanguage;
+    },
   },
   mounted() {
     this.loginButton = document.querySelector("#login-button");
   },
   methods: {
     // dev only:
-    handleLogin() {
-      this.loginSuccess();
+    handleLogin(credentials) {
+      const cred = credentials;
+      console.log(cred);
+      if (credentials.language === "de") {
+        console.log("lang: de");
+        this.$store.commit("setLanguageDE");
+        this.loginSuccess();
+      } else if (credentials.language === "en") {
+        console.log("lang: en");
+        this.$store.commit("setLanguageEN");
+        this.loginSuccess();
+      } else {
+        console.log("lang error.");
+      }
 
-      // for later transfer to prod. function:
+      console.log("cookie: ", this.selectedLanguage);
     },
 
     // async handleLogin(credentials) {
@@ -229,6 +248,9 @@ export default {
       "loginSuccess",
       "serverErrorTrue",
       "notWaitingForServerResponse",
+
+      "setLanguageDE",
+      "setLanguageEN",
     ]),
 
     onFormSubmitted() {
