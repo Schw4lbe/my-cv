@@ -5,6 +5,7 @@ import SalesView from "@/views/SalesView.vue";
 import CodingView from "@/views/CodingView.vue";
 import ReferenceView from "@/views/ReferenceView.vue";
 import FreelanceView from "@/views/FreelanceView.vue";
+import OutroView from "@/views/OutroView.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/freelance",
     name: "freelance",
     component: FreelanceView,
+  },
+  {
+    path: "/outro",
+    name: "outro",
+    component: OutroView,
   },
 ];
 

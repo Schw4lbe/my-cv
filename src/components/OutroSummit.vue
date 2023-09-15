@@ -1,4 +1,5 @@
 <template>
+  <h1>Outro</h1>
   <p>
     Hier kommt noch rein, was ich gelernt habe, was neu für mich war, wo meine
     Herausforderungen lagen, was ich besser möchen würde und was mir am meisten
@@ -8,7 +9,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "OutroSummit",
+};
 </script>
 
 <style></style>

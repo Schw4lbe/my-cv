@@ -67,17 +67,17 @@ export default {
       menuItemsArray: [
         {
           id: "item1",
-          name: "Skill Matrix",
+          name: "Fachwissen",
           path: "/person",
         },
         {
           id: "item2",
-          name: "Sales Erfahrung",
+          name: "Vertrieb",
           path: "/sales",
         },
         {
           id: "item3",
-          name: "Coding Erfahrung",
+          name: "Webentwicklung",
           path: "/coding",
         },
         {
@@ -89,6 +89,11 @@ export default {
           id: "item5",
           name: "Referenzen",
           path: "/reference",
+        },
+        {
+          id: "item6",
+          name: "Schlusswort",
+          path: "/outro",
         },
       ],
       startInputs: [
