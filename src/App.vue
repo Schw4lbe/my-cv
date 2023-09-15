@@ -50,7 +50,7 @@ import ReadyCheck from "@/components/ReadyCheck.vue";
 import FooterMain from "@/components/FooterMain.vue";
 import LoginView from "@/views/LoginView.vue";
 
-// import axios from "axios";
+import axios from "axios";
 
 export default {
   components: {
@@ -159,37 +159,37 @@ export default {
   },
   methods: {
     // dev only:
-    handleLogin() {
-      this.loginSuccess();
-    },
-
-    // async handleLogin(credentials) {
-    //   try {
-    //     const apiUrl = "https://sandbox-coding.de/login";
-
-    //     const response = await axios.post(apiUrl, credentials, {
-    //       timeout: 10000,
-    //     });
-
-    //     console.log("Login successful:", response.data);
-    //     this.$store.commit("loginSuccess");
-    //     this.hideLogin();
-    //   } catch (error) {
-    //     if (!error.response) {
-    //       console.error("Server not available.");
-    //       console.log(error.response);
-    //       this.serverErrorTrue();
-    //       this.notWaitingForServerResponse();
-    //     } else if (error.response.status === 401) {
-    //       this.enableTimeout();
-    //       this.notWaitingForServerResponse();
-    //       setTimeout(() => {
-    //         this.loginFailed = false;
-    //         this.enableLoginButton();
-    //       }, 10000);
-    //     }
-    //   }
+    // handleLogin() {
+    //   this.loginSuccess();
     // },
+
+    async handleLogin(credentials) {
+      try {
+        const apiUrl = "https://sandbox-coding.de/login";
+
+        const response = await axios.post(apiUrl, credentials, {
+          timeout: 10000,
+        });
+
+        console.log("Login successful:", response.data);
+        this.$store.commit("loginSuccess");
+        this.hideLogin();
+      } catch (error) {
+        if (!error.response) {
+          console.error("Server not available.");
+          console.log(error.response);
+          this.serverErrorTrue();
+          this.notWaitingForServerResponse();
+        } else if (error.response.status === 401) {
+          this.enableTimeout();
+          this.notWaitingForServerResponse();
+          setTimeout(() => {
+            this.loginFailed = false;
+            this.enableLoginButton();
+          }, 10000);
+        }
+      }
+    },
 
     enableTimeout() {
       this.disableLoginButton();
