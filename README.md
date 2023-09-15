@@ -39,3 +39,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - JWT Funktion und Umfang im Backend verifizieren
 - Login logisch von App.vue trennen (eigene Komponente und logic für request verschieben)
 - Refactoring Komponentennamen
+- Logout button und Cookie reset
