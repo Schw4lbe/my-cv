@@ -19,11 +19,37 @@
       justify-content: center;
 
       .login-form {
-        height: 200px;
-        width: 200px;
+        height: max-content;
+        width: max-content;
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
+
+        h3 {
+          margin-bottom: 25px;
+        }
+
+        .language-container {
+          margin-bottom: 25px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          input + label {
+            color: $clr-primary-light3;
+            font-weight: 500;
+            i {
+              display: none;
+            }
+          }
+
+          input:checked + label {
+            color: $clr-accent-e;
+            font-weight: bold;
+            i {
+              display: inline;
+            }
+          }
+        }
 
         input,
         button {
@@ -43,14 +69,24 @@
 
         button {
           font-weight: bold;
+          color: $clr-accent-g;
+          background: rgba($color: #0d0d0d, $alpha: 0.8);
+          transition: 0.3s;
+
           &:disabled {
             background: rgba($color: #0d0d0d, $alpha: 0.2);
+            color: $clr-secondary;
+          }
+
+          &:hover {
+            background-color: $clr-secondary;
+            color: $clr-accent-e;
           }
         }
 
         input:focus {
           outline: none;
-          background: rgba($color: #0d0d0d, $alpha: 0.8);
+          background: rgba($color: #0d0d0d, $alpha: 0.7);
           &::placeholder {
             color: transparent;
           }

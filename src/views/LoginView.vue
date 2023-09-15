@@ -1,6 +1,7 @@
 <template>
   <form class="login-form">
     <h3>Login</h3>
+
     <input
       id="username"
       type="text"
@@ -15,6 +16,31 @@
       placeholder="Password"
       @keydown="resetShowError"
     />
+
+    <div class="language-container">
+      <div class="language-option">
+        <input
+          v-model="deSelected"
+          type="radio"
+          id="de"
+          name="drone"
+          value="huey"
+        />
+        <label for="de">Deutsch <i class="fa-solid fa-flag"></i></label>
+      </div>
+
+      <div class="language-option">
+        <input
+          v-model="enSelected"
+          type="radio"
+          id="en"
+          name="drone"
+          value="dewey"
+        />
+        <label for="en">English <i class="fa-solid fa-flag"></i></label>
+      </div>
+    </div>
+
     <button
       id="login-button"
       @click="onLoginClick()"
@@ -45,6 +71,8 @@ export default {
     return {
       username: "",
       password: "",
+      deSelected: "",
+      enSelected: "",
     };
   },
 
@@ -52,7 +80,11 @@ export default {
     ...mapGetters(["hasServerError", "isWaitingForServer"]),
 
     isButtonDisabled() {
-      return !(this.username && this.password);
+      return !(
+        this.username &&
+        this.password &&
+        (this.deSelected || this.enSelected)
+      );
     },
   },
 
