@@ -8,6 +8,7 @@
 </template>
 
 <script>
+// import { mapGetters } from "vuex";
 import AccordionInfo from "@/components/AccordionInfo.vue";
 import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
 import Logo4 from "@/assets/img/logo-gfn.svg";
@@ -17,6 +18,15 @@ export default {
   components: {
     AccordionInfo,
   },
+
+  // computed: {
+  //   ...mapGetters(["selectedLanguage"]),
+
+  //   codingItems() {
+  //     return this.$store.state.contentData[this.selectedLanguage].codingItems;
+  //   },
+  // },
+
   data() {
     return {
       codingItems: [

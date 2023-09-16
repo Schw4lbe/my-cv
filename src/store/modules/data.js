@@ -61,6 +61,7 @@ export const data = {
       message2: " Sekunden erneut.",
     },
     errorMsg: "Login Server nicht verfügbar.",
+    codingItems: [],
   },
   en: {
     introContent: [
