@@ -28,10 +28,7 @@
           </ul>
           <div class="tab-media">
             <img
-              v-if="
-                (item.logo != undefined && item.logo.length > 0) ||
-                (item.media != undefined && item.media.length > 0)
-              "
+              v-if="item.logo != undefined && item.logo.length > 0"
               :src="item.logo"
               alt="logo"
             />

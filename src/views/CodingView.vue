@@ -1,7 +1,7 @@
 <template>
   <div class="coding-wrapper">
     <div class="coding-data-container">
-      <h3 class="page-title">Coding Erfahrung</h3>
+      <h3 class="page-title">{{ getHeader }}</h3>
       <AccordionInfo :items="codingItems" />
     </div>
   </div>
@@ -10,8 +10,6 @@
 <script>
 import { mapGetters } from "vuex";
 import AccordionInfo from "@/components/AccordionInfo.vue";
-// import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
-// import Logo4 from "@/assets/img/logo-gfn.svg";
 
 export default {
   name: "CodingView",
@@ -24,6 +22,11 @@ export default {
 
     codingItems() {
       return this.$store.state.contentData[this.selectedLanguage].codingItems;
+    },
+
+    getHeader() {
+      return this.$store.state.contentData[this.selectedLanguage].menuItems[2]
+        .name;
     },
   },
 };

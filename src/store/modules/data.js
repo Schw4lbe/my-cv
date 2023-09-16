@@ -1,3 +1,7 @@
+// Media:
+import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
+import Logo4 from "@/assets/img/logo-gfn.svg";
+
 export const data = {
   de: {
     introContent: [
@@ -77,8 +81,7 @@ export const data = {
         ],
         success:
           "Erstellung Responsive Design & eigener Web Components für Online Bestellstrecke",
-        logo: "",
-        media: "",
+        logo: Logo3,
         link: "https://www.vivax-solution.de/",
       },
       {
@@ -93,8 +96,7 @@ export const data = {
           "Einführung Test Driven Development (TDD) & Einstieg React",
         ],
         success: "Erfolgeicher Abschluss 11.03.2022 (88 / 100 Punkten - “gut”)",
-        logo: "",
-        media: "",
+        logo: Logo4,
         link: "https://www.gfn.de/",
       },
       {
@@ -110,8 +112,7 @@ export const data = {
         ],
         success:
           "Erfolgeicher Abschluss 10.12.2021 (90 / 100 Punkten - “sehr gut”)",
-        logo: "",
-        media: "",
+        logo: Logo4,
         link: "https://www.gfn.de/",
       },
     ],
