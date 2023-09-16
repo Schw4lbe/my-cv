@@ -89,7 +89,7 @@ export const data = {
         header: "Zertifizierung JavaScript Developer - GFN GmbH",
         period: "12/2021 - 03/2022",
         subtopics: [
-          "Einrichtung IDE, Visual Studio Code, Extensions, Npm Package Manager, JSON Config",
+          "Einrichtung IDE, Visual Studio Code, Extensions, NPM Package Manager, JSON Config",
           "JavaScript (ES6) Syntax, Methoden, Arrays, Objekte, Destructuring, Helper Funktionen",
           "JavaScript DOM, Manipulation HTML & CSS, Events, Timing Funktionen",
           "Node.js & Express, Module, APIs, Websockets, CSV Anbindung, AJAX",
@@ -179,6 +179,58 @@ export const data = {
     },
 
     errorMsg: "Login Server not available.",
+    codingItems: [
+      {
+        id: "1",
+        header: "Software Development Frontend - Vivax Solution GmbH",
+        period: "05/2022 - today",
+        subtopics: [
+          "Development of web components in Vue.js with TypeScript for conditional rendering of JSON-Schema.",
+          "Scope: JavaScript, TypeScript, CSS, SCSS, HTML, JSON in PHP Storm & Visual Studio Code.",
+          "Planning, concept, and implementation of an adaptive SCSS styling framework for customer projects.",
+          "Use of Vue Property Decorator for initial approaches in object-oriented programming.",
+          "Creation of a matrix and execution of multi-device tests in Browserstack.",
+          "Designing document templates via Twig.",
+          "Editing and provision of image material, both pixel and vector graphics.",
+        ],
+        success:
+          "Creation of responsive design & custom web components for online ordering process.",
+        logo: Logo3,
+        link: "https://www.vivax-solution.de/",
+      },
+      {
+        id: "2",
+        header: "Certified JavaScript Developer - GFN GmbH",
+        period: "12/2021 - 03/2022",
+        subtopics: [
+          "Setting up IDE, Visual Studio Code, Extensions, Npm Package Manager, JSON Config.",
+          "JavaScript (ES6) syntax, methods, arrays, objects, destructuring, helper functions.",
+          "JavaScript DOM, manipulation of HTML & CSS, events, timing functions.",
+          "Node.js & Express, modules, APIs, websockets, CSV integration, AJAX.",
+          "Introduction to Test Driven Development (TDD) & getting started with React.",
+        ],
+        success:
+          "Successful completion on 11th of March 2022 (88 out of 100 points - “good”).",
+        logo: Logo4,
+        link: "https://www.gfn.de/",
+      },
+      {
+        id: "3",
+        header: "Certified Webdesigner - GFN GmbH",
+        period: "10/2021 - 12/2021",
+        subtopics: [
+          "Setup of IDE, Visual Studio Code, Extensions, XAMPP.",
+          "Basics of Web design, HTML5 syntax, accessible programming, Markdown, Emmet.",
+          "CSS3 & SCSS responsive Web design, syntax, vendor prefixes, partials, breakpoints, nesting.",
+          "Integration of Bootstrap libraries & use of modules in projects.",
+          "UI/UX Design, creation of app concept in Figma.",
+        ],
+        success:
+          "Successful completion on 10th of December 2021 (90 / 100 Punkten - “very good”)",
+        logo: Logo4,
+        link: "https://www.gfn.de/",
+      },
+    ],
   },
   serverMsg: "...logging in.",
   navbarItems: [
