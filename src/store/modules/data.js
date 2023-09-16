@@ -119,7 +119,7 @@ export const data = {
   },
   en: {
     introContent: [
-      "What's the purpose of the online CV?",
+      "What's the purpose for the online CV?",
       "Because I want to prove my skills.",
     ],
     readyCheckContent: {
@@ -203,7 +203,7 @@ export const data = {
         header: "Certified JavaScript Developer - GFN GmbH",
         period: "12/2021 - 03/2022",
         subtopics: [
-          "Setting up IDE, Visual Studio Code, Extensions, Npm Package Manager, JSON Config.",
+          "Setup IDE, Visual Studio Code, Extensions, Npm Package Manager, JSON Config.",
           "JavaScript (ES6) syntax, methods, arrays, objects, destructuring, helper functions.",
           "JavaScript DOM, manipulation of HTML & CSS, events, timing functions.",
           "Node.js & Express, modules, APIs, websockets, CSV integration, AJAX.",
@@ -219,7 +219,7 @@ export const data = {
         header: "Certified Webdesigner - GFN GmbH",
         period: "10/2021 - 12/2021",
         subtopics: [
-          "Setup of IDE, Visual Studio Code, Extensions, XAMPP.",
+          "Setup IDE, Visual Studio Code, Extensions, XAMPP.",
           "Basics of Web design, HTML5 syntax, accessible programming, Markdown, Emmet.",
           "CSS3 & SCSS responsive Web design, syntax, vendor prefixes, partials, breakpoints, nesting.",
           "Integration of Bootstrap libraries & use of modules in projects.",
