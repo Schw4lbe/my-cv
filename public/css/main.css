@@ -22,6 +22,7 @@
 .footer-main {
   position: fixed;
   bottom: 0;
+  height: -moz-max-content;
   height: max-content;
   width: 100%;
   background: #222222;
@@ -173,7 +174,8 @@ body,
   padding: 1rem;
 }
 .home-wrapper .home-container .home-header-container .home-image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 100%;
   width: 100%;
   height: auto;
@@ -444,6 +446,7 @@ body,
   margin-top: 1rem;
 }
 .accordion-wrapper .tab-link-container .tab-link {
+  width: -moz-max-content;
   width: max-content;
   background: #e4e4e4;
   color: #9e009e;
@@ -599,6 +602,7 @@ body,
   display: flex;
   justify-content: center;
   width: 100%;
+  height: -moz-max-content;
   height: max-content;
   background: #e4e4e4;
   border-top: 10px solid #c790c7;
@@ -608,6 +612,7 @@ body,
   padding: 1rem;
   min-width: 500px;
   max-width: 1250px;
+  height: -moz-max-content;
   height: max-content;
 }
 .readycheck-container .form-wrapper form h3 {
@@ -663,6 +668,7 @@ body,
   border: none;
   border-radius: 5px;
   padding: 1rem 3rem;
+  width: -moz-max-content;
   width: max-content;
   margin-top: 25px;
   transition: 0.5s;
@@ -791,7 +797,8 @@ body,
   width: 100%;
   display: inline-block;
   padding-bottom: 2rem;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
   word-wrap: break-word;
   line-height: 2;
   font-size: 1.1rem;
@@ -819,7 +826,8 @@ body,
 .reference-grid-container img {
   height: auto;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .coding-wrapper {
@@ -977,7 +985,9 @@ body,
   justify-content: center;
 }
 .login-wrapper .login-color-lighten .login-container .login-form {
+  height: -moz-max-content;
   height: max-content;
+  width: -moz-max-content;
   width: max-content;
   display: grid;
   grid-template-columns: 1fr;
@@ -1015,6 +1025,10 @@ body,
   text-align: center;
   background: rgba(13, 13, 13, 0.6);
 }
+.login-wrapper .login-color-lighten .login-container .login-form input::-moz-placeholder, .login-wrapper .login-color-lighten .login-container .login-form button::-moz-placeholder {
+  color: #b8b8b8;
+  text-align: center;
+}
 .login-wrapper .login-color-lighten .login-container .login-form input::placeholder,
 .login-wrapper .login-color-lighten .login-container .login-form button::placeholder {
   color: #b8b8b8;
@@ -1030,6 +1044,10 @@ body,
   background: rgba(13, 13, 13, 0.2);
   color: #f2f2f2;
 }
+.login-wrapper .login-color-lighten .login-container .login-form button:disabled:hover {
+  background: rgba(13, 13, 13, 0.2);
+  color: #f2f2f2;
+}
 .login-wrapper .login-color-lighten .login-container .login-form button:hover {
   background-color: #f2f2f2;
   color: #9e009e;
@@ -1037,6 +1055,9 @@ body,
 .login-wrapper .login-color-lighten .login-container .login-form input:focus {
   outline: none;
   background: rgba(13, 13, 13, 0.7);
+}
+.login-wrapper .login-color-lighten .login-container .login-form input:focus::-moz-placeholder {
+  color: transparent;
 }
 .login-wrapper .login-color-lighten .login-container .login-form input:focus::placeholder {
   color: transparent;
@@ -1071,7 +1092,6 @@ body,
   top: 0;
   bottom: 0;
   margin: auto;
-  -webkit-animation: loader-rotation 0.8s infinite linear;
   animation: loader-rotation 0.8s infinite linear;
   border-left: 3px solid #0d0d0d;
   border-right: 3px solid #0d0d0d;
@@ -1092,7 +1112,9 @@ body,
   height: 100%;
 }
 .login-wrapper .login-color-lighten .timeout-container .timeout-frame {
+  width: -moz-max-content;
   width: max-content;
+  height: -moz-max-content;
   height: max-content;
   background: rgba(51, 51, 51, 0.6);
   border-radius: 5px;
@@ -1127,14 +1149,6 @@ body,
   }
   100% {
     background-position: 0 0;
-  }
-}
-@-webkit-keyframes loader-rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
   }
 }
 @keyframes loader-rotation {
@@ -1429,4 +1443,4 @@ body,
   src: url("../fonts/JosefinSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}/*# sourceMappingURL=main.css.map */
+}

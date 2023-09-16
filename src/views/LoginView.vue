@@ -17,7 +17,7 @@
       @keydown="resetShowError"
     />
 
-    <div class="language-container">
+    <div class="language-container" ref="langContainer">
       <div class="language-option">
         <input
           @click="catchSelectecLanguage"
@@ -98,7 +98,17 @@ export default {
 
       this.username = "";
       this.password = "";
+      this.resetRadio();
       this.waitingForServerResponse();
+    },
+
+    resetRadio() {
+      const radios = this.$refs.langContainer.querySelectorAll(
+        'input[type="radio"]'
+      );
+      radios.forEach((radio) => {
+        radio.checked = false;
+      });
     },
 
     resetShowError() {

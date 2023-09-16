@@ -116,6 +116,11 @@ export const data = {
         path: "/outro",
       },
     ],
+    timeoutContent: {
+      header: "An Error occurred!",
+      message: "Your login information is wrong. Please try again in ",
+      message2: " seconds.",
+    },
   },
   navbarItems: [
     {
@@ -135,9 +140,4 @@ export const data = {
       icon: "fa-brands fa-soundcloud",
     },
   ],
-  timeoutContent: {
-    header: "An Error occurred!",
-    message: "Your login information is wrong. Please try again in ",
-    message2: " seconds.",
-  },
 };
