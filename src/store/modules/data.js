@@ -1,6 +1,8 @@
 // Media:
 import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
 import Logo4 from "@/assets/img/logo-gfn.svg";
+import Logo5 from "@/assets/img/logo-tapemate.png";
+import Logo6 from "@/assets/img/logo-grammophon.png";
 
 export const data = {
   de: {
@@ -116,6 +118,42 @@ export const data = {
         link: "https://www.gfn.de/",
       },
     ],
+    freelanceItems: [
+      {
+        id: "1",
+        header: "Besinnung & Neuorientierung",
+        period: "10/2020 - 10/2021",
+        subtopics: [
+          "Aufbau eines Twitch.tv Livestream Kanals (Affiliate Status), Live DJ-ing & Vj-ing",
+          "Erste Einblicke Game Development C# auf Unity Engine",
+          "Einarbeitung in Character Animation mittels Blender",
+          "Eruierung möglicher Weiterbildungsmaßnahmen",
+          "Austausch mit diversen Schulungsunternehmen",
+        ],
+        success:
+          "Twitch Livestream vor knapp 1000 Viewern mit Schallplatten - Hosting durch bekannten Künstler",
+        logo: Logo5,
+        media: "",
+        link: "https://soundcloud.com/tape-mate",
+      },
+      {
+        id: "2",
+        header: "Eventmanagement & Musiker - Münchner Grammophon e. K.",
+        period: "10/2014 - 09/2016",
+        subtopics: [
+          "Planung & Organisation von Veranstaltungen 50 – 1.200 Teilnehmer",
+          "Tätigkeit als Schallplattenunterhalter in diversen Lokalitäten in München",
+          "Vernetzung von Veranstaltungskollektiven in Deutschland / Österreich",
+          "Abschluss von Kooperationen zwischen Betreibern & Dienstleistern",
+          "Werbetätigkeiten & Bearbeitung von Onlinepräsenzen",
+        ],
+        success:
+          "Drei Fragezeichen Festival Feierwerk München (ca. 1.200 Besucher)",
+        logo: Logo6,
+        media: "",
+        link: "https://soundcloud.com/muenchner-grammophon",
+      },
+    ],
   },
   en: {
     introContent: [
@@ -229,6 +267,42 @@ export const data = {
           "Successful completion on 10th of December 2021 (90 / 100 Punkten - “very good”)",
         logo: Logo4,
         link: "https://www.gfn.de/",
+      },
+    ],
+    freelanceItems: [
+      {
+        id: "1",
+        header: "Reflection & Reorientation",
+        period: "10/2020 - 10/2021",
+        subtopics: [
+          "Setting up a Twitch.tv livestream channel (Affiliate Status), Live DJ-ing & VJ-ing",
+          "Initial insights into game development with C# on Unity Engine",
+          "Introduction to character animation using Blender",
+          "Evaluation of possible further training measures",
+          "Exchange with various training companies",
+        ],
+        success:
+          "Twitch livestream for nearly 1,000 viewers with vinyl records - Hosting by a well-known artist.",
+        logo: Logo5,
+        media: "",
+        link: "https://soundcloud.com/tape-mate",
+      },
+      {
+        id: "2",
+        header: "Event Management & Musician - Munich Gramophone e. K.",
+        period: "10/2014 - 09/2016",
+        subtopics: [
+          "Planning & organization of events with 50 – 1,200 participants",
+          "Worked as a vinyl record entertainer in various venues in Munich",
+          "Networking of event collectives in Germany / Austria",
+          "Finalization of cooperations between operators & service providers",
+          "Advertising activities & editing of online presences",
+        ],
+        success:
+          "Drei Fragezeichen Festival Feierwerk Munich (ca. 1.200 participants)",
+        logo: Logo6,
+        media: "",
+        link: "https://soundcloud.com/muenchner-grammophon",
       },
     ],
   },
