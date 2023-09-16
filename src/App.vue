@@ -9,7 +9,11 @@
         v-if="!isLoginSuccess && loginFailed === false"
         class="login-container"
       >
-        <LoginView @login-clicked="handleLogin" />
+        <LoginView
+          @login-clicked="handleLogin"
+          :loading="serverMsg"
+          :error="errorMsg"
+        />
       </div>
 
       <div v-if="loginFailed === true" class="timeout-container">
@@ -88,6 +92,14 @@ export default {
 
     selectedLanguage() {
       return this.$store.getters.selectedLanguage;
+    },
+
+    serverMsg() {
+      return this.$store.state.contentData.serverMsg;
+    },
+
+    errorMsg() {
+      return this.$store.state.contentData[this.selectedLanguage].errorMsg;
     },
 
     timeoutContent() {

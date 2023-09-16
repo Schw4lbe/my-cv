@@ -60,6 +60,7 @@ export const data = {
         "Die Anmeldeinformationen sind falsch. Bitte versuchen sie es in ",
       message2: " Sekunden erneut.",
     },
+    errorMsg: "Login Server nicht verfügbar.",
   },
   en: {
     introContent: [
@@ -121,7 +122,10 @@ export const data = {
       message: "Your login information is wrong. Please try again in ",
       message2: " seconds.",
     },
+
+    errorMsg: "Login Server not available.",
   },
+  serverMsg: "...logging in.",
   navbarItems: [
     {
       link: "https://www.linkedin.com/in/jean-pierre-h%C3%A4ussler-66019118a/",

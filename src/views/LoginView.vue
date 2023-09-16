@@ -50,13 +50,13 @@
     </button>
 
     <div v-if="isWaitingForServer" class="login-loading">
-      <p>...wartet auf Server.</p>
+      <p>{{ loading }}</p>
       <i class="fa-regular fa-hourglass-half"></i>
       <div class="lazyloader"></div>
     </div>
 
     <div v-if="hasServerError" class="error-message">
-      Login Server nicht verfügbar.
+      {{ error }}
     </div>
   </form>
 </template>
@@ -66,6 +66,10 @@ import { mapGetters, mapMutations } from "vuex";
 
 export default {
   name: "LoginView",
+  props: {
+    loading: String,
+    error: String,
+  },
 
   data() {
     return {

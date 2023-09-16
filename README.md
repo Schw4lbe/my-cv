@@ -40,3 +40,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Login logisch von App.vue trennen (eigene Komponente und logic für request verschieben)
 - Refactoring Komponentennamen
 - Logout button und Cookie reset
+- Waiting for server und login failed Nachricht background auf ganzem monitor und text mittig
