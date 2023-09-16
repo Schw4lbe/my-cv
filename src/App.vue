@@ -13,14 +13,7 @@
       </div>
 
       <div v-if="loginFailed === true" class="timeout-container">
-        <div class="timeout-frame">
-          <h3>Ein Fehler ist aufgetreten!<i class="fa-solid fa-ban"></i></h3>
-          <div class="countdown-container">
-            Die Anmeldeinformationen sind falsch. Bitte versuchen sie es in
-            <span id="countdown">9</span>
-            Sekunden erneut.
-          </div>
-        </div>
+        <TimeOut :content="timeoutContent" />
       </div>
     </div>
   </div>
@@ -34,16 +27,12 @@
     </div>
     <div class="cv-main" v-if="isCvMainVisible">
       <div class="navbar-wrapper">
-        <NavbarMain :menuItems="menuItemsArray" />
+        <NavbarMain :navbarItems="navbarItemsArray" />
       </div>
       <router-view />
     </div>
   </div>
-  <FooterMain
-    v-if="isLoginSuccess"
-    :content="contentData"
-    :contact="contactData"
-  />
+  <FooterMain v-if="isLoginSuccess" :items="footerItems" />
 </template>
 
 <script>
@@ -52,6 +41,7 @@ import NavbarMain from "@/components/NavbarMain.vue";
 import ReadyCheck from "@/components/ReadyCheck.vue";
 import FooterMain from "@/components/FooterMain.vue";
 import LoginView from "@/views/LoginView.vue";
+import TimeOut from "@/components/TimeOut.vue";
 
 // import axios from "axios";
 
@@ -61,32 +51,15 @@ export default {
     ReadyCheck,
     FooterMain,
     LoginView,
+    TimeOut,
   },
   data() {
     return {
       loginFailed: false,
       loginButton: null,
-      contentData: [],
-      contactData: [
-        {
-          link: "https://www.linkedin.com/in/jean-pierre-h%C3%A4ussler-66019118a/",
-          icon: "fa-brands fa-linkedin",
-        },
-        {
-          link: "https://www.xing.com/profile/JeanPierre_Haeussler/cv",
-          icon: "fa-brands fa-square-xing",
-        },
-        {
-          link: "https://github.com/TapeMate",
-          icon: "fa-brands fa-square-github",
-        },
-        {
-          link: "https://soundcloud.com/tape-mate",
-          icon: "fa-brands fa-soundcloud",
-        },
-      ],
     };
   },
+
   created() {
     const cvMainVisible = localStorage.getItem("cvMainVisible");
     if (cvMainVisible === "true") {
@@ -102,6 +75,7 @@ export default {
       this.showElement();
     }
   },
+
   computed: {
     ...mapGetters([
       "isElementHidden",
@@ -116,7 +90,12 @@ export default {
       return this.$store.getters.selectedLanguage;
     },
 
-    menuItemsArray() {
+    timeoutContent() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .timeoutContent;
+    },
+
+    navbarItemsArray() {
       return this.$store.state.contentData[this.selectedLanguage].menuItems;
     },
 
@@ -124,10 +103,16 @@ export default {
       return this.$store.state.contentData[this.selectedLanguage]
         .readyCheckContent;
     },
+
+    footerItems() {
+      return this.$store.state.contentData.navbarItems;
+    },
   },
+
   mounted() {
     this.loginButton = document.querySelector("#login-button");
   },
+
   methods: {
     // dev only:
     handleLogin(credentials) {

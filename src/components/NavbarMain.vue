@@ -20,7 +20,7 @@
             </router-link>
           </li>
           <li
-            v-for="item in menuItems"
+            v-for="item in navbarItems"
             :key="item.id"
             :id="item.id"
             class="nav-item"
@@ -41,7 +41,7 @@ import router from "@/router";
 export default {
   name: "NavbarMain",
   props: {
-    menuItems: Array,
+    navbarItems: Array,
   },
   data() {
     return {

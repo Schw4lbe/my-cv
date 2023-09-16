@@ -1,9 +1,8 @@
 <template>
   <footer class="footer-main">
     <div class="footer-contact">
-      <h5>Kontakt:</h5>
       <ul>
-        <li v-for="(item, index) in contact" :key="index">
+        <li v-for="(item, index) in items" :key="index">
           <a :href="item.link"><i :class="item.icon"></i></a>
         </li>
       </ul>
@@ -15,8 +14,7 @@
 export default {
   name: "FooterMain",
   props: {
-    content: Array,
-    contact: Array,
+    items: Array,
   },
 };
 </script>

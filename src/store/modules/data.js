@@ -54,6 +54,12 @@ export const data = {
         path: "/outro",
       },
     ],
+    timeoutContent: {
+      header: "Ein Fehler ist aufgetreten!",
+      message:
+        "Die Anmeldeinformationen sind falsch. Bitte versuchen sie es in ",
+      message2: " Sekunden erneut.",
+    },
   },
   en: {
     introContent: [
@@ -110,5 +116,28 @@ export const data = {
         path: "/outro",
       },
     ],
+  },
+  navbarItems: [
+    {
+      link: "https://www.linkedin.com/in/jean-pierre-h%C3%A4ussler-66019118a/",
+      icon: "fa-brands fa-linkedin",
+    },
+    {
+      link: "https://www.xing.com/profile/JeanPierre_Haeussler/cv",
+      icon: "fa-brands fa-square-xing",
+    },
+    {
+      link: "https://github.com/TapeMate",
+      icon: "fa-brands fa-square-github",
+    },
+    {
+      link: "https://soundcloud.com/tape-mate",
+      icon: "fa-brands fa-soundcloud",
+    },
+  ],
+  timeoutContent: {
+    header: "An Error occurred!",
+    message: "Your login information is wrong. Please try again in ",
+    message2: " seconds.",
   },
 };
