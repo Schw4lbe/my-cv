@@ -4,6 +4,24 @@ export const data = {
       "Warum eigentlich ein online Lebenslauf?",
       "Weil ich zeigen möchte, was ich kann.",
     ],
+    readyCheckContent: {
+      header: "Alle Vorbereitungen getroffen?",
+      content: [
+        {
+          label: "Tee oder Kaffee frisch aufgebrüht?",
+          icon: "fa-solid fa-mug-hot",
+        },
+        {
+          label: "Notizblock bereit?",
+          icon: "fa-sharp fa-solid fa-pen-to-square",
+        },
+        {
+          label: "Die wichtigsten Personen sind anwesend?",
+          icon: "fa-solid fa-people-group",
+        },
+      ],
+      buttonText: "Los geht's!",
+    },
     menuItems: [
       {
         id: "item1",
@@ -42,6 +60,24 @@ export const data = {
       "What's the purpose of the online CV?",
       "Because I want to prove my skills.",
     ],
+    readyCheckContent: {
+      header: "Are we all set?",
+      content: [
+        {
+          label: "Tea or coffee freshly brewed?",
+          icon: "fa-solid fa-mug-hot",
+        },
+        {
+          label: "Is your notepad at hand?",
+          icon: "fa-sharp fa-solid fa-pen-to-square",
+        },
+        {
+          label: "Are the essential participants present?",
+          icon: "fa-solid fa-people-group",
+        },
+      ],
+      buttonText: "Off we go!",
+    },
     menuItems: [
       {
         id: "item1",

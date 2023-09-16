@@ -5,9 +5,9 @@
   <div class="readycheck-container">
     <div class="form-wrapper">
       <form action="" @submit="formSubmit">
-        <h3>Alle Vorbereitungen getroffen?</h3>
+        <h3>{{ content.header }}</h3>
         <div
-          v-for="(input, index) in inputs"
+          v-for="(input, index) in content.content"
           :key="index"
           class="input-container"
         >
@@ -31,7 +31,7 @@
             :disabled="!allInputsChecked"
             @click="checkInputs"
           >
-            Los geht's!
+            {{ content.buttonText }}
           </button>
         </div>
       </form>
@@ -49,13 +49,13 @@ export default {
     IntroScene,
   },
   props: {
-    inputs: Array,
+    content: Object,
   },
   computed: {
     ...mapGetters(["selectedLanguage"]),
 
     allInputsChecked() {
-      return this.inputs.every((input) => input.checked);
+      return this.content.content.every((input) => input.checked);
     },
 
     contentArray() {

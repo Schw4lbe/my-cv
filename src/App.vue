@@ -27,7 +27,10 @@
 
   <div v-if="isLoginSuccess" class="page-wrapper">
     <div class="cv-readycheck" :class="{ hide: isElementHidden }" id="test">
-      <ReadyCheck :inputs="startInputs" @form-submit="onFormSubmitted" />
+      <ReadyCheck
+        :content="readyCheckContentArray"
+        @form-submit="onFormSubmitted"
+      />
     </div>
     <div class="cv-main" v-if="isCvMainVisible">
       <div class="navbar-wrapper">
@@ -63,20 +66,6 @@ export default {
     return {
       loginFailed: false,
       loginButton: null,
-      startInputs: [
-        {
-          label: "Tee oder Kaffee frisch aufgebrüht?",
-          icon: "fa-solid fa-mug-hot",
-        },
-        {
-          label: "Notizblock bereit?",
-          icon: "fa-sharp fa-solid fa-pen-to-square",
-        },
-        {
-          label: "Die wichtigsten Personen sind anwesend?",
-          icon: "fa-solid fa-people-group",
-        },
-      ],
       contentData: [],
       contactData: [
         {
@@ -129,6 +118,11 @@ export default {
 
     menuItemsArray() {
       return this.$store.state.contentData[this.selectedLanguage].menuItems;
+    },
+
+    readyCheckContentArray() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .readyCheckContent;
     },
   },
   mounted() {
