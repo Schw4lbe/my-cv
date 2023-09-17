@@ -30,10 +30,10 @@
             </router-link>
           </li>
         </ul>
-        <ButtonToggle />
       </div>
     </div>
   </nav>
+  <ButtonToggle />
 </template>
 
 <script>

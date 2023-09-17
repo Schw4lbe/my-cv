@@ -98,7 +98,8 @@ body,
   justify-content: center;
   align-items: center;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
+  position: fixed;
   background: #222222;
   border-bottom: 1px solid #9e009e;
 }
@@ -1163,6 +1164,62 @@ body,
   width: 100%;
   max-width: 1920px;
   background: #e4e4e4;
+}
+
+.toggle-radio {
+  margin-left: 20px;
+}
+.toggle-radio .separator {
+  position: relative;
+  top: -13px;
+  font-size: 40px;
+  color: #222222;
+}
+.toggle-radio .switch {
+  position: relative;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  background: #4393d8;
+  transition: all 0.4s ease;
+  border-radius: 25px;
+}
+.toggle-radio input[type=radio] {
+  display: none;
+}
+.toggle-radio .switch label {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.2);
+  width: 60px;
+  line-height: 40px;
+  transition: all 0.4s ease;
+}
+.toggle-radio label[for=de] {
+  position: absolute;
+  left: 0px;
+  height: 20px;
+}
+.toggle-radio label[for=en] {
+  position: absolute;
+  right: 0px;
+}
+.toggle-radio #en:checked ~ .switch {
+  background: #a54ca5;
+}
+.toggle-radio #en:checked ~ .switch span {
+  margin-left: -8px;
+}
+.toggle-radio #en:checked ~ .switch span:after {
+  background: #f2f2f2;
+  height: 20px;
+  margin-top: -8px;
+  margin-left: 8px;
+}
+.toggle-radio #de:checked ~ .switch label[for=de] {
+  color: #f2f2f2;
+}
+.toggle-radio #en:checked ~ .switch label[for=en] {
+  color: #f2f2f2;
 }
 
 @media (max-width: 1400px) {
