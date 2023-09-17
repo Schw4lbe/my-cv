@@ -350,7 +350,7 @@ export const data = {
   en: {
     introContent: [
       "What's the purpose for the online CV?",
-      "Because I want to prove my skills.",
+      "I want to show and prove my skills.",
     ],
     readyCheckContent: {
       header: "Are we all set?",
