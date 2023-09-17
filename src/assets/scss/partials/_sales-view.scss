@@ -8,5 +8,10 @@
     width: 100%;
     max-width: 1920px;
     background: $clr-secondary-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
   }
 }
