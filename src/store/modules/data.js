@@ -1,4 +1,6 @@
 // Media:
+import Logo1 from "@/assets/img/logo-straight.jpg";
+import Logo2 from "@/assets/img/logo-sycor.svg";
 import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
 import Logo4 from "@/assets/img/logo-gfn.svg";
 import Logo5 from "@/assets/img/logo-tapemate.png";
@@ -239,6 +241,88 @@ export const data = {
     ],
     referenceSubHeader:
       "Skala von 1 (Grundwissen) bis 10 (Experte). Bemessen an Praxiserfahrung.",
+    salesItems: [
+      {
+        id: "1",
+        header: "Microsoft Cloud Solution Visionary - straight solutions GmbH",
+        period: "06/2020 - 10/2020",
+        subtopics: [
+          "Beratung & Konzeptionierung Microsoft 365 Cloud Lösungen",
+          "Projektplanung, Projektleitung, Kalkulation und techn. Teilumsetzung",
+          "Schulung Endkunde Schwerpunkt Microsoft Teams, SharePoint, MS Office",
+        ],
+        success:
+          "Einführung Microsoft Teams Telefonie Lösung (Niederlassungen in USA & Deutschland)",
+        logo: Logo1,
+        media: "",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "2",
+        header: "Head of Sales - straight solutions GmbH",
+        period: "01/2018 - 05/2020",
+        subtopics: [
+          "Leitung selbstorganisiertes Drei Mann Vertriebsteam",
+          "Neuverteilung interner Verantwortungsbereiche & Kernkompetenzen",
+          "vertriebliche Verantwortung für Microsoft 365 & HP PSG",
+        ],
+        success:
+          "Teilprojektleitung Windows 10 Deployment 27 Standorten / 500 Arbeitsplätzen",
+        logo: Logo1,
+        media: "",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "3",
+        header: "IT Sales Consultant - straight solutions GmbH",
+        period: "10/2016 - 12/2017",
+        subtopics: [
+          "Restrukturierung & Ausbau bestehender Vertriebsprozesse",
+          "Lizenzberatung Microsoft Volume Licensing & Microsoft Cloud Transition",
+          "Pflege Warenwirtschaft sowie Abwicklung von Angebot bis Rechnung",
+          "Aufbau / Pflege von Hersteller- & Partnerbeziehungen",
+        ],
+        success:
+          "Aufnahme in Microsoft managed Partner Programm (unternehmensweit)",
+        logo: Logo1,
+        media: "",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "4",
+        header:
+          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
+        period: "07/2012 - 09/2014",
+        subtopics: [
+          "Betreuung Bestandskunden (Microsoft Volume Licensing / HP PSG)",
+          "Neukundenakquise (outbound & Microsoft Leads)",
+          "Systembetreuung & interne Abwicklung (Einkauf/Verkauf)",
+          "Etablierung Adobe Volume Licensing (TLP, CLP, VIP), Umsetzung, Abschluss & Schulung Fokus auf Kreativprodukte",
+        ],
+        success:
+          "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
+        logo: Logo2,
+        media: "",
+        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+      },
+      {
+        id: "5",
+        header:
+          "Ausbildung IT-Systemkaufmann (IHK) - IQ GmbH (später Sycor IQ Solutions GmbH)",
+        period: "10/2009 - 06/2012",
+        subtopics: [
+          "Inside Sales Umgang mit Warenwirtschaft und Geschäftsprozessen",
+          "Zuarbeit bei Microsoft Software Asset Management Projekten",
+          "Neukundengewinnung (inbound) samt Projektbegleitung",
+          "Führung von Erstgesprächen, Qualifikation von Neukunden",
+        ],
+        success:
+          "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
+        logo: Logo2,
+        media: "",
+        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+      },
+    ],
   },
   en: {
     introContent: [
@@ -469,6 +553,88 @@ export const data = {
     ],
     referenceSubHeader:
       "Scale from 1 (basic knowledge) to 10 (expert). Measured by practical experience.",
+    salesItems: [
+      {
+        id: "1",
+        header: "Microsoft Cloud Solution Visionary - straight solutions GmbH",
+        period: "06/2020 - 10/2020",
+        subtopics: [
+          "Consulting & Conceptualization of Microsoft 365 Cloud Solutions",
+          "Project planning, project management, calculation, and technical partial implementation",
+          "End-customer training with a focus on Microsoft Teams, SharePoint, MS Office",
+        ],
+        success:
+          "Implementation of Microsoft Teams Telephony Solution (branches in the USA & Germany)",
+        logo: Logo1,
+        media: "",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "2",
+        header: "Head of Sales - straight solutions GmbH",
+        period: "01/2018 - 05/2020",
+        subtopics: [
+          "Management of a self-organized three-man sales team",
+          "Redistribution of internal areas of responsibility & core competencies",
+          "Sales responsibility for Microsoft 365 & HP PSG",
+        ],
+        success:
+          "Partial project management of Windows 10 deployment at 27 locations / 500 workstations",
+        logo: Logo1,
+        media: "",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "3",
+        header: "IT Sales Consultant - straight solutions GmbH",
+        period: "10/2016 - 12/2017",
+        subtopics: [
+          "Restructuring & expansion of existing sales processes",
+          "Licensing consultation for Microsoft Volume Licensing & Microsoft Cloud Transition",
+          "Maintenance of inventory management as well as processing from quotation to invoice",
+          "Establishment/maintenance of manufacturer & partner relationships",
+        ],
+        success:
+          "Admission to the Microsoft managed Partner Program (company-wide)",
+        logo: Logo1,
+        media: "",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "4",
+        header:
+          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
+        period: "07/2012 - 09/2014",
+        subtopics: [
+          "Support of existing customers (Microsoft Volume Licensing / HP PSG)",
+          "Acquisition of new customers (outbound & Microsoft Leads)",
+          "System support & internal processing (purchasing/selling)",
+          "Establishment of Adobe Volume Licensing (TLP, CLP, VIP), implementation, completion & training with a focus on creative products",
+        ],
+        success:
+          "Project management, implementation, training for the Adobe editorial system (USA & EU)",
+        logo: Logo2,
+        media: "",
+        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+      },
+      {
+        id: "5",
+        header:
+          "Training as IT Systems Merchant (IHK) - IQ GmbH (later Sycor IQ Solutions GmbH)",
+        period: "10/2009 - 06/2012",
+        subtopics: [
+          "Inside Sales dealing with merchandise management and business processes",
+          "Collaboration on Microsoft Software Asset Management projects",
+          "Acquisition of new customers (inbound) with project support",
+          "Conducting initial discussions, qualification of new customers",
+        ],
+        success:
+          "Supporting the introduction of Microsoft BPOS in a small logistics company",
+        logo: Logo2,
+        media: "",
+        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+      },
+    ],
   },
   serverMsg: "...logging in.",
   navbarItems: [
