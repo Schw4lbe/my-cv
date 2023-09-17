@@ -602,8 +602,8 @@ body,
   width: 100%;
   height: max-content;
   background: #e4e4e4;
-  border-top: 10px solid #c790c7;
-  border-bottom: 10px solid #c790c7;
+  border-top: 10px solid #4393d8;
+  border-bottom: 10px solid #4393d8;
 }
 .readycheck-container .form-wrapper form {
   padding: 1rem;
