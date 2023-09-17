@@ -16,25 +16,33 @@
         </div>
         <span class="skill-rating">{{ skill.rating }} / 10</span>
       </div>
-      <h3>
-        Skala von 1 (Grundwissen) bis 10 (Experte). Bemessen an Praxiserfahrung.
-      </h3>
+      <h3>{{ setSubHeader }}</h3>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "PersonalData",
   props: {
     skills: Array,
   },
+
   data() {
     return {
       colors: ["#adffad", "#6beb6b", "#00ca00"],
     };
   },
   computed: {
+    ...mapGetters(["selectedLanguage"]),
+
+    setSubHeader() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .referenceSubHeader;
+    },
+
     getProgressWidth() {
       return function (rating) {
         return (rating / 10) * 100;

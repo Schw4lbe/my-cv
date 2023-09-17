@@ -237,6 +237,8 @@ export const data = {
         },
       },
     ],
+    referenceSubHeader:
+      "Skala von 1 (Grundwissen) bis 10 (Experte). Bemessen an Praxiserfahrung.",
   },
   en: {
     introContent: [
@@ -465,6 +467,8 @@ export const data = {
         },
       },
     ],
+    referenceSubHeader:
+      "Scale from 1 (basic knowledge) to 10 (expert). Measured by practical experience.",
   },
   serverMsg: "...logging in.",
   navbarItems: [
