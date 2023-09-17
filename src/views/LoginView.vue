@@ -1,7 +1,6 @@
 <template>
   <form class="login-form">
     <h3>Login</h3>
-
     <input
       id="username"
       type="text"

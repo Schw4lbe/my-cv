@@ -1,6 +1,13 @@
 <template>
-  <div class="toggle-button-container">
-    <input class="toggle-button" type="checkbox" />
+  <div class="toggle-radio">
+    <input type="radio" name="rdo" id="de" checked />
+    <input type="radio" name="rdo" id="en" />
+    <div class="switch">
+      <label for="de">DE </label>
+      <span class="separator">|</span>
+      <label for="en"> EN</label>
+      <span></span>
+    </div>
   </div>
 </template>
 
@@ -11,46 +18,61 @@ export default {
 </script>
 
 <style scoped>
-:root {
-  --white: #fffffe;
-  --grey: #94a1b2;
-  --purple-dark: #7f5af0;
+.toggle-radio {
+  margin-left: 20px;
 }
 
-.toggle-button-container {
-  padding: 0.5rem;
-}
-
-input {
-  -webkit-appearance: none;
+.separator {
   position: relative;
-  width: 74px;
-  height: 33px;
-  border-radius: 20px;
-  background-color: var(--grey);
-  transition: background 0.3s;
-  outline: none;
+  top: -13px;
+  font-size: 40px;
+  color: #222222;
+}
+.switch {
+  position: relative;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  background: #4393d8;
+  transition: all 0.4s ease;
+  border-radius: 25px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.switch label {
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.2);
+  width: 60px;
+  line-height: 40px;
+  transition: all 0.4s ease;
 }
-
-input::after {
-  content: "";
+label[for="de"] {
   position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  background: var(--white);
-  transition: left 0.3s;
+  left: 0px;
+  height: 20px;
 }
-
-input:checked {
-  background: var(--purple-dark);
+label[for="en"] {
+  position: absolute;
+  right: 0px;
 }
-
-input:checked::after {
-  left: 75%;
+#en:checked ~ .switch {
+  background: #a54ca5;
+}
+#en:checked ~ .switch span {
+  margin-left: -8px;
+}
+#en:checked ~ .switch span:after {
+  background: #f2f2f2;
+  height: 20px;
+  margin-top: -8px;
+  margin-left: 8px;
+}
+#de:checked ~ .switch label[for="de"] {
+  color: #f2f2f2;
+}
+#en:checked ~ .switch label[for="en"] {
+  color: #f2f2f2;
 }
 </style>
