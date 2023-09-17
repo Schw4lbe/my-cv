@@ -18,6 +18,7 @@ export const data = {
       "Warum eigentlich ein online Lebenslauf?",
       "Weil ich zeigen möchte, was ich kann.",
     ],
+
     readyCheckContent: {
       header: "Alle Vorbereitungen getroffen?",
       content: [
@@ -36,6 +37,7 @@ export const data = {
       ],
       buttonText: "Los geht's!",
     },
+
     menuItems: [
       {
         id: "item1",
@@ -68,29 +70,33 @@ export const data = {
         path: "/outro",
       },
     ],
+
     timeoutContent: {
       header: "Ein Fehler ist aufgetreten!",
       message:
         "Die Anmeldeinformationen sind falsch. Bitte versuchen sie es in ",
       message2: " Sekunden erneut.",
     },
+
     errorMsg: "Login Server nicht verfügbar.",
     buttonLinkText: "Homepage des Unternehmens",
     referenceSuccessMsg: "Größter Erfolg: ",
     modalButtonText: "Vollbild mit Klick",
-
     introHeader: "Lebenslauf",
     introHeaderTechStack: "Online Lebenslauf Tech Stack",
     introHeaderTesting: "Online Lebenslauf Kompatibilität",
     introHeaderStrength: "Stärken",
     introHeaderHobbies: "Hobbies",
+
     introData: [
       {
         header: "Präambel",
         text: "Dieser online Lebenslauf ist mit der Intention enstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung dar zu stellen. Zusammengefasst habe ich 6 Monate Weiterbildung und ein gutes Jahr Berufserfahrung sammeln können. Da dies ein recht überschaubarer Rahmen an Praxiserfahrung ist, möchte ich die Gelegenheit nutzen, mich mit bewegten Inhalten zu präsentieren.",
       },
     ],
+
     propsData: ["Eigenmotivation", "Verantwortungsbewustsein", "Authentizität"],
+
     hobbiesData: [
       "Sport, fernöstliche Kampf- & Körperkunst",
       "Musik Produktion, DJ-ing & Livestreams",
@@ -148,6 +154,7 @@ export const data = {
         link: "https://www.gfn.de/",
       },
     ],
+
     freelanceItems: [
       {
         id: "1",
@@ -163,7 +170,6 @@ export const data = {
         success:
           "Twitch Livestream vor knapp 1000 Viewern mit Schallplatten - Hosting durch bekannten Künstler",
         logo: Logo5,
-        media: "",
         link: "https://soundcloud.com/tape-mate",
       },
       {
@@ -180,13 +186,14 @@ export const data = {
         success:
           "Drei Fragezeichen Festival Feierwerk München (ca. 1.200 Besucher)",
         logo: Logo6,
-        media: "",
         link: "https://soundcloud.com/muenchner-grammophon",
       },
     ],
+
     referenceArray: [
       {
         id: "1",
+        hasMedia: true,
         header: "Wetter APP",
         subheader: "Tech Stack:",
         subtopics: [
@@ -195,10 +202,11 @@ export const data = {
           "OpenWeatherAPI: https://openweathermap.org",
         ],
         text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
-        img: img04,
+        media: img04,
       },
       {
         id: "2",
+        hasMedia: true,
         header: "Dummy Homepage",
         subheader: "Tech Stack:",
         subtopics: [
@@ -208,10 +216,11 @@ export const data = {
           "JSON-Server als Fake Backend",
         ],
         text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
-        img: img02,
+        media: img02,
       },
       {
         id: "3",
+        hasMedia: true,
         header: "Kontakt Formular",
         subheader: "Tech Stack & Details:",
         subtopics: [
@@ -221,10 +230,11 @@ export const data = {
           "Captcha Lösungswort & Honeypot durch CSS manipuliert",
         ],
         text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
-        img: img03,
+        media: img03,
       },
       {
         id: "4",
+        hasMedia: true,
         header: "Kundenprojekt",
         subheader: "Tech Stack & Herausforderungen:",
         subtopics: [
@@ -235,10 +245,11 @@ export const data = {
           "Komplette Anwendung läuft in einem IFrame",
         ],
         text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
-        img: img01,
+        media: img01,
       },
       {
         id: "5",
+        hasMedia: true,
         header: "Spiel Entwicklung",
         subheader: "Randnotizen & Tech Stack:",
         subtopics: [
@@ -248,11 +259,13 @@ export const data = {
           "Item & Crafting Sprites samt Table",
         ],
         text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst bei zu bringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiter entwickelt.",
-        img: img05,
+        media: img05,
       },
     ],
+
     referenceSubHeader:
       "Skala von 1 (Grundwissen) bis 10 (Experte). Bemessen an Praxiserfahrung.",
+
     salesItems: [
       {
         id: "1",
@@ -266,7 +279,6 @@ export const data = {
         success:
           "Einführung Microsoft Teams Telefonie Lösung (Niederlassungen in USA & Deutschland)",
         logo: Logo1,
-        media: "",
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -281,7 +293,6 @@ export const data = {
         success:
           "Teilprojektleitung Windows 10 Deployment 27 Standorten / 500 Arbeitsplätzen",
         logo: Logo1,
-        media: "",
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -297,7 +308,6 @@ export const data = {
         success:
           "Aufnahme in Microsoft managed Partner Programm (unternehmensweit)",
         logo: Logo1,
-        media: "",
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -314,7 +324,6 @@ export const data = {
         success:
           "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
         logo: Logo2,
-        media: "",
         link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
       },
       {
@@ -331,16 +340,17 @@ export const data = {
         success:
           "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
         logo: Logo2,
-        media: "",
         link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
       },
     ],
   },
+
   en: {
     introContent: [
       "What's the purpose for the online CV?",
       "I want to show and prove my skills.",
     ],
+
     readyCheckContent: {
       header: "Are we all set?",
       content: [
@@ -359,6 +369,7 @@ export const data = {
       ],
       buttonText: "Off we go!",
     },
+
     menuItems: [
       {
         id: "item1",
@@ -391,6 +402,7 @@ export const data = {
         path: "/outro",
       },
     ],
+
     timeoutContent: {
       header: "An Error occurred!",
       message: "Your login information is wrong. Please try again in ",
@@ -401,19 +413,21 @@ export const data = {
     buttonLinkText: "Company website",
     referenceSuccessMsg: "Greatest success: ",
     modalButtonText: "Click to view full screen",
-
     introHeader: "Curriculum Vitae",
     introHeaderTechStack: "Online CV Tech Stack",
     introHeaderTesting: "Online CV Compatibility",
     introHeaderStrength: "Strengths",
     introHeaderHobbies: "Hobbies",
+
     introData: [
       {
         header: "Preamble",
         text: "This online resume was created with the intention of showcasing my current proficiency in frontend development. In summary, I have undergone 6 months of further training and have accumulated a good year of professional experience. Since this is a relatively limited scope of practical experience, I want to take this opportunity to present myself with dynamic content.",
       },
     ],
+
     propsData: ["Self-motivation", "Sense of responsibility", "Authenticity"],
+
     hobbiesData: [
       "Sports, Far Eastern martial & body arts",
       "Music production, DJ-ing & livestreams",
@@ -472,6 +486,7 @@ export const data = {
         link: "https://www.gfn.de/",
       },
     ],
+
     freelanceItems: [
       {
         id: "1",
@@ -487,7 +502,6 @@ export const data = {
         success:
           "Twitch livestream for nearly 1,000 viewers with vinyl records - Hosting by a well-known artist.",
         logo: Logo5,
-        media: "",
         link: "https://soundcloud.com/tape-mate",
       },
       {
@@ -504,13 +518,15 @@ export const data = {
         success:
           "Drei Fragezeichen Festival Feierwerk Munich (ca. 1.200 participants)",
         logo: Logo6,
-        media: "",
+
         link: "https://soundcloud.com/muenchner-grammophon",
       },
     ],
+
     referenceArray: [
       {
         id: "1",
+        hasMedia: true,
         header: "Weather APP",
         subheader: "Tech Stack:",
         subtopics: [
@@ -519,10 +535,11 @@ export const data = {
           "OpenWeatherAPI: https://openweathermap.org",
         ],
         text: "As practice in integrating and using APIs as well as in writing Node.js, I followed several YouTube tutorials. Besides this application, I also created a small chatbot and a task manager. The application is based on the OpenWeatherAPI.",
-        img: img04,
+        media: img04,
       },
       {
         id: "2",
+        hasMedia: true,
         header: "Dummy Homepage",
         subheader: "Tech Stack:",
         subtopics: [
@@ -532,10 +549,11 @@ export const data = {
           "JSON-Server as a fake backend",
         ],
         text: "Over the past few months, I've built a dummy homepage. Whenever I discover a new technology for myself or want to test a design, I can revert to this build. The dummy page allows me to test and learn quickly and efficiently.",
-        img: img02,
+        media: img02,
       },
       {
         id: "3",
+        hasMedia: true,
         header: "Contact Form",
         subheader: "Tech Stack & Details:",
         subtopics: [
@@ -545,10 +563,11 @@ export const data = {
           "Captcha solution word & honeypot manipulated by CSS",
         ],
         text: "Creation of a custom contact form to consolidate newly acquired knowledge and as a creative playground for various styling ideas.",
-        img: img03,
+        media: img03,
       },
       {
         id: "4",
+        hasMedia: true,
         header: "Client Project",
         subheader: "Tech Stack & Challenges:",
         subtopics: [
@@ -559,10 +578,11 @@ export const data = {
           "The complete application runs in an IFrame",
         ],
         text: "Client project for Stadtwerke Lauterbach. Implementation of an online ordering process using VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
-        img: img01,
+        media: img01,
       },
       {
         id: "5",
+        hasMedia: true,
         header: "Game Development",
         subheader: "Side Notes & Tech Stack:",
         subtopics: [
@@ -572,11 +592,13 @@ export const data = {
           "Item & Crafting Sprites with table",
         ],
         text: "My passion for computer games led me to teach myself programming in C# based on the Unity Engine using Unity documentation, C# documentation, YouTube tutorials, Google, and Chat GPT. I consider this hobby project as a work in progress and continue to develop it regularly.",
-        img: img05,
+        media: img05,
       },
     ],
+
     referenceSubHeader:
       "Scale from 1 (basic knowledge) to 10 (expert). Measured by practical experience.",
+
     salesItems: [
       {
         id: "1",
@@ -590,7 +612,6 @@ export const data = {
         success:
           "Implementation of Microsoft Teams Telephony Solution (branches in the USA & Germany)",
         logo: Logo1,
-        media: "",
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -605,7 +626,6 @@ export const data = {
         success:
           "Partial project management of Windows 10 deployment at 27 locations / 500 workstations",
         logo: Logo1,
-        media: "",
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -621,7 +641,6 @@ export const data = {
         success:
           "Admission to the Microsoft managed Partner Program (company-wide)",
         logo: Logo1,
-        media: "",
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -638,7 +657,6 @@ export const data = {
         success:
           "Project management, implementation, training for the Adobe editorial system (USA & EU)",
         logo: Logo2,
-        media: "",
         link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
       },
       {
@@ -655,11 +673,11 @@ export const data = {
         success:
           "Supporting the introduction of Microsoft BPOS in a small logistics company",
         logo: Logo2,
-        media: "",
         link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
       },
     ],
   },
+
   serverMsg: "...logging in.",
 
   navbarItems: [
