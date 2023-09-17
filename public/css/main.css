@@ -2,6 +2,7 @@
 .navbar {
   align-items: center;
   max-width: 1920px;
+  border-right: 2px solid #f2f2f2;
 }
 .navbar .router-link-active,
 .navbar .router-link-exact-active {
@@ -101,7 +102,6 @@ body,
   flex-direction: row;
   position: fixed;
   background: #222222;
-  border-bottom: 1px solid #9e009e;
 }
 
 .cv-readycheck {
@@ -1178,7 +1178,7 @@ body,
 .toggle-radio .switch {
   position: relative;
   width: 100px;
-  height: 35px;
+  height: 30px;
   text-align: center;
   background: #4393d8;
   transition: all 0.4s ease;
@@ -1198,28 +1198,61 @@ body,
   position: absolute;
   left: 0px;
   height: 20px;
+  top: -3px;
 }
 .toggle-radio label[for=en] {
   position: absolute;
   right: 0px;
+  top: -3px;
 }
 .toggle-radio #en:checked ~ .switch {
   background: #a54ca5;
-}
-.toggle-radio #en:checked ~ .switch span {
-  margin-left: -8px;
-}
-.toggle-radio #en:checked ~ .switch span:after {
-  background: #f2f2f2;
-  height: 20px;
-  margin-top: -8px;
-  margin-left: 8px;
 }
 .toggle-radio #de:checked ~ .switch label[for=de] {
   color: #f2f2f2;
 }
 .toggle-radio #en:checked ~ .switch label[for=en] {
   color: #f2f2f2;
+}
+
+.logout-container {
+  margin-left: 5px;
+}
+.logout-container .logout-button {
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  height: 35px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+.logout-container .logout-button:hover {
+  border: 1px solid #f2f2f2;
+}
+.logout-container .logout-button:hover i,
+.logout-container .logout-button span {
+  color: #4393d8;
+}
+.logout-container .logout-button:hover span {
+  color: #4393d8;
+}
+.logout-container .logout-button i {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+.logout-container .logout-button span {
+  color: #f2f2f2;
+  font-size: 0.8rem;
+  padding-top: 4px;
+  padding-left: 0px;
+  margin-left: 5px;
+  transition: 0.4s;
 }
 
 @media (max-width: 1400px) {

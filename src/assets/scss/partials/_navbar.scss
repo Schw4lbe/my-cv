@@ -1,6 +1,7 @@
 .navbar {
   align-items: center;
   max-width: 1920px;
+  border-right: 2px solid $clr-secondary;
 
   .router-link-active,
   .router-link-exact-active {

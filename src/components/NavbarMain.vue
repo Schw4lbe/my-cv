@@ -33,17 +33,20 @@
       </div>
     </div>
   </nav>
-  <ButtonToggle />
+  <ToggleButton />
+  <LogoutButton />
 </template>
 
 <script>
 import router from "@/router";
-import ButtonToggle from "@/components/ButtonToggle.vue";
+import ToggleButton from "@/components/ToggleButton.vue";
+import LogoutButton from "@/components/LogoutButton.vue";
 
 export default {
   name: "NavbarMain",
   components: {
-    ButtonToggle,
+    ToggleButton,
+    LogoutButton,
   },
   props: {
     navbarItems: Array,

@@ -1,0 +1,45 @@
+.logout-container {
+  margin-left: 5px;
+
+  .logout-button {
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    height: 35px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: 0.4s;
+
+    &:hover {
+      border: 1px solid $clr-secondary;
+    }
+
+    &:hover i,
+    span {
+      color: $clr-accent;
+    }
+
+    &:hover span {
+      color: $clr-accent;
+    }
+
+    i {
+      color: $clr-secondary;
+      font-size: 1.5rem;
+      transition: 0.4s;
+    }
+
+    span {
+      color: $clr-secondary;
+      font-size: 0.8rem;
+      padding-top: 4px;
+      padding-left: 0px;
+      margin-left: 5px;
+      transition: 0.4s;
+    }
+  }
+}

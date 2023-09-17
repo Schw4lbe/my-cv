@@ -10,7 +10,7 @@
   .switch {
     position: relative;
     width: 100px;
-    height: 35px;
+    height: 30px;
     text-align: center;
     background: $clr-accent;
     transition: all 0.4s ease;
@@ -31,23 +31,20 @@
     position: absolute;
     left: 0px;
     height: 20px;
+    top: -3px;
   }
   label[for="en"] {
     position: absolute;
     right: 0px;
+    top: -3px;
   }
   #en:checked ~ .switch {
     background: $clr-accent-f;
   }
-  #en:checked ~ .switch span {
-    margin-left: -8px;
-  }
-  #en:checked ~ .switch span:after {
-    background: $clr-secondary;
-    height: 20px;
-    margin-top: -8px;
-    margin-left: 8px;
-  }
+  // #en:checked ~ .switch span {
+  //   margin-left: -8px;
+  // }
+
   #de:checked ~ .switch label[for="de"] {
     color: $clr-secondary;
   }
