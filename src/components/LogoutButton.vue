@@ -12,7 +12,6 @@ export default {
 
   methods: {
     onClickLogout() {
-      console.log("logout clicked.");
       localStorage.clear();
       sessionStorage.clear();
       location.reload();
