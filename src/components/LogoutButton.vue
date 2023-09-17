@@ -1,6 +1,6 @@
 <template>
   <div class="logout-container">
-    <button class="logout-button">
+    <button @click="onClickLogout" class="logout-button">
       <i class="fa-solid fa-right-from-bracket"></i><span>LOGOUT</span>
     </button>
   </div>
@@ -9,5 +9,14 @@
 <script>
 export default {
   name: "LogoutButton",
+
+  methods: {
+    onClickLogout() {
+      console.log("logout clicked.");
+      localStorage.clear();
+      sessionStorage.clear();
+      location.reload();
+    },
+  },
 };
 </script>

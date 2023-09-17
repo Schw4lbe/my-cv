@@ -1216,7 +1216,7 @@ body,
 }
 
 .logout-container {
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .logout-container .logout-button {
   border: none;
@@ -1228,11 +1228,6 @@ body,
   justify-content: center;
   align-items: center;
   background: transparent;
-  border: 1px solid transparent;
-  transition: 0.4s;
-}
-.logout-container .logout-button:hover {
-  border: 1px solid #f2f2f2;
 }
 .logout-container .logout-button:hover i,
 .logout-container .logout-button span {
