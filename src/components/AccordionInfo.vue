@@ -17,23 +17,21 @@
           ><span>{{ item.period }}</span>
         </label>
         <div class="tab-content">
+          <p>{{ item.text }}</p>
+          <h3>{{ item.subheader }}</h3>
           <ul>
             <li v-for="subtopic in item.subtopics" :key="subtopic">
               {{ subtopic }}
             </li>
             <br />
-            <span
+            <span v-if="item.success != undefined"
               ><i>{{ setRefSuccessMsg }}{{ item.success }}</i></span
             >
           </ul>
-          <div class="tab-media">
-            <img
-              v-if="item.logo != undefined && item.logo.length > 0"
-              :src="item.logo"
-              alt="logo"
-            />
+          <div v-if="item.logo != undefined" class="tab-media">
+            <img :src="item.logo" alt="logo" />
           </div>
-          <div v-if="item.link.length > 0" class="tab-link-container">
+          <div v-if="item.link != undefined" class="tab-link-container">
             <a class="tab-link" :href="item.link" target="_blank">{{
               setButtonText
             }}</a>

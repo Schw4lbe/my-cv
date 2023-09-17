@@ -78,7 +78,6 @@ export const data = {
     buttonLinkText: "Homepage des Unternehmens",
     referenceSuccessMsg: "Größter Erfolg: ",
     modalButtonText: "Vollbild mit Klick",
-    accordionCloseAll: "Alle schließen",
 
     introHeader: "Lebenslauf",
     introHeaderTechStack: "Online Lebenslauf Tech Stack",
@@ -187,79 +186,69 @@ export const data = {
     ],
     referenceArray: [
       {
-        id: "01",
-        name: "Wetter APP",
-        content: {
-          text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
-          subheader: "Tech Stack:",
-          notes: [
-            "VUE.JS 3, HTML, CSS, JavaScript ES6, Node.js, Express",
-            "VUE Router, ESLint, Prettier, Visual Studio Code",
-            "OpenWeatherAPI: https://openweathermap.org",
-          ],
-          img: img04,
-        },
+        id: "1",
+        header: "Wetter APP",
+        subheader: "Tech Stack:",
+        subtopics: [
+          "VUE.JS 3, HTML, CSS, JavaScript ES6, Node.js, Express",
+          "VUE Router, ESLint, Prettier, Visual Studio Code",
+          "OpenWeatherAPI: https://openweathermap.org",
+        ],
+        text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
+        img: img04,
       },
       {
-        id: "02",
-        name: "Dummy Homepage",
-        content: {
-          text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
-          subheader: "Tech Stack:",
-          notes: [
-            "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
-            "VUE Router, Bootstrap via CDN, ESLint, Prettier",
-            "Visual Studio Code, LiveSASS Compiler",
-            "JSON-Server als Fake Backend",
-          ],
-          img: img02,
-        },
+        id: "2",
+        header: "Dummy Homepage",
+        subheader: "Tech Stack:",
+        subtopics: [
+          "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
+          "VUE Router, Bootstrap via CDN, ESLint, Prettier",
+          "Visual Studio Code, LiveSASS Compiler",
+          "JSON-Server als Fake Backend",
+        ],
+        text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
+        img: img02,
       },
       {
-        id: "03",
-        name: "Kontakt Formular",
-        content: {
-          text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
-          subheader: "Tech Stack & Details:",
-          notes: [
-            "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
-            "Verifzierung Telefonnummer und E-Mail Adresse via Regex",
-            "Eigener Captcha samt Honeypot",
-            "Captcha Lösungswort & Honeypot durch CSS manipuliert",
-          ],
-          img: img03,
-        },
+        id: "3",
+        header: "Kontakt Formular",
+        subheader: "Tech Stack & Details:",
+        subtopics: [
+          "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
+          "Verifzierung Telefonnummer und E-Mail Adresse via Regex",
+          "Eigener Captcha samt Honeypot",
+          "Captcha Lösungswort & Honeypot durch CSS manipuliert",
+        ],
+        text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
+        img: img03,
       },
       {
-        id: "04",
-        name: "Kundenprojekt",
-        content: {
-          text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
-          subheader: "Tech Stack & Herausforderungen:",
-          notes: [
-            "VUE.JS 2.x, TypeScript, JSON-Schema",
-            "EDI: Visual Studio Code & PHP Storm",
-            "genannte Technologien waren Neuland",
-            "Kompatibilität für Geräte der letzten 6 Jahre",
-            "Komplette Anwendung läuft in einem IFrame",
-          ],
-          img: img01,
-        },
+        id: "4",
+        header: "Kundenprojekt",
+        subheader: "Tech Stack & Herausforderungen:",
+        subtopics: [
+          "VUE.JS 2.x, TypeScript, JSON-Schema",
+          "EDI: Visual Studio Code & PHP Storm",
+          "genannte Technologien waren Neuland",
+          "Kompatibilität für Geräte der letzten 6 Jahre",
+          "Komplette Anwendung läuft in einem IFrame",
+        ],
+        text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
+        img: img01,
       },
       {
-        id: "05",
-        name: "Game Development",
-        content: {
-          text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst bei zu bringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiter entwickelt.",
-          subheader: "Randnotizen & Tech Stack:",
-          notes: [
-            "Unity Editor & Unity Engine",
-            "C# in Microsoft Visual Studio 2022",
-            "Gameconcept in Markdown",
-            "Item & Crafting Sprites samt Table",
-          ],
-          img: img05,
-        },
+        id: "5",
+        header: "Spiel Entwicklung",
+        subheader: "Randnotizen & Tech Stack:",
+        subtopics: [
+          "Unity Editor & Unity Engine",
+          "C# in Microsoft Visual Studio 2022",
+          "Gameconcept in Markdown",
+          "Item & Crafting Sprites samt Table",
+        ],
+        text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst bei zu bringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiter entwickelt.",
+        img: img05,
       },
     ],
     referenceSubHeader:
@@ -412,7 +401,6 @@ export const data = {
     buttonLinkText: "Company website",
     referenceSuccessMsg: "Greatest success: ",
     modalButtonText: "Click to view full screen",
-    accordionCloseAll: "Close all",
 
     introHeader: "Curriculum Vitae",
     introHeaderTechStack: "Online CV Tech Stack",
@@ -522,7 +510,9 @@ export const data = {
     ],
     referenceArray: [
       {
-        id: "01",
+        id: "1",
+        logo: "",
+        link: "",
         name: "Weather APP",
         content: {
           text: "For practice in integrating and handling APIs, as well as in writing Node.js, I followed several YouTube tutorials. Besides this application, I also created a small chatbot and a task manager. The application is based on the OpenWeatherAPI.",
@@ -536,7 +526,9 @@ export const data = {
         },
       },
       {
-        id: "02",
+        id: "2",
+        logo: "",
+        link: "",
         name: "Dummy Homepage",
         content: {
           text: "Over the past few months, I have set up a dummy homepage. Whenever I discover a new technology or want to test a design, I can refer back to this build. The dummy page allows me to test and learn quickly and efficiently.",
@@ -551,7 +543,9 @@ export const data = {
         },
       },
       {
-        id: "03",
+        id: "3",
+        logo: "",
+        link: "",
         name: "Contact Form",
         content: {
           text: "Creation of my own contact form to reinforce newly acquired knowledge, as well as a creative playground for various styling ideas.",
@@ -566,7 +560,9 @@ export const data = {
         },
       },
       {
-        id: "04",
+        id: "4",
+        logo: "",
+        link: "",
         name: "Costumer project",
         content: {
           text: "Client project for Stadtwerke Lauterbach. Implementation of an online ordering process using VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
@@ -582,7 +578,9 @@ export const data = {
         },
       },
       {
-        id: "05",
+        id: "5",
+        logo: "",
+        link: "",
         name: "Game Development",
         content: {
           text: "My passion for computer games led me to teach myself programming in C# based on the Unity Engine using Unity documentation, C# documentation, YouTube tutorials, Google, and Chat GPT. I consider this hobby project a work in progress and continue to develop it consistently.",
