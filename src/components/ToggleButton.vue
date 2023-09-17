@@ -37,12 +37,10 @@ export default {
     ...mapMutations(["setLanguageDE", "setLanguageEN"]),
 
     setLanguageToDE() {
-      console.log("set language: DE");
       this.setLanguageDE();
     },
 
     setLanguageToEN() {
-      console.log("set language: EN");
       this.setLanguageEN();
     },
   },

@@ -129,7 +129,6 @@ export default {
     // dev only:
     handleLogin(credentials) {
       this.setCookieLanguage(credentials.language);
-      console.log("cookie: ", this.selectedLanguage);
       this.loginSuccess();
     },
 
