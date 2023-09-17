@@ -75,6 +75,8 @@ export const data = {
       message2: " Sekunden erneut.",
     },
     errorMsg: "Login Server nicht verfügbar.",
+    buttonLinkText: "Homepage des Unternehmens",
+    referenceSuccessMsg: "Größter Erfolg: ",
     codingItems: [
       {
         id: "1",
@@ -386,6 +388,8 @@ export const data = {
     },
 
     errorMsg: "Login Server not available.",
+    buttonLinkText: "Company website",
+    referenceSuccessMsg: "Greatest success: ",
     codingItems: [
       {
         id: "1",

@@ -23,7 +23,7 @@
             </li>
             <br />
             <span
-              ><i>Größter Erfolg: {{ item.success }}</i></span
+              ><i>{{ setRefSuccessMsg }}{{ item.success }}</i></span
             >
           </ul>
           <div class="tab-media">
@@ -34,9 +34,9 @@
             />
           </div>
           <div v-if="item.link.length > 0" class="tab-link-container">
-            <a class="tab-link" :href="item.link" target="_blank"
-              >Homepage des Unternehmens</a
-            >
+            <a class="tab-link" :href="item.link" target="_blank">{{
+              setButtonText
+            }}</a>
           </div>
         </div>
       </div>
@@ -45,11 +45,28 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "AccordionInfo",
   props: {
     items: Array,
   },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+
+    setRefSuccessMsg() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .referenceSuccessMsg;
+    },
+
+    setButtonText() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .buttonLinkText;
+    },
+  },
+
   data() {
     return {
       checkedIndex: 0,
