@@ -42,7 +42,7 @@
             </div>
             <div class="tab">
               <input type="radio" id="rd3" name="rd" />
-              <label for="rd3" class="tab-close">Alle schließen. &times;</label>
+              <label for="rd3" class="tab-close">{{ accordionCloseAll }}</label>
             </div>
           </div>
         </div>
@@ -52,6 +52,7 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import VueModal from "./VueModal.vue";
 
 export default {
@@ -63,6 +64,16 @@ export default {
   components: {
     VueModal,
   },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+
+    accordionCloseAll() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .accordionCloseAll;
+    },
+  },
+
   data() {
     return {
       checkedIndex: 0,

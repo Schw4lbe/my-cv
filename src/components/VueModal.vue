@@ -3,7 +3,7 @@
     <div @click="openModal" class="image-frame">
       <img class="image" :src="image" />
       <div class="click-overlay">
-        <span class="click-text">Vollbild mit Klick</span>
+        <span class="click-text">{{ modalButtonText }}</span>
       </div>
     </div>
     <div class="modal" v-if="showModal">
@@ -21,12 +21,24 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "VueModal",
   props: {
     image: String,
     modalHeader: String,
   },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+
+    modalButtonText() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .modalButtonText;
+    },
+  },
+
   data() {
     return {
       showModal: false,

@@ -77,6 +77,8 @@ export const data = {
     errorMsg: "Login Server nicht verfügbar.",
     buttonLinkText: "Homepage des Unternehmens",
     referenceSuccessMsg: "Größter Erfolg: ",
+    modalButtonText: "Vollbild mit Klick",
+    accordionCloseAll: "Alle schließen",
 
     introHeader: "Lebenslauf",
     introHeaderTechStack: "Online Lebenslauf Tech Stack",
@@ -409,6 +411,8 @@ export const data = {
     errorMsg: "Login Server not available.",
     buttonLinkText: "Company website",
     referenceSuccessMsg: "Greatest success: ",
+    modalButtonText: "Click to view full screen",
+    accordionCloseAll: "Close all",
 
     introHeader: "Curriculum Vitae",
     introHeaderTechStack: "Online CV Tech Stack",
