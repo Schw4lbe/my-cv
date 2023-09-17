@@ -2,7 +2,7 @@
 .navbar {
   align-items: center;
   min-width: 840px;
-  max-width: 1920px;
+  max-width: 1420px;
   border-right: 2px solid #f2f2f2;
 }
 .navbar .router-link-active,
@@ -274,7 +274,7 @@ body,
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1420px;
   margin-bottom: 50px;
 }
 .data-container .skill-data-container {
@@ -832,7 +832,7 @@ body,
 }
 .coding-wrapper .coding-data-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1420px;
 }
 
 .freelance-wrapper {
@@ -844,7 +844,7 @@ body,
 }
 .freelance-wrapper .freelance-data-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1420px;
 }
 
 .personal-data-wrapper {
@@ -864,7 +864,7 @@ body,
 }
 .reference-wrapper .reference-data-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1420px;
 }
 
 .sales-wrapper {
@@ -875,7 +875,7 @@ body,
 }
 .sales-wrapper .sales-data-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1420px;
   background: #e4e4e4;
   display: flex;
   justify-content: center;
@@ -1163,7 +1163,7 @@ body,
 }
 .outro-wrapper .outro-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1420px;
   background: #e4e4e4;
 }
 
