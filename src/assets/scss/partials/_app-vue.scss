@@ -14,7 +14,7 @@ body,
 }
 
 .page-title {
-  padding-top: 50px;
+  padding-top: 70px;
   margin: 2rem 0 0;
   color: $clr-accent-a;
   text-transform: uppercase;
@@ -30,6 +30,8 @@ body,
   flex-direction: row;
   position: fixed;
   background: $clr-primary-light2;
+  z-index: 99;
+  border-bottom: 1px solid $clr-secondary-dark;
 }
 
 .cv-readycheck {

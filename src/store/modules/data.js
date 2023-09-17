@@ -80,6 +80,8 @@ export const data = {
 
     errorMsg: "Login Server nicht verfügbar.",
     buttonLinkText: "Homepage des Unternehmens",
+    accordionOpenText: "aufklappen",
+    accordionCollapseText: "zuklappen",
     referenceSuccessMsg: "Größter Erfolg: ",
     modalButtonText: "Vollbild mit Klick",
     introHeader: "Lebenslauf",
@@ -250,7 +252,7 @@ export const data = {
       {
         id: "5",
         hasMedia: true,
-        header: "Spiel Entwicklung",
+        header: "Spiele Entwicklung",
         subheader: "Randnotizen & Tech Stack:",
         subtopics: [
           "Unity Editor & Unity Engine",
@@ -411,6 +413,8 @@ export const data = {
 
     errorMsg: "Login Server not available.",
     buttonLinkText: "Company website",
+    accordionOpenText: "expand",
+    accordionCollapseText: "collapse",
     referenceSuccessMsg: "Greatest success: ",
     modalButtonText: "Click to view full screen",
     introHeader: "Curriculum Vitae",

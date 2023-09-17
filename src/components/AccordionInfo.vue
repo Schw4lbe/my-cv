@@ -1,6 +1,9 @@
 <template>
   <div class="accordion-wrapper">
     <div class="accordion-container">
+      <div @click="onClickOpenTabs" class="tab tab-control">
+        {{ accordionOpenText }}
+      </div>
       <div
         @click="focusOnClick"
         v-for="(item, index) in items"
@@ -26,7 +29,9 @@
                 {{ subtopic }}
               </li>
             </ul>
-            <VueModal :image="item.media" :modalHeader="item.header" />
+            <div class="media-container">
+              <VueModal :image="item.media" :modalHeader="item.header" />
+            </div>
           </div>
         </div>
 
@@ -49,6 +54,9 @@
             }}</a>
           </div>
         </div>
+      </div>
+      <div @click="onClickCloseTabs" class="tab tab-control">
+        {{ accordionCollapseText }}
       </div>
     </div>
   </div>
@@ -79,6 +87,16 @@ export default {
       return this.$store.state.contentData[this.selectedLanguage]
         .buttonLinkText;
     },
+
+    accordionOpenText() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .accordionOpenText;
+    },
+
+    accordionCollapseText() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .accordionCollapseText;
+    },
   },
 
   data() {
@@ -92,6 +110,14 @@ export default {
       setTimeout(function () {
         e.target.scrollIntoView({ behavior: "smooth" });
       }, 100);
+    },
+
+    onClickOpenTabs() {
+      console.log("open");
+    },
+
+    onClickCloseTabs() {
+      console.log("close");
     },
   },
 };

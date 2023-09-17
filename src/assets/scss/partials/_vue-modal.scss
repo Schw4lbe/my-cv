@@ -27,6 +27,12 @@
     filter: grayscale(75%);
     transform: scale(1);
     transition: 0.3s;
+
+    img {
+      height: auto;
+      width: 100%;
+      padding: 0 2rem 0 0;
+    }
   }
 
   .image-frame:hover {
@@ -65,14 +71,14 @@
         background: none;
         border: none;
         i {
-          color: $clr-accent-g;
+          color: $clr-accent-f;
           font-size: 1.4rem;
           transition: 0.2s;
+          padding: 0.5rem;
         }
 
         &:hover i {
           color: $clr-secondary;
-          font-size: 1.5rem;
           transition: 0.2s;
         }
       }
@@ -80,9 +86,15 @@
   }
 
   .modal-content {
-    width: 65%;
-    height: auto;
-    padding: 20px;
-    background: #222;
+    width: 90%;
+    max-width: max-content;
+    height: max-content;
+    max-height: 85%;
+    padding: 10px;
+    background: $clr-primary;
+
+    .modal-image {
+      max-height: 95%;
+    }
   }
 }
