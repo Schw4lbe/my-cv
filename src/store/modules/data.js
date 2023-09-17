@@ -79,6 +79,10 @@ export const data = {
     referenceSuccessMsg: "Größter Erfolg: ",
 
     introHeader: "Lebenslauf",
+    introHeaderTechStack: "Online Lebenslauf Tech Stack",
+    introHeaderTesting: "Online Lebenslauf Kompatibilität",
+    introHeaderStrength: "Stärken",
+    introHeaderHobbies: "Hobbies",
     introData: [
       {
         header: "Präambel",
@@ -407,6 +411,10 @@ export const data = {
     referenceSuccessMsg: "Greatest success: ",
 
     introHeader: "Curriculum Vitae",
+    introHeaderTechStack: "Online CV Tech Stack",
+    introHeaderTesting: "Online CV Compatibility",
+    introHeaderStrength: "Strengths",
+    introHeaderHobbies: "Hobbies",
     introData: [
       {
         header: "Preamble",

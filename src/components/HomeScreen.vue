@@ -15,7 +15,7 @@
       <p>{{ intro[0].text }}</p>
     </div>
     <div class="home-tech">
-      <h3 class="tech-header">Online-CV Tech Stack</h3>
+      <h3 class="tech-header">{{ setIntroHeaderTechStack }}</h3>
       <div class="tech-container">
         <ul class="tech-list">
           <li v-for="(tech, index) in technologies" :key="index">
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="home-testing">
-      <h3 class="testing-header">Online-CV Kompatibilität</h3>
+      <h3 class="testing-header">{{ setIntroHeaderTesting }}</h3>
       <div class="testing-container">
         <ul class="testing-list">
           <li
@@ -48,13 +48,13 @@
     <div class="home-data-container">
       <div class="home-props">
         <div class="properties">
-          <h3 class="prop-header">Stärken</h3>
+          <h3 class="prop-header">{{ setIntroHeaderStrength }}</h3>
           <ul>
             <li v-for="(prop, index) in props" :key="index">{{ prop }}</li>
           </ul>
         </div>
         <div class="hobbies">
-          <h3 class="hobby-header">Hobbies</h3>
+          <h3 class="hobby-header">{{ setIntroHeaderHobbies }}</h3>
           <ul>
             <li v-for="(hobby, index) in hobbies" :key="index">
               {{ hobby }}
@@ -67,6 +67,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "HomeScreen",
   props: {
@@ -77,6 +79,30 @@ export default {
     testing: Array,
     hobbies: Array,
     technologies: Array,
+  },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+
+    setIntroHeaderTechStack() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .introHeaderTechStack;
+    },
+
+    setIntroHeaderTesting() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .introHeaderTesting;
+    },
+
+    setIntroHeaderStrength() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .introHeaderStrength;
+    },
+
+    setIntroHeaderHobbies() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .introHeaderHobbies;
+    },
   },
 };
 </script>
