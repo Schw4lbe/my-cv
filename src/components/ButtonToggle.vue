@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <input type="checkbox" />
+  <div class="toggle-button-container">
+    <input class="toggle-button" type="checkbox" />
   </div>
 </template>
 
@@ -10,11 +10,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 :root {
   --white: #fffffe;
   --grey: #94a1b2;
   --purple-dark: #7f5af0;
+}
+
+.toggle-button-container {
+  padding: 0.5rem;
 }
 
 input {
