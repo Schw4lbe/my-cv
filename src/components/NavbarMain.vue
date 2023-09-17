@@ -31,15 +31,20 @@
           </li>
         </ul>
       </div>
+      <ButtonToggle />
     </div>
   </nav>
 </template>
 
 <script>
 import router from "@/router";
+import ButtonToggle from "@/components/ButtonToggle.vue";
 
 export default {
   name: "NavbarMain",
+  components: {
+    ButtonToggle,
+  },
   props: {
     navbarItems: Array,
   },
