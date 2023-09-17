@@ -391,9 +391,9 @@ export const data = {
     referenceArray: [
       {
         id: "01",
-        name: "Wetter APP",
+        name: "Weather APP",
         content: {
-          text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
+          text: "For practice in integrating and handling APIs, as well as in writing Node.js, I followed several YouTube tutorials. Besides this application, I also created a small chatbot and a task manager. The application is based on the OpenWeatherAPI.",
           subheader: "Tech Stack:",
           notes: [
             "VUE.JS 3, HTML, CSS, JavaScript ES6, Node.js, Express",
@@ -407,44 +407,44 @@ export const data = {
         id: "02",
         name: "Dummy Homepage",
         content: {
-          text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
+          text: "Over the past few months, I have set up a dummy homepage. Whenever I discover a new technology or want to test a design, I can refer back to this build. The dummy page allows me to test and learn quickly and efficiently.",
           subheader: "Tech Stack:",
           notes: [
             "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
             "VUE Router, Bootstrap via CDN, ESLint, Prettier",
             "Visual Studio Code, LiveSASS Compiler",
-            "JSON-Server als Fake Backend",
+            "JSON-Server as fake Backend",
           ],
           img: img02,
         },
       },
       {
         id: "03",
-        name: "Kontakt Formular",
+        name: "Contact Form",
         content: {
-          text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
+          text: "Creation of my own contact form to reinforce newly acquired knowledge, as well as a creative playground for various styling ideas.",
           subheader: "Tech Stack & Details:",
           notes: [
             "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
-            "Verifzierung Telefonnummer und E-Mail Adresse via Regex",
-            "Eigener Captcha samt Honeypot",
-            "Captcha Lösungswort & Honeypot durch CSS manipuliert",
+            "Verification of phone number and email address via Regex",
+            "Own Captcha along with Honeypot",
+            "Captcha solution word & Honeypot manipulated through CSS",
           ],
           img: img03,
         },
       },
       {
         id: "04",
-        name: "Kundenprojekt",
+        name: "Costumer project",
         content: {
-          text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
-          subheader: "Tech Stack & Herausforderungen:",
+          text: "Client project for Stadtwerke Lauterbach. Implementation of an online ordering process using VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
+          subheader: "Tech Stack & Challenge:",
           notes: [
             "VUE.JS 2.x, TypeScript, JSON-Schema",
             "EDI: Visual Studio Code & PHP Storm",
-            "genannte Technologien waren Neuland",
-            "Kompatibilität für Geräte der letzten 6 Jahre",
-            "Komplette Anwendung läuft in einem IFrame",
+            "mentioned technologies were uncharted territory",
+            "compatibility for devices from the last 6 years",
+            "entire application runs within an iFrame",
           ],
           img: img01,
         },
@@ -453,13 +453,13 @@ export const data = {
         id: "05",
         name: "Game Development",
         content: {
-          text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst bei zu bringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiter entwickelt.",
-          subheader: "Randnotizen & Tech Stack:",
+          text: "My passion for computer games led me to teach myself programming in C# based on the Unity Engine using Unity documentation, C# documentation, YouTube tutorials, Google, and Chat GPT. I consider this hobby project a work in progress and continue to develop it consistently.",
+          subheader: "Sidenotes & Tech Stack:",
           notes: [
             "Unity Editor & Unity Engine",
             "C# in Microsoft Visual Studio 2022",
-            "Gameconcept in Markdown",
-            "Item & Crafting Sprites samt Table",
+            "Game concept in Markdown",
+            "Item & Crafting Sprites along with Table",
           ],
           img: img05,
         },
