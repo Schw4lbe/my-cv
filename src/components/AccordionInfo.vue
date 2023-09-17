@@ -8,9 +8,11 @@
         @click="focusOnClick"
         v-for="(item, index) in items"
         :key="item.id"
-        class="tab"
+        class="tab tab-element"
       >
         <input
+          ref="trigger"
+          class="tab-input"
           type="checkbox"
           :id="item.id"
           :checked="index === checkedIndex"
@@ -102,7 +104,14 @@ export default {
   data() {
     return {
       checkedIndex: 0,
+      tabsArr: null,
+      firstTab: null,
     };
+  },
+
+  mounted() {
+    this.tabsArr = document.querySelectorAll(".tab-input");
+    this.firstTab = document.querySelector(".tab-input");
   },
 
   methods: {
@@ -113,11 +122,16 @@ export default {
     },
 
     onClickOpenTabs() {
-      console.log("open");
+      this.tabsArr.forEach((el) => {
+        el.checked = true;
+      });
     },
 
     onClickCloseTabs() {
-      console.log("close");
+      this.tabsArr.forEach((el) => {
+        el.checked = false;
+      });
+      this.firstTab.checked = true;
     },
   },
 };
