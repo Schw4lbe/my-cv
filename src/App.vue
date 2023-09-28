@@ -1,4 +1,5 @@
 <template>
+  <div v-if="isWaitingForServer" class="login-loading-background"></div>
   <div
     v-if="!isLoginSuccess"
     class="login-wrapper"
@@ -47,7 +48,7 @@ import FooterMain from "@/components/FooterMain.vue";
 import LoginView from "@/views/LoginView.vue";
 import TimeOut from "@/components/TimeOut.vue";
 
-// import axios from "axios";
+import axios from "axios";
 
 export default {
   components: {
@@ -88,6 +89,7 @@ export default {
       "isLoginSuccess",
 
       "selectedLanguage",
+      "isWaitingForServer",
     ]),
 
     selectedLanguage() {
@@ -127,40 +129,40 @@ export default {
 
   methods: {
     // dev only:
-    handleLogin(credentials) {
-      this.setCookieLanguage(credentials.language);
-      this.loginSuccess();
-    },
-
-    // async handleLogin(credentials) {
-    //   try {
-    //     const apiUrl = "https://sandbox-coding.de/login";
-    //     const response = await axios.post(apiUrl, credentials, {
-    //       timeout: 10000,
-    //     });
-
-    //     console.log("Login successful:", response.data);
-    //     this.$store.commit("loginSuccess");
-    //     this.hideLogin();
-    //     this.setCookieLanguage(credentials.language);
-    //   } catch (error) {
-    //     if (!error.response) {
-    //       this.setCookieLanguage(credentials.language);
-    //       console.error("Server not available.");
-    //       console.log(error.response);
-    //       this.serverErrorTrue();
-    //       this.notWaitingForServerResponse();
-    //     } else if (error.response.status === 401) {
-    //       this.setCookieLanguage(credentials.language);
-    //       this.enableTimeout();
-    //       this.notWaitingForServerResponse();
-    //       setTimeout(() => {
-    //         this.loginFailed = false;
-    //         this.enableLoginButton();
-    //       }, 10000);
-    //     }
-    //   }
+    // handleLogin(credentials) {
+    //   this.setCookieLanguage(credentials.language);
+    //   this.loginSuccess();
     // },
+
+    async handleLogin(credentials) {
+      try {
+        const apiUrl = "https://sandbox-coding.de/login";
+        const response = await axios.post(apiUrl, credentials, {
+          timeout: 10000,
+        });
+
+        console.log("Login successful:", response.data);
+        this.$store.commit("loginSuccess");
+        this.hideLogin();
+        this.setCookieLanguage(credentials.language);
+      } catch (error) {
+        if (!error.response) {
+          this.setCookieLanguage(credentials.language);
+          console.error("Server not available.");
+          console.log(error.response);
+          this.serverErrorTrue();
+          this.notWaitingForServerResponse();
+        } else if (error.response.status === 401) {
+          this.setCookieLanguage(credentials.language);
+          this.enableTimeout();
+          this.notWaitingForServerResponse();
+          setTimeout(() => {
+            this.loginFailed = false;
+            this.enableLoginButton();
+          }, 10000);
+        }
+      }
+    },
 
     setCookieLanguage(lang) {
       if (lang === "de") {

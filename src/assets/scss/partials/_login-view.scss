@@ -1,3 +1,13 @@
+.login-loading-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba($color: #fff, $alpha: 0.8);
+  z-index: 1;
+}
+
 .login-wrapper {
   height: 100%;
   width: 100%;
@@ -96,19 +106,29 @@
           }
         }
 
+        // .login-loading-background {
+        //   height: 100%;
+        //   width: 100%;
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   background: rgba($color: #fff, $alpha: 0.8);
+        // }
+
         .login-loading {
           position: relative;
           top: -265px;
           // left: 37px;
           height: 275px;
           width: 250px;
-          background: rgba($color: $clr-secondary, $alpha: 0.9);
+          background: transparent;
           border-radius: 25px;
+          z-index: 2;
 
           p {
             position: absolute;
             top: 170px;
-            left: 55px;
+            left: 80px;
             font-weight: bold;
           }
 

@@ -17,14 +17,26 @@
   animation-duration: 1s;
   animation-delay: 25s;
 
+  .readycheck-background {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://i.imgur.com/pFFEJDg.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(0.4);
+    animation: moveBackground 300s linear infinite;
+  }
+
   .form-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
     height: max-content;
-    background: $clr-secondary-dark;
-    border-top: 10px solid $clr-accent;
-    border-bottom: 10px solid $clr-accent;
+    background: rgba($color: $clr-primary, $alpha: 0.4);
+    border-top: 3px solid $clr-accent-e;
+    border-bottom: 3px solid $clr-accent-e;
 
     form {
       padding: 1rem;
@@ -33,7 +45,7 @@
       height: max-content;
 
       h3 {
-        color: $clr-primary;
+        color: $clr-secondary;
         padding: 2rem 0;
         font-size: 2rem;
         text-align: center;
@@ -54,7 +66,7 @@
         }
 
         .input-label {
-          color: $clr-primary-light3;
+          color: $clr-secondary-dark;
           padding: 1rem;
           margin-left: 10px;
           font-size: 1.2rem;
@@ -75,7 +87,7 @@
 
         input:checked ~ .input-label {
           transition: 0.6s;
-          color: $clr-primary;
+          color: $clr-secondary;
         }
 
         input:checked ~ .icon-container .input-icon {
@@ -102,11 +114,11 @@
 
           &:disabled {
             transition: 1s;
-            color: $clr-secondary-dark;
-            background: $clr-secondary-dark;
+            color: transparent;
+            background: transparent;
             &:hover {
-              background: $clr-secondary-dark;
-              color: $clr-secondary-dark;
+              color: transparent;
+              background: transparent;
             }
           }
 
@@ -131,4 +143,16 @@
 
 .hide {
   display: none !important;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }

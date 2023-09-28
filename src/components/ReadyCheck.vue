@@ -3,6 +3,7 @@
     <IntroScene :content="contentArray" />
   </div>
   <div class="readycheck-container">
+    <div class="readycheck-background"></div>
     <div class="form-wrapper">
       <form action="" @submit="formSubmit">
         <h3>{{ content.header }}</h3>

@@ -47,7 +47,6 @@
     >
       Login
     </button>
-
     <div v-if="isWaitingForServer" class="login-loading">
       <p>{{ loading }}</p>
       <i class="fa-regular fa-hourglass-half"></i>
