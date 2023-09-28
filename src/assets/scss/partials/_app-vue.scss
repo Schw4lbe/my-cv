@@ -14,9 +14,11 @@ body,
 }
 
 .page-title {
-  padding-top: 70px;
-  margin: 2rem 0 0;
+  padding: 80px 0 1rem 0;
+  // margin-bottom: 2rem 0 0;
+  width: 100%;
   color: $clr-accent-a;
+  border-bottom: 1px solid $clr-accent;
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;

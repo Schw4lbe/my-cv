@@ -42,6 +42,7 @@ $clouds: $clr-secondary;
 
     &:hover {
       background: $clr-primary-light3;
+      color: $clr-secondary !important;
     }
   }
 
@@ -134,6 +135,14 @@ $clouds: $clr-secondary;
       margin-left: -1rem;
     }
 
+    ul li::before {
+      content: "" !important;
+    }
+
+    li {
+      list-style: square !important;
+    }
+
     // ul li:before {
     //   content: "\2666";
     //   color: $clr-accent-e;
@@ -179,6 +188,14 @@ $clouds: $clr-secondary;
         display: inline-block;
         width: 1rem;
         margin-left: -1rem;
+      }
+
+      ul li::before {
+        content: "" !important;
+      }
+
+      li {
+        list-style: square !important;
       }
 
       // ul li:before {

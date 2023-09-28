@@ -143,6 +143,14 @@
           margin-left: -1rem;
         }
 
+        ul li::before {
+          content: "" !important;
+        }
+
+        li {
+          list-style: square !important;
+        }
+
         // ul li:before {
         //   content: "\2666";
         //   color: $clr-accent-e;

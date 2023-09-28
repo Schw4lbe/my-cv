@@ -1,0 +1,8 @@
+@import "breakpoint-variables";
+
+@media (max-width: $bp-lg) {
+  .page-title {
+    padding-top: 1rem;
+    font-size: 2.4rem;
+  }
+}
