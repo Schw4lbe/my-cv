@@ -172,7 +172,7 @@ export const data = {
         success:
           "Twitch Livestream vor knapp 1000 Viewern mit Schallplatten - Hosting durch bekannten Künstler",
         logo: Logo5,
-        link: "https://soundcloud.com/tape-mate",
+        link: "",
       },
       {
         id: "2",
@@ -188,7 +188,7 @@ export const data = {
         success:
           "Drei Fragezeichen Festival Feierwerk München (ca. 1.200 Besucher)",
         logo: Logo6,
-        link: "https://soundcloud.com/muenchner-grammophon",
+        link: "",
       },
     ],
 
@@ -506,7 +506,7 @@ export const data = {
         success:
           "Twitch livestream for nearly 1,000 viewers with vinyl records - Hosting by a well-known artist.",
         logo: Logo5,
-        link: "https://soundcloud.com/tape-mate",
+        link: "",
       },
       {
         id: "2",
@@ -523,7 +523,7 @@ export const data = {
           "Drei Fragezeichen Festival Feierwerk Munich (ca. 1.200 participants)",
         logo: Logo6,
 
-        link: "https://soundcloud.com/muenchner-grammophon",
+        link: "",
       },
     ],
 

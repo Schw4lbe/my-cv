@@ -50,7 +50,10 @@
           <div v-if="item.logo != undefined" class="tab-image-container">
             <img :src="item.logo" alt="logo" />
           </div>
-          <div v-if="item.link != undefined" class="tab-link-container">
+          <div
+            v-if="item.link != undefined && item.link.length > 0"
+            class="tab-link-container"
+          >
             <a class="tab-link" :href="item.link" target="_blank">{{
               setHyperlinkText
             }}</a>
