@@ -1406,20 +1406,15 @@ body,
   .accordion-container {
     margin: 0 !important;
   }
-  .accordion-container .tab-content {
-    padding: 0 5px !important;
+  .accordion-container p,
+  .accordion-container ul {
+    padding: 0 !important;
   }
-  .accordion-container .tab-content ul,
-  .accordion-container .tab-content .tab-media {
-    margin-top: 1rem !important;
+  .accordion-container ul li::before {
+    content: "" !important;
   }
-  .accordion-container .tab-content ul li,
-  .accordion-container .tab-content .tab-media li {
-    border-bottom: 1px solid #e4e4e4;
-    margin-bottom: 5px;
-  }
-  .accordion-container .tab-content .tab-link-container {
-    margin-bottom: 20px;
+  .accordion-container li {
+    list-style: square !important;
   }
 }
 @media (max-width: 576px) {
