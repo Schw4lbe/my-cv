@@ -345,6 +345,11 @@ export const data = {
         link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
       },
     ],
+
+    outroItems: [
+      { header: "header01", content: ["item1", "item2", "item3"] },
+      { header: "header02", content: ["item1", "item2", "item3"] },
+    ],
   },
 
   en: {

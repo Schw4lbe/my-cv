@@ -1,7 +1,7 @@
 <template>
   <div class="outro-wrapper">
     <h3 class="page-title">{{ setHeader }}</h3>
-    <OutroSummit />
+    <OutroSummit :items="itemArr" />
   </div>
 </template>
 
@@ -19,6 +19,10 @@ export default {
     setHeader() {
       return this.$store.state.contentData[this.selectedLanguage].menuItems[5]
         .name;
+    },
+
+    itemArr() {
+      return this.$store.state.contentData[this.selectedLanguage].outroItems;
     },
   },
 };

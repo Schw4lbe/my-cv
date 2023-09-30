@@ -9,13 +9,23 @@
       begreifen.
     </p>
     <p>Login logisch von app.vue trennen</p>
+
+    <div v-for="(topic, index) in items" :key="index" class="outro-content">
+      <h5>{{ topic.header }}</h5>
+      <ul>
+        <li v-for="(item, index) in topic.content" :key="index">{{ item }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "OutroSummit",
+  props: {
+    items: Array,
+  },
 };
 </script>
 
-<style></style>
+<style scoped></style>
