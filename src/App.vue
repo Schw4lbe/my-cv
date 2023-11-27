@@ -138,6 +138,8 @@ export default {
       this.loginSuccess();
     },
 
+    // test
+
     // async handleLogin(credentials) {
     //   try {
     //     const apiUrl = "https://sandbox-coding.de/login";
