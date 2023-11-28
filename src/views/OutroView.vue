@@ -1,7 +1,11 @@
 <template>
   <div class="outro-wrapper">
     <h3 class="page-title">{{ setHeader }}</h3>
-    <OutroSummit :items="itemArr" :subHeader="setSubHeader" />
+    <OutroSummit
+      :items="itemArr"
+      :subHeader="setSubHeader"
+      :mainContent="setMainContent"
+    />
   </div>
 </template>
 
@@ -23,6 +27,11 @@ export default {
 
     setSubHeader() {
       return this.$store.state.contentData[this.selectedLanguage].outroHeader;
+    },
+
+    setMainContent() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .outroMainContent;
     },
 
     itemArr() {

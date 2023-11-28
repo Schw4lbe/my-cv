@@ -1,14 +1,7 @@
 <template>
   <div class="outro-container">
     <h3>{{ subHeader }}</h3>
-    <p>
-      Hier kommt noch rein, was ich gelernt habe, was neu für mich war, wo meine
-      Herausforderungen lagen, was ich besser möchen würde und was mir am
-      meisten Spaß gemacht hat, sowie eine Quellenangabe der genutzen foren,
-      informationsplattformen und co. Composition API nutzen und vollständig
-      begreifen.
-    </p>
-    <p>Login logisch von app.vue trennen</p>
+    <p>{{ mainContent }}</p>
 
     <div v-for="(topic, index) in items" :key="index" class="outro-content">
       <h5>{{ topic.title }}</h5>
@@ -25,6 +18,7 @@ export default {
   props: {
     items: Array,
     subHeader: String,
+    mainContent: String,
   },
 };
 </script>

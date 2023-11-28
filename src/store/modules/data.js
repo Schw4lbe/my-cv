@@ -346,9 +346,52 @@ export const data = {
       },
     ],
     outroHeader: "Abschließende Worte...",
+    outroMainContent:
+      "Ich hatte große Freude an der Erstellung dieses Projekts. Im Nachfolgenden möchte ich beschreiben, was neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
     outroItems: [
-      { title: "header01", content: ["item1", "item2", "item3"] },
-      { title: "header02", content: ["item1", "item2", "item3"] },
+      {
+        title: "neue Technologie:",
+        content: [
+          "VUEX State & Content Management, samt Erzeugung Session Cookie",
+          "Gulp Task Automatisierung mittels Autoprefixer & PostCSS",
+          "Ubuntu in der Azure Cloud und Setup eines Backend Servers",
+          "Automatisierung des Backends mittels PM2 Manager",
+          "SSL Zertifikatsbeantragung bei Let's Encrypt mittels NGINX",
+        ],
+      },
+      {
+        title: "Die größten Herausforderungen:",
+        content: [
+          "Erstellung des Backends beginnend mit Node.js bis hin zur Umsetzung in Ubuntu on Azure",
+          "Einrichtung Webserver auf Azure Maschine zur Erstellung des SSL Zertifikats",
+          "VUEX für Session Management, da alles neu für mich war.",
+          "Erstellung eines Loginprozederes samt Prüfung der Daten",
+        ],
+      },
+      {
+        title: "Verbesserungspotenzial:",
+        content: [
+          "Verwendung der VUE Composition API da zukunftsicher",
+          "Einbindung eines Authentifizierungsservice - z.B. JSON Webtoken - für sauberen Login",
+          "Login Logik sauberer von App.vue trennen und wartbarer gestalten",
+          "Login Logik & Backend ausbauen, Session Timeout & Authentisierung implementieren",
+        ],
+      },
+      {
+        title: "Quellenangaben:",
+        content: [
+          "developer.mozilla.org",
+          "stackoverflow.com/",
+          "codepen.io",
+          "chat.openai.com",
+          "getbootstrap.com",
+          "fontawesome.com",
+          "learn.microsoft.com",
+          "vuejs.org",
+          "gulpjs.com",
+          "github.com",
+        ],
+      },
     ],
   },
 
@@ -686,9 +729,52 @@ export const data = {
       },
     ],
     outroHeader: "Some closing arguments...",
+    outroMainContent:
+      "I greatly enjoyed working on this project. In the following, I would like to describe what was new to me, my biggest challenges, and what could be done differently or better in future projects.",
     outroItems: [
-      { title: "header01", content: ["item1", "item2", "item3"] },
-      { title: "header02", content: ["item1", "item2", "item3"] },
+      {
+        title: "new technologies:",
+        content: [
+          "VUEX state & content management, including the generation of a session cookie.",
+          "Gulp task automation using Autoprefixer & PostCSS.",
+          "Ubuntu on Azure Cloud and setup a backend server.",
+          "Backend automation using PM2 Manager.",
+          "SSL certificate application with Let's Encrypt using NGINX.",
+        ],
+      },
+      {
+        title: "biggest challenges:",
+        content: [
+          "Backend creation starting with Node.js up to the implementation in Ubuntu on Azure.",
+          "Setting up a web server on an Azure machine for the creation of the SSL certificate.",
+          "VUEX for session management, as everything was new to me.",
+          "Creation of a login procedure including data verification.",
+        ],
+      },
+      {
+        title: "room for approvement:",
+        content: [
+          "Use VUE Composition API as it is future-proof.",
+          "Integration of an authentication service - e.g., JSON Web Token - for a clean login.",
+          "Separate the login logic more cleanly from app.vue and make it more maintainable.",
+          "Expand the login logic & backend, implement session timeout & authentication.",
+        ],
+      },
+      {
+        title: "sources:",
+        content: [
+          "developer.mozilla.org",
+          "stackoverflow.com/",
+          "codepen.io",
+          "chat.openai.com",
+          "getbootstrap.com",
+          "fontawesome.com",
+          "learn.microsoft.com",
+          "vuejs.org",
+          "gulpjs.com",
+          "github.com",
+        ],
+      },
     ],
   },
 
