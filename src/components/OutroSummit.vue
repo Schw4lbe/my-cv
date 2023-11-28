@@ -1,7 +1,7 @@
 <template>
   <div class="outro-container">
     <h3>{{ subHeader }}</h3>
-    <p>{{ mainContent }}</p>
+    <p class="outro-content-main">{{ mainContent }}</p>
 
     <div v-for="(topic, index) in items" :key="index" class="outro-content">
       <h5>{{ topic.title }}</h5>
