@@ -222,7 +222,6 @@ export default {
     onFormSubmitted() {
       this.hideElement();
       this.showCvMain();
-      // this.hideAnimation();
     },
   },
 };
