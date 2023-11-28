@@ -109,7 +109,7 @@ export const data = {
       {
         id: "1",
         header: "Softwareentwicklung Frontend - Vivax Solution GmbH",
-        period: "05/2022 - heute",
+        period: "05/2022 - 06/2023",
         subtopics: [
           "Entwicklung Webcomponents in vue.js mit TypeScript für conditional Rendering von JSON Schema",
           "Umfang: JavaScript, TypeScript, CSS, SCSS, HTML, JSON in PHP Storm & Visual Studio Code",
@@ -160,6 +160,20 @@ export const data = {
     freelanceItems: [
       {
         id: "1",
+        header: "Selbstständige Weiterbildung - Webentwicklung",
+        period: "06/2023 - heute",
+        subtopics: [
+          "Planung & Erstellung eines online Lebenslaufes auf Basis von VUE.js 3.x",
+          "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
+          "Verwendung neuer Technologien - siehe Schlusswort für mehr Details",
+          "Besuch von diversen online Schulungen & Tutorials",
+        ],
+        success:
+          "Erstellung eines modernen Online Lebenslaufes als Referenz für den zukünftigen Arbeitgeber, also für SIE.",
+        link: "",
+      },
+      {
+        id: "2",
         header: "Besinnung & Neuorientierung",
         period: "10/2020 - 10/2021",
         subtopics: [
@@ -175,7 +189,7 @@ export const data = {
         link: "",
       },
       {
-        id: "2",
+        id: "3",
         header: "Eventmanagement & Musiker - Münchner Grammophon e. K.",
         period: "10/2014 - 09/2016",
         subtopics: [
@@ -350,7 +364,7 @@ export const data = {
       "Ich hatte große Freude an der Erstellung dieses Projekts. Im Nachfolgenden möchte ich beschreiben, was neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
     outroItems: [
       {
-        title: "neue Technologie:",
+        title: "Neue Technologien:",
         content: [
           "VUEX State & Content Management, samt Erzeugung Session Cookie",
           "Gulp Task Automatisierung mittels Autoprefixer & PostCSS",
@@ -375,6 +389,7 @@ export const data = {
           "Einbindung eines Authentifizierungsservice - z.B. JSON Webtoken - für sauberen Login",
           "Login Logik sauberer von App.vue trennen und wartbarer gestalten",
           "Login Logik & Backend ausbauen, Session Timeout & Authentisierung implementieren",
+          "Mehr SCSS Variablen für bessere globale Steuerung des Layouts",
         ],
       },
       {
@@ -490,7 +505,7 @@ export const data = {
       {
         id: "1",
         header: "Software Development Frontend - Vivax Solution GmbH",
-        period: "05/2022 - today",
+        period: "05/2022 - 06/2023",
         subtopics: [
           "Development of web components in Vue.js with TypeScript for conditional rendering of JSON-Schema.",
           "Scope: JavaScript, TypeScript, CSS, SCSS, HTML, JSON in PHP Storm & Visual Studio Code.",
@@ -542,6 +557,20 @@ export const data = {
     freelanceItems: [
       {
         id: "1",
+        header: "Self-directed Education - Web Development",
+        period: "06/2023 - today",
+        subtopics: [
+          "Planning & creation of an online resume based on VUE.js 3.x.",
+          "Improvement of expertise and acquisition of new skills in front- and back-end development.",
+          "Use of new technologies - see the concluding outro for more details.",
+          "Participation in various online trainings & tutorials.",
+        ],
+        success:
+          "Creation of a modern online resume as a reference for future employers, for YOU.",
+        link: "",
+      },
+      {
+        id: "2",
         header: "Reflection & Reorientation",
         period: "10/2020 - 10/2021",
         subtopics: [
@@ -557,7 +586,7 @@ export const data = {
         link: "",
       },
       {
-        id: "2",
+        id: "3",
         header: "Event Management & Musician - Munich Gramophone e. K.",
         period: "10/2014 - 09/2016",
         subtopics: [
@@ -758,6 +787,7 @@ export const data = {
           "Integration of an authentication service - e.g., JSON Web Token - for a clean login.",
           "Separate the login logic more cleanly from app.vue and make it more maintainable.",
           "Expand the login logic & backend, implement session timeout & authentication.",
+          "More Variables in SCSS for better global control.",
         ],
       },
       {
@@ -832,19 +862,19 @@ export const data = {
     {
       icon: "fa-brands fa-windows",
       os: "Windows 10 22H2",
-      browser: "Google Chrome v.116",
+      browser: "Google Chrome v.116-119",
       iconbrowser: "fa-brands fa-chrome",
     },
     {
       icon: "fa-brands fa-windows",
       os: "Windows 10 22H2",
-      browser: "Microsoft Edge v.116",
+      browser: "Microsoft Edge v.116-119",
       iconbrowser: "fa-brands fa-edge",
     },
     {
       icon: "fa-brands fa-windows",
       os: "Windows 10 22H2",
-      browser: "Mozilla Firefox v.117",
+      browser: "Mozilla Firefox v.117-120",
       iconbrowser: "fa-brands fa-firefox-browser",
     },
   ],
