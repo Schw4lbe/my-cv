@@ -13,6 +13,12 @@
     <div class="home-intro">
       <h2>{{ intro[0].header }}</h2>
       <p>{{ intro[0].text }}</p>
+      <br />
+      <br />
+      <p>{{ intro[0].text2 }}</p>
+      <br />
+      <br />
+      <p>{{ intro[0].text3 }}</p>
     </div>
     <div class="home-tech">
       <h3 class="tech-header">{{ setIntroHeaderTechStack }}</h3>

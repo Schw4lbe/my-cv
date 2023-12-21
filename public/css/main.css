@@ -585,7 +585,7 @@ body,
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-  animation-delay: 25s;
+  animation-delay: 15s;
 }
 .readycheck-container .readycheck-background {
   height: 100%;
@@ -615,8 +615,14 @@ body,
 }
 .readycheck-container .form-wrapper form h3 {
   color: #f2f2f2;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   font-size: 2rem;
+  text-align: center;
+}
+.readycheck-container .form-wrapper form p {
+  color: #f2f2f2;
+  padding: 0 0 2rem 0;
+  font-size: 1.1rem;
   text-align: center;
 }
 .readycheck-container .form-wrapper form .input-container {
@@ -633,28 +639,31 @@ body,
   z-index: 1;
 }
 .readycheck-container .form-wrapper form .input-container .input-label {
+  display: flex;
+  justify-content: space-between;
   color: #e4e4e4;
-  padding: 1rem;
-  margin-left: 10px;
+  margin-left: 30px;
+  padding-left: 10px;
   font-size: 1.2rem;
   text-align: left;
   width: 100%;
 }
 .readycheck-container .form-wrapper form .input-container .icon-container .input-icon {
   color: #4b4b4b;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  opacity: 0.3;
 }
 .readycheck-container .form-wrapper form .input-container input:checked ~ .icon-container .input-icon {
-  transition: 0.6s;
-  color: #9e009e;
+  transition: 0.4s;
+  color: #f2f2f2;
+  opacity: 1;
 }
 .readycheck-container .form-wrapper form .input-container input:checked ~ .input-label {
-  transition: 0.6s;
+  transition: 0.4s;
   color: #f2f2f2;
 }
 .readycheck-container .form-wrapper form .input-container input:checked ~ .icon-container .input-icon {
-  transition: 0.6s;
-  font-size: 2rem;
+  transition: 0.4s;
 }
 .readycheck-container .form-wrapper form .button-container {
   display: flex;
@@ -662,7 +671,7 @@ body,
 }
 .readycheck-container .form-wrapper form .button-container button {
   background-color: #f2f2f2;
-  color: #4393d8;
+  color: #9e009e;
   border: none;
   border-radius: 5px;
   padding: 1rem 3rem;
@@ -709,6 +718,81 @@ body,
     background-position: 0 0;
   }
 }
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  border-radius: 100%;
+  border: 1px solid #9e009e;
+  height: 25px;
+  width: 25px;
+  background-color: #f2f2f2;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #b8b8b8;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #9e009e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0px 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-wrapper > form {
+  width: 100% !important;
+  max-width: 600px !important;
+}
+
 .intro-container {
   display: flex;
   justify-content: center;
@@ -720,30 +804,30 @@ body,
 .intro-container p {
   white-space: nowrap;
   overflow: hidden;
-  font-size: 24px;
+  font-size: 22px !important;
   color: #0d0d0d;
 }
 .intro-container #text01 {
-  animation: animated-text 2s steps(22, end) 1s 1 normal both, animated-cursor 600ms steps(22, end) infinite;
+  animation: animated-text 1s steps(22, end) 1s 1 normal both, animated-cursor 600ms steps(22, end) infinite;
   animation-delay: 1s;
 }
 .intro-container #text02 {
-  animation: animated-text 2s steps(22, end) 1s 1 normal both, animated-cursor 600ms steps(22, end) infinite;
-  animation-delay: 12s;
+  animation: animated-text 1s steps(22, end) 1s 1 normal both, animated-cursor 600ms steps(22, end) infinite;
+  animation-delay: 8s;
 }
 .intro-container #intro01 {
   animation-name: textBlur;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
-  animation-delay: 10s;
+  animation-delay: 7s;
 }
 .intro-container #intro02 {
   animation-name: textBlur;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
-  animation-delay: 23s;
+  animation-delay: 14s;
 }
 
 @keyframes animated-text {
@@ -854,10 +938,10 @@ body,
 }
 .modal-wrapper .click-text {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   width: 50%;
-  background: rgba(0, 0, 0, 0.6);
+  background: #9e009e;
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -958,22 +1042,30 @@ body,
 }
 .login-wrapper .login-color-lighten .login-container .login-form {
   height: max-content;
-  width: max-content;
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
+  margin-top: -75px;
 }
 .login-wrapper .login-color-lighten .login-container .login-form h3 {
   margin-bottom: 25px;
+  font-size: 2rem;
+}
+.login-wrapper .login-color-lighten .login-container .login-form > input {
+  font-size: 1.2rem;
+}
+.login-wrapper .login-color-lighten .login-container .login-form #login-button {
+  font-size: 1.2rem;
 }
 .login-wrapper .login-color-lighten .login-container .login-form .language-container {
-  margin-bottom: 25px;
+  margin: 20px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .login-wrapper .login-color-lighten .login-container .login-form .language-container input + label {
   color: #4b4b4b;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 .login-wrapper .login-color-lighten .login-container .login-form .language-container input + label i {
   display: none;
@@ -1290,7 +1382,7 @@ body,
 }
 @media (max-width: 768px) {
   .home-container .home-header-container {
-    justify-content: space-between !important;
+    justify-content: center !important;
   }
   .home-container .home-header-container .home-header {
     padding: 1rem !important;
@@ -1313,7 +1405,7 @@ body,
     padding: 2rem 1rem !important;
   }
   .home-container .home-tech .tech-list {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
     padding-left: 0 !important;
   }
   .home-container .home-tech .tech-list li {
@@ -1323,20 +1415,22 @@ body,
     padding: 2rem 1rem !important;
   }
   .home-container .home-testing .testing-header {
-    text-align: left;
+    text-align: center;
+    margin: 0;
+  }
+  .home-container .home-testing .testing-container .testing-list {
+    padding: 0 !important;
+    text-align: center;
     margin: 0;
   }
   .home-container .home-testing .testing-container .testing-list .testing-os-container,
   .home-container .home-testing .testing-container .testing-list .testing-browser-container {
     display: block;
+    width: 100%;
   }
   .home-container .home-testing .testing-container .testing-list li {
     grid-template-columns: 1fr !important;
     margin-bottom: 20px;
-  }
-  .home-container .home-testing .testing-container .testing-list li .testing-browser-container {
-    width: 80%;
-    border-bottom: 1px solid #a0bed9;
   }
   .home-container .home-testing .testing-container .testing-list li .testing-browser-container .testing-browser-icon {
     margin: 0;
@@ -1520,9 +1614,6 @@ body,
     z-index: 1;
   }
   .navbar-wrapper .navbar-collapse {
-    border-top: 1px solid #4393d8;
-    margin-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
   }
   .navbar-wrapper .navbar-collapse a {
@@ -1555,29 +1646,23 @@ body,
       width: 0;
     }
     to {
-      width: 300px;
+      width: 100%;
     }
   }
   .readycheck-container .form-wrapper form {
     min-width: 0 !important;
   }
   .readycheck-container .form-wrapper form h3 {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
     padding: 2rem 0.5rem;
-  }
-  .readycheck-container .form-wrapper form .input-container {
-    margin-bottom: 20px;
   }
   .readycheck-container .form-wrapper form .input-container .input-checkbox {
     height: 20px;
     width: 20px;
   }
   .readycheck-container .form-wrapper form .input-container .input-label {
-    padding: 0 !important;
-    font-size: 0.8rem !important;
-  }
-  .readycheck-container .form-wrapper form .input-container input:checked ~ .icon-container .input-icon {
-    font-size: 1.7rem !important;
+    padding: 0 0 0 10px !important;
+    font-size: 1.1rem !important;
   }
 }
 @media (max-width: 576px) {
@@ -1592,6 +1677,7 @@ body,
   .page-title {
     padding-top: 1rem;
     font-size: 2.4rem;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 768px) {

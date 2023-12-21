@@ -21,6 +21,8 @@ export const data = {
 
     readyCheckContent: {
       header: "Alle Vorbereitungen getroffen?",
+      subheader:
+        "(Bitte alle drei Optionen auswählen, um zum Inhalt zu gelangen.)",
       content: [
         {
           label: "Tee oder Kaffee frisch aufgebrüht?",
@@ -93,11 +95,19 @@ export const data = {
     introData: [
       {
         header: "Präambel",
-        text: "Dieser online Lebenslauf ist mit der Intention enstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung dar zu stellen. Zusammengefasst habe ich 6 Monate Weiterbildung und ein gutes Jahr Berufserfahrung sammeln können. Da dies ein recht überschaubarer Rahmen an Praxiserfahrung ist, möchte ich die Gelegenheit nutzen, mich mit bewegten Inhalten zu präsentieren.",
+        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Zusammengefasst habe ich 6 Monate Weiterbildung bei einem Schulungsunternehmen genossen, ein gutes Jahr Berufserfahrung sammeln können und mich seither selbstständig weitergebildet. Da dies ein recht überschaubarer Rahmen an Praxiserfahrung ist, möchte ich die Gelegenheit nutzen, mich mit bewegten Inhalten zu präsentieren.",
+        text2:
+          "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Das Backend ist in Node.js geschrieben und in einer Azure Ubuntu Umgebung gehostet und durch den PM2 Manager automatisiert. Die Verbindung des Backends mit dem Frontend findet verschlüsselt mittels HTTPS und einem Let's Encrypt SSL Zertifikat statt. Postman habe ich während der Entwicklung für Tests verwendet. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen.",
+        text3:
+          "Getestet habe ich auf meinem Windows 10 Rechner und dem eines Freundes. Ich besitze privat leider keine Browserstack Lizenz, nun ja, man kann nicht alles haben :). Da ich kein Apple Device besitze, habe ich mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten besitzt, in jedem Fall stünden hier noch ausführliche Tests an!",
       },
     ],
 
-    propsData: ["Eigenmotivation", "Verantwortungsbewustsein", "Authentizität"],
+    propsData: [
+      "Eigenmotivation",
+      "Verantwortungsbewusstsein ",
+      "Authentizität",
+    ],
 
     hobbiesData: [
       "Sport, fernöstliche Kampf- & Körperkunst",
@@ -117,7 +127,7 @@ export const data = {
           "Verwendung Vue Property Decorator für erste Ansätze in objektorientierter Programmierung",
           "Erstellung Matrix und Durchführung Multi-Device Tests in Browserstack",
           "Anfertigung von Dokumenten Templates via Twig",
-          "Bearbeitung und Bereitsstellung Bildmaterial Pixel- und Vektorgrafiken",
+          "Bearbeitung und Bereitstellung Bildmaterial Pixel- und Vektorgrafiken",
         ],
         success:
           "Erstellung Responsive Design & eigener Web Components für Online Bestellstrecke",
@@ -169,7 +179,7 @@ export const data = {
           "Besuch von diversen online Schulungen & Tutorials",
         ],
         success:
-          "Erstellung eines modernen Online Lebenslaufes als Referenz für den zukünftigen Arbeitgeber, also für SIE.",
+          "Erstellung eines modernen online Lebenslaufes als Referenz für den zukünftigen Arbeitgeber, also für SIE.",
         link: "",
       },
       {
@@ -274,7 +284,7 @@ export const data = {
           "Gameconcept in Markdown",
           "Item & Crafting Sprites samt Table",
         ],
-        text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst bei zu bringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiter entwickelt.",
+        text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst beizubringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiterentwickelt.",
         media: img05,
       },
     ],
@@ -361,7 +371,7 @@ export const data = {
     ],
     outroHeader: "Abschließende Worte...",
     outroMainContent:
-      "Ich hatte große Freude an der Erstellung dieses Projekts. Im Nachfolgenden möchte ich beschreiben, was neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
+      "Vorab sei betont, dass ich jederzeit gern bereit bin, gemeinsam mit Ihnen den Quellcode dieses Projektes zu betrachten, um auf Fragen ein zu gehen. Ich hatte große Freude an der Erstellung dieses Projekts. Im Nachfolgenden möchte ich beschreiben, was neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
     outroItems: [
       {
         title: "Neue Technologien:",
@@ -379,17 +389,19 @@ export const data = {
           "Erstellung des Backends beginnend mit Node.js bis hin zur Umsetzung in Ubuntu on Azure",
           "Einrichtung Webserver auf Azure Maschine zur Erstellung des SSL Zertifikats",
           "VUEX für Session Management, da alles neu für mich war.",
-          "Erstellung eines Loginprozederes samt Prüfung der Daten",
+          "Erstellung eines Login Prozederes samt Prüfung der Daten",
         ],
       },
       {
         title: "Verbesserungspotenzial:",
         content: [
-          "Verwendung der VUE Composition API da zukunftsicher",
+          "Verwendung der VUE Composition API da zukunftssicher",
+          "Verwendung von SCSS @forward & @use da @import depricated",
           "Einbindung eines Authentifizierungsservice - z.B. JSON Webtoken - für sauberen Login",
           "Login Logik sauberer von App.vue trennen und wartbarer gestalten",
           "Login Logik & Backend ausbauen, Session Timeout & Authentisierung implementieren",
-          "Mehr SCSS Variablen für bessere globale Steuerung des Layouts",
+          "Mehr SCSS-Variablen für bessere globale Steuerung des Layouts",
+          "Verwendung einer Datenbank zur Verwaltung der Zugangsdaten (MongoDB, MySQL)",
         ],
       },
       {
@@ -418,6 +430,7 @@ export const data = {
 
     readyCheckContent: {
       header: "Are we all set?",
+      subheader: "(Please select all three options to access the content.)",
       content: [
         {
           label: "Tea or coffee freshly brewed?",
@@ -489,7 +502,11 @@ export const data = {
     introData: [
       {
         header: "Preamble",
-        text: "This online resume was created with the intention of showcasing my current proficiency in frontend development. In summary, I have undergone 6 months of further training and have accumulated a good year of professional experience. Since this is a relatively limited scope of practical experience, I want to take this opportunity to present myself with dynamic content.",
+        text: "This online resume was created with the intention of showcasing my current proficiency in frontend development. In summary, I have undergone 6 months of further training in web development at a private educational oriented company, have accumulated a good year of professional experience and ongoing autonomous self-improvement. Since this is a relatively limited scope of practical experience, I want to take this opportunity to present myself with dynamic content.",
+        text2:
+          "The entire project was written from scratch by my self. I integrated Bootstrap into a few individual components to avoid reinventing the wheel. The development environment utilized Visual Studio Code along with the SASS Live Compiler Extension, in conjunction with VUE.JS 3.x. The CV is available in germand and english. The backend is written in Node.js and hosted in an Azure Ubuntu environment, automated through the PM2 Manager. The connection between the backend and frontend is encrypted using HTTPS and a Let's Encrypt SSL certificate. I used Postman for testing during development. Gulp serves as task automation to generate CSS that is as extensively backward compatible as possible.",
+        text3:
+          "Testing was conducted on my Windows machine and that of a friend. Unfortunately, I don't personally own a Browserstack license – well, you can't have everything. Since I don't have an Apple device, I could only test on Android for mobile. I am well aware, that Apple can be kind a tricky and further testing would be necessary.",
       },
     ],
 
@@ -759,7 +776,7 @@ export const data = {
     ],
     outroHeader: "Some closing arguments...",
     outroMainContent:
-      "I greatly enjoyed working on this project. In the following, I would like to describe what was new to me, my biggest challenges, and what could be done differently or better in future projects.",
+      "I would like to emphasize in advance that I am always willing to review the source code of this project with you, to address any questions you may have. I greatly enjoyed working on this project. In the following, I would like to describe what was new to me, my biggest challenges, and what could be done differently or better in future projects.",
     outroItems: [
       {
         title: "new technologies:",
@@ -784,10 +801,12 @@ export const data = {
         title: "room for approvement:",
         content: [
           "Use VUE Composition API as it is future-proof.",
+          "Use SCSS @forward & @use because @import is depricated",
           "Integration of an authentication service - e.g., JSON Web Token - for a clean login.",
           "Separate the login logic more cleanly from app.vue and make it more maintainable.",
           "Expand the login logic & backend, implement session timeout & authentication.",
           "More Variables in SCSS for better global control.",
+          "Use of a database for managing user accounts (MongoDB, MySQL)",
         ],
       },
       {
@@ -839,6 +858,10 @@ export const data = {
     {
       name: "JavaScript ES6",
       icon: "fa-brands fa-square-js",
+    },
+    {
+      name: "Node.js",
+      icon: "fa-brands fa-node-js",
     },
     { name: "SCSS", icon: "fa-brands fa-sass" },
     { name: "HTML 5", icon: "fa-brands fa-html5" },

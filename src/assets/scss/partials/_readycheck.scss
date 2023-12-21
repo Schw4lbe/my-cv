@@ -15,7 +15,7 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-  animation-delay: 25s;
+  animation-delay: 15s;
 
   .readycheck-background {
     height: 100%;
@@ -46,8 +46,15 @@
 
       h3 {
         color: $clr-secondary;
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
         font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        color: $clr-secondary;
+        padding: 0 0 2rem 0;
+        font-size: 1.1rem;
         text-align: center;
       }
 
@@ -66,9 +73,11 @@
         }
 
         .input-label {
+          display: flex;
+          justify-content: space-between;
           color: $clr-secondary-dark;
-          padding: 1rem;
-          margin-left: 10px;
+          margin-left: 30px;
+          padding-left: 10px;
           font-size: 1.2rem;
           text-align: left;
           width: 100%;
@@ -77,22 +86,24 @@
         .icon-container {
           .input-icon {
             color: $clr-primary-light3;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
+            opacity: 0.3;
           }
         }
         input:checked ~ .icon-container .input-icon {
-          transition: 0.6s;
-          color: $clr-accent-e;
+          transition: 0.4s;
+          color: $clr-secondary;
+          opacity: 1;
         }
 
         input:checked ~ .input-label {
-          transition: 0.6s;
+          transition: 0.4s;
           color: $clr-secondary;
         }
 
         input:checked ~ .icon-container .input-icon {
-          transition: 0.6s;
-          font-size: 2rem;
+          transition: 0.4s;
+          // font-size: 1.5rem;
         }
       }
 
@@ -102,7 +113,7 @@
 
         button {
           background-color: $clr-secondary;
-          color: $clr-accent;
+          color: $clr-accent-e;
           border: none;
           border-radius: 5px;
           padding: 1rem 3rem;
@@ -155,4 +166,75 @@
   100% {
     background-position: 0 0;
   }
+}
+
+// custom checkbox:
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  border-radius: 100%;
+  border: 1px solid $clr-accent-e;
+  height: 25px;
+  width: 25px;
+  background-color: $clr-secondary;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: $clr-secondary-dark2;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: $clr-accent-e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0px 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

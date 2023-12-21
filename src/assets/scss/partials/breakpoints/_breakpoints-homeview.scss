@@ -64,7 +64,7 @@
 @media (max-width: $bp-md) {
   .home-container {
     .home-header-container {
-      justify-content: space-between !important;
+      justify-content: center !important;
 
       .home-header {
         padding: 1rem !important;
@@ -92,7 +92,7 @@
       padding: 2rem 1rem !important;
 
       .tech-list {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
         padding-left: 0 !important;
 
         li {
@@ -105,14 +105,18 @@
       padding: 2rem 1rem !important;
 
       .testing-header {
-        text-align: left;
+        text-align: center;
         margin: 0;
       }
       .testing-container {
         .testing-list {
+          padding: 0 !important;
+          text-align: center;
+          margin: 0;
           .testing-os-container,
           .testing-browser-container {
             display: block;
+            width: 100%;
           }
 
           li {
@@ -120,8 +124,8 @@
             margin-bottom: 20px;
 
             .testing-browser-container {
-              width: 80%;
-              border-bottom: 1px solid $clr-accent-b;
+              // width: 80%;
+              // // border-bottom: 1px solid $clr-accent-b;
 
               .testing-browser-icon {
                 margin: 0;

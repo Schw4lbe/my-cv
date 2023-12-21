@@ -15,7 +15,12 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link :to="homeLink" class="nav-link" aria-current="page">
+            <router-link
+              :to="homeLink"
+              class="nav-link"
+              aria-current="page"
+              @click="collapseNavbar"
+            >
               Home
             </router-link>
           </li>
@@ -25,7 +30,11 @@
             :id="item.id"
             class="nav-item"
           >
-            <router-link :to="item.path" class="nav-link">
+            <router-link
+              :to="item.path"
+              class="nav-link"
+              @click="collapseNavbar"
+            >
               {{ item.name }}
             </router-link>
           </li>
@@ -55,6 +64,21 @@ export default {
     return {
       homeLink: router.options.routes[0],
     };
+  },
+
+  // workaround due to vue router conflict with bootstrap js.
+  methods: {
+    collapseNavbar() {
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+      console.log(navbarCollapse);
+      if (!navbarToggler.classList.contains("collapsed")) {
+        navbarToggler.classList.add("collapsed");
+      }
+      if (navbarCollapse.classList.contains("show")) {
+        navbarCollapse.classList.remove("show");
+      }
+    },
   },
 };
 </script>

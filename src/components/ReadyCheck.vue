@@ -7,23 +7,26 @@
     <div class="form-wrapper">
       <form action="" @submit="formSubmit">
         <h3>{{ content.header }}</h3>
+        <p>{{ content.subheader }}</p>
         <div
           v-for="(input, index) in content.content"
           :key="index"
           class="input-container"
         >
-          <input
-            class="input-checkbox"
-            type="checkbox"
-            :id="input.label"
-            v-model="input.checked"
-          />
-          <label class="input-label" :for="input.label">{{
-            input.label
-          }}</label>
-          <div class="icon-container">
-            <i :class="input.icon" class="input-icon"></i>
-          </div>
+          <label class="input-label container" :for="input.label"
+            >{{ input.label }}
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              :id="input.label"
+              v-model="input.checked"
+              style="display: none"
+            />
+            <span class="checkmark"></span>
+            <div class="icon-container">
+              <i :class="input.icon" class="input-icon"></i>
+            </div>
+          </label>
         </div>
 
         <div class="button-container">
