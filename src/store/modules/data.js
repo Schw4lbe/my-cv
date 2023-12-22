@@ -230,6 +230,7 @@ export const data = {
         ],
         text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
         media: img04,
+        link: "https://github.com/TapeMate/vue-weatherapp",
       },
       {
         id: "2",
@@ -242,8 +243,9 @@ export const data = {
           "Visual Studio Code, LiveSASS Compiler",
           "JSON-Server als Fake Backend",
         ],
-        text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann ich auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
+        text: "Im Lauf der Zeit habe ich mir eine Dummy Homepage aufgebaut. Sie ist eine Spielwiese für mich, um neue Designs zu testen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und zu lernen.",
         media: img02,
+        link: "https://github.com/TapeMate/homepage",
       },
       {
         id: "3",
@@ -251,13 +253,14 @@ export const data = {
         header: "Kontakt Formular",
         subheader: "Tech Stack & Details:",
         subtopics: [
-          "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
+          "VUE.JS 3, HTML, CSS, JavaScript ES6, JSON-Server",
           "Verifzierung Telefonnummer und E-Mail Adresse via Regex",
           "Eigener Captcha samt Honeypot",
           "Captcha Lösungswort & Honeypot durch CSS manipuliert",
         ],
         text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
         media: img03,
+        link: "https://github.com/TapeMate/vue-contactform",
       },
       {
         id: "4",
@@ -273,6 +276,7 @@ export const data = {
         ],
         text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
         media: img01,
+        link: "",
       },
       {
         id: "5",
@@ -289,6 +293,7 @@ export const data = {
         ],
         text: "Rudimentärer Login Prototype stark vereinfacht zur Anwendung neuer Technologien und Erweiterung des Fachwissens. Lokale Variable zur Ablage der Benutzer ist in einer Produktivumgebung durch eine Datenbank zu ersetzen.",
         media: img06,
+        link: "https://github.com/TapeMate/login-prototype",
       },
       {
         id: "6",
@@ -303,6 +308,7 @@ export const data = {
         ],
         text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst beizubringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiterentwickelt.",
         media: img05,
+        link: "",
       },
     ],
 
@@ -651,6 +657,7 @@ export const data = {
         ],
         text: "As practice in integrating and using APIs as well as in writing Node.js, I followed several YouTube tutorials. Besides this application, I also created a small chatbot and a task manager. The application is based on the OpenWeatherAPI.",
         media: img04,
+        link: "https://github.com/TapeMate/vue-weatherapp",
       },
       {
         id: "2",
@@ -663,8 +670,9 @@ export const data = {
           "Visual Studio Code, LiveSASS Compiler",
           "JSON-Server as a fake backend",
         ],
-        text: "Over the past few months, I've built a dummy homepage. Whenever I discover a new technology for myself or want to test a design, I can revert to this build. The dummy page allows me to test and learn quickly and efficiently.",
+        text: "Over time, I have developed a dummy homepage. It serves as a playground for me to test new designs. The dummy page gives me the opportunity to test and learn quickly and efficiently.",
         media: img02,
+        link: "https://github.com/TapeMate/homepage",
       },
       {
         id: "3",
@@ -672,13 +680,14 @@ export const data = {
         header: "Contact Form",
         subheader: "Tech Stack & Details:",
         subtopics: [
-          "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
+          "VUE.JS 3, HTML, CSS, JavaScript ES6, JSON-Server",
           "Phone number and email address verification via Regex",
           "Own captcha with honeypot",
           "Captcha solution word & honeypot manipulated by CSS",
         ],
         text: "Creation of a custom contact form to consolidate newly acquired knowledge and as a creative playground for various styling ideas.",
         media: img03,
+        link: "https://github.com/TapeMate/vue-contactform",
       },
       {
         id: "4",
@@ -694,6 +703,7 @@ export const data = {
         ],
         text: "Client project for Stadtwerke Lauterbach. Implementation of an online ordering process using VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
         media: img01,
+        link: "",
       },
       {
         id: "5",
@@ -710,6 +720,7 @@ export const data = {
         ],
         text: "A rudimentary login prototype, greatly simplified for applying new technologies and expanding technical knowledge. Local variable as user Array should be replaced in production.",
         media: img06,
+        link: "https://github.com/TapeMate/login-prototype",
       },
       {
         id: "6",
@@ -724,6 +735,7 @@ export const data = {
         ],
         text: "My passion for computer games led me to teach myself programming in C# based on the Unity Engine using Unity documentation, C# documentation, YouTube tutorials, Google, and Chat GPT. I consider this hobby project as a work in progress and continue to develop it regularly.",
         media: img05,
+        link: "",
       },
     ],
 

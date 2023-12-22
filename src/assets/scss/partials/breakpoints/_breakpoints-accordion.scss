@@ -5,7 +5,7 @@
     .tab {
       .tab-content-media {
         .tab-content-media-grid {
-          p,
+          .tab-content-media-description,
           ul {
             padding: 0;
           }
@@ -48,7 +48,7 @@
       .tab-content-media {
         .tab-content-media-grid {
           grid-template-columns: 1fr 1fr;
-          p,
+          .tab-content-media-description,
           ul {
             grid-column: 1 / end;
             padding: 0 1rem 0 1rem;
@@ -93,7 +93,7 @@
   .accordion-container {
     margin: 0 !important;
 
-    p,
+    .tab-content-media-description,
     ul {
       padding: 0 !important;
     }
@@ -105,23 +105,5 @@
     li {
       list-style: square !important;
     }
-
-    // .tab-content {
-    //   padding: 0 5px !important;
-
-    //   ul,
-    //   .tab-media {
-    //     margin-top: 1rem !important;
-
-    //     li {
-    //       border-bottom: 1px solid $clr-secondary-dark;
-    //       margin-bottom: 5px;
-    //     }
-    //   }
-
-    //   .tab-link-container {
-    //     margin-bottom: 20px;
-    //   }
-    // }
   }
 }

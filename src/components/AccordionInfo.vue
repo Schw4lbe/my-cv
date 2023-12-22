@@ -24,7 +24,14 @@
 
         <div v-if="item.hasMedia === true" class="tab-content-media">
           <div class="tab-content-media-grid">
-            <p>{{ item.text }}</p>
+            <div class="tab-content-media-description">
+              <p>{{ item.text }}</p>
+              <div v-if="item.link.length > 0" class="github-link-container">
+                <a class="github-link" :href="item.link" target="_blank"
+                  ><i class="fa-brands fa-github"></i> Github Repository</a
+                >
+              </div>
+            </div>
             <ul>
               <h3>{{ item.subheader }}</h3>
               <li v-for="subtopic in item.subtopics" :key="subtopic">

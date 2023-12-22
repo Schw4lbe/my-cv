@@ -441,11 +441,44 @@ body,
   display: grid;
   grid-template-columns: 5fr 7fr;
 }
-.accordion-wrapper .tab .tab-content-media .tab-content-media-grid p {
-  padding: 0 2rem 2rem 2rem;
+.accordion-wrapper .tab .tab-content-media .tab-content-media-grid .tab-content-media-description {
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 20px;
   grid-column: 1/2;
   grid-row: 1/2;
   line-height: 1.8;
+}
+.accordion-wrapper .tab .tab-content-media .tab-content-media-grid .tab-content-media-description p {
+  margin: 0;
+}
+.accordion-wrapper .tab .tab-content-media .tab-content-media-grid .tab-content-media-description .github-link-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.accordion-wrapper .tab .tab-content-media .tab-content-media-grid .tab-content-media-description .github-link-container .github-link {
+  display: block;
+  width: 220px;
+  background: #4393d8;
+  color: #f2f2f2;
+  font-size: 20px;
+  margin-top: 10px;
+  padding-right: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.accordion-wrapper .tab .tab-content-media .tab-content-media-grid .tab-content-media-description .github-link-container .github-link i {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+.accordion-wrapper .tab .tab-content-media .tab-content-media-grid .tab-content-media-description .github-link-container .github-link:hover {
+  background: #79acd9;
+  color: #0d0d0d;
+  transition: 0.3s;
 }
 .accordion-wrapper .tab .tab-content-media .tab-content-media-grid ul {
   padding: 0 2rem 0 2rem;
@@ -940,8 +973,9 @@ body,
   color: white;
   font-size: 1.2rem;
   text-align: center;
-  width: 50%;
-  background: #9e009e;
+  width: 220px;
+  background: #4393d8;
+  color: #f2f2f2;
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -1477,7 +1511,7 @@ body,
   }
 }
 @media (max-width: 1200px) {
-  .accordion-container .tab .tab-content-media .tab-content-media-grid p,
+  .accordion-container .tab .tab-content-media .tab-content-media-grid .tab-content-media-description,
   .accordion-container .tab .tab-content-media .tab-content-media-grid ul {
     padding: 0;
   }
@@ -1509,7 +1543,7 @@ body,
   .accordion-container .tab .tab-content-media .tab-content-media-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .accordion-container .tab .tab-content-media .tab-content-media-grid p,
+  .accordion-container .tab .tab-content-media .tab-content-media-grid .tab-content-media-description,
   .accordion-container .tab .tab-content-media .tab-content-media-grid ul {
     grid-column: 1/end;
     padding: 0 1rem 0 1rem;
@@ -1544,7 +1578,7 @@ body,
   .accordion-container {
     margin: 0 !important;
   }
-  .accordion-container p,
+  .accordion-container .tab-content-media-description,
   .accordion-container ul {
     padding: 0 !important;
   }
