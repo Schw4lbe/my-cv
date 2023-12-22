@@ -12,6 +12,7 @@ import img03 from "@/assets/img/contactform-demo.gif";
 import img04 from "@/assets/img/weatherapp-demo.gif";
 import img05 from "@/assets/img/unity-demo.gif";
 import img06 from "@/assets/img/login-demo.gif";
+import img07 from "@/assets/img/online-cv-demo.gif";
 
 export const data = {
   de: {
@@ -88,7 +89,7 @@ export const data = {
     referenceSuccessMsg: "Größter Erfolg: ",
     modalButtonText: "Vollbild Demo",
     introHeader: "Lebenslauf",
-    introHeaderTechStack: "Online Lebenslauf Tech Stack",
+    introHeaderTechStack: "Tech Stack",
     introHeaderTesting: "Kompatibilität",
     introHeaderStrength: "Stärken",
     introHeaderHobbies: "Hobbies",
@@ -250,6 +251,18 @@ export const data = {
       {
         id: "3",
         hasMedia: true,
+        header: "Online Lebenslauf",
+        subheader: "Tech Stack & Details:",
+        subtopics: [
+          "Für Details siehe Home Verzeichnis unter Präambel & Tech Stack.",
+        ],
+        text: "Responsive online Lebenslauf als Single Page Application für Bewerbungszwecke. Sprachen: Deutsch & Englisch. Gern auf mobilen Endgeräten testen, ich freue mich über Feedback und Verbesserungsvorschläge.",
+        media: img07,
+        link: "https://github.com/TapeMate/my-cv",
+      },
+      {
+        id: "4",
+        hasMedia: true,
         header: "Kontakt Formular",
         subheader: "Tech Stack & Details:",
         subtopics: [
@@ -263,7 +276,7 @@ export const data = {
         link: "https://github.com/TapeMate/vue-contactform",
       },
       {
-        id: "4",
+        id: "5",
         hasMedia: true,
         header: "Kundenprojekt",
         subheader: "Tech Stack & Herausforderungen:",
@@ -279,7 +292,7 @@ export const data = {
         link: "",
       },
       {
-        id: "5",
+        id: "6",
         hasMedia: true,
         header: "Login Prototype",
         subheader: "Tech Stack",
@@ -296,7 +309,7 @@ export const data = {
         link: "https://github.com/TapeMate/login-prototype",
       },
       {
-        id: "6",
+        id: "7",
         hasMedia: true,
         header: "Spiele Entwicklung",
         subheader: "Randnotizen & Tech Stack:",
@@ -518,7 +531,7 @@ export const data = {
     referenceSuccessMsg: "Greatest success: ",
     modalButtonText: "Fullscreen Demo",
     introHeader: "Curriculum Vitae",
-    introHeaderTechStack: "Online CV Tech Stack",
+    introHeaderTechStack: "Tech Stack",
     introHeaderTesting: "Compatibility",
     introHeaderStrength: "Strengths",
     introHeaderHobbies: "Hobbies",
@@ -678,6 +691,18 @@ export const data = {
       {
         id: "3",
         hasMedia: true,
+        header: "Online CV",
+        subheader: "Tech Stack & Details:",
+        subtopics: [
+          "For details, see the Home directory under Preamble & Tech Stack.",
+        ],
+        text: "Responsive online resume as a Single Page Application for job application purposes. Languages: German & English. Feel free to test on mobile devices, I welcome feedback and suggestions for improvement.",
+        media: img07,
+        link: "https://github.com/TapeMate/my-cv",
+      },
+      {
+        id: "4",
+        hasMedia: true,
         header: "Contact Form",
         subheader: "Tech Stack & Details:",
         subtopics: [
@@ -691,7 +716,7 @@ export const data = {
         link: "https://github.com/TapeMate/vue-contactform",
       },
       {
-        id: "4",
+        id: "5",
         hasMedia: true,
         header: "Client Project",
         subheader: "Tech Stack & Challenges:",
@@ -707,7 +732,7 @@ export const data = {
         link: "",
       },
       {
-        id: "5",
+        id: "6",
         hasMedia: true,
         header: "Login Prototype",
         subheader: "Tech Stack",
@@ -724,7 +749,7 @@ export const data = {
         link: "https://github.com/TapeMate/login-prototype",
       },
       {
-        id: "6",
+        id: "7",
         hasMedia: true,
         header: "Game Development",
         subheader: "Side Notes & Tech Stack:",
