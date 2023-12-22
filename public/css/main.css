@@ -447,6 +447,7 @@ body,
   grid-column: 1/2;
   grid-row: 1/2;
   line-height: 1.8;
+  border-bottom: 1px solid #79acd9;
 }
 .accordion-wrapper .tab .tab-content-media .tab-content-media-grid .tab-content-media-description p {
   margin: 0;
@@ -495,6 +496,8 @@ body,
 .accordion-wrapper .tab .tab-content-media .tab-content-media-grid .media-container {
   grid-column: 2/3;
   grid-row: 1/3;
+  padding-left: 1rem;
+  border-left: 1px solid #79acd9;
 }
 .accordion-wrapper .tab ul li::before {
   content: "♦";
@@ -1549,8 +1552,12 @@ body,
   .accordion-container .tab .tab-content-media .tab-content-media-grid ul li {
     font-size: 1rem;
   }
+  .accordion-container .tab .tab-content-media .tab-content-media-grid .media-container {
+    margin-left: 1rem;
+    padding-left: 0;
+  }
   .accordion-container .tab .tab-content-media .tab-content-media-grid .media-container .image {
-    padding: 0 0 0 2rem;
+    margin-left: 1rem;
   }
 }
 @media (max-width: 992px) {
@@ -1583,9 +1590,12 @@ body,
     grid-column: 1/end;
     grid-row: 3;
     padding: 1rem 4rem 0 4rem;
+    border: none;
+    margin-left: 0;
   }
   .accordion-container .tab .tab-content-media .tab-content-media-grid .media-container .image {
     padding: 0;
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {

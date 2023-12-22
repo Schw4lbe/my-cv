@@ -13,8 +13,10 @@
             font-size: 1rem;
           }
           .media-container {
+            margin-left: 1rem;
+            padding-left: 0;
             .image {
-              padding: 0 0 0 2rem;
+              margin-left: 1rem;
             }
           }
         }
@@ -57,8 +59,11 @@
             grid-column: 1 / end;
             grid-row: 3;
             padding: 1rem 4rem 0 4rem;
+            border: none;
+            margin-left: 0;
             .image {
               padding: 0;
+              margin-left: 0;
             }
           }
         }

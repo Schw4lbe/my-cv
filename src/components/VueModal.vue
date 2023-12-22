@@ -1,7 +1,7 @@
 <template>
   <div class="modal-wrapper">
     <div @click="openModal" class="image-frame">
-      <img class="image" :src="image" />
+      <img class="image" :src="image" rel="preload" />
       <div class="click-overlay">
         <span class="click-text">{{ modalButtonText }}</span>
       </div>
@@ -14,7 +14,7 @@
             <i class="fa-regular fa-circle-xmark"></i>
           </button>
         </div>
-        <img class="modal-image" :src="image" />
+        <img class="modal-image" :src="image" rel="preload" />
       </div>
     </div>
   </div>
