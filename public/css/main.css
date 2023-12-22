@@ -804,7 +804,7 @@ body,
 .intro-container p {
   white-space: nowrap;
   overflow: hidden;
-  font-size: 22px !important;
+  font-size: 20px !important;
   color: #0d0d0d;
 }
 .intro-container #text01 {

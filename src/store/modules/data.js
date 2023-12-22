@@ -11,11 +11,12 @@ import img02 from "@/assets/img/homepage-demo.gif";
 import img03 from "@/assets/img/contactform-demo.gif";
 import img04 from "@/assets/img/weatherapp-demo.gif";
 import img05 from "@/assets/img/unity-demo.gif";
+import img06 from "@/assets/img/login-demo.gif";
 
 export const data = {
   de: {
     introContent: [
-      "Warum eigentlich ein online Lebenslauf?",
+      "Warum ein online Lebenslauf?",
       "Weil ich zeigen möchte, was ich kann.",
     ],
 
@@ -241,7 +242,7 @@ export const data = {
           "Visual Studio Code, LiveSASS Compiler",
           "JSON-Server als Fake Backend",
         ],
-        text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
+        text: "Im Lauf der letzten Monate habe ich mir eine Dummy Homepage aufgebaut. Wenn ich eine neue Technologie für mich entdecke oder ein Design testen möchte, kann ich auf diesen Build zurückgreifen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und lernen.",
         media: img02,
       },
       {
@@ -275,6 +276,22 @@ export const data = {
       },
       {
         id: "5",
+        hasMedia: true,
+        header: "Login Prototype",
+        subheader: "Tech Stack",
+        subtopics: [
+          "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
+          "Express samt Express Session & Express Flash",
+          "dotenv für Umgebungsvariablen",
+          "bcrypt zum verschlüsseln der Passwörter",
+          "passport & passport-local als Bibliothek für Anmeldedaten",
+          "method override zum überschreiben von z.B. POST durch DELETE",
+        ],
+        text: "Rudimentärer Login Prototype stark vereinfacht zur Anwendung neuer Technologien und Erweiterung des Fachwissens. Lokale Variable zur Ablage der Benutzer ist in einer Produktivumgebung durch eine Datenbank zu ersetzen.",
+        media: img06,
+      },
+      {
+        id: "6",
         hasMedia: true,
         header: "Spiele Entwicklung",
         subheader: "Randnotizen & Tech Stack:",
@@ -371,7 +388,7 @@ export const data = {
     ],
     outroHeader: "Abschließende Worte...",
     outroMainContent:
-      "Vorab sei betont, dass ich jederzeit gern bereit bin, gemeinsam mit Ihnen den Quellcode dieses Projektes zu betrachten, um auf Fragen ein zu gehen. Ich hatte große Freude an der Erstellung dieses Projekts. Im Nachfolgenden möchte ich beschreiben, was neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
+      "Vorab sei betont, dass ich jederzeit gern bereit bin, gemeinsam mit Ihnen den Quellcode dieses Projektes zu betrachten, um auf Fragen einzugehen. Ich hatte große Freude an der Erstellung dieses Projekts. Im Nachfolgenden möchte ich beschreiben, was neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
     outroItems: [
       {
         title: "Neue Technologien:",
@@ -680,6 +697,22 @@ export const data = {
       },
       {
         id: "5",
+        hasMedia: true,
+        header: "Login Prototype",
+        subheader: "Tech Stack",
+        subtopics: [
+          "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
+          "Express along with Express Session & Express Flash",
+          "dotenv for environment variables",
+          "bcrypt for encrypting & hashing passwords",
+          "passport & passport-local as a library for credentials",
+          "method override to overwrite eg. POST with DELETE",
+        ],
+        text: "A rudimentary login prototype, greatly simplified for applying new technologies and expanding technical knowledge. Local variable as user Array should be replaced in production.",
+        media: img06,
+      },
+      {
+        id: "6",
         hasMedia: true,
         header: "Game Development",
         subheader: "Side Notes & Tech Stack:",
