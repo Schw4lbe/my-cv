@@ -1,5 +1,18 @@
 @import "breakpoint-variables";
 
+@media (max-width: $bp-sm) {
+  .home-container {
+    .tech-container {
+      .tech-list {
+        gap: 10px 5px !important;
+        li {
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $bp-xxl) {
   .home-container {
     margin-bottom: 50px;
@@ -102,7 +115,7 @@
     }
 
     .home-testing {
-      padding: 2rem 1rem !important;
+      padding: 2rem 2rem 0 0.5rem !important;
 
       .testing-header {
         text-align: center;
@@ -124,9 +137,6 @@
             margin-bottom: 20px;
 
             .testing-browser-container {
-              // width: 80%;
-              // // border-bottom: 1px solid $clr-accent-b;
-
               .testing-browser-icon {
                 margin: 0;
               }

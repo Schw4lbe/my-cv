@@ -89,7 +89,7 @@ export const data = {
     modalButtonText: "Vollbild Demo",
     introHeader: "Lebenslauf",
     introHeaderTechStack: "Online Lebenslauf Tech Stack",
-    introHeaderTesting: "Online Lebenslauf Kompatibilität",
+    introHeaderTesting: "Kompatibilität",
     introHeaderStrength: "Stärken",
     introHeaderHobbies: "Hobbies",
 
@@ -519,7 +519,7 @@ export const data = {
     modalButtonText: "Fullscreen Demo",
     introHeader: "Curriculum Vitae",
     introHeaderTechStack: "Online CV Tech Stack",
-    introHeaderTesting: "Online CV Compatibility",
+    introHeaderTesting: "Compatibility",
     introHeaderStrength: "Strengths",
     introHeaderHobbies: "Hobbies",
 
@@ -913,7 +913,7 @@ export const data = {
     { name: "SCSS", icon: "fa-brands fa-sass" },
     { name: "HTML 5", icon: "fa-brands fa-html5" },
     { name: "Bootstrap 5.2", icon: "fa-brands fa-bootstrap" },
-    { name: "Visual Studio Code", icon: "fa-brands fa-microsoft" },
+    { name: "VS Code", icon: "fa-brands fa-microsoft" },
     { name: "Gulp", icon: "fa-brands fa-gulp" },
     { name: "Autoprefixer", icon: "fa-brands fa-autoprefixer" },
     { name: "PostCSS", icon: "fa-brands fa-css3-alt" },
