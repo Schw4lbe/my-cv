@@ -407,7 +407,7 @@ export const data = {
         ],
       },
       {
-        title: "Die größten Herausforderungen:",
+        title: "Herausforderungen:",
         content: [
           "Erstellung des Backends beginnend mit Node.js bis hin zur Umsetzung in Ubuntu on Azure",
           "Einrichtung Webserver auf Azure Maschine zur Erstellung des SSL Zertifikats",
@@ -440,6 +440,7 @@ export const data = {
           "vuejs.org",
           "gulpjs.com",
           "github.com",
+          "youtube.com",
         ],
       },
     ],
@@ -824,7 +825,7 @@ export const data = {
       "I would like to emphasize in advance that I am always willing to review the source code of this project with you, to address any questions you may have. I greatly enjoyed working on this project. In the following, I would like to describe what was new to me, my biggest challenges, and what could be done differently or better in future projects.",
     outroItems: [
       {
-        title: "new technologies:",
+        title: "New technologies:",
         content: [
           "VUEX state & content management, including the generation of a session cookie.",
           "Gulp task automation using Autoprefixer & PostCSS.",
@@ -834,7 +835,7 @@ export const data = {
         ],
       },
       {
-        title: "biggest challenges:",
+        title: "Challenges:",
         content: [
           "Backend creation starting with Node.js up to the implementation in Ubuntu on Azure.",
           "Setting up a web server on an Azure machine for the creation of the SSL certificate.",
@@ -843,7 +844,7 @@ export const data = {
         ],
       },
       {
-        title: "room for approvement:",
+        title: "Room for approvement:",
         content: [
           "Use VUE Composition API as it is future-proof.",
           "Use SCSS @forward & @use because @import is depricated",
@@ -855,7 +856,7 @@ export const data = {
         ],
       },
       {
-        title: "sources:",
+        title: "Sources:",
         content: [
           "developer.mozilla.org",
           "stackoverflow.com/",
@@ -867,6 +868,7 @@ export const data = {
           "vuejs.org",
           "gulpjs.com",
           "github.com",
+          "youtube.com",
         ],
       },
     ],
