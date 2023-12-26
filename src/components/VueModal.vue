@@ -14,7 +14,7 @@
             <i class="fa-regular fa-circle-xmark"></i>
           </button>
         </div>
-        <img class="modal-image" :src="image" rel="preload" />
+        <img class="modal-image" :src="media" rel="preload" />
       </div>
     </div>
   </div>
@@ -27,6 +27,7 @@ export default {
   name: "VueModal",
   props: {
     image: String,
+    media: String,
     modalHeader: String,
   },
 

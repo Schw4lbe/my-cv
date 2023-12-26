@@ -28,10 +28,12 @@
     filter: grayscale(75%);
     transform: scale(1);
     transition: 0.3s;
+    overflow: hidden;
 
     img {
-      height: auto;
+      height: 100%;
       width: 100%;
+      object-fit: contain;
       padding: 0 2rem 0 0;
     }
   }
@@ -63,7 +65,7 @@
         color: $clr-accent-e;
         border: none;
         font-size: 1.5rem;
-        padding: 0.5rem 1rem;
+        padding: 0.2rem 0.5rem;
         border-radius: none;
         margin: 0;
       }
@@ -90,8 +92,8 @@
     width: 90%;
     max-width: max-content;
     height: max-content;
-    max-height: 85%;
-    padding: 10px;
+    max-height: 90%;
+    padding: 5px;
     background: $clr-secondary;
 
     .modal-image {

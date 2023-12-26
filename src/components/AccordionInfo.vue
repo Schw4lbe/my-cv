@@ -39,7 +39,11 @@
               </li>
             </ul>
             <div class="media-container">
-              <VueModal :image="item.media" :modalHeader="item.header" />
+              <VueModal
+                :image="item.image"
+                :media="item.media"
+                :modalHeader="item.header"
+              />
             </div>
           </div>
         </div>
