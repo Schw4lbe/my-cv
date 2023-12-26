@@ -16,9 +16,6 @@
       <br />
       <br />
       <p>{{ intro[0].text2 }}</p>
-      <br />
-      <br />
-      <p>{{ intro[0].text3 }}</p>
     </div>
     <div class="home-tech">
       <h3 class="tech-header">{{ setIntroHeaderTechStack }}</h3>

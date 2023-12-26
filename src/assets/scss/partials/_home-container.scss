@@ -91,14 +91,14 @@
       .testing-container {
         .testing-list {
           display: grid;
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
           padding-left: 8px;
           list-style: none;
           align-items: center;
 
           li {
-            display: grid;
-            grid-template-columns: 1fr 4fr;
+            display: flex;
+            flex-direction: column;
             font-size: 1.1rem;
             line-height: 2;
             color: $clr-primary-light2;
@@ -109,10 +109,6 @@
               width: 30px;
               font-size: 1.1rem;
               color: $clr-accent-e;
-            }
-
-            .testing-browser-icon {
-              margin-left: 20px;
             }
           }
         }

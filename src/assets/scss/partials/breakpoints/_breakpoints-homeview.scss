@@ -19,16 +19,20 @@
   }
 }
 
+@media (max-width: $bp-xl) {
+  .home-container {
+    .testing-container {
+      .testing-list {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  }
+}
+
 @media (max-width: $bp-lg) {
   .home-container {
     .tech-list {
       grid-template-columns: 1fr 1fr 1fr !important;
-    }
-  }
-
-  .home-testing {
-    li {
-      grid-template-columns: 1fr 2fr !important;
     }
   }
 }

@@ -111,9 +111,8 @@ export const data = {
         header: "Präambel",
         text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Zusammengefasst habe ich 6 Monate Weiterbildung bei einem Schulungsunternehmen genossen, ein gutes Jahr Berufserfahrung sammeln können und mich seither selbstständig weitergebildet. Da dies ein recht überschaubarer Rahmen an Praxiserfahrung ist, möchte ich die Gelegenheit nutzen, mich mit bewegten Inhalten zu präsentieren.",
         text2:
-          "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Das Backend ist in Node.js geschrieben und in einer Azure Ubuntu Umgebung gehostet und durch den PM2 Manager automatisiert. Die Verbindung des Backends mit dem Frontend findet verschlüsselt mittels HTTPS und einem Let's Encrypt SSL Zertifikat statt. Postman habe ich während der Entwicklung für Tests verwendet. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen.",
-        text3:
-          "Getestet habe ich auf meinem Windows 10 Rechner und dem eines Freundes. Ich besitze privat leider keine Browserstack Lizenz, nun ja, man kann nicht alles haben :). Da ich kein Apple Device besitze, habe ich mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten besitzt, in jedem Fall stünden hier noch ausführliche Tests an!",
+          "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Das Backend ist in Node.js geschrieben und in einer Azure Ubuntu Umgebung gehostet und durch den PM2 Manager automatisiert. Die Verbindung des Backends mit dem Frontend findet verschlüsselt mittels HTTPS und einem Let's Encrypt SSL Zertifikat statt. Postman habe ich während der Entwicklung für Tests verwendet. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen. Getestet habe ich auf Windows 10. Ich besitze privat leider keine Browserstack Lizenz, daher war der Umfang auf Familie und Freunde begrenzt. Ein Apple Device besitze ich nicht und habe daher mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten hinsichtlich Design Elementen besitzt. In einer Produktivumgebung stünden jedefalls noch ausführliche Tests an.",
+        text3: "",
       },
     ],
 
@@ -191,9 +190,11 @@ export const data = {
           "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
           "Verwendung neuer Technologien - siehe Schlusswort für mehr Details",
           "Besuch von diversen online Schulungen & Tutorials",
+          "Schwerpunkt auf Backend Technologien insbesondere PHP 8",
+          "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter PHP Entwicklung",
         ],
         success:
-          "Erstellung eines modernen online Lebenslaufes als Referenz für den zukünftigen Arbeitgeber, also für SIE.",
+          "Erstellung eines online Lebenslaufes als Referenzprojekt & Benchmark.",
         link: "",
       },
       {
@@ -577,9 +578,8 @@ export const data = {
         header: "Preamble",
         text: "This online resume was created with the intention of showcasing my current proficiency in frontend development. In summary, I have undergone 6 months of further training in web development at a private educational oriented company, have accumulated a good year of professional experience and ongoing autonomous self-improvement. Since this is a relatively limited scope of practical experience, I want to take this opportunity to present myself with dynamic content.",
         text2:
-          "The entire project was written from scratch by my self. I integrated Bootstrap into a few individual components to avoid reinventing the wheel. The development environment utilized Visual Studio Code along with the SASS Live Compiler Extension, in conjunction with VUE.JS 3.x. The CV is available in germand and english. The backend is written in Node.js and hosted in an Azure Ubuntu environment, automated through the PM2 Manager. The connection between the backend and frontend is encrypted using HTTPS and a Let's Encrypt SSL certificate. I used Postman for testing during development. Gulp serves as task automation to generate CSS that is as extensively backward compatible as possible.",
-        text3:
-          "Testing was conducted on my Windows machine and that of a friend. Unfortunately, I don't personally own a Browserstack license – well, you can't have everything. Since I don't have an Apple device, I could only test on Android for mobile. I am well aware, that Apple can be kind a tricky and further testing would be necessary.",
+          "The entire project was written from scratch by my self. I integrated Bootstrap into a few individual components to avoid reinventing the wheel. The development environment utilized Visual Studio Code along with the SASS Live Compiler Extension, in conjunction with VUE.JS 3.x. The CV is available in germand and english. The backend is written in Node.js and hosted in an Azure Ubuntu environment, automated through the PM2 Manager. The connection between the backend and frontend is encrypted using HTTPS and a Let's Encrypt SSL certificate. I used Postman for testing during development. Gulp serves as task automation to generate CSS that is as extensively backward compatible as possible. I have tested on Windows 10. Unfortunately, I do not have a private Browserstack license, so my testing was limited to family and friends. I do not own an Apple device, so I was only able to test on Android mobile devices. I am well aware that Apple has quite a few peculiarities regarding design elements. In a production environment, extensive testing would certainly still be necessary.",
+        text3: "",
       },
     ],
 
@@ -654,9 +654,11 @@ export const data = {
           "Improvement of expertise and acquisition of new skills in front- and back-end development.",
           "Use of new technologies - see the concluding outro for more details.",
           "Participation in various online trainings & tutorials.",
+          "Focus on backend technologies, especially PHP 8",
+          "Gathering practical experience in procedural and object-oriented PHP development",
         ],
         success:
-          "Creation of a modern online resume as a reference for future employers, for YOU.",
+          "Creation of an online resume as a reference project & benchmark.",
         link: "",
       },
       {
@@ -1017,13 +1019,13 @@ export const data = {
     {
       icon: "fa-brands fa-windows",
       os: "Windows 10 22H2",
-      browser: "Google Chrome v.116-119",
+      browser: "Google Chrome v.116-120",
       iconbrowser: "fa-brands fa-chrome",
     },
     {
       icon: "fa-brands fa-windows",
       os: "Windows 10 22H2",
-      browser: "Microsoft Edge v.116-119",
+      browser: "Microsoft Edge v.116-120",
       iconbrowser: "fa-brands fa-edge",
     },
     {
@@ -1031,6 +1033,12 @@ export const data = {
       os: "Windows 10 22H2",
       browser: "Mozilla Firefox v.117-120",
       iconbrowser: "fa-brands fa-firefox-browser",
+    },
+    {
+      icon: "fa-brands fa-android",
+      os: "Android 10.1 - 14.0",
+      browser: "Google Chrome v.113-120",
+      iconbrowser: "fa-brands fa-chrome",
     },
   ],
 
