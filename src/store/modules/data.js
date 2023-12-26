@@ -13,6 +13,7 @@ import img04 from "@/assets/img/weatherapp-demo.gif";
 import img05 from "@/assets/img/unity-demo.gif";
 import img06 from "@/assets/img/login-demo.gif";
 import img07 from "@/assets/img/online-cv-demo.gif";
+import img08 from "@/assets/img/php-login-prototype.gif";
 
 export const data = {
   de: {
@@ -294,7 +295,7 @@ export const data = {
       {
         id: "6",
         hasMedia: true,
-        header: "Login Prototype",
+        header: "Node.js Login Prototype",
         subheader: "Tech Stack",
         subtopics: [
           "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
@@ -310,6 +311,22 @@ export const data = {
       },
       {
         id: "7",
+        hasMedia: true,
+        header: "PHP Login Prototype",
+        subheader: "Tech Stack & Info",
+        subtopics: [
+          "Visual Studio Code, PHP 8, XAMPP, MySQL, Apache",
+          "Einführung in PHP Syntax",
+          "Anbindung an MySQL Datenbank in XAMPP",
+          "Erstellung Data Table in phpMyAdmin",
+          "Einführung in Code Sanitizing & Basis Security Features",
+        ],
+        text: "Erste Praxiserfahrung im Umgang mit PHP in Verbindung mit XAMPP (MySQL, Apache). Darstellung Prototype samt Datentransfer in MySQL. Erarbeitung Best-Practice Ansätzen für Passwort Hashing, Erzeugung & Verwaltung Session Variablen, htmlspecialchars & Code Sanitizing.",
+        media: img08,
+        link: "https://github.com/TapeMate/PHP-login-prototype",
+      },
+      {
+        id: "8",
         hasMedia: true,
         header: "Spiele Entwicklung",
         subheader: "Randnotizen & Tech Stack:",
@@ -734,7 +751,7 @@ export const data = {
       {
         id: "6",
         hasMedia: true,
-        header: "Login Prototype",
+        header: "Node.js Login Prototype",
         subheader: "Tech Stack",
         subtopics: [
           "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
@@ -750,6 +767,22 @@ export const data = {
       },
       {
         id: "7",
+        hasMedia: true,
+        header: "PHP Login Prototype",
+        subheader: "Tech Stack & Info",
+        subtopics: [
+          "Visual Studio Code, PHP 8, XAMPP, MySQL, Apache",
+          "Introduction to PHP Syntax",
+          "Connecting to a MySQL Database in XAMPP",
+          "Creating a Data Table in phpMyAdmin",
+          "Introduction to Code Sanitizing & Basic Security Features",
+        ],
+        text: "Initial practical experience in using PHP in conjunction with XAMPP (MySQL, Apache). Demonstration prototype including data transfer to MySQL. Development of best-practice approaches for password hashing, use of session variables, htmlspecialchars & code sanitizing.",
+        media: img08,
+        link: "https://github.com/TapeMate/PHP-login-prototype",
+      },
+      {
+        id: "8",
         hasMedia: true,
         header: "Game Development",
         subheader: "Side Notes & Tech Stack:",
@@ -1012,13 +1045,13 @@ export const data = {
       id: "9",
       icon: "fa-solid fa-t",
       name: "typescript",
-      rating: "2",
+      rating: "3",
     },
     {
       id: "10",
       icon: "fa-brands fa-node-js",
       name: "node.js",
-      rating: "3",
+      rating: "4",
     },
     { id: "11", icon: "fa-solid fa-e", name: "express", rating: "1" },
     { id: "12", icon: "fa-brands fa-react", name: "react", rating: "2" },
@@ -1032,28 +1065,34 @@ export const data = {
       id: "14",
       icon: "fa-brands fa-vuejs",
       name: "vuex",
-      rating: "1",
+      rating: "3",
     },
     {
       id: "15",
+      icon: "fa-brands fa-php",
+      name: "PHP 8",
+      rating: "2",
+    },
+    {
+      id: "16",
       icon: "fa-regular fa-window-restore",
       name: "browserstack",
       rating: "6",
     },
     {
-      id: "16",
+      id: "17",
       icon: "fa-brands fa-microsoft",
       name: "visual studio code",
       rating: "8",
     },
     {
-      id: "17",
+      id: "18",
       icon: "fa-brands fa-microsoft",
       name: "visual studio 2022",
       rating: "4",
     },
     {
-      id: "18",
+      id: "19",
       icon: "fa-solid fa-code",
       name: "phpstorm",
       rating: "5",
