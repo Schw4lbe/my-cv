@@ -116,9 +116,10 @@ $clouds: $clr-secondary;
             align-items: center;
             padding: 0.5rem;
 
-            .github-link {
+            .github-link,
+            .github-link2 {
               display: block;
-              width: 220px;
+              width: 150px;
               background: $clr-accent;
               color: $clr-secondary;
               font-size: 20px;
@@ -134,6 +135,15 @@ $clouds: $clr-secondary;
               }
               &:hover {
                 background: $clr-accent-a;
+                color: $clr-primary;
+                transition: 0.3s;
+              }
+            }
+            .github-link2 {
+              background: $clr-accent-e;
+              margin-left: 5px;
+              &:hover {
+                background: $clr-accent-g;
                 color: $clr-primary;
                 transition: 0.3s;
               }

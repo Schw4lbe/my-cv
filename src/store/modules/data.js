@@ -15,6 +15,7 @@ import img05a from "@/assets/img/unity-demo.png";
 import img06a from "@/assets/img/login-demo.png";
 import img07a from "@/assets/img/online-cv-demo.png";
 import img08a from "@/assets/img/php-login-prototype.png";
+import img09a from "@/assets/img/store-demo.png";
 
 // import gif for fullscreen demo
 import img01 from "@/assets/img/kundenprojekt-demo.gif";
@@ -25,6 +26,7 @@ import img05 from "@/assets/img/unity-demo.gif";
 import img06 from "@/assets/img/login-demo.gif";
 import img07 from "@/assets/img/online-cv-demo.gif";
 import img08 from "@/assets/img/php-login-prototype.gif";
+import img09 from "@/assets/img/store-demo.gif";
 
 export const data = {
   de: {
@@ -246,6 +248,7 @@ export const data = {
         image: img04a,
         media: img04,
         link: "https://github.com/TapeMate/vue-weatherapp",
+        link2: "",
       },
       {
         id: "2",
@@ -262,6 +265,7 @@ export const data = {
         image: img02a,
         media: img02,
         link: "https://github.com/TapeMate/homepage",
+        link2: "",
       },
       {
         id: "3",
@@ -275,6 +279,7 @@ export const data = {
         image: img07a,
         media: img07,
         link: "https://github.com/TapeMate/my-cv",
+        link2: "",
       },
       {
         id: "4",
@@ -291,6 +296,7 @@ export const data = {
         image: img03a,
         media: img03,
         link: "https://github.com/TapeMate/vue-contactform",
+        link2: "",
       },
       {
         id: "5",
@@ -308,6 +314,7 @@ export const data = {
         image: img01a,
         media: img01,
         link: "",
+        link2: "",
       },
       {
         id: "6",
@@ -326,6 +333,7 @@ export const data = {
         image: img06a,
         media: img06,
         link: "https://github.com/TapeMate/login-prototype",
+        link2: "",
       },
       {
         id: "7",
@@ -343,9 +351,29 @@ export const data = {
         image: img08a,
         media: img08,
         link: "https://github.com/TapeMate/PHP-login-prototype",
+        link2: "",
       },
       {
         id: "8",
+        hasMedia: true,
+        header: "PHP / VUE Online Store",
+        subheader: "Tech Stack & Info",
+        subtopics: [
+          "Visual Studio Code, PHP 8, VUE.JS, VUEX, XAMPP, MySQL, Apache",
+          "Erstellung PHP Backend samt Interaction mit MySQL Datenbanken",
+          "PHP Backend bestehend aus Benutzerlogin, Produktverwaltung, Bestellerfassung",
+          "Anwendung des MVC (Model View Controller) Prinzips",
+          "Frontend Erstellung samt Styling in VUE.JS & SCSS",
+          "Erstes Projekt mit VUE.JS in Verbindung mit PHP 8",
+        ],
+        text: "Erste Umsetzung & Verbinung von VUE.JS & PHP zusammen mit XAMPP (MySQL, Apache). Erschaffung eines fiktiven Online Shops samt Nutzerverwaltung. Einarbeitung in objektorentierte PHP Entwicklung, Transfer von Daten zwischen VUE.JS, PHP und SQL.",
+        image: img09a,
+        media: img09,
+        link: "https://github.com/TapeMate/vue-php-store-prototype-frontend",
+        link2: "https://github.com/TapeMate/vue-php-store-prototype-backend",
+      },
+      {
+        id: "9",
         hasMedia: true,
         header: "Spiele Entwicklung",
         subheader: "Randnotizen & Tech Stack:",
@@ -359,6 +387,7 @@ export const data = {
         image: img05a,
         media: img05,
         link: "",
+        link2: "",
       },
     ],
 
@@ -711,6 +740,7 @@ export const data = {
         image: img04a,
         media: img04,
         link: "https://github.com/TapeMate/vue-weatherapp",
+        link2: "",
       },
       {
         id: "2",
@@ -727,6 +757,7 @@ export const data = {
         image: img02a,
         media: img02,
         link: "https://github.com/TapeMate/homepage",
+        link2: "",
       },
       {
         id: "3",
@@ -740,6 +771,7 @@ export const data = {
         image: img07a,
         media: img07,
         link: "https://github.com/TapeMate/my-cv",
+        link2: "",
       },
       {
         id: "4",
@@ -756,6 +788,7 @@ export const data = {
         image: img03a,
         media: img03,
         link: "https://github.com/TapeMate/vue-contactform",
+        link2: "",
       },
       {
         id: "5",
@@ -773,6 +806,7 @@ export const data = {
         image: img01a,
         media: img01,
         link: "",
+        link2: "",
       },
       {
         id: "6",
@@ -791,6 +825,7 @@ export const data = {
         image: img06a,
         media: img06,
         link: "https://github.com/TapeMate/login-prototype",
+        link2: "",
       },
       {
         id: "7",
@@ -808,9 +843,29 @@ export const data = {
         image: img08a,
         media: img08,
         link: "https://github.com/TapeMate/PHP-login-prototype",
+        link2: "",
       },
       {
         id: "8",
+        hasMedia: true,
+        header: "PHP / VUE Online Store",
+        subheader: "Tech Stack & Info",
+        subtopics: [
+          "Visual Studio Code, PHP 8, VUE.JS, VUEX, XAMPP, MySQL, Apache",
+          "Creation of PHP Backend including interaction with MySQL databases",
+          "PHP Backend consisting of user login, product management, and order processing",
+          "Application of the MVC (Model View Controller) principle",
+          "Frontend creation and styling in VUE.JS & SCSS",
+          "First project using VUE.JS in conjunction with PHP 8",
+        ],
+        text: "First implementation and connection of VUE.JS & PHP along with XAMPP (MySQL, Apache). Creation of a fictitious online store including user management. Training in object-oriented PHP development, transfer of data between VUE.JS, PHP, and SQL.",
+        image: img09a,
+        media: img09,
+        link: "https://github.com/TapeMate/vue-php-store-prototype-frontend",
+        link2: "https://github.com/TapeMate/vue-php-store-prototype-backend",
+      },
+      {
+        id: "9",
         hasMedia: true,
         header: "Game Development",
         subheader: "Side Notes & Tech Stack:",
@@ -824,6 +879,7 @@ export const data = {
         image: img05a,
         media: img05,
         link: "",
+        link2: "",
       },
     ],
 

@@ -28,7 +28,14 @@
               <p>{{ item.text }}</p>
               <div v-if="item.link.length > 0" class="github-link-container">
                 <a class="github-link" :href="item.link" target="_blank"
-                  ><i class="fa-brands fa-github"></i> Github Repository</a
+                  ><i class="fa-brands fa-github"></i> Github</a
+                >
+                <a
+                  v-if="item.link2.length > 0"
+                  class="github-link2"
+                  :href="item.link2"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> Github</a
                 >
               </div>
             </div>
