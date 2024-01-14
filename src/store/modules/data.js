@@ -7,7 +7,6 @@ import Logo5 from "@/assets/img/logo-tapemate.png";
 import Logo6 from "@/assets/img/logo-grammophon.png";
 
 // import demo img to lead to fullscreen demo
-import img01a from "@/assets/img/kundenprojekt-demo.png";
 import img02a from "@/assets/img/homepage-demo.png";
 import img03a from "@/assets/img/contactform-demo.png";
 import img04a from "@/assets/img/weatherapp-demo.png";
@@ -18,7 +17,6 @@ import img08a from "@/assets/img/php-login-prototype.png";
 import img09a from "@/assets/img/store-demo.png";
 
 // import gif for fullscreen demo
-import img01 from "@/assets/img/kundenprojekt-demo.gif";
 import img02 from "@/assets/img/homepage-demo.gif";
 import img03 from "@/assets/img/contactform-demo.gif";
 import img04 from "@/assets/img/weatherapp-demo.gif";
@@ -101,7 +99,7 @@ export const data = {
     accordionOpenText: "aufklappen",
     accordionCollapseText: "zuklappen",
     referenceSuccessMsg: "Größter Erfolg: ",
-    modalButtonText: "Vollbild Demo",
+    modalButtonText: "Demo ansehen",
     introHeader: "Lebenslauf",
     introHeaderTechStack: "Tech Stack",
     introHeaderTesting: "Kompatibilität",
@@ -296,24 +294,6 @@ export const data = {
         image: img03a,
         media: img03,
         link: "https://github.com/TapeMate/vue-contactform",
-        link2: "",
-      },
-      {
-        id: "5",
-        hasMedia: true,
-        header: "Kundenprojekt",
-        subheader: "Tech Stack & Herausforderungen:",
-        subtopics: [
-          "VUE.JS 2.x, TypeScript, JSON-Schema",
-          "EDI: Visual Studio Code & PHP Storm",
-          "genannte Technologien waren Neuland",
-          "Kompatibilität für Geräte der letzten 6 Jahre",
-          "Komplette Anwendung läuft in einem IFrame",
-        ],
-        text: "Kundenprojekt für Stadtwerke Lauterbach. Umsetzung einer online Bestellstrecke mittels VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
-        image: img01a,
-        media: img01,
-        link: "",
         link2: "",
       },
       {
@@ -595,7 +575,7 @@ export const data = {
     accordionOpenText: "expand",
     accordionCollapseText: "collapse",
     referenceSuccessMsg: "Greatest success: ",
-    modalButtonText: "Fullscreen Demo",
+    modalButtonText: "Show Demo",
     introHeader: "Curriculum Vitae",
     introHeaderTechStack: "Tech Stack",
     introHeaderTesting: "Compatibility",
@@ -788,24 +768,6 @@ export const data = {
         image: img03a,
         media: img03,
         link: "https://github.com/TapeMate/vue-contactform",
-        link2: "",
-      },
-      {
-        id: "5",
-        hasMedia: true,
-        header: "Client Project",
-        subheader: "Tech Stack & Challenges:",
-        subtopics: [
-          "VUE.JS 2.x, TypeScript, JSON-Schema",
-          "EDI: Visual Studio Code & PHP Storm",
-          "mentioned technologies were new territory",
-          "Compatibility for devices of the last 6 years",
-          "The complete application runs in an IFrame",
-        ],
-        text: "Client project for Stadtwerke Lauterbach. Implementation of an online ordering process using VUE.JS 2.x, TypeScript, SCSS & JSON-Schema.",
-        image: img01a,
-        media: img01,
-        link: "",
         link2: "",
       },
       {
