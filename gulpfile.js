@@ -9,5 +9,4 @@ function applyAutoprefixer() {
     .pipe(gulp.dest("public/css"));
 }
 
-// test
 exports.default = applyAutoprefixer;
