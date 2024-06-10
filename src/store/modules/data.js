@@ -1098,7 +1098,7 @@ export const data = {
       id: "9",
       icon: "fa-solid fa-t",
       name: "typescript",
-      rating: "3",
+      rating: "5",
     },
     {
       id: "10",
@@ -1118,13 +1118,13 @@ export const data = {
       id: "14",
       icon: "fa-brands fa-vuejs",
       name: "vuex",
-      rating: "3",
+      rating: "6",
     },
     {
       id: "15",
       icon: "fa-brands fa-php",
       name: "PHP 8",
-      rating: "2",
+      rating: "4",
     },
     {
       id: "16",

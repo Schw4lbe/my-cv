@@ -43,19 +43,16 @@
     </div>
   </nav>
   <ToggleButton />
-  <LogoutButton />
 </template>
 
 <script>
 import router from "@/router";
 import ToggleButton from "@/components/ToggleButton.vue";
-import LogoutButton from "@/components/LogoutButton.vue";
 
 export default {
   name: "NavbarMain",
   components: {
     ToggleButton,
-    LogoutButton,
   },
   props: {
     navbarItems: Array,
@@ -71,7 +68,6 @@ export default {
     collapseNavbar() {
       const navbarToggler = document.querySelector(".navbar-toggler");
       const navbarCollapse = document.querySelector(".navbar-collapse");
-      console.log(navbarCollapse);
       if (!navbarToggler.classList.contains("collapsed")) {
         navbarToggler.classList.add("collapsed");
       }
