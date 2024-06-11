@@ -6,11 +6,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "autoprefix": "gulp"
+    "autoprefix": "gulp",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.5.0",
-    "gulp": "^4.0.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.1.0"
