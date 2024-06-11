@@ -7,7 +7,6 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "autoprefix": "gulp",
-    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.5.0",
