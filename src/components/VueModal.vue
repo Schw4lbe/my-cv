@@ -20,6 +20,7 @@
           class="modal-image"
           :src="media"
           @load="imageLoaded"
+          @error="imageError"
           rel="preload"
         />
       </div>
@@ -51,18 +52,36 @@ export default {
     return {
       showModal: false,
       loading: false,
+      imageLoadedSuccessfully: false,
     };
   },
   methods: {
     openModal() {
       this.showModal = true;
       this.loading = true;
+      this.imageLoadedSuccessfully = false;
+      this.preloadImage(this.media);
     },
     closeModal() {
       this.showModal = false;
     },
+    preloadImage(src) {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        this.imageLoaded();
+      };
+      img.onerror = () => {
+        this.imageError();
+      };
+    },
     imageLoaded() {
       this.loading = false;
+      this.imageLoadedSuccessfully = true;
+    },
+    imageError() {
+      this.loading = false;
+      console.error("Failed to load image.");
     },
   },
 };
