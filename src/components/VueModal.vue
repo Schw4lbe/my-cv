@@ -20,7 +20,6 @@
           class="modal-image"
           :src="media"
           @load="imageLoaded"
-          @error="imageError"
           rel="preload"
         />
       </div>
@@ -52,36 +51,20 @@ export default {
     return {
       showModal: false,
       loading: false,
-      imageLoadedSuccessfully: false,
     };
   },
   methods: {
     openModal() {
       this.showModal = true;
       this.loading = true;
-      this.imageLoadedSuccessfully = false;
-      this.preloadImage(this.media);
     },
     closeModal() {
       this.showModal = false;
     },
-    preloadImage(src) {
-      const img = new Image();
-      img.src = src;
-      img.onload = () => {
-        this.imageLoaded();
-      };
-      img.onerror = () => {
-        this.imageError();
-      };
-    },
     imageLoaded() {
-      this.loading = false;
-      this.imageLoadedSuccessfully = true;
-    },
-    imageError() {
-      this.loading = false;
-      console.error("Failed to load image.");
+      setTimeout(() => {
+        this.loading = false;
+      }, 500); // slight delay to ensure the loading animation is visible
     },
   },
 };
@@ -92,7 +75,7 @@ export default {
   position: relative;
   z-index: 501;
   border: 6px solid #f3f3f3; /* Light grey */
-  border-top: 6px solid #555555; /* Blue */
+  border-top: 6px solid #555555; /* Dark grey */
   border-radius: 50%;
   width: 55px;
   height: 55px;
