@@ -21,6 +21,10 @@ export default {
     FooterMain,
   },
 
+  mounted() {
+    this.$store.commit("setLanguageDE");
+  },
+
   computed: {
     ...mapGetters(["selectedLanguage"]),
 
