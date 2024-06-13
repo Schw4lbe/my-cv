@@ -14,7 +14,14 @@
             <i class="fa-regular fa-circle-xmark"></i>
           </button>
         </div>
-        <img class="modal-image" :src="media" rel="preload" />
+        <div v-if="loading" class="Loader"></div>
+        <img
+          v-else
+          class="modal-image"
+          :src="media"
+          @load="imageLoaded"
+          rel="preload"
+        />
       </div>
     </div>
   </div>
@@ -43,15 +50,45 @@ export default {
   data() {
     return {
       showModal: false,
+      loading: false,
     };
   },
   methods: {
     openModal() {
       this.showModal = true;
+      this.loading = true;
     },
     closeModal() {
       this.showModal = false;
     },
+    imageLoaded() {
+      this.loading = false;
+    },
   },
 };
 </script>
+
+<style scoped>
+.Loader {
+  position: fixed;
+  z-index: 501;
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #555555; /* Blue */
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  animation: spin 0.8s linear infinite;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
