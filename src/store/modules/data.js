@@ -9,7 +9,7 @@ import Logo6 from "@/assets/img/logo-grammophon.png";
 // import demo img to lead to fullscreen demo
 import img02a from "@/assets/img/homepage-demo.png";
 import img03a from "@/assets/img/contactform-demo.png";
-import img04a from "@/assets/img/weatherapp-demo.png";
+import img04a from "@/assets/img/csv-processing-demo.png";
 import img05a from "@/assets/img/unity-demo.png";
 import img06a from "@/assets/img/login-demo.png";
 import img07a from "@/assets/img/online-cv-demo.png";
@@ -19,7 +19,7 @@ import img09a from "@/assets/img/store-demo.png";
 // import gif for fullscreen demo
 import img02 from "@/assets/img/homepage-demo.gif";
 import img03 from "@/assets/img/contactform-demo.gif";
-import img04 from "@/assets/img/weatherapp-demo.gif";
+import img04 from "@/assets/img/csv-processing-demo.gif";
 import img05 from "@/assets/img/unity-demo.gif";
 import img06 from "@/assets/img/login-demo.gif";
 import img07 from "@/assets/img/online-cv-demo.gif";
@@ -109,9 +109,9 @@ export const data = {
     introData: [
       {
         header: "Präambel",
-        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Zusammengefasst habe ich 6 Monate Weiterbildung bei einem Schulungsunternehmen genossen, ein gutes Jahr Berufserfahrung sammeln können und mich seither selbstständig weitergebildet. Da dies ein recht überschaubarer Rahmen an Praxiserfahrung ist, möchte ich die Gelegenheit nutzen, mich mit bewegten Inhalten zu präsentieren.",
+        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind meiner Meinung nach aussagekräftiger als ein Schlichter Lebenslauf in PDF Format.",
         text2:
-          "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Das Backend ist in Node.js geschrieben und in einer Azure Ubuntu Umgebung gehostet und durch den PM2 Manager automatisiert. Die Verbindung des Backends mit dem Frontend findet verschlüsselt mittels HTTPS und einem Let's Encrypt SSL Zertifikat statt. Postman habe ich während der Entwicklung für Tests verwendet. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen. Getestet habe ich auf Windows 10. Ich besitze privat leider keine Browserstack Lizenz, daher war der Umfang auf Familie und Freunde begrenzt. Ein Apple Device besitze ich nicht und habe daher mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten hinsichtlich Design Elementen besitzt. In einer Produktivumgebung stünden jedefalls noch ausführliche Tests an.",
+          "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen. Getestet habe ich auf Windows 10. Ich besitze privat leider keine Browserstack Lizenz, daher war der Umfang auf Familie und Freunde begrenzt. Ein Apple Device besitze ich nicht und habe daher mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten hinsichtlich Design Elementen besitzt. In einer Produktivumgebung stünden jedefalls noch ausführliche Tests an.",
         text3: "",
       },
     ],
@@ -183,18 +183,17 @@ export const data = {
     freelanceItems: [
       {
         id: "1",
-        header: "Selbstständige Weiterbildung - Webentwicklung",
+        header: "Freiberufliche Webentwicklung - Weiterbildung",
         period: "06/2023 - heute",
         subtopics: [
-          "Planung & Erstellung eines online Lebenslaufes auf Basis von VUE.js 3.x",
+          "Freiberufliche Umsetzung Webprojekte, Beratung & Konzeptionierung",
           "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
           "Verwendung neuer Technologien - siehe Schlusswort für mehr Details",
           "Besuch von diversen online Schulungen & Tutorials",
           "Schwerpunkt auf Backend Technologien insbesondere PHP 8",
           "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter PHP Entwicklung",
         ],
-        success:
-          "Erstellung eines online Lebenslaufes als Referenzprojekt & Benchmark.",
+        success: "Umsetzung Diverser Webapplikationen",
         link: "",
       },
       {
@@ -235,17 +234,18 @@ export const data = {
       {
         id: "1",
         hasMedia: true,
-        header: "Wetter APP",
+        header: "CSV-Processing Tool",
         subheader: "Tech Stack:",
         subtopics: [
-          "VUE.JS 3, HTML, CSS, JavaScript ES6, Node.js, Express",
-          "VUE Router, ESLint, Prettier, Visual Studio Code",
-          "OpenWeatherAPI: https://openweathermap.org",
+          "VUE.JS 3, PHP 8, SCSS, Vuetify, Chart Kick, Apache, MySQL, Gulp, Docker",
+          "ESLint, Prettier, LiveSASS Compiler, Visual Studio Code, Postman",
+          "Anwendung des MVC (Model View Controller) Prinzips",
+          "Verwendung von Best Practice Ansätzen für Datei- & Contentvalidierung",
         ],
-        text: "Zur Übung in der Einbindung und im Umgang von API's als auch im Schreiben von Node.js, habe ich mehrere Youtube Tutorials vollzogen. Neben dieser Anwendung habe ich zudem einen kleinen Chatbot und einen Taskmanager erstellt. Die Anwendung basiert auf der OpenWeatherAPI.",
+        text: "Erstellung einer Konzeptarbeit für ein Unternehmen. Frontend bestehend aus VUE.JS, Vuetify & Chartkick. Backend in PHP 8 ohne Framework enthält eine Suche & Paginierung. Demo in Docker ausführbar.",
         image: img04a,
         media: img04,
-        link: "https://github.com/TapeMate/vue-weatherapp",
+        link: "https://github.com/TapeMate/CSV-Processing",
         link2: "",
       },
       {
@@ -453,46 +453,33 @@ export const data = {
     ],
     outroHeader: "Abschließende Worte...",
     outroMainContent:
-      "Vorab sei betont, dass ich jederzeit gern bereit bin, gemeinsam mit Ihnen den Quellcode dieses Projektes zu betrachten, um auf Fragen einzugehen. Ich hatte große Freude an der Erstellung dieses Projekts. Im Nachfolgenden möchte ich beschreiben, was neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
+      "Ich freue mich jederzeit über Feedback zu meinen Projekten und bin gern bereit im Detail auf Fragen ein zu gehen. Im Nachfolgenden möchte ich beschreiben, was bei der Erstellung dieses online Lebenslaufes neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
     outroItems: [
       {
         title: "Neue Technologien:",
         content: [
           "VUEX State & Content Management, samt Erzeugung Session Cookie",
           "Gulp Task Automatisierung mittels Autoprefixer & PostCSS",
-          "Ubuntu in der Azure Cloud und Setup eines Backend Servers",
-          "Automatisierung des Backends mittels PM2 Manager",
-          "SSL Zertifikatsbeantragung bei Let's Encrypt mittels NGINX",
         ],
       },
       {
         title: "Herausforderungen:",
-        content: [
-          "Erstellung des Backends beginnend mit Node.js bis hin zur Umsetzung in Ubuntu on Azure",
-          "Einrichtung Webserver auf Azure Maschine zur Erstellung des SSL Zertifikats",
-          "VUEX für Session Management, da alles neu für mich war.",
-          "Erstellung eines Login Prozederes samt Prüfung der Daten",
-        ],
+        content: ["VUEX für Session Management, da alles neu für mich war."],
       },
       {
         title: "Verbesserungspotenzial:",
         content: [
           "Verwendung der VUE Composition API da zukunftssicher",
           "Verwendung von SCSS @forward & @use da @import depricated",
-          "Einbindung eines Authentifizierungsservice - z.B. JSON Webtoken - für sauberen Login",
-          "Login Logik sauberer von App.vue trennen und wartbarer gestalten",
-          "Login Logik & Backend ausbauen, Session Timeout & Authentisierung implementieren",
           "Mehr SCSS-Variablen für bessere globale Steuerung des Layouts",
-          "Verwendung einer Datenbank zur Verwaltung der Zugangsdaten (MongoDB, MySQL)",
         ],
       },
       {
         title: "Quellenangaben:",
         content: [
           "developer.mozilla.org",
-          "stackoverflow.com/",
+          "stackoverflow.com",
           "codepen.io",
-          "chat.openai.com",
           "getbootstrap.com",
           "fontawesome.com",
           "learn.microsoft.com",
@@ -585,9 +572,9 @@ export const data = {
     introData: [
       {
         header: "Preamble",
-        text: "This online resume was created with the intention of showcasing my current proficiency in frontend development. In summary, I have undergone 6 months of further training in web development at a private educational oriented company, have accumulated a good year of professional experience and ongoing autonomous self-improvement. Since this is a relatively limited scope of practical experience, I want to take this opportunity to present myself with dynamic content.",
+        text: "This online resume was created with the intention of showcasing my current skill level in frontend development. In my opinion, animated images and real code are more illustrative than a simple resume in PDF format.",
         text2:
-          "The entire project was written from scratch by my self. I integrated Bootstrap into a few individual components to avoid reinventing the wheel. The development environment utilized Visual Studio Code along with the SASS Live Compiler Extension, in conjunction with VUE.JS 3.x. The CV is available in germand and english. The backend is written in Node.js and hosted in an Azure Ubuntu environment, automated through the PM2 Manager. The connection between the backend and frontend is encrypted using HTTPS and a Let's Encrypt SSL certificate. I used Postman for testing during development. Gulp serves as task automation to generate CSS that is as extensively backward compatible as possible. I have tested on Windows 10. Unfortunately, I do not have a private Browserstack license, so my testing was limited to family and friends. I do not own an Apple device, so I was only able to test on Android mobile devices. I am well aware that Apple has quite a few peculiarities regarding design elements. In a production environment, extensive testing would certainly still be necessary.",
+          "The entire project was written by myself from scratch. I integrated Bootstrap in a few isolated components to avoid reinventing the wheel. The development environment used was Visual Studio Code along with the SASS-Live Compiler extension, in conjunction with VUE.JS 3.x. The language can be displayed in either German or English at any time. Gulp serves as my task automation tool to generate CSS with extensive backward compatibility. Testing was conducted on Windows 10. Unfortunately, I do not have a Browserstack license, so testing was limited to family and friends. I do not own an Apple device, so mobile testing was only done on Android. I am well aware that Apple has some peculiarities regarding design elements. In a production environment, extensive testing would still be required.",
         text3: "",
       },
     ],
@@ -656,18 +643,17 @@ export const data = {
     freelanceItems: [
       {
         id: "1",
-        header: "Self-directed Education - Web Development",
+        header: "Freelance Web Development - Further Education",
         period: "06/2023 - today",
         subtopics: [
-          "Planning & creation of an online resume based on VUE.js 3.x.",
+          "Freelance implementation of web projects, consulting, and conceptualization",
           "Improvement of expertise and acquisition of new skills in front- and back-end development.",
           "Use of new technologies - see the concluding outro for more details.",
           "Participation in various online trainings & tutorials.",
           "Focus on backend technologies, especially PHP 8",
           "Gathering practical experience in procedural and object-oriented PHP development",
         ],
-        success:
-          "Creation of an online resume as a reference project & benchmark.",
+        success: "Implementation of various web applications",
         link: "",
       },
       {
@@ -709,14 +695,15 @@ export const data = {
       {
         id: "1",
         hasMedia: true,
-        header: "Weather APP",
+        header: "CSV-Processing Tool",
         subheader: "Tech Stack:",
         subtopics: [
-          "VUE.JS 3, HTML, CSS, JavaScript ES6, Node.js, Express",
-          "VUE Router, ESLint, Prettier, Visual Studio Code",
-          "OpenWeatherAPI: https://openweathermap.org",
+          "VUE.JS 3, PHP 8, SCSS, Vuetify, Chart Kick, Apache, MySQL, Gulp, Docker",
+          "ESLint, Prettier, LiveSASS Compiler, Visual Studio Code, Postman",
+          "Application of the MVC (Model View Controller) principle",
+          "Use of best practice approaches for file and content validation",
         ],
-        text: "As practice in integrating and using APIs as well as in writing Node.js, I followed several YouTube tutorials. Besides this application, I also created a small chatbot and a task manager. The application is based on the OpenWeatherAPI.",
+        text: "Creation of a concept work for a company. Frontend consists of VUE.JS, Vuetify, and Chartkick. Backend in PHP 8 with no framework. Backend includes search and pagination. Demo executable in Docker.",
         image: img04a,
         media: img04,
         link: "https://github.com/TapeMate/vue-weatherapp",
@@ -927,46 +914,33 @@ export const data = {
     ],
     outroHeader: "Some closing arguments...",
     outroMainContent:
-      "I would like to emphasize in advance that I am always willing to review the source code of this project with you, to address any questions you may have. I greatly enjoyed working on this project. In the following, I would like to describe what was new to me, my biggest challenges, and what could be done differently or better in future projects.",
+      "I am always happy to receive feedback on my projects and am willing to address questions in detail. In the following, I would like to describe what was new to me in creating this online resume, where the biggest challenges were, and what I would like to do differently or better in future projects.",
     outroItems: [
       {
         title: "New technologies:",
         content: [
           "VUEX state & content management, including the generation of a session cookie.",
           "Gulp task automation using Autoprefixer & PostCSS.",
-          "Ubuntu on Azure Cloud and setup a backend server.",
-          "Backend automation using PM2 Manager.",
-          "SSL certificate application with Let's Encrypt using NGINX.",
         ],
       },
       {
         title: "Challenges:",
-        content: [
-          "Backend creation starting with Node.js up to the implementation in Ubuntu on Azure.",
-          "Setting up a web server on an Azure machine for the creation of the SSL certificate.",
-          "VUEX for session management, as everything was new to me.",
-          "Creation of a login procedure including data verification.",
-        ],
+        content: ["VUEX for session management, as everything was new to me."],
       },
       {
         title: "Room for approvement:",
         content: [
           "Use VUE Composition API as it is future-proof.",
           "Use SCSS @forward & @use because @import is depricated",
-          "Integration of an authentication service - e.g., JSON Web Token - for a clean login.",
-          "Separate the login logic more cleanly from app.vue and make it more maintainable.",
-          "Expand the login logic & backend, implement session timeout & authentication.",
           "More Variables in SCSS for better global control.",
-          "Use of a database for managing user accounts (MongoDB, MySQL)",
         ],
       },
       {
         title: "Sources:",
         content: [
           "developer.mozilla.org",
-          "stackoverflow.com/",
+          "stackoverflow.com",
           "codepen.io",
-          "chat.openai.com",
           "getbootstrap.com",
           "fontawesome.com",
           "learn.microsoft.com",
@@ -1011,26 +985,15 @@ export const data = {
       name: "JavaScript ES6",
       icon: "fa-brands fa-square-js",
     },
-    {
-      name: "Node.js",
-      icon: "fa-brands fa-node-js",
-    },
     { name: "SCSS", icon: "fa-brands fa-sass" },
     { name: "HTML 5", icon: "fa-brands fa-html5" },
     { name: "Bootstrap 5.2", icon: "fa-brands fa-bootstrap" },
+    { name: "FontAwesome", icon: "fa-solid fa-font-awesome" },
     { name: "VS Code", icon: "fa-brands fa-microsoft" },
     { name: "Gulp", icon: "fa-brands fa-gulp" },
     { name: "Autoprefixer", icon: "fa-brands fa-autoprefixer" },
     { name: "PostCSS", icon: "fa-brands fa-css3-alt" },
-    { name: "FileZilla", icon: "fa-solid fa-file" },
-    { name: "Express", icon: "fa-solid fa-e" },
-    { name: "Postman", icon: "fa-solid fa-code-pull-request" },
-    { name: "Ubuntu on Azure", icon: "fa-brands fa-ubuntu" },
-    { name: "PM2 Manager", icon: "fa-solid fa-server" },
-    { name: "Axios", icon: "fa-solid fa-a" },
-    { name: "Apache", icon: "fa-solid fa-helicopter" },
-    { name: "NGINX", icon: "fa-solid fa-server" },
-    { name: "Let's Encrypt", icon: "fa-brands fa-expeditedssl" },
+    { name: "GitHub", icon: "fa-brands fa-github" },
   ],
 
   testingData: [
@@ -1072,80 +1035,87 @@ export const data = {
     },
     {
       id: "5",
+      icon: "fa-solid fa-book",
+      name: "vuetify",
+      rating: "4",
+    },
+    {
+      id: "6",
       icon: "fa-solid fa-q",
       name: "quasar",
       rating: "3",
     },
+
     {
-      id: "6",
+      id: "7",
       icon: "fa-brands fa-uikit",
       name: "ux / ui design",
       rating: "5",
     },
     {
-      id: "7",
+      id: "8",
       icon: "fa-brands fa-js",
       name: "javascript es6",
       rating: "7",
     },
     {
-      id: "8",
+      id: "9",
       icon: "fa-brands fa-js",
       name: "javascript dom",
       rating: "6",
     },
     {
-      id: "9",
+      id: "10",
       icon: "fa-solid fa-t",
       name: "typescript",
       rating: "5",
     },
     {
-      id: "10",
+      id: "11",
       icon: "fa-brands fa-node-js",
       name: "node.js",
       rating: "4",
     },
-    { id: "11", icon: "fa-solid fa-e", name: "express", rating: "1" },
-    { id: "12", icon: "fa-brands fa-react", name: "react", rating: "2" },
+    { id: "12", icon: "fa-solid fa-e", name: "express", rating: "1" },
+    { id: "13", icon: "fa-brands fa-react", name: "react", rating: "2" },
     {
-      id: "13",
+      id: "14",
       icon: "fa-brands fa-vuejs",
       name: "vue js 2 & 3",
       rating: "7",
     },
     {
-      id: "14",
+      id: "15",
       icon: "fa-brands fa-vuejs",
       name: "vuex",
       rating: "6",
     },
     {
-      id: "15",
+      id: "16",
       icon: "fa-brands fa-php",
       name: "PHP 8",
       rating: "4",
     },
     {
-      id: "16",
+      id: "17",
       icon: "fa-regular fa-window-restore",
       name: "browserstack",
       rating: "6",
     },
     {
-      id: "17",
+      id: "18",
       icon: "fa-brands fa-microsoft",
       name: "visual studio code",
       rating: "8",
     },
     {
-      id: "18",
+      id: "19",
       icon: "fa-brands fa-microsoft",
       name: "visual studio 2022",
       rating: "4",
     },
     {
-      id: "19",
+      id: "20",
       icon: "fa-solid fa-code",
       name: "phpstorm",
       rating: "5",
