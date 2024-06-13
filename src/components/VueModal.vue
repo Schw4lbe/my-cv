@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="modal" v-if="showModal">
-      <div class="modal-content">
+      <div class="modal-content" style="border-radius: 0px">
         <div class="modal-control">
           <h3 class="modal-header">{{ modalHeader }}</h3>
           <button class="modal-close-button" @click="closeModal">
