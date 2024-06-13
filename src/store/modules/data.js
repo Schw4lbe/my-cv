@@ -432,7 +432,7 @@ export const data = {
         success:
           "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
         logo: Logo2,
-        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+        link: "https://www.iq-gmbh.de/",
       },
       {
         id: "5",
@@ -448,7 +448,7 @@ export const data = {
         success:
           "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
         logo: Logo2,
-        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+        link: "https://www.iq-gmbh.de/",
       },
     ],
     outroHeader: "Abschließende Worte...",
@@ -893,7 +893,7 @@ export const data = {
         success:
           "Project management, implementation, training for the Adobe editorial system (USA & EU)",
         logo: Logo2,
-        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+        link: "https://www.iq-gmbh.de/",
       },
       {
         id: "5",
@@ -909,7 +909,7 @@ export const data = {
         success:
           "Supporting the introduction of Microsoft BPOS in a small logistics company",
         logo: Logo2,
-        link: "https://sycor-group.com/de-de/ueber-sycor/management/sycor-iq-solutions-gmbh.html",
+        link: "https://www.iq-gmbh.de/",
       },
     ],
     outroHeader: "Some closing arguments...",
