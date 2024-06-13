@@ -16,7 +16,7 @@
         </div>
         <div v-if="loading" class="Loader"></div>
         <img
-          v-else
+          v-show="!loading"
           class="modal-image"
           :src="media"
           @load="imageLoaded"
