@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
 .Loader {
-  position: fixed;
+  position: relative;
   z-index: 501;
   border: 6px solid #f3f3f3; /* Light grey */
   border-top: 6px solid #555555; /* Blue */
@@ -79,8 +79,6 @@ export default {
   height: 55px;
   animation: spin 0.8s linear infinite;
   box-sizing: border-box;
-  top: 50%;
-  left: 50%;
 }
 
 @keyframes spin {
