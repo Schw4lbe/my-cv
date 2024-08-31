@@ -7,6 +7,8 @@ import ReferenceView from "@/views/ReferenceView.vue";
 import FreelanceView from "@/views/FreelanceView.vue";
 import OutroView from "@/views/OutroView.vue";
 
+import DevView from "@/views/DevView.vue";
+
 const routes = [
   {
     path: "/",
@@ -42,6 +44,11 @@ const routes = [
     path: "/outro",
     name: "outro",
     component: OutroView,
+  },
+  {
+    path: "/dev",
+    name: "dev",
+    component: DevView,
   },
 ];
 
