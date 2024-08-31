@@ -1,4 +1,4 @@
-@import "breakpoint-variables";
+@use "../abstracts/" as *;
 
 @media (max-width: $bp-sm) {
   .navbar-nav {

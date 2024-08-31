@@ -1,5 +1,4 @@
-$midnight: $clr-primary-light3;
-$clouds: $clr-secondary;
+@use "abstracts/" as *;
 
 .accordion-wrapper {
   display: flex;

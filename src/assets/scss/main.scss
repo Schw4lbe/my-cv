@@ -1,29 +1,6 @@
-@import "partials/colors";
-
-@import "partials/navbar";
-@import "partials/footer";
-@import "partials/app-vue";
-@import "partials/home-container";
-@import "partials/personal-data";
-@import "partials/accordion";
-@import "partials/coding-view";
-@import "partials/freelance-view";
-@import "partials/person-view";
-@import "partials/reference-view";
-@import "partials/sales-view";
-@import "partials/vue-modal";
-@import "partials/outro-view";
-@import "partials/toggle-button";
-
-@import "partials/dev-view";
-
-@import "partials/breakpoints/breakpoints-homeview";
-@import "partials/breakpoints/breakpoints-personview";
-@import "partials/breakpoints/breakpoints-accordion";
-@import "partials/breakpoints/breakpoints-navbar";
-@import "partials/breakpoints/breakpoints-footer";
-@import "partials/breakpoints/breakpoints-page-title";
-@import "partials/breakpoints/breakpoints-outro";
+@use "partials/abstracts/" as *;
+@use "partials/" as *;
+@use "partials/breakpoints/" as *;
 
 * {
   margin: 0;
