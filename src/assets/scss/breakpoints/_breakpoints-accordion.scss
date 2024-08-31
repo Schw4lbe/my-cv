@@ -1,0 +1,114 @@
+@use "../abstracts/" as *;
+
+@media (max-width: $bp-xl) {
+  .accordion-container {
+    .tab {
+      .tab-content-media {
+        .tab-content-media-grid {
+          .tab-content-media-description,
+          ul {
+            padding: 0;
+          }
+          ul li {
+            font-size: 1rem;
+          }
+          .media-container {
+            margin-left: 1rem;
+            padding-left: 0;
+            .image {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-lg) {
+  .accordion-container {
+    min-width: 0px !important;
+
+    .tab {
+      .tab-label {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        span {
+          width: 100%;
+          text-align: center;
+        }
+
+        span:nth-of-type(2) {
+          margin-top: 10px;
+        }
+      }
+
+      .tab-content-media {
+        .tab-content-media-grid {
+          grid-template-columns: 1fr 1fr;
+          .tab-content-media-description,
+          ul {
+            grid-column: 1 / end;
+            padding: 0 1rem 0 1rem;
+          }
+          .media-container {
+            grid-column: 1 / end;
+            grid-row: 3;
+            padding: 1rem 4rem 0 4rem;
+            border: none;
+            margin-left: 0;
+            .image {
+              padding: 0;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-md) {
+  .accordion-container {
+    .tab-content {
+      ul {
+        width: 100%;
+      }
+      .tab-media {
+        display: none;
+      }
+    }
+    .media-container {
+      padding: 0 0.5rem !important;
+      .image-frame {
+        height: 50px;
+        .image {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-sm) {
+  .accordion-container {
+    margin: 0 !important;
+
+    .tab-content-media-description,
+    ul {
+      padding: 0 !important;
+    }
+
+    ul li::before {
+      content: "" !important;
+    }
+
+    li {
+      list-style: square !important;
+    }
+  }
+}
