@@ -1,5 +1,9 @@
 ### BACKLOG
 
+# data.js
+
+- add subheaders for skills in en / de block
+
 # initial Impulse
 
 - you are a DEVELOPER not a BORING PERSON SHOW IT!!!
@@ -24,6 +28,9 @@
 - redesign progressbars
 - remove values "9/10" and so on just give a bar
 - group together IDE / FrameWork / Syntax or something like this to make more userfriendly
+- things to add: GitHub, Netlify, Netlify CMS, Decap CMS, Docker, Gulp
+- delete: JS DOM,
+- edit: VUEX / VueRouter
 
 ##### Idea reworked styling progress bars:
 

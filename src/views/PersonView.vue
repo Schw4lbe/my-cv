@@ -1,7 +1,7 @@
 <template>
   <div class="personal-data-wrapper">
     <h3 class="page-title">{{ getHeader }}</h3>
-    <PersonalData :skills="skillsArray" />
+    <PersonalData :skillData="skillDataArray" />
   </div>
 </template>
 
@@ -18,8 +18,13 @@ export default {
   computed: {
     ...mapGetters(["selectedLanguage"]),
 
-    skillsArray() {
-      return this.$store.state.contentData.skillsArray;
+    skillDataArray() {
+      return this.$store.state.contentData[this.selectedLanguage].skillData;
+    },
+
+    subHeaderArray() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .skillsSubheader;
     },
 
     getHeader() {

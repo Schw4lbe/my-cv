@@ -1,9 +1,5 @@
 @use "../abstracts/" as *;
 
-body {
-  background-color: $clr-primary;
-}
-
 html,
 body,
 #app {
@@ -16,14 +12,13 @@ body,
 }
 
 .page-title {
-  padding: 80px 0 1rem 0;
-  // margin-bottom: 2rem 0 0;
+  padding: 150px 0 1rem 0;
   width: 100%;
-  color: $clr-accent-a;
-  border-bottom: 1px solid $clr-accent;
-  text-transform: uppercase;
+  color: $clr-accent;
   text-align: center;
   font-size: 3rem;
+  background-clip: text;
+  font-family: PoppinsBold;
 }
 
 .navbar-wrapper {
@@ -33,9 +28,8 @@ body,
   width: 100%;
   flex-direction: row;
   position: fixed;
-  background: $clr-primary-light2;
+  background: rgba($color: $clr-primary, $alpha: 0.9);
   z-index: 99;
-  border-bottom: 1px solid $clr-secondary-dark;
 }
 
 .cv-readycheck {
@@ -50,7 +44,12 @@ body,
 }
 
 .cv-main {
-  background-color: $clr-secondary-dark;
+  background: linear-gradient(
+    to bottom,
+    var(--clr-primary),
+    var(--clr-primary-light2)
+  );
+  // background-color: var(--clr-primary);
   height: auto;
   min-height: 100%;
 }

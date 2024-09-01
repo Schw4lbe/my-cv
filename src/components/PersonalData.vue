@@ -1,63 +1,140 @@
 <template>
-  <div class="data-container">
-    <div class="skill-data-container">
-      <div v-for="skill in skills" :key="skill.id" class="skill-container">
-        <i :class="skill.icon" class="skill-icon"></i>
-        <span class="skill-name">{{ skill.name }}</span>
-
-        <div class="progress-bar">
-          <div
-            :style="{
-              width: getProgressWidth(skill.rating) + '%',
-              backgroundColor: setProgressBarColor(skill.rating),
-            }"
-            class="progress"
-          ></div>
+  <section class="skill-data-container">
+    <div
+      v-for="(category, catIndex) in skillData"
+      :key="catIndex"
+      class="skill-section-container"
+      :class="setVariation(catIndex)"
+      @click="handleSectionToggle"
+    >
+      <input
+        type="checkbox"
+        :id="'skill-section-' + catIndex"
+        :checked="isSectionVisible(catIndex)"
+        class="section-control"
+      />
+      <label
+        :for="'skill-section-' + catIndex"
+        class="section-label"
+        @click.stop
+        >{{ category.lable }}</label
+      >
+      <p class="section-description">{{ category.description }}</p>
+      <div
+        v-for="(skill, index) in category.items"
+        :key="index"
+        class="skill-container"
+      >
+        <div class="render-decider" v-if="isSectionVisible(catIndex)">
+          <div class="icon"><i :class="skill.icon" class="skill-icon"></i></div>
+          <div class="bar-container">
+            <div class="label">{{ skill.name }}</div>
+            <div class="progress-bar">
+              <div
+                :style="{
+                  width: getProgressWidth(skill.rating),
+                  animationDuration: getAnimationDuration(skill.rating),
+                }"
+                class="progress"
+                id="test"
+              >
+                <div class="glow"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="skill-rating">{{ skill.rating }} / 10</span>
       </div>
-      <h3>{{ setSubHeader }}</h3>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 
 export default {
-  name: "PersonalData",
+  name: "DevComponent",
   props: {
-    skills: Array,
+    skillData: Array,
   },
 
   data() {
     return {
-      colors: ["#adffad", "#6beb6b", "#00ca00"],
+      showSection0: false,
+      showSection1: false,
+      showSection2: false,
     };
   },
+
   computed: {
     ...mapGetters(["selectedLanguage"]),
 
-    setSubHeader() {
-      return this.$store.state.contentData[this.selectedLanguage]
-        .referenceSubHeader;
-    },
-
     getProgressWidth() {
       return function (rating) {
-        return (rating / 10) * 100;
+        return rating * 10 + "%";
       };
     },
-    setProgressBarColor() {
-      return (rating) => {
-        if (rating <= 4) {
-          return this.colors[0];
-        } else if (rating > 4 && rating <= 7) {
-          return this.colors[1];
-        } else if (rating > 7 && rating <= 10) {
-          return this.colors[2];
-        }
+
+    getAnimationDuration() {
+      return function (rating) {
+        return rating / 5 + "s";
       };
+    },
+  },
+
+  mounted() {
+    this.initFirstElement();
+  },
+
+  methods: {
+    initFirstElement() {
+      setTimeout(() => {
+        this.showSection0 = true;
+        document
+          .querySelector(".section-label")
+          .classList.add("skill-section-open", "section0-active");
+      }, 500);
+    },
+
+    setVariation(index) {
+      return `variation-${index}`;
+    },
+
+    handleSectionToggle(e) {
+      // Stop the event from bubbling up and double trigger
+      // @click.stop event on label to make stopPropagation function work
+      e.stopPropagation();
+      const id = e.target.id;
+      const element = document.getElementById(id);
+      this.toggleSectionOpen(element);
+
+      setTimeout(() => {
+        if (!element) {
+          return;
+        } else {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest",
+          });
+        }
+      }, 300);
+
+      const sectionId = parseInt(id.slice(-1));
+      this[`showSection${sectionId}`] = !this[`showSection${sectionId}`];
+    },
+
+    toggleSectionOpen(el) {
+      if (!el) {
+        return;
+      }
+
+      const sectionIndex = el.id.split("-").pop(); // Get the number from the id
+      el.nextSibling.classList.toggle(`section${sectionIndex}-active`);
+      el.nextSibling.classList.toggle("skill-section-open");
+    },
+
+    isSectionVisible(index) {
+      return this[`showSection${index}`];
     },
   },
 };

@@ -1,20 +1,65 @@
-$clr-primary: #0d0d0d;
-$clr-primary-light: #1a1a1a;
+:root {
+  --clr-primary: #020420;
+  --clr-primary-light: #0f172a;
+  --clr-primary-light2: #222222;
+  --clr-primary-light3: #4b4b4b;
+  --clr-primary-light4: #757575;
+
+  --clr-secondary: #f2f2f2;
+  --clr-secondary-dark: #e4e4e4;
+  --clr-secondary-dark2: #b8b8b8;
+
+  --clr-accent: #00dc82;
+  --clr-accent-a: #79ffc7;
+  --clr-accent-b: #b7fde0;
+  --clr-accent-c: #3bb1af;
+  --clr-accent-d: #68c5c4;
+  --clr-accent-e: #b2dfde;
+  --clr-accent-f: #6087f3;
+  --clr-accent-g: #7494ee;
+  --clr-accent-h: #bbc8eb;
+
+  --clr-success-a: #00ca00;
+  --clr-success-b: #6beb6b;
+  --clr-success-c: #adffad;
+  --clr-error: #ff6347;
+
+  // accordion coloring
+  --midnight: var(--clr-primary-light3);
+  --clouds: var(--clr-secondary);
+
+  // progress bar coloring
+  --bar-color: var(--clr-accent);
+  --bar-glow: var(--clr-accent-a);
+}
+
+.theme-dark {
+  // later on just copy paste the root defaults
+}
+
+.theme-light {
+  // mirror dark and light while switchin color values with prim and secon.
+}
+
+$clr-primary: #030621;
+$clr-primary-light: #0f172a;
 $clr-primary-light2: #222222;
 $clr-primary-light3: #4b4b4b;
 $clr-primary-light4: #757575;
+
 $clr-secondary: #f2f2f2;
 $clr-secondary-dark: #e4e4e4;
 $clr-secondary-dark2: #b8b8b8;
 
-$clr-accent: #4393d8;
-$clr-accent-a: #79acd9;
-$clr-accent-b: #a0bed9;
-$clr-accent-c: #a68365;
-$clr-accent-d: #8f7259;
-$clr-accent-e: #9e009e;
-$clr-accent-f: #a54ca5;
-$clr-accent-g: #c790c7;
+$clr-accent: #00c16a;
+$clr-accent-a: #79ffc7;
+$clr-accent-b: #b7fde0;
+$clr-accent-c: #4db7b6;
+$clr-accent-d: #68c5c4;
+$clr-accent-e: #91e0df;
+$clr-accent-f: #6087f3;
+$clr-accent-g: #7494ee;
+$clr-accent-h: #a2b8f3;
 
 $clr-success-a: #00ca00;
 $clr-success-b: #6beb6b;
@@ -23,3 +68,13 @@ $clr-error: #ff6347;
 
 $midnight: $clr-primary-light3;
 $clouds: $clr-secondary;
+
+.variation-1 {
+  --bar-color: var(--clr-accent-c);
+  --bar-glow: var(--clr-accent-e);
+}
+
+.variation-2 {
+  --bar-color: var(--clr-accent-f);
+  --bar-glow: var(--clr-accent-h);
+}

@@ -28,6 +28,130 @@ import img09 from "@/assets/img/store-demo.gif";
 
 export const data = {
   de: {
+    skillData: [
+      {
+        lable: "Sprachen",
+        description:
+          "Eine Auflistung mit Skillniveau der Programmiersprachen die ich bereits beherrsche und welche ich noch lernen möchte, bzw. zum Teil beherrsche.",
+        items: [
+          {
+            id: "2",
+            icon: "fa-brands fa-css3-alt",
+            name: "css 3",
+            rating: "8",
+          },
+          { id: "1", icon: "fa-brands fa-html5", name: "html 5", rating: "9" },
+
+          {
+            id: "8",
+            icon: "fa-brands fa-js",
+            name: "javascript es6",
+            rating: "7",
+          },
+          {
+            id: "9",
+            icon: "fa-brands fa-js",
+            name: "javascript dom",
+            rating: "6",
+          },
+          { id: "3", icon: "fa-brands fa-sass", name: "scss", rating: "8" },
+          {
+            id: "11",
+            icon: "fa-brands fa-node-js",
+            name: "node.js",
+            rating: "4",
+          },
+          {
+            id: "16",
+            icon: "fa-brands fa-php",
+            name: "PHP 8",
+            rating: "4",
+          },
+          {
+            id: "10",
+            icon: "fa-solid fa-t",
+            name: "typescript",
+            rating: "5",
+          },
+        ],
+      },
+      {
+        lable: "Frameworks",
+        description: "",
+        items: [
+          {
+            id: "4",
+            icon: "fa-brands fa-bootstrap",
+            name: "bootstrap",
+            rating: "7",
+          },
+          {
+            id: "5",
+            icon: "fa-solid fa-book",
+            name: "vuetify",
+            rating: "4",
+          },
+          {
+            id: "6",
+            icon: "fa-solid fa-q",
+            name: "quasar",
+            rating: "3",
+          },
+          { id: "12", icon: "fa-solid fa-e", name: "express", rating: "1" },
+          { id: "13", icon: "fa-brands fa-react", name: "react", rating: "2" },
+          {
+            id: "14",
+            icon: "fa-brands fa-vuejs",
+            name: "vue js 2 & 3",
+            rating: "7",
+          },
+          {
+            id: "15",
+            icon: "fa-brands fa-vuejs",
+            name: "vuex / router",
+            rating: "6",
+          },
+        ],
+      },
+      {
+        lable: "Tools & Zubehör",
+        description: "",
+        items: [
+          {
+            id: "7",
+            icon: "fa-brands fa-uikit",
+            name: "ux / ui design",
+            rating: "5",
+          },
+
+          {
+            id: "17",
+            icon: "fa-regular fa-window-restore",
+            name: "browserstack",
+            rating: "6",
+          },
+          {
+            id: "18",
+            icon: "fa-brands fa-microsoft",
+            name: "visual studio code",
+            rating: "8",
+          },
+          {
+            id: "19",
+            icon: "fa-brands fa-microsoft",
+            name: "visual studio 2022",
+            rating: "4",
+          },
+          {
+            id: "20",
+            icon: "fa-solid fa-code",
+            name: "phpstorm",
+            rating: "5",
+          },
+        ],
+      },
+    ],
+
     introContent: [
       "Warum ein online Lebenslauf?",
       "Weil ich zeigen möchte, was ich kann.",
@@ -493,6 +617,8 @@ export const data = {
   },
 
   en: {
+    skillsSubheader: ["Development Languages", "Frameworks", "Tools & Utility"],
+
     introContent: [
       "What's the purpose for the online CV?",
       "I want to show and prove my skills.",
@@ -1020,105 +1146,6 @@ export const data = {
       os: "Android 10.1 - 14.0",
       browser: "Google Chrome v.113-120",
       iconbrowser: "fa-brands fa-chrome",
-    },
-  ],
-
-  skillsArray: [
-    { id: "1", icon: "fa-brands fa-html5", name: "html 5", rating: "9" },
-    { id: "2", icon: "fa-brands fa-css3-alt", name: "css 3", rating: "8" },
-    { id: "3", icon: "fa-brands fa-sass", name: "scss", rating: "8" },
-    {
-      id: "4",
-      icon: "fa-brands fa-bootstrap",
-      name: "bootstrap",
-      rating: "7",
-    },
-    {
-      id: "5",
-      icon: "fa-solid fa-book",
-      name: "vuetify",
-      rating: "4",
-    },
-    {
-      id: "6",
-      icon: "fa-solid fa-q",
-      name: "quasar",
-      rating: "3",
-    },
-
-    {
-      id: "7",
-      icon: "fa-brands fa-uikit",
-      name: "ux / ui design",
-      rating: "5",
-    },
-    {
-      id: "8",
-      icon: "fa-brands fa-js",
-      name: "javascript es6",
-      rating: "7",
-    },
-    {
-      id: "9",
-      icon: "fa-brands fa-js",
-      name: "javascript dom",
-      rating: "6",
-    },
-    {
-      id: "10",
-      icon: "fa-solid fa-t",
-      name: "typescript",
-      rating: "5",
-    },
-    {
-      id: "11",
-      icon: "fa-brands fa-node-js",
-      name: "node.js",
-      rating: "4",
-    },
-    { id: "12", icon: "fa-solid fa-e", name: "express", rating: "1" },
-    { id: "13", icon: "fa-brands fa-react", name: "react", rating: "2" },
-    {
-      id: "14",
-      icon: "fa-brands fa-vuejs",
-      name: "vue js 2 & 3",
-      rating: "7",
-    },
-    {
-      id: "15",
-      icon: "fa-brands fa-vuejs",
-      name: "vuex",
-      rating: "6",
-    },
-    {
-      id: "16",
-      icon: "fa-brands fa-php",
-      name: "PHP 8",
-      rating: "4",
-    },
-    {
-      id: "17",
-      icon: "fa-regular fa-window-restore",
-      name: "browserstack",
-      rating: "6",
-    },
-    {
-      id: "18",
-      icon: "fa-brands fa-microsoft",
-      name: "visual studio code",
-      rating: "8",
-    },
-    {
-      id: "19",
-      icon: "fa-brands fa-microsoft",
-      name: "visual studio 2022",
-      rating: "4",
-    },
-    {
-      id: "20",
-      icon: "fa-solid fa-code",
-      name: "phpstorm",
-      rating: "5",
     },
   ],
 };
