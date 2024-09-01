@@ -195,23 +195,6 @@ export const data = {
         name: "Fachwissen",
         path: "/person",
       },
-
-      // {
-      //   id: "item2",
-      //   name: "Vertrieb",
-      //   path: "/sales",
-      // },
-      // {
-      //   id: "item3",
-      //   name: "Webentwicklung",
-      //   path: "/coding",
-      // },
-      // {
-      //   id: "item4",
-      //   name: "Selbstständigkeit",
-      //   path: "/freelance",
-      // },
-
       {
         id: "item4",
         name: "Lebenslauf",

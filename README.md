@@ -17,7 +17,7 @@
 
 # Skills
 
-- ok
+- double active class assignment bug
 
 # Sales / Development / Freelancer
 

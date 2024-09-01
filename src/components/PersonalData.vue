@@ -83,6 +83,11 @@ export default {
 
   mounted() {
     this.initFirstElement();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   },
 
   methods: {
