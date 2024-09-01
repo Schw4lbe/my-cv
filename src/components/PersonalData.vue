@@ -87,12 +87,10 @@ export default {
 
   methods: {
     initFirstElement() {
-      setTimeout(() => {
-        this.showSection0 = true;
-        document
-          .querySelector(".section-label")
-          .classList.add("skill-section-open", "section0-active");
-      }, 500);
+      this.showSection0 = true;
+      document
+        .querySelector(".section-label")
+        .classList.add("skill-section-open", "section0-active");
     },
 
     setVariation(index) {

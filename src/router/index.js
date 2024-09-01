@@ -1,14 +1,10 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import PersonView from "@/views/PersonView.vue";
-// import SalesView from "@/views/SalesView.vue";
-// import CodingView from "@/views/CodingView.vue";
 import CarrerView from "@/views/CarrerView.vue";
 import ReferenceView from "@/views/ReferenceView.vue";
-// import FreelanceView from "@/views/FreelanceView.vue";
 import OutroView from "@/views/OutroView.vue";
 
-// import DevComponent from "@/components/DevComponent.vue";
 import DevView from "@/views/DevView.vue";
 
 const routes = [
@@ -22,17 +18,6 @@ const routes = [
     name: "person",
     component: PersonView,
   },
-  // {
-  //   path: "/sales",
-  //   name: "sales",
-  //   component: SalesView,
-  // },
-  // {
-  //   path: "/coding",
-  //   name: "coding",
-  //   component: CodingView,
-  // },
-
   {
     path: "/carrer",
     name: "carrer",
@@ -43,11 +28,6 @@ const routes = [
     name: "reference",
     component: ReferenceView,
   },
-  // {
-  //   path: "/freelance",
-  //   name: "freelance",
-  //   component: FreelanceView,
-  // },
   {
     path: "/outro",
     name: "outro",

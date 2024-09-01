@@ -1,5 +1,4 @@
 <template>
-  <!-- <h3 class="page-title">Home</h3> -->
   <div class="home-container">
     <div class="home-header-container">
       <div class="home-image">
@@ -46,24 +45,6 @@
             </div>
           </li>
         </ul>
-      </div>
-    </div>
-    <div class="home-data-container">
-      <div class="home-props">
-        <div class="properties">
-          <h3 class="prop-header">{{ setIntroHeaderStrength }}</h3>
-          <ul>
-            <li v-for="(prop, index) in props" :key="index">{{ prop }}</li>
-          </ul>
-        </div>
-        <div class="hobbies">
-          <h3 class="hobby-header">{{ setIntroHeaderHobbies }}</h3>
-          <ul>
-            <li v-for="(hobby, index) in hobbies" :key="index">
-              {{ hobby }}
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   </div>

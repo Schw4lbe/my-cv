@@ -1,6 +1,6 @@
 <template>
   <div class="outro-wrapper">
-    <h3 class="page-title">{{ setHeader }}</h3>
+    <h3 class="page-title">{{ getHeader }}</h3>
     <OutroSummit
       :items="itemArr"
       :subHeader="setSubHeader"
@@ -20,8 +20,8 @@ export default {
   computed: {
     ...mapGetters(["selectedLanguage"]),
 
-    setHeader() {
-      return this.$store.state.contentData[this.selectedLanguage].navbarItems[5]
+    getHeader() {
+      return this.$store.state.contentData[this.selectedLanguage].navbarItems[3]
         .name;
     },
 
