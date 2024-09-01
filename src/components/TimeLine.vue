@@ -71,6 +71,11 @@ export default {
 
   mounted() {
     window.addEventListener("scroll", this.setTimelineFocus);
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   },
 
   beforeUnmount() {
@@ -112,6 +117,7 @@ export default {
       if (!e.target) {
         return;
       }
+
       const timeline = e.target.closest(".timeline-item");
 
       if (timeline && timeline !== this.lastActiveTimeline) {
