@@ -3,7 +3,7 @@ import Logo1 from "@/assets/img/logo-straight.jpg";
 import Logo2 from "@/assets/img/logo-sycor.svg";
 import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
 import Logo4 from "@/assets/img/logo-gfn.svg";
-import Logo5 from "@/assets/img/logo-tapemate.png";
+// import Logo5 from "@/assets/img/logo-Schw4lbe.png";
 import Logo6 from "@/assets/img/logo-grammophon.png";
 
 // import demo img to lead to fullscreen demo
@@ -324,7 +324,7 @@ export const data = {
         ],
         success:
           "Twitch Livestream vor knapp 1000 Viewern mit Schallplatten - Hosting durch bekannten Künstler",
-        logo: Logo5,
+        // logo: Logo5,
         link: "",
       },
       {
@@ -435,7 +435,7 @@ export const data = {
         text: "Erstellung einer Konzeptarbeit für ein Unternehmen. Frontend bestehend aus VUE.JS, Vuetify & Chartkick. Backend in PHP 8 ohne Framework enthält eine Suche & Paginierung. Demo in Docker ausführbar.",
         image: img04a,
         media: img04,
-        link: "https://github.com/TapeMate/CSV-Processing",
+        link: "https://github.com/Schw4lbe/CSV-Processing",
         link2: "",
       },
       {
@@ -452,7 +452,7 @@ export const data = {
         text: "Im Lauf der Zeit habe ich mir eine Dummy Homepage aufgebaut. Sie ist eine Spielwiese für mich, um neue Designs zu testen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und zu lernen.",
         image: img02a,
         media: img02,
-        link: "https://github.com/TapeMate/homepage",
+        link: "https://github.com/Schw4lbe/homepage",
         link2: "",
       },
       {
@@ -466,7 +466,7 @@ export const data = {
         text: "Responsive online Lebenslauf als Single Page Application für Bewerbungszwecke. Sprachen: Deutsch & Englisch. Gern auf mobilen Endgeräten testen, ich freue mich über Feedback und Verbesserungsvorschläge.",
         image: img07a,
         media: img07,
-        link: "https://github.com/TapeMate/my-cv",
+        link: "https://github.com/Schw4lbe/my-cv",
         link2: "",
       },
       {
@@ -483,7 +483,7 @@ export const data = {
         text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
         image: img03a,
         media: img03,
-        link: "https://github.com/TapeMate/vue-contactform",
+        link: "https://github.com/Schw4lbe/vue-contactform",
         link2: "",
       },
       {
@@ -502,7 +502,7 @@ export const data = {
         text: "Rudimentärer Login Prototype stark vereinfacht zur Anwendung neuer Technologien und Erweiterung des Fachwissens. Lokale Variable zur Ablage der Benutzer ist in einer Produktivumgebung durch eine Datenbank zu ersetzen.",
         image: img06a,
         media: img06,
-        link: "https://github.com/TapeMate/login-prototype",
+        link: "https://github.com/Schw4lbe/login-prototype",
         link2: "",
       },
       {
@@ -520,7 +520,7 @@ export const data = {
         text: "Erste Praxiserfahrung im Umgang mit PHP in Verbindung mit XAMPP (MySQL, Apache). Darstellung Prototype samt Datentransfer in MySQL. Erarbeitung Best-Practice Ansätzen für Passwort Hashing, Erzeugung & Verwaltung Session Variablen, htmlspecialchars & Code Sanitizing.",
         image: img08a,
         media: img08,
-        link: "https://github.com/TapeMate/PHP-login-prototype",
+        link: "https://github.com/Schw4lbe/PHP-login-prototype",
         link2: "",
       },
       {
@@ -539,8 +539,8 @@ export const data = {
         text: "Erste Umsetzung & Verbinung von VUE.JS & PHP zusammen mit XAMPP (MySQL, Apache). Erschaffung eines fiktiven Online Shops samt Nutzerverwaltung. Einarbeitung in objektorentierte PHP Entwicklung, Transfer von Daten zwischen VUE.JS, PHP und SQL.",
         image: img09a,
         media: img09,
-        link: "https://github.com/TapeMate/vue-php-store-prototype-frontend",
-        link2: "https://github.com/TapeMate/vue-php-store-prototype-backend",
+        link: "https://github.com/Schw4lbe/vue-php-store-prototype-frontend",
+        link2: "https://github.com/Schw4lbe/vue-php-store-prototype-backend",
       },
       {
         id: "9",
@@ -784,7 +784,7 @@ export const data = {
         ],
         success:
           "Twitch livestream for nearly 1,000 viewers with vinyl records - Hosting by a well-known artist.",
-        logo: Logo5,
+        // logo: Logo5,
         link: "",
       },
       {
@@ -821,7 +821,7 @@ export const data = {
         text: "Creation of a concept work for a company. Frontend consists of VUE.JS, Vuetify, and Chartkick. Backend in PHP 8 with no framework. Backend includes search and pagination. Demo executable in Docker.",
         image: img04a,
         media: img04,
-        link: "https://github.com/TapeMate/vue-weatherapp",
+        link: "https://github.com/Schw4lbe/vue-weatherapp",
         link2: "",
       },
       {
@@ -838,7 +838,7 @@ export const data = {
         text: "Over time, I have developed a dummy homepage. It serves as a playground for me to test new designs. The dummy page gives me the opportunity to test and learn quickly and efficiently.",
         image: img02a,
         media: img02,
-        link: "https://github.com/TapeMate/homepage",
+        link: "https://github.com/Schw4lbe/homepage",
         link2: "",
       },
       {
@@ -852,7 +852,7 @@ export const data = {
         text: "Responsive online resume as a Single Page Application for job application purposes. Languages: German & English. Feel free to test on mobile devices, I welcome feedback and suggestions for improvement.",
         image: img07a,
         media: img07,
-        link: "https://github.com/TapeMate/my-cv",
+        link: "https://github.com/Schw4lbe/my-cv",
         link2: "",
       },
       {
@@ -869,7 +869,7 @@ export const data = {
         text: "Creation of a custom contact form to consolidate newly acquired knowledge and as a creative playground for various styling ideas.",
         image: img03a,
         media: img03,
-        link: "https://github.com/TapeMate/vue-contactform",
+        link: "https://github.com/Schw4lbe/vue-contactform",
         link2: "",
       },
       {
@@ -888,7 +888,7 @@ export const data = {
         text: "A rudimentary login prototype, greatly simplified for applying new technologies and expanding technical knowledge. Local variable as user Array should be replaced in production.",
         image: img06a,
         media: img06,
-        link: "https://github.com/TapeMate/login-prototype",
+        link: "https://github.com/Schw4lbe/login-prototype",
         link2: "",
       },
       {
@@ -906,7 +906,7 @@ export const data = {
         text: "Initial practical experience in using PHP in conjunction with XAMPP (MySQL, Apache). Demonstration prototype including data transfer to MySQL. Development of best-practice approaches for password hashing, use of session variables, htmlspecialchars & code sanitizing.",
         image: img08a,
         media: img08,
-        link: "https://github.com/TapeMate/PHP-login-prototype",
+        link: "https://github.com/Schw4lbe/PHP-login-prototype",
         link2: "",
       },
       {
@@ -925,8 +925,8 @@ export const data = {
         text: "First implementation and connection of VUE.JS & PHP along with XAMPP (MySQL, Apache). Creation of a fictitious online store including user management. Training in object-oriented PHP development, transfer of data between VUE.JS, PHP, and SQL.",
         image: img09a,
         media: img09,
-        link: "https://github.com/TapeMate/vue-php-store-prototype-frontend",
-        link2: "https://github.com/TapeMate/vue-php-store-prototype-backend",
+        link: "https://github.com/Schw4lbe/vue-php-store-prototype-frontend",
+        link2: "https://github.com/Schw4lbe/vue-php-store-prototype-backend",
       },
       {
         id: "9",

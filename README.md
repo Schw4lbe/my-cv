@@ -27,6 +27,7 @@
 
 # Reference
 
+- update build
 - update content
 - update gifs
 - check github links
