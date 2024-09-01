@@ -32,7 +32,7 @@ export const data = {
       {
         lable: "Sprachen",
         description:
-          "Eine Auflistung mit Skillniveau der Programmiersprachen die ich bereits beherrsche und welche ich noch lernen möchte, bzw. zum Teil beherrsche.",
+          "Eine Auflistung mit Skillniveau der Programmiersprachen die ich bereits beherrsche und welche ich noch lernen möchte, bzw. zum Teil schon kann.",
         items: [
           {
             id: "2",
@@ -77,7 +77,8 @@ export const data = {
       },
       {
         lable: "Frameworks",
-        description: "",
+        description:
+          "Frameworks sind unerlässlich um produktiv zu sein. Neben meinem Liebling, Vue.js nachfolgend eine Liste weitere Frameworks, mit denen ich bereits gearbeitet habe.",
         items: [
           {
             id: "4",
@@ -115,7 +116,8 @@ export const data = {
       },
       {
         lable: "Tools & Zubehör",
-        description: "",
+        description:
+          "Zu guter Letzt noch ein kurz er Einblick in weitere Technologien die ich gern nutze.",
         items: [
           {
             id: "7",
@@ -234,8 +236,8 @@ export const data = {
       {
         header: "Präambel",
         text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind meiner Meinung nach aussagekräftiger als ein Schlichter Lebenslauf in PDF Format.",
-        text2:
-          "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen. Getestet habe ich auf Windows 10. Ich besitze privat leider keine Browserstack Lizenz, daher war der Umfang auf Familie und Freunde begrenzt. Ein Apple Device besitze ich nicht und habe daher mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten hinsichtlich Design Elementen besitzt. In einer Produktivumgebung stünden jedefalls noch ausführliche Tests an.",
+        // text2:
+        //   "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen. Getestet habe ich auf Windows 10. Ich besitze privat leider keine Browserstack Lizenz, daher war der Umfang auf Familie und Freunde begrenzt. Ein Apple Device besitze ich nicht und habe daher mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten hinsichtlich Design Elementen besitzt. In einer Produktivumgebung stünden jedefalls noch ausführliche Tests an.",
         text3: "",
       },
     ],
@@ -699,8 +701,8 @@ export const data = {
       {
         header: "Preamble",
         text: "This online resume was created with the intention of showcasing my current skill level in frontend development. In my opinion, animated images and real code are more illustrative than a simple resume in PDF format.",
-        text2:
-          "The entire project was written by myself from scratch. I integrated Bootstrap in a few isolated components to avoid reinventing the wheel. The development environment used was Visual Studio Code along with the SASS-Live Compiler extension, in conjunction with VUE.JS 3.x. The language can be displayed in either German or English at any time. Gulp serves as my task automation tool to generate CSS with extensive backward compatibility. Testing was conducted on Windows 10. Unfortunately, I do not have a Browserstack license, so testing was limited to family and friends. I do not own an Apple device, so mobile testing was only done on Android. I am well aware that Apple has some peculiarities regarding design elements. In a production environment, extensive testing would still be required.",
+        // text2:
+        //   "The entire project was written by myself from scratch. I integrated Bootstrap in a few isolated components to avoid reinventing the wheel. The development environment used was Visual Studio Code along with the SASS-Live Compiler extension, in conjunction with VUE.JS 3.x. The language can be displayed in either German or English at any time. Gulp serves as my task automation tool to generate CSS with extensive backward compatibility. Testing was conducted on Windows 10. Unfortunately, I do not have a Browserstack license, so testing was limited to family and friends. I do not own an Apple device, so mobile testing was only done on Android. I am well aware that Apple has some peculiarities regarding design elements. In a production environment, extensive testing would still be required.",
         text3: "",
       },
     ],

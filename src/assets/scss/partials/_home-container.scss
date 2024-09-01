@@ -5,31 +5,32 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 100px;
   margin-bottom: 50px;
-  background: $clr-secondary-dark;
 
   .home-container {
-    background: $clr-secondary-dark;
     height: 100%;
     max-width: 1400px;
     width: 100%;
+    color: var(--clr-secondary);
 
     .home-header-container {
+      padding: 5rem;
       width: 100%;
       display: flex;
-      justify-content: flex-start;
-      border-bottom: 1px solid $clr-accent-a;
+      justify-content: center;
 
       .home-header {
+        position: absolute;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
+        align-items: center;
+        padding-top: 5rem;
       }
 
       .home-image {
-        width: 150px;
+        width: 250px;
         height: auto;
         padding: 1rem;
 
@@ -43,8 +44,8 @@
     }
 
     .home-intro {
+      text-align: center;
       padding: 2rem;
-      border-bottom: 1px solid $clr-accent-a;
       p {
         font-size: 1.2rem;
       }
@@ -52,7 +53,8 @@
 
     .home-tech {
       padding: 2rem;
-      border-bottom: 1px solid $clr-accent-a;
+      text-align: center;
+
       .tech-header {
         padding-bottom: 1rem;
       }
@@ -68,14 +70,14 @@
           li {
             font-size: 1.1rem;
             line-height: 2;
-            color: $clr-primary-light2;
+            color: var(--clr-secondary);
             font-weight: bold;
             width: 100%;
 
             i {
               width: 30px;
               font-size: 1.1rem;
-              color: $clr-accent-e;
+              color: var(--clr-accent);
             }
           }
         }
@@ -84,7 +86,7 @@
 
     .home-testing {
       padding: 2rem;
-      border-bottom: 1px solid $clr-accent-a;
+      text-align: center;
 
       .testing-header {
         padding-bottom: 1rem;
@@ -103,14 +105,14 @@
             flex-direction: column;
             font-size: 1.1rem;
             line-height: 2;
-            color: $clr-primary-light2;
+            color: var(--clr-secondary);
             font-weight: bold;
             width: 100%;
 
             i {
               width: 30px;
               font-size: 1.1rem;
-              color: $clr-accent-e;
+              color: var(--clr-accent);
             }
           }
         }
@@ -120,6 +122,7 @@
     .home-data-container {
       padding: 2rem;
       margin-bottom: 50px;
+      text-align: center;
       .home-props {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -130,23 +133,6 @@
             line-height: 2;
             font-size: 1.1rem;
           }
-        }
-
-        ul li::before {
-          content: "\2666";
-          color: $clr-accent-e;
-          font-weight: bold;
-          display: inline-block;
-          width: 1rem;
-          margin-left: -1rem;
-        }
-
-        ul li::before {
-          content: "" !important;
-        }
-
-        li {
-          list-style: square !important;
         }
       }
     }

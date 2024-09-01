@@ -12,18 +12,25 @@
 
     width: 100%;
     max-width: 1600px;
-    background: $clr-secondary-dark;
+    // background: $clr-secondary-dark;
+    color: var(--clr-secondary-dark);
     padding: 2rem;
     margin-bottom: 50px;
 
     > h3 {
       grid-column: 1 / end;
+      color: var(--clr-accent);
+      text-align: center;
+      padding: 1rem 0;
     }
 
     .outro-content-main {
       font-size: 1.2rem;
       margin-bottom: 30px;
       grid-column: 1 / end;
+      text-align: center;
+      padding: 2rem;
+      line-height: 1.7;
     }
 
     .outro-content:nth-of-type(1),

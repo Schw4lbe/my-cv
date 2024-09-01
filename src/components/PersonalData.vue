@@ -113,11 +113,11 @@ export default {
         } else {
           element.scrollIntoView({
             behavior: "smooth",
-            block: "center",
+            block: "start",
             inline: "nearest",
           });
         }
-      }, 300);
+      }, 500);
 
       const sectionId = parseInt(id.slice(-1));
       this[`showSection${sectionId}`] = !this[`showSection${sectionId}`];
