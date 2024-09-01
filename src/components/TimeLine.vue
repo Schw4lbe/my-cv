@@ -39,7 +39,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  name: "DevComponent",
+  name: "TimeLine",
   props: {
     timelineItems: Array,
   },

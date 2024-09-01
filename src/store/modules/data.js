@@ -195,20 +195,26 @@ export const data = {
         name: "Fachwissen",
         path: "/person",
       },
-      {
-        id: "item2",
-        name: "Vertrieb",
-        path: "/sales",
-      },
-      {
-        id: "item3",
-        name: "Webentwicklung",
-        path: "/coding",
-      },
+      // {
+      //   id: "item2",
+      //   name: "Vertrieb",
+      //   path: "/sales",
+      // },
+      // {
+      //   id: "item3",
+      //   name: "Webentwicklung",
+      //   path: "/coding",
+      // },
+      // {
+      //   id: "item4",
+      //   name: "Selbstständigkeit",
+      //   path: "/freelance",
+      // },
+
       {
         id: "item4",
-        name: "Selbstständigkeit",
-        path: "/freelance",
+        name: "Lebenslauf",
+        path: "/carrer",
       },
       {
         id: "item5",
@@ -227,6 +233,7 @@ export const data = {
     accordionCollapseText: "zuklappen",
     referenceSuccessMsg: "Größter Erfolg: ",
     modalButtonText: "Demo ansehen",
+    timelineDetails: "[ klick für mehr Infos ]",
     introHeader: "Lebenslauf",
     introHeaderTechStack: "Tech Stack",
     introHeaderTesting: "Kompatibilität",
