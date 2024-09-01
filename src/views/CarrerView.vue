@@ -20,5 +20,12 @@ export default {
       return this.$store.state.contentData[this.selectedLanguage].timelineItems;
     },
   },
+
+  mounted() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  },
 };
 </script>
