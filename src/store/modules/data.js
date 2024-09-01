@@ -1,11 +1,3 @@
-// Media:
-import Logo1 from "@/assets/img/logo-straight.jpg";
-import Logo2 from "@/assets/img/logo-sycor.svg";
-import Logo3 from "@/assets/img/logo-vivax-solution.jpg";
-import Logo4 from "@/assets/img/logo-gfn.svg";
-// import Logo5 from "@/assets/img/logo-Schw4lbe.png";
-import Logo6 from "@/assets/img/logo-grammophon.png";
-
 // import demo img to lead to fullscreen demo
 import img02a from "@/assets/img/homepage-demo.png";
 import img03a from "@/assets/img/contactform-demo.png";
@@ -32,7 +24,7 @@ export const data = {
       {
         lable: "Sprachen",
         description:
-          "Eine Auflistung mit Skillniveau der Programmiersprachen die ich bereits beherrsche und welche ich noch lernen möchte, bzw. zum Teil schon kann.",
+          "Eine Auflistung der Programmiersprachen die ich bereits beherrsche.",
         items: [
           {
             id: "2",
@@ -234,18 +226,6 @@ export const data = {
       },
     ],
 
-    propsData: [
-      "Eigenmotivation",
-      "Verantwortungsbewusstsein ",
-      "Authentizität",
-    ],
-
-    hobbiesData: [
-      "Sport, fernöstliche Kampf- & Körperkunst",
-      "Musik Produktion, DJ-ing & Livestreams",
-      "E-Sport, Game Development (C# + Unity)",
-    ],
-
     timelineItems: [
       {
         id: "1",
@@ -277,7 +257,6 @@ export const data = {
         ],
         success:
           "Erstellung Responsive Design & eigener Web Components für Online Bestellstrecke",
-        logo: Logo3,
         link: "https://www.vivax-solution.de/",
       },
       {
@@ -292,7 +271,6 @@ export const data = {
           "Einführung Test Driven Development (TDD) & Einstieg React",
         ],
         success: "Erfolgeicher Abschluss 11.03.2022 (88 / 100 Punkten - “gut”)",
-        logo: Logo4,
         link: "https://www.gfn.de/",
       },
       {
@@ -308,7 +286,6 @@ export const data = {
         ],
         success:
           "Erfolgeicher Abschluss 10.12.2021 (90 / 100 Punkten - “sehr gut”)",
-        logo: Logo4,
         link: "https://www.gfn.de/",
       },
       {
@@ -324,7 +301,6 @@ export const data = {
         ],
         success:
           "Twitch Livestream vor knapp 1000 Viewern mit Schallplatten - Hosting durch bekannten Künstler",
-        // logo: Logo5,
         link: "",
       },
       {
@@ -338,7 +314,6 @@ export const data = {
         ],
         success:
           "Einführung Microsoft Teams Telefonie Lösung (Niederlassungen in USA & Deutschland)",
-        logo: Logo1,
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -352,7 +327,6 @@ export const data = {
         ],
         success:
           "Teilprojektleitung Windows 10 Deployment 27 Standorten / 500 Arbeitsplätzen",
-        logo: Logo1,
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -367,7 +341,6 @@ export const data = {
         ],
         success:
           "Aufnahme in Microsoft managed Partner Programm (unternehmensweit)",
-        logo: Logo1,
         link: "https://www.straight-solutions.com/",
       },
       {
@@ -383,7 +356,6 @@ export const data = {
         ],
         success:
           "Drei Fragezeichen Festival Feierwerk München (ca. 1.200 Besucher)",
-        logo: Logo6,
         link: "",
       },
       {
@@ -399,7 +371,6 @@ export const data = {
         ],
         success:
           "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
-        logo: Logo2,
         link: "https://www.iq-gmbh.de/",
       },
       {
@@ -415,7 +386,6 @@ export const data = {
         ],
         success:
           "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
-        logo: Logo2,
         link: "https://www.iq-gmbh.de/",
       },
     ],
@@ -561,9 +531,6 @@ export const data = {
       },
     ],
 
-    referenceSubHeader:
-      "Skala von 1 (Grundwissen) bis 10 (Experte). Bemessen an Praxiserfahrung.",
-
     outroHeader: "Abschließende Worte...",
     outroMainContent:
       "Ich freue mich jederzeit über Feedback zu meinen Projekten und bin gern bereit im Detail auf Fragen ein zu gehen. Im Nachfolgenden möchte ich beschreiben, was bei der Erstellung dieses online Lebenslaufes neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
@@ -606,32 +573,163 @@ export const data = {
   },
 
   en: {
-    skillsSubheader: ["Development Languages", "Frameworks", "Tools & Utility"],
+    skillData: [
+      {
+        lable: "Languages",
+        description: "",
+        items: [
+          {
+            id: "2",
+            icon: "fa-brands fa-css3-alt",
+            name: "css 3",
+            rating: "8",
+          },
+          { id: "1", icon: "fa-brands fa-html5", name: "html 5", rating: "9" },
 
-    introContent: [
-      "What's the purpose for the online CV?",
-      "I want to show and prove my skills.",
+          {
+            id: "8",
+            icon: "fa-brands fa-js",
+            name: "javascript es6",
+            rating: "7",
+          },
+          {
+            id: "9",
+            icon: "fa-brands fa-js",
+            name: "javascript dom",
+            rating: "6",
+          },
+          { id: "3", icon: "fa-brands fa-sass", name: "scss", rating: "8" },
+          {
+            id: "11",
+            icon: "fa-brands fa-node-js",
+            name: "node.js",
+            rating: "4",
+          },
+          {
+            id: "16",
+            icon: "fa-brands fa-php",
+            name: "PHP 8",
+            rating: "4",
+          },
+          {
+            id: "10",
+            icon: "fa-solid fa-t",
+            name: "typescript",
+            rating: "5",
+          },
+        ],
+      },
+      {
+        lable: "Frameworks & Libraries",
+        description: "",
+        items: [
+          {
+            id: "14",
+            icon: "fa-brands fa-vuejs",
+            name: "vue js 2 & 3",
+            rating: "8",
+          },
+          {
+            id: "15",
+            icon: "fa-brands fa-vuejs",
+            name: "vuex + vue-router",
+            rating: "6",
+          },
+          {
+            id: "5",
+            icon: "fa-solid fa-book",
+            name: "vuetify",
+            rating: "4",
+          },
+          {
+            id: "4",
+            icon: "fa-brands fa-bootstrap",
+            name: "bootstrap",
+            rating: "7",
+          },
+          {
+            id: "35",
+            icon: "fa-solid fa-dna",
+            name: "animate.css",
+            rating: "4",
+          },
+          {
+            id: "6",
+            icon: "fa-solid fa-q",
+            name: "quasar",
+            rating: "3",
+          },
+          { id: "12", icon: "fa-solid fa-e", name: "express", rating: "2" },
+          { id: "13", icon: "fa-brands fa-react", name: "react", rating: "1" },
+        ],
+      },
+      {
+        lable: "Tools & Utility",
+        description: "",
+        items: [
+          {
+            id: "18",
+            icon: "fa-brands fa-microsoft",
+            name: "visual studio code",
+            rating: "8",
+          },
+          {
+            id: "19",
+            icon: "fa-brands fa-microsoft",
+            name: "visual studio 2022",
+            rating: "4",
+          },
+          {
+            id: "20",
+            icon: "fa-solid fa-code",
+            name: "phpstorm",
+            rating: "5",
+          },
+          {
+            id: "15",
+            icon: "fa-brands fa-vuejs",
+            name: "vue devtools",
+            rating: "5",
+          },
+          {
+            id: "17",
+            icon: "fa-regular fa-window-restore",
+            name: "browserstack",
+            rating: "6",
+          },
+          {
+            id: "34",
+            icon: "fa-brands fa-gulp",
+            name: "gulp.js",
+            rating: "2",
+          },
+          {
+            id: "33",
+            icon: "fa-brands fa-docker",
+            name: "docker desktop",
+            rating: "3",
+          },
+          {
+            id: "30",
+            icon: "fa-brands fa-github",
+            name: "github (pages + ci-cd)",
+            rating: "6",
+          },
+          {
+            id: "31",
+            icon: "fa-solid fa-n",
+            name: "netlify (identity + cms + ci-cd)",
+            rating: "4",
+          },
+          {
+            id: "32",
+            icon: "fa-solid fa-d",
+            name: "decap cms",
+            rating: "4",
+          },
+        ],
+      },
     ],
-
-    readyCheckContent: {
-      header: "Are we all set?",
-      subheader: "(Please select all three options to access the content.)",
-      content: [
-        {
-          label: "Tea or coffee freshly brewed?",
-          icon: "fa-solid fa-mug-hot",
-        },
-        {
-          label: "Is your notepad at hand?",
-          icon: "fa-sharp fa-solid fa-pen-to-square",
-        },
-        {
-          label: "Are the essential participants present?",
-          icon: "fa-solid fa-people-group",
-        },
-      ],
-      buttonText: "Off we go!",
-    },
 
     navbarItems: [
       {
@@ -640,19 +738,9 @@ export const data = {
         path: "/person",
       },
       {
-        id: "item2",
-        name: "Sales",
-        path: "/sales",
-      },
-      {
-        id: "item3",
-        name: "Development",
-        path: "/coding",
-      },
-      {
         id: "item4",
-        name: "Freelancer",
-        path: "/freelance",
+        name: "Carrer",
+        path: "/carrer",
       },
       {
         id: "item5",
@@ -666,18 +754,12 @@ export const data = {
       },
     ],
 
-    timeoutContent: {
-      header: "An Error occurred!",
-      message: "Your login information is wrong. Please try again in ",
-      message2: " seconds.",
-    },
-
-    errorMsg: "Login Server not available.",
     buttonLinkText: "Company website",
     accordionOpenText: "expand",
     accordionCollapseText: "collapse",
     referenceSuccessMsg: "Greatest success: ",
     modalButtonText: "Show Demo",
+    timelineDetails: "[ click for details ]",
     introHeader: "Curriculum Vitae",
     introHeaderTechStack: "Tech Stack",
     introHeaderTesting: "Compatibility",
@@ -694,72 +776,11 @@ export const data = {
       },
     ],
 
-    propsData: ["Self-motivation", "Sense of responsibility", "Authenticity"],
-
-    hobbiesData: [
-      "Sports, Far Eastern martial & body arts",
-      "Music production, DJ-ing & livestreams",
-      "E-sports, Game Development (C# + Unity)",
-    ],
-
-    codingItems: [
-      {
-        id: "1",
-        header: "Software Development Frontend - Vivax Solution GmbH",
-        period: "05/2022 - 06/2023",
-        subtopics: [
-          "Development of web components in Vue.js with TypeScript for conditional rendering of JSON-Schema.",
-          "Scope: JavaScript, TypeScript, CSS, SCSS, HTML, JSON in PHP Storm & Visual Studio Code.",
-          "Planning, concept, and implementation of an adaptive SCSS styling framework for customer projects.",
-          "Use of Vue Property Decorator for initial approaches in object-oriented programming.",
-          "Creation of a matrix and execution of multi-device tests in Browserstack.",
-          "Designing document templates via Twig.",
-          "Editing and provision of image material, both pixel and vector graphics.",
-        ],
-        success:
-          "Creation of responsive design & custom web components for online ordering process.",
-        logo: Logo3,
-        link: "https://www.vivax-solution.de/",
-      },
-      {
-        id: "2",
-        header: "Certified JavaScript Developer - GFN GmbH",
-        period: "12/2021 - 03/2022",
-        subtopics: [
-          "Setup IDE, Visual Studio Code, Extensions, Npm Package Manager, JSON Config.",
-          "JavaScript (ES6) syntax, methods, arrays, objects, destructuring, helper functions.",
-          "JavaScript DOM, manipulation of HTML & CSS, events, timing functions.",
-          "Node.js & Express, modules, APIs, websockets, CSV integration, AJAX.",
-          "Introduction to Test Driven Development (TDD) & getting started with React.",
-        ],
-        success:
-          "Successful completion on 11th of March 2022 (88 out of 100 points - “good”).",
-        logo: Logo4,
-        link: "https://www.gfn.de/",
-      },
-      {
-        id: "3",
-        header: "Certified Webdesigner - GFN GmbH",
-        period: "10/2021 - 12/2021",
-        subtopics: [
-          "Setup IDE, Visual Studio Code, Extensions, XAMPP.",
-          "Basics of Web design, HTML5 syntax, accessible programming, Markdown, Emmet.",
-          "CSS3 & SCSS responsive Web design, syntax, vendor prefixes, partials, breakpoints, nesting.",
-          "Integration of Bootstrap libraries & use of modules in projects.",
-          "UI/UX Design, creation of app concept in Figma.",
-        ],
-        success:
-          "Successful completion on 10th of December 2021 (90 / 100 Punkten - “very good”)",
-        logo: Logo4,
-        link: "https://www.gfn.de/",
-      },
-    ],
-
-    freelanceItems: [
+    timelineItems: [
       {
         id: "1",
         header: "Freelance Web Development - Further Education",
-        period: "06/2023 - today",
+        period: "Jun 2023 - today",
         subtopics: [
           "Freelance implementation of web projects, consulting, and conceptualization",
           "Improvement of expertise and acquisition of new skills in front- and back-end development.",
@@ -773,8 +794,55 @@ export const data = {
       },
       {
         id: "2",
+        header: "Software Development Frontend - Vivax Solution GmbH",
+        period: "Mar 2022 - Jun 2023",
+        subtopics: [
+          "Development of web components in Vue.js with TypeScript for conditional rendering of JSON-Schema.",
+          "Scope: JavaScript, TypeScript, CSS, SCSS, HTML, JSON in PHP Storm & Visual Studio Code.",
+          "Planning, concept, and implementation of an adaptive SCSS styling framework for customer projects.",
+          "Use of Vue Property Decorator for initial approaches in object-oriented programming.",
+          "Creation of a matrix and execution of multi-device tests in Browserstack.",
+          "Designing document templates via Twig.",
+          "Editing and provision of image material, both pixel and vector graphics.",
+        ],
+        success:
+          "Creation of responsive design & custom web components for online ordering process.",
+        link: "https://www.vivax-solution.de/",
+      },
+      {
+        id: "3",
+        header: "Certified JavaScript Developer - GFN GmbH",
+        period: "Dec 2021 - Mar 2022",
+        subtopics: [
+          "Setup IDE, Visual Studio Code, Extensions, Npm Package Manager, JSON Config.",
+          "JavaScript (ES6) syntax, methods, arrays, objects, destructuring, helper functions.",
+          "JavaScript DOM, manipulation of HTML & CSS, events, timing functions.",
+          "Node.js & Express, modules, APIs, websockets, CSV integration, AJAX.",
+          "Introduction to Test Driven Development (TDD) & getting started with React.",
+        ],
+        success:
+          "Successful completion on 11th of March 2022 (88 out of 100 points - “good”).",
+        link: "https://www.gfn.de/",
+      },
+      {
+        id: "4",
+        header: "Certified Webdesigner - GFN GmbH",
+        period: "Dec 2021 - Dec 2021",
+        subtopics: [
+          "Setup IDE, Visual Studio Code, Extensions, XAMPP.",
+          "Basics of Web design, HTML5 syntax, accessible programming, Markdown, Emmet.",
+          "CSS3 & SCSS responsive Web design, syntax, vendor prefixes, partials, breakpoints, nesting.",
+          "Integration of Bootstrap libraries & use of modules in projects.",
+          "UI/UX Design, creation of app concept in Figma.",
+        ],
+        success:
+          "Successful completion on 10th of December 2021 (90 / 100 Punkten - “very good”)",
+        link: "https://www.gfn.de/",
+      },
+      {
+        id: "5",
         header: "Reflection & Reorientation",
-        period: "10/2020 - 10/2021",
+        period: "Dec 2020 - Dec 2021",
         subtopics: [
           "Setting up a Twitch.tv livestream channel (Affiliate Status), Live DJ-ing & VJ-ing",
           "Initial insights into game development with C# on Unity Engine",
@@ -784,13 +852,52 @@ export const data = {
         ],
         success:
           "Twitch livestream for nearly 1,000 viewers with vinyl records - Hosting by a well-known artist.",
-        // logo: Logo5,
         link: "",
       },
       {
-        id: "3",
+        id: "6",
+        header: "Microsoft Cloud Solution Visionary - straight solutions GmbH",
+        period: "Jun 2020 - Dec 2020",
+        subtopics: [
+          "Consulting & Conceptualization of Microsoft 365 Cloud Solutions",
+          "Project planning, project management, calculation, and technical partial implementation",
+          "End-customer training with a focus on Microsoft Teams, SharePoint, MS Office",
+        ],
+        success:
+          "Implementation of Microsoft Teams Telephony Solution (branches in the USA & Germany)",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "7",
+        header: "Head of Sales - straight solutions GmbH",
+        period: "Jan 2018 - Jun 2020",
+        subtopics: [
+          "Management of a self-organized three-man sales team",
+          "Redistribution of internal areas of responsibility & core competencies",
+          "Sales responsibility for Microsoft 365 & HP PSG",
+        ],
+        success:
+          "Partial project management of Windows 10 deployment at 27 locations / 500 workstations",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "8",
+        header: "IT Sales Consultant - straight solutions GmbH",
+        period: "Sep 2016 - Jan 2018",
+        subtopics: [
+          "Restructuring & expansion of existing sales processes",
+          "Licensing consultation for Microsoft Volume Licensing & Microsoft Cloud Transition",
+          "Maintenance of inventory management as well as processing from quotation to invoice",
+          "Establishment/maintenance of manufacturer & partner relationships",
+        ],
+        success:
+          "Admission to the Microsoft managed Partner Program (company-wide)",
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "9",
         header: "Event Management & Musician - Munich Gramophone e. K.",
-        period: "10/2014 - 09/2016",
+        period: "Sep 2014 - Sep 2016",
         subtopics: [
           "Planning & organization of events with 50 – 1,200 participants",
           "Worked as a vinyl record entertainer in various venues in Munich",
@@ -800,9 +907,38 @@ export const data = {
         ],
         success:
           "Drei Fragezeichen Festival Feierwerk Munich (ca. 1.200 participants)",
-        logo: Logo6,
-
         link: "",
+      },
+
+      {
+        id: "10",
+        header:
+          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
+        period: "Jul 2012 - Sep 2014",
+        subtopics: [
+          "Support of existing customers (Microsoft Volume Licensing / HP PSG)",
+          "Acquisition of new customers (outbound & Microsoft Leads)",
+          "System support & internal processing (purchasing/selling)",
+          "Establishment of Adobe Volume Licensing (TLP, CLP, VIP), implementation, completion & training with a focus on creative products",
+        ],
+        success:
+          "Project management, implementation, training for the Adobe editorial system (USA & EU)",
+        link: "https://www.iq-gmbh.de/",
+      },
+      {
+        id: "11",
+        header:
+          "Training as IT Systems Merchant (IHK) - IQ GmbH (later Sycor IQ Solutions GmbH)",
+        period: "Oct 2009 - Jun 2012",
+        subtopics: [
+          "Inside Sales dealing with merchandise management and business processes",
+          "Collaboration on Microsoft Software Asset Management projects",
+          "Acquisition of new customers (inbound) with project support",
+          "Conducting initial discussions, qualification of new customers",
+        ],
+        success:
+          "Supporting the introduction of Microsoft BPOS in a small logistics company",
+        link: "https://www.iq-gmbh.de/",
       },
     ],
 
@@ -947,86 +1083,6 @@ export const data = {
       },
     ],
 
-    referenceSubHeader:
-      "Scale from 1 (basic knowledge) to 10 (expert). Measured by practical experience.",
-
-    salesItems: [
-      {
-        id: "1",
-        header: "Microsoft Cloud Solution Visionary - straight solutions GmbH",
-        period: "06/2020 - 10/2020",
-        subtopics: [
-          "Consulting & Conceptualization of Microsoft 365 Cloud Solutions",
-          "Project planning, project management, calculation, and technical partial implementation",
-          "End-customer training with a focus on Microsoft Teams, SharePoint, MS Office",
-        ],
-        success:
-          "Implementation of Microsoft Teams Telephony Solution (branches in the USA & Germany)",
-        logo: Logo1,
-        link: "https://www.straight-solutions.com/",
-      },
-      {
-        id: "2",
-        header: "Head of Sales - straight solutions GmbH",
-        period: "01/2018 - 05/2020",
-        subtopics: [
-          "Management of a self-organized three-man sales team",
-          "Redistribution of internal areas of responsibility & core competencies",
-          "Sales responsibility for Microsoft 365 & HP PSG",
-        ],
-        success:
-          "Partial project management of Windows 10 deployment at 27 locations / 500 workstations",
-        logo: Logo1,
-        link: "https://www.straight-solutions.com/",
-      },
-      {
-        id: "3",
-        header: "IT Sales Consultant - straight solutions GmbH",
-        period: "10/2016 - 12/2017",
-        subtopics: [
-          "Restructuring & expansion of existing sales processes",
-          "Licensing consultation for Microsoft Volume Licensing & Microsoft Cloud Transition",
-          "Maintenance of inventory management as well as processing from quotation to invoice",
-          "Establishment/maintenance of manufacturer & partner relationships",
-        ],
-        success:
-          "Admission to the Microsoft managed Partner Program (company-wide)",
-        logo: Logo1,
-        link: "https://www.straight-solutions.com/",
-      },
-      {
-        id: "4",
-        header:
-          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
-        period: "07/2012 - 09/2014",
-        subtopics: [
-          "Support of existing customers (Microsoft Volume Licensing / HP PSG)",
-          "Acquisition of new customers (outbound & Microsoft Leads)",
-          "System support & internal processing (purchasing/selling)",
-          "Establishment of Adobe Volume Licensing (TLP, CLP, VIP), implementation, completion & training with a focus on creative products",
-        ],
-        success:
-          "Project management, implementation, training for the Adobe editorial system (USA & EU)",
-        logo: Logo2,
-        link: "https://www.iq-gmbh.de/",
-      },
-      {
-        id: "5",
-        header:
-          "Training as IT Systems Merchant (IHK) - IQ GmbH (later Sycor IQ Solutions GmbH)",
-        period: "10/2009 - 06/2012",
-        subtopics: [
-          "Inside Sales dealing with merchandise management and business processes",
-          "Collaboration on Microsoft Software Asset Management projects",
-          "Acquisition of new customers (inbound) with project support",
-          "Conducting initial discussions, qualification of new customers",
-        ],
-        success:
-          "Supporting the introduction of Microsoft BPOS in a small logistics company",
-        logo: Logo2,
-        link: "https://www.iq-gmbh.de/",
-      },
-    ],
     outroHeader: "Some closing arguments...",
     outroMainContent:
       "I am always happy to receive feedback on my projects and am willing to address questions in detail. In the following, I would like to describe what was new to me in creating this online resume, where the biggest challenges were, and what I would like to do differently or better in future projects.",
