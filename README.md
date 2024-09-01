@@ -9,25 +9,19 @@
 - change color theme to be more nerdy but still professional
 - create dark and light theme
 - fully animate the page its boring
+- rework font sizes on desktop 100% zoom
 
 # Home
 
 - make styling more open
-- put hobbies and strengths next to name and title
 
 # Skills
 
 - double active class assignment bug
 
-# Sales / Development / Freelancer
-
-- rethink design decision
-- no clear timeline vissible -> isnt that important?
-- create new comp with timeline vissible always and dynamic on scroll layout / style
-
 # Reference
 
-- update build
+- integrate modals again
 - update content
 - update gifs
 - check github links
@@ -46,7 +40,8 @@
 - elements centered
 - rework styling
 - include dark / light mode toggle button
+- rework lang toggle button styling
 
 # Footer
 
-- ok
+- consider different color on icons
