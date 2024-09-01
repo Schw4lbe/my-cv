@@ -1,11 +1,11 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
-import PersonView from "@/views/PersonView.vue";
-import CarrerView from "@/views/CarrerView.vue";
+import SkillView from "@/views/SkillView.vue";
+import TimeLineView from "@/views/TimeLineView.vue";
 import ReferenceView from "@/views/ReferenceView.vue";
 import OutroView from "@/views/OutroView.vue";
 
-import DevView from "@/views/DevView.vue";
+import DevView from "@/views/development/DevView.vue";
 
 const routes = [
   {
@@ -16,12 +16,12 @@ const routes = [
   {
     path: "/person",
     name: "person",
-    component: PersonView,
+    component: SkillView,
   },
   {
     path: "/carrer",
     name: "carrer",
-    component: CarrerView,
+    component: TimeLineView,
   },
   {
     path: "/reference",

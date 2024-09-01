@@ -1,6 +1,6 @@
 <template>
   <div class="home-wrapper">
-    <HomeScreen
+    <Home
       :header="introHeader"
       subHeader="Jean-Pierre Häussler"
       :intro="introData"
@@ -14,12 +14,12 @@
 
 <script>
 import { mapGetters } from "vuex";
-import HomeScreen from "@/components/HomeScreen.vue";
+import Home from "@/components/Home.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HomeScreen,
+    Home,
   },
 
   computed: {

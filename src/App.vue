@@ -12,8 +12,8 @@
 
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import NavbarMain from "@/components/NavbarMain.vue";
-import FooterMain from "@/components/FooterMain.vue";
+import NavbarMain from "@/components/utility/NavbarMain.vue";
+import FooterMain from "@/components/utility/FooterMain.vue";
 
 export default {
   components: {

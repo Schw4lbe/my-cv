@@ -2,20 +2,20 @@
   <div class="reference-wrapper">
     <div class="reference-data-container">
       <h3 class="page-title">{{ getHeader }}</h3>
-      <AccordionInfo :items="referenceArray" />
+      <!-- <AccordionInfo :items="referenceArray" /> -->
     </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-import AccordionInfo from "@/components/AccordionInfo.vue";
+// import AccordionInfo from "@/components/AccordionInfo.vue";
 
 export default {
   name: "ReferenceView",
-  components: {
-    AccordionInfo,
-  },
+  // components: {
+  //   AccordionInfo,
+  // },
   computed: {
     ...mapGetters(["selectedLanguage"]),
 

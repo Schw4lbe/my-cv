@@ -8,7 +8,7 @@ import TimeLine from "@/components/TimeLine.vue";
 import { mapGetters } from "vuex";
 
 export default {
-  name: "DevView",
+  name: "TimeLineView",
   components: {
     TimeLine,
   },

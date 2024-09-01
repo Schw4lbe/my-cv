@@ -1,7 +1,7 @@
 <template>
   <div class="outro-wrapper">
     <h3 class="page-title">{{ getHeader }}</h3>
-    <OutroSummit
+    <Outro
       :items="itemArr"
       :subHeader="setSubHeader"
       :mainContent="setMainContent"
@@ -11,11 +11,11 @@
 
 <script>
 import { mapGetters } from "vuex";
-import OutroSummit from "@/components/OutroSummit.vue";
+import Outro from "@/components/Outro.vue";
 
 export default {
   name: "OutroView",
-  components: OutroSummit,
+  components: Outro,
 
   computed: {
     ...mapGetters(["selectedLanguage"]),

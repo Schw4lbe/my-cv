@@ -54,7 +54,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  name: "HomeScreen",
+  name: "Home",
   props: {
     header: String,
     subHeader: String,

@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import DevComponent from "@/components/DevComponent.vue";
+import DevComponent from "@/components/development/DevComponent.vue";
 import { mapGetters } from "vuex";
 
 export default {

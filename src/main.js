@@ -4,12 +4,12 @@ import router from "./router";
 import store from "./store";
 
 //custom components:
-import OutroSummit from "@/components/OutroSummit.vue";
+import Outro from "@/components/Outro.vue";
 
 const app = createApp(App);
 
 //register costum components:
-app.component("OutroSummit", OutroSummit);
+app.component("Outro", Outro);
 
 app.use(store);
 app.use(router).mount("#app");
