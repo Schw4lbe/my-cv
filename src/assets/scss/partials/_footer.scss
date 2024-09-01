@@ -2,10 +2,12 @@
 
 .footer-main {
   position: fixed;
+  padding: 0.5rem;
   bottom: 0;
   height: max-content;
   width: 100%;
-  background: $clr-primary-light2;
+  background: var(--clr-primary-light2);
+  opacity: 0.9;
 
   .footer-contact {
     width: 100%;

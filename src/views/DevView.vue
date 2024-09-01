@@ -1,19 +1,24 @@
 <template>
-  <div class="dev-container">
-    <h2>DEV View</h2>
-    <div class="dev-render-container">
-      <DevComponent />
-    </div>
-  </div>
+  <h3 class="page-title">Development</h3>
+  <DevComponent :timelineItems="getTimeLineItems" />
 </template>
 
 <script>
 import DevComponent from "@/components/DevComponent.vue";
+import { mapGetters } from "vuex";
 
 export default {
   name: "DevView",
   components: {
     DevComponent,
+  },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+
+    getTimeLineItems() {
+      return this.$store.state.contentData[this.selectedLanguage].timelineItems;
+    },
   },
 };
 </script>

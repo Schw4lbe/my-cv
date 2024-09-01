@@ -25,7 +25,7 @@ export default {
     },
 
     getHeader() {
-      return this.$store.state.contentData[this.selectedLanguage].menuItems[1]
+      return this.$store.state.contentData[this.selectedLanguage].navbarItems[1]
         .name;
     },
   },

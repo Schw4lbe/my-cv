@@ -7,7 +7,8 @@ import ReferenceView from "@/views/ReferenceView.vue";
 import FreelanceView from "@/views/FreelanceView.vue";
 import OutroView from "@/views/OutroView.vue";
 
-import DevComponent from "@/components/DevComponent.vue";
+// import DevComponent from "@/components/DevComponent.vue";
+import DevView from "@/views/DevView.vue";
 
 const routes = [
   {
@@ -48,7 +49,7 @@ const routes = [
   {
     path: "/dev",
     name: "dev",
-    component: DevComponent,
+    component: DevView,
   },
 ];
 

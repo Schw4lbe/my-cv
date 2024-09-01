@@ -1,5 +1,36 @@
 @use "../abstracts/" as *;
 
+// accordion like animation config
+.skill-data-container {
+  overflow: hidden;
+
+  .skill-section-container {
+    .section-control {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+      &:checked ~ .skill-container {
+        max-height: 10rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .section-label {
+      display: flex;
+      justify-content: space-between;
+      // padding: 1rem;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+
+    .skill-container {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s;
+    }
+  }
+}
+
 .skill-section-open {
   // pulse arrow to indicate more content
   // color: var(--clr-accent) !important;
@@ -112,7 +143,7 @@ $bar-height: 6px;
             height: $bar-height;
             position: relative;
             border-radius: calc($bar-height / 2);
-            background-color: var(--clr-primary-light2);
+            background-color: var(--clr-primary-light3);
             overflow: visible;
 
             .progress {

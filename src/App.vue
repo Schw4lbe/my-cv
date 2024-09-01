@@ -33,11 +33,11 @@ export default {
     },
 
     navbarItemsArray() {
-      return this.$store.state.contentData[this.selectedLanguage].menuItems;
+      return this.$store.state.contentData[this.selectedLanguage].navbarItems;
     },
 
     footerItems() {
-      return this.$store.state.contentData.navbarItems;
+      return this.$store.state.contentData.footerItems;
     },
   },
 

@@ -49,7 +49,13 @@ body,
     var(--clr-primary),
     var(--clr-primary-light2)
   );
-  // background-color: var(--clr-primary);
+
+  background: linear-gradient(
+    180deg,
+    var(--clr-primary) 0%,
+    var(--clr-primary-light2) 80%
+  );
+
   height: auto;
   min-height: 100%;
 }

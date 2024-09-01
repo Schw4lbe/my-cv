@@ -21,7 +21,7 @@ export default {
     ...mapGetters(["selectedLanguage"]),
 
     setHeader() {
-      return this.$store.state.contentData[this.selectedLanguage].menuItems[5]
+      return this.$store.state.contentData[this.selectedLanguage].navbarItems[5]
         .name;
     },
 

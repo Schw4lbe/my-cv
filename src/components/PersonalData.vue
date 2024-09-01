@@ -103,10 +103,10 @@ export default {
       // Stop the event from bubbling up and double trigger
       // @click.stop event on label to make stopPropagation function work
       e.stopPropagation();
+
       const id = e.target.id;
       const element = document.getElementById(id);
       this.toggleSectionOpen(element);
-      console.log(element);
 
       setTimeout(() => {
         if (!element) {

@@ -76,15 +76,21 @@ export const data = {
         ],
       },
       {
-        lable: "Frameworks",
+        lable: "Frameworks & Libraries",
         description:
-          "Frameworks sind unerlässlich um produktiv zu sein. Neben meinem Liebling, Vue.js nachfolgend eine Liste weitere Frameworks, mit denen ich bereits gearbeitet habe.",
+          "Frameworks & Libraries sind unerlässlich um produktiv zu sein und das Rat nicht neu zu erfinden. Neben meinem Liebling, Vue.js nachfolgend eine Liste weitere Frameworks, mit denen ich bereits gearbeitet habe.",
         items: [
           {
-            id: "4",
-            icon: "fa-brands fa-bootstrap",
-            name: "bootstrap",
-            rating: "7",
+            id: "14",
+            icon: "fa-brands fa-vuejs",
+            name: "vue js 2 & 3",
+            rating: "8",
+          },
+          {
+            id: "15",
+            icon: "fa-brands fa-vuejs",
+            name: "vuex + vue-router",
+            rating: "6",
           },
           {
             id: "5",
@@ -93,25 +99,25 @@ export const data = {
             rating: "4",
           },
           {
+            id: "4",
+            icon: "fa-brands fa-bootstrap",
+            name: "bootstrap",
+            rating: "7",
+          },
+          {
+            id: "35",
+            icon: "fa-solid fa-dna",
+            name: "animate.css",
+            rating: "4",
+          },
+          {
             id: "6",
             icon: "fa-solid fa-q",
             name: "quasar",
             rating: "3",
           },
-          { id: "12", icon: "fa-solid fa-e", name: "express", rating: "1" },
-          { id: "13", icon: "fa-brands fa-react", name: "react", rating: "2" },
-          {
-            id: "14",
-            icon: "fa-brands fa-vuejs",
-            name: "vue js 2 & 3",
-            rating: "7",
-          },
-          {
-            id: "15",
-            icon: "fa-brands fa-vuejs",
-            name: "vuex / router",
-            rating: "6",
-          },
+          { id: "12", icon: "fa-solid fa-e", name: "express", rating: "2" },
+          { id: "13", icon: "fa-brands fa-react", name: "react", rating: "1" },
         ],
       },
       {
@@ -119,19 +125,6 @@ export const data = {
         description:
           "Zu guter Letzt noch ein kurz er Einblick in weitere Technologien die ich gern nutze.",
         items: [
-          {
-            id: "7",
-            icon: "fa-brands fa-uikit",
-            name: "ux / ui design",
-            rating: "5",
-          },
-
-          {
-            id: "17",
-            icon: "fa-regular fa-window-restore",
-            name: "browserstack",
-            rating: "6",
-          },
           {
             id: "18",
             icon: "fa-brands fa-microsoft",
@@ -150,37 +143,53 @@ export const data = {
             name: "phpstorm",
             rating: "5",
           },
+          {
+            id: "15",
+            icon: "fa-brands fa-vuejs",
+            name: "vue devtools",
+            rating: "5",
+          },
+          {
+            id: "17",
+            icon: "fa-regular fa-window-restore",
+            name: "browserstack",
+            rating: "6",
+          },
+          {
+            id: "34",
+            icon: "fa-brands fa-gulp",
+            name: "gulp.js",
+            rating: "2",
+          },
+          {
+            id: "33",
+            icon: "fa-brands fa-docker",
+            name: "docker desktop",
+            rating: "3",
+          },
+          {
+            id: "30",
+            icon: "fa-brands fa-github",
+            name: "github (pages + ci-cd)",
+            rating: "6",
+          },
+          {
+            id: "31",
+            icon: "fa-solid fa-n",
+            name: "netlify (identity + cms + ci-cd)",
+            rating: "4",
+          },
+          {
+            id: "32",
+            icon: "fa-solid fa-d",
+            name: "decap cms",
+            rating: "4",
+          },
         ],
       },
     ],
 
-    introContent: [
-      "Warum ein online Lebenslauf?",
-      "Weil ich zeigen möchte, was ich kann.",
-    ],
-
-    readyCheckContent: {
-      header: "Alle Vorbereitungen getroffen?",
-      subheader:
-        "(Bitte alle drei Optionen auswählen, um zum Inhalt zu gelangen.)",
-      content: [
-        {
-          label: "Tee oder Kaffee frisch aufgebrüht?",
-          icon: "fa-solid fa-mug-hot",
-        },
-        {
-          label: "Notizblock bereit?",
-          icon: "fa-sharp fa-solid fa-pen-to-square",
-        },
-        {
-          label: "Die wichtigsten Personen sind anwesend?",
-          icon: "fa-solid fa-people-group",
-        },
-      ],
-      buttonText: "Los geht's!",
-    },
-
-    menuItems: [
+    navbarItems: [
       {
         id: "item1",
         name: "Fachwissen",
@@ -213,14 +222,6 @@ export const data = {
       },
     ],
 
-    timeoutContent: {
-      header: "Ein Fehler ist aufgetreten!",
-      message:
-        "Die Anmeldeinformationen sind falsch. Bitte versuchen sie es in ",
-      message2: " Sekunden erneut.",
-    },
-
-    errorMsg: "Login Server nicht verfügbar.",
     buttonLinkText: "Homepage des Unternehmens",
     accordionOpenText: "aufklappen",
     accordionCollapseText: "zuklappen",
@@ -254,11 +255,26 @@ export const data = {
       "E-Sport, Game Development (C# + Unity)",
     ],
 
-    codingItems: [
+    timelineItems: [
       {
         id: "1",
+        header: "Freiberufliche Webentwicklung - Weiterbildung",
+        period: "Juni 2023 - heute",
+        subtopics: [
+          "Freiberufliche Umsetzung Webprojekte, Beratung & Konzeptionierung",
+          "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
+          "Verwendung neuer Technologien - siehe Schlusswort für mehr Details",
+          "Besuch von diversen online Schulungen & Tutorials",
+          "Schwerpunkt auf Backend Technologien insbesondere PHP 8",
+          "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter PHP Entwicklung",
+        ],
+        success: "Umsetzung Diverser Webapplikationen",
+        link: "",
+      },
+      {
+        id: "2",
         header: "Softwareentwicklung Frontend - Vivax Solution GmbH",
-        period: "05/2022 - 06/2023",
+        period: "Mai 2022 - Juni 2023",
         subtopics: [
           "Entwicklung Webcomponents in vue.js mit TypeScript für conditional Rendering von JSON Schema",
           "Umfang: JavaScript, TypeScript, CSS, SCSS, HTML, JSON in PHP Storm & Visual Studio Code",
@@ -274,9 +290,9 @@ export const data = {
         link: "https://www.vivax-solution.de/",
       },
       {
-        id: "2",
+        id: "3",
         header: "Zertifizierung JavaScript Developer - GFN GmbH",
-        period: "12/2021 - 03/2022",
+        period: "Dezember 2021 - März 2022",
         subtopics: [
           "Einrichtung IDE, Visual Studio Code, Extensions, NPM Package Manager, JSON Config",
           "JavaScript (ES6) Syntax, Methoden, Arrays, Objekte, Destructuring, Helper Funktionen",
@@ -289,9 +305,9 @@ export const data = {
         link: "https://www.gfn.de/",
       },
       {
-        id: "3",
+        id: "4",
         header: "Zertifizierung Webdesigner - GFN GmbH",
-        period: "10/2021 - 12/2021",
+        period: "Oktober 2021 - Dezember 2021",
         subtopics: [
           "Einrichtung IDE, Visual Studio Code, Extensions, XAMPP",
           "Grundlagen Webdesign, HTML5 Syntax, barrierefreie Programmierung, Markdown, Emmet",
@@ -304,28 +320,10 @@ export const data = {
         logo: Logo4,
         link: "https://www.gfn.de/",
       },
-    ],
-
-    freelanceItems: [
       {
-        id: "1",
-        header: "Freiberufliche Webentwicklung - Weiterbildung",
-        period: "06/2023 - heute",
-        subtopics: [
-          "Freiberufliche Umsetzung Webprojekte, Beratung & Konzeptionierung",
-          "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
-          "Verwendung neuer Technologien - siehe Schlusswort für mehr Details",
-          "Besuch von diversen online Schulungen & Tutorials",
-          "Schwerpunkt auf Backend Technologien insbesondere PHP 8",
-          "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter PHP Entwicklung",
-        ],
-        success: "Umsetzung Diverser Webapplikationen",
-        link: "",
-      },
-      {
-        id: "2",
+        id: "5",
         header: "Besinnung & Neuorientierung",
-        period: "10/2020 - 10/2021",
+        period: "Oktober 2020 - Oktober 2021",
         subtopics: [
           "Aufbau eines Twitch.tv Livestream Kanals (Affiliate Status), Live DJ-ing & Vj-ing",
           "Erste Einblicke Game Development C# auf Unity Engine",
@@ -339,9 +337,52 @@ export const data = {
         link: "",
       },
       {
-        id: "3",
+        id: "6",
+        header: "Microsoft Cloud Solution Visionary - straight solutions GmbH",
+        period: "Juni 2020 - Oktober 2020",
+        subtopics: [
+          "Beratung & Konzeptionierung Microsoft 365 Cloud Lösungen",
+          "Projektplanung, Projektleitung, Kalkulation und techn. Teilumsetzung",
+          "Schulung Endkunde Schwerpunkt Microsoft Teams, SharePoint, MS Office",
+        ],
+        success:
+          "Einführung Microsoft Teams Telefonie Lösung (Niederlassungen in USA & Deutschland)",
+        logo: Logo1,
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "7",
+        header: "Head of Sales - straight solutions GmbH",
+        period: "Januar 2018 - Juni 2020",
+        subtopics: [
+          "Leitung selbstorganisiertes Drei Mann Vertriebsteam",
+          "Neuverteilung interner Verantwortungsbereiche & Kernkompetenzen",
+          "vertriebliche Verantwortung für Microsoft 365 & HP PSG",
+        ],
+        success:
+          "Teilprojektleitung Windows 10 Deployment 27 Standorten / 500 Arbeitsplätzen",
+        logo: Logo1,
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "8",
+        header: "IT Sales Consultant - straight solutions GmbH",
+        period: "Oktober 2016 - Januar 2018",
+        subtopics: [
+          "Restrukturierung & Ausbau bestehender Vertriebsprozesse",
+          "Lizenzberatung Microsoft Volume Licensing & Microsoft Cloud Transition",
+          "Pflege Warenwirtschaft sowie Abwicklung von Angebot bis Rechnung",
+          "Aufbau / Pflege von Hersteller- & Partnerbeziehungen",
+        ],
+        success:
+          "Aufnahme in Microsoft managed Partner Programm (unternehmensweit)",
+        logo: Logo1,
+        link: "https://www.straight-solutions.com/",
+      },
+      {
+        id: "9",
         header: "Eventmanagement & Musiker - Münchner Grammophon e. K.",
-        period: "10/2014 - 09/2016",
+        period: "Oktober 2014 - September 2016",
         subtopics: [
           "Planung & Organisation von Veranstaltungen 50 – 1.200 Teilnehmer",
           "Tätigkeit als Schallplattenunterhalter in diversen Lokalitäten in München",
@@ -353,6 +394,38 @@ export const data = {
           "Drei Fragezeichen Festival Feierwerk München (ca. 1.200 Besucher)",
         logo: Logo6,
         link: "",
+      },
+      {
+        id: "10",
+        header:
+          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
+        period: "Juli 2012 - September 2014",
+        subtopics: [
+          "Betreuung Bestandskunden (Microsoft Volume Licensing / HP PSG)",
+          "Neukundenakquise (outbound & Microsoft Leads)",
+          "Systembetreuung & interne Abwicklung (Einkauf/Verkauf)",
+          "Etablierung Adobe Volume Licensing (TLP, CLP, VIP), Umsetzung, Abschluss & Schulung Fokus auf Kreativprodukte",
+        ],
+        success:
+          "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
+        logo: Logo2,
+        link: "https://www.iq-gmbh.de/",
+      },
+      {
+        id: "11",
+        header:
+          "Ausbildung IT-Systemkaufmann (IHK) - IQ GmbH (später Sycor IQ Solutions GmbH)",
+        period: "Oktober 2009 - Juni 2012",
+        subtopics: [
+          "Inside Sales Umgang mit Warenwirtschaft und Geschäftsprozessen",
+          "Zuarbeit bei Microsoft Software Asset Management Projekten",
+          "Neukundengewinnung (inbound) samt Projektbegleitung",
+          "Führung von Erstgesprächen, Qualifikation von Neukunden",
+        ],
+        success:
+          "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
+        logo: Logo2,
+        link: "https://www.iq-gmbh.de/",
       },
     ],
 
@@ -500,83 +573,6 @@ export const data = {
     referenceSubHeader:
       "Skala von 1 (Grundwissen) bis 10 (Experte). Bemessen an Praxiserfahrung.",
 
-    salesItems: [
-      {
-        id: "1",
-        header: "Microsoft Cloud Solution Visionary - straight solutions GmbH",
-        period: "06/2020 - 10/2020",
-        subtopics: [
-          "Beratung & Konzeptionierung Microsoft 365 Cloud Lösungen",
-          "Projektplanung, Projektleitung, Kalkulation und techn. Teilumsetzung",
-          "Schulung Endkunde Schwerpunkt Microsoft Teams, SharePoint, MS Office",
-        ],
-        success:
-          "Einführung Microsoft Teams Telefonie Lösung (Niederlassungen in USA & Deutschland)",
-        logo: Logo1,
-        link: "https://www.straight-solutions.com/",
-      },
-      {
-        id: "2",
-        header: "Head of Sales - straight solutions GmbH",
-        period: "01/2018 - 05/2020",
-        subtopics: [
-          "Leitung selbstorganisiertes Drei Mann Vertriebsteam",
-          "Neuverteilung interner Verantwortungsbereiche & Kernkompetenzen",
-          "vertriebliche Verantwortung für Microsoft 365 & HP PSG",
-        ],
-        success:
-          "Teilprojektleitung Windows 10 Deployment 27 Standorten / 500 Arbeitsplätzen",
-        logo: Logo1,
-        link: "https://www.straight-solutions.com/",
-      },
-      {
-        id: "3",
-        header: "IT Sales Consultant - straight solutions GmbH",
-        period: "10/2016 - 12/2017",
-        subtopics: [
-          "Restrukturierung & Ausbau bestehender Vertriebsprozesse",
-          "Lizenzberatung Microsoft Volume Licensing & Microsoft Cloud Transition",
-          "Pflege Warenwirtschaft sowie Abwicklung von Angebot bis Rechnung",
-          "Aufbau / Pflege von Hersteller- & Partnerbeziehungen",
-        ],
-        success:
-          "Aufnahme in Microsoft managed Partner Programm (unternehmensweit)",
-        logo: Logo1,
-        link: "https://www.straight-solutions.com/",
-      },
-      {
-        id: "4",
-        header:
-          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
-        period: "07/2012 - 09/2014",
-        subtopics: [
-          "Betreuung Bestandskunden (Microsoft Volume Licensing / HP PSG)",
-          "Neukundenakquise (outbound & Microsoft Leads)",
-          "Systembetreuung & interne Abwicklung (Einkauf/Verkauf)",
-          "Etablierung Adobe Volume Licensing (TLP, CLP, VIP), Umsetzung, Abschluss & Schulung Fokus auf Kreativprodukte",
-        ],
-        success:
-          "Projektleitung, Umsetzung, Schulung Adobe Redaktionssystem (USA & EU)",
-        logo: Logo2,
-        link: "https://www.iq-gmbh.de/",
-      },
-      {
-        id: "5",
-        header:
-          "Ausbildung IT-Systemkaufmann (IHK) - IQ GmbH (später Sycor IQ Solutions GmbH)",
-        period: "10/2009 - 06/2012",
-        subtopics: [
-          "Inside Sales Umgang mit Warenwirtschaft und Geschäftsprozessen",
-          "Zuarbeit bei Microsoft Software Asset Management Projekten",
-          "Neukundengewinnung (inbound) samt Projektbegleitung",
-          "Führung von Erstgesprächen, Qualifikation von Neukunden",
-        ],
-        success:
-          "Begleitende Einführung von Microsoft BPOS in einem kleinen Speditionsunternehmen",
-        logo: Logo2,
-        link: "https://www.iq-gmbh.de/",
-      },
-    ],
     outroHeader: "Abschließende Worte...",
     outroMainContent:
       "Ich freue mich jederzeit über Feedback zu meinen Projekten und bin gern bereit im Detail auf Fragen ein zu gehen. Im Nachfolgenden möchte ich beschreiben, was bei der Erstellung dieses online Lebenslaufes neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
@@ -646,7 +642,7 @@ export const data = {
       buttonText: "Off we go!",
     },
 
-    menuItems: [
+    navbarItems: [
       {
         id: "item1",
         name: "Skills",
@@ -1081,9 +1077,7 @@ export const data = {
     ],
   },
 
-  serverMsg: "...logging in.",
-
-  navbarItems: [
+  footerItems: [
     {
       link: "https://www.linkedin.com/in/jean-pierre-h%C3%A4ussler-66019118a/",
       icon: "fa-brands fa-linkedin",
@@ -1093,12 +1087,8 @@ export const data = {
       icon: "fa-brands fa-square-xing",
     },
     {
-      link: "https://github.com/TapeMate",
+      link: "https://github.com/Schw4lbe",
       icon: "fa-brands fa-square-github",
-    },
-    {
-      link: "https://soundcloud.com/tape-mate",
-      icon: "fa-brands fa-soundcloud",
     },
   ],
 
