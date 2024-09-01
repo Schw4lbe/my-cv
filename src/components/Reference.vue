@@ -41,7 +41,9 @@
             </button>
           </div>
         </div>
-        <div class="grid-container animate__animated animate__fadeIn">
+        <div
+          class="grid-container image-container ref-animate-control animate__animated hidden"
+        >
           <img :src="item.image" alt="reference image" class="ref-image" />
         </div>
       </div>
@@ -57,7 +59,7 @@ export default {
   },
 
   mounted() {
-    this.animationTest();
+    this.setupIntersectionObserver();
 
     window.scrollTo({
       top: 0,
@@ -66,15 +68,39 @@ export default {
   },
 
   methods: {
-    animationTest() {
-      const parent = document.querySelector("#test");
-      const elements = parent.querySelectorAll(".ref-animate-control");
+    setupIntersectionObserver() {
+      const observerOptions = {
+        root: null, // Use the viewport as the root
+        rootMargin: "0px",
+        threshold: 1, // Trigger when at least 100% of the element is visible
+      };
 
-      elements.forEach((el, index) => {
-        setTimeout(() => {
-          el.classList.remove("hidden");
-          el.classList.add("visible", "animate__backInLeft");
-        }, 100 * index);
+      // use vue intersection observer api
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const elements = entry.target.querySelectorAll(
+              ".ref-animate-control"
+            );
+
+            elements.forEach((el, index) => {
+              if (el.classList.contains("image-container")) {
+                el.classList.remove("hidden");
+                el.classList.add("visible", "animate__zoomIn");
+              } else {
+                setTimeout(() => {
+                  el.classList.remove("hidden");
+                  el.classList.add("visible", "animate__backInLeft");
+                }, 50 * index);
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      const items = this.$el.querySelectorAll(".ref-item");
+      items.forEach((item) => {
+        observer.observe(item);
       });
     },
   },
