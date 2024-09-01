@@ -106,18 +106,19 @@ export default {
       const id = e.target.id;
       const element = document.getElementById(id);
       this.toggleSectionOpen(element);
+      console.log(element);
 
       setTimeout(() => {
         if (!element) {
           return;
         } else {
-          element.scrollIntoView({
+          element.parentElement.scrollIntoView({
             behavior: "smooth",
-            block: "start",
+            block: "center",
             inline: "nearest",
           });
         }
-      }, 500);
+      }, 200);
 
       const sectionId = parseInt(id.slice(-1));
       this[`showSection${sectionId}`] = !this[`showSection${sectionId}`];
