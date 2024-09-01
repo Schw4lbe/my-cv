@@ -2,7 +2,7 @@
 
 .dev,
 .timeline-container {
-  padding: 150px 2rem 2rem 2rem;
+  padding: 150px 2rem;
   width: 100%;
   max-width: 1400px;
   height: 100%;
@@ -54,11 +54,34 @@
       transition: all 0.5s;
 
       .timeline-header {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         letter-spacing: 1px;
         font-family: PoppinsBold;
         padding: 1rem 0;
         transition: all 1s;
+      }
+
+      .teaser {
+        height: 0px;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.5s;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+        animation: pulseText 1s ease-in-out infinite;
+      }
+
+      @keyframes pulseText {
+        0% {
+          color: var(--clr-accent);
+        }
+        25% {
+          color: var(--clr-accent-b);
+        }
+        100% {
+          color: var(--clr-accent);
+        }
       }
 
       .subtopics {
@@ -109,6 +132,7 @@
     }
 
     &::after {
+      background: var(--clr-secondary-dark2) !important;
     }
   }
 
@@ -116,22 +140,17 @@
     color: var(--clr-secondary) !important;
     letter-spacing: 3px !important;
     font-size: 16px !important;
+    border-top: 1px solid var(--clr-accent);
   }
   .timeline-content {
     .timeline-header {
+      font-size: 1.6rem !important;
       color: var(--clr-accent);
       letter-spacing: 3px !important;
     }
 
-    .subtopics {
-      .topic {
-      }
-    }
-
-    .success {
-    }
-
-    .btn-reference {
+    .teaser {
+      height: 30px !important;
     }
   }
 }
@@ -139,13 +158,17 @@
 // helperclass to assign to active timeline item to trigger content animation
 .timeline-active {
   padding-bottom: 4rem;
-
+  padding-left: 4rem !important;
   .timeline-marker {
     &::before {
+      background: var(--clr-accent) !important;
+      box-shadow: 0px 0px 5px 5px var(--clr-accent);
+      height: 17px;
+      width: 17px;
     }
 
     &::after {
-      background: var(--clr-secondary-dark2) !important;
+      background: var(--clr-secondary-dark) !important;
     }
   }
 
@@ -155,6 +178,18 @@
   }
 
   .timeline-content {
+    .timeline-header {
+      font-size: 1.6rem !important;
+      color: var(--clr-accent);
+      letter-spacing: 3px !important;
+    }
+
+    .teaser {
+      height: 0px !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+    }
+
     .subtopics {
       height: 180px !important;
       overflow: hidden;
