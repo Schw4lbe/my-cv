@@ -536,25 +536,6 @@ export const data = {
       "Ich freue mich jederzeit über Feedback zu meinen Projekten und bin gern bereit im Detail auf Fragen ein zu gehen. Im Nachfolgenden möchte ich beschreiben, was bei der Erstellung dieses online Lebenslaufes neu für mich war, wo die größten Herausforderungen für mich lagen und was ich in künftigen Projekten anders oder besser machen möchte.",
     outroItems: [
       {
-        title: "Neue Technologien:",
-        content: [
-          "VUEX State & Content Management, samt Erzeugung Session Cookie",
-          "Gulp Task Automatisierung mittels Autoprefixer & PostCSS",
-        ],
-      },
-      {
-        title: "Herausforderungen:",
-        content: ["VUEX für Session Management, da alles neu für mich war."],
-      },
-      {
-        title: "Verbesserungspotenzial:",
-        content: [
-          "Verwendung der VUE Composition API da zukunftssicher",
-          "Verwendung von SCSS @forward & @use da @import depricated",
-          "Mehr SCSS-Variablen für bessere globale Steuerung des Layouts",
-        ],
-      },
-      {
         title: "Quellenangaben:",
         content: [
           "developer.mozilla.org",
@@ -1087,25 +1068,6 @@ export const data = {
     outroMainContent:
       "I am always happy to receive feedback on my projects and am willing to address questions in detail. In the following, I would like to describe what was new to me in creating this online resume, where the biggest challenges were, and what I would like to do differently or better in future projects.",
     outroItems: [
-      {
-        title: "New technologies:",
-        content: [
-          "VUEX state & content management, including the generation of a session cookie.",
-          "Gulp task automation using Autoprefixer & PostCSS.",
-        ],
-      },
-      {
-        title: "Challenges:",
-        content: ["VUEX for session management, as everything was new to me."],
-      },
-      {
-        title: "Room for approvement:",
-        content: [
-          "Use VUE Composition API as it is future-proof.",
-          "Use SCSS @forward & @use because @import is depricated",
-          "More Variables in SCSS for better global control.",
-        ],
-      },
       {
         title: "Sources:",
         content: [
