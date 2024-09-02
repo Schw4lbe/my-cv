@@ -1,6 +1,8 @@
 <template>
   <div class="outro-wrapper">
-    <h3 class="page-title">{{ getHeader }}</h3>
+    <h3 class="page-title animate__animated animate__backInDown">
+      {{ getHeader }}
+    </h3>
     <Outro
       :items="itemArr"
       :subHeader="setSubHeader"

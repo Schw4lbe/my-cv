@@ -1,5 +1,8 @@
 <template>
   <div class="ref-wrapper">
+    <h5 class="ref-description animate__animated animate__backInDown">
+      {{ refDescription }}
+    </h5>
     <div class="ref-container">
       <div
         v-for="item in referenceData"
@@ -56,6 +59,7 @@ export default {
   name: "Reference",
   props: {
     referenceData: Array,
+    refDescription: String,
   },
 
   mounted() {

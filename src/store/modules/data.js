@@ -70,7 +70,7 @@ export const data = {
       {
         lable: "Frameworks & Libraries",
         description:
-          "Frameworks & Libraries sind unerlässlich um produktiv zu sein und um das Rat nicht neu zu erfinden. Neben meinem Liebling, Vue.js nachfolgend eine Liste weitere Frameworks und Bibliotheken, mit denen ich täglich arbeite.",
+          "Frameworks & Libraries sind unerlässlich um produktiv zu sein und um das Rat nicht neu zu erfinden. Neben meinem Liebling, Vue.js nachfolgend eine Liste weitere Frameworks und Bibliotheken, mit denen ich sehr oft arbeite.",
         items: [
           {
             id: "14",
@@ -210,6 +210,7 @@ export const data = {
     referenceSuccessMsg: "Größter Erfolg: ",
     modalButtonText: "Demo ansehen",
     timelineDetails: "[ klick für mehr Infos ]",
+    timelineBtnBackUp: "zurück zum Anfang",
     introHeader: "Lebenslauf",
     introHeaderTechStack: "Erstellt mit",
     introHeaderTesting: "Kompatibilität",
@@ -220,10 +221,12 @@ export const data = {
       {
         header: "Präambel",
         text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind aussagekräftiger als ein Schlichter Lebenslauf in PDF Format. Dieses Projekt ist mittels Eisnatz der folgenden Technologien entstanden.",
-        // text2:
-        //   "Das komplette Projekt ist von der Pike auf von mir selbst geschrieben. Ich habe Bootstrap in ein paar vereinzelten Komponenten integriert, um das Rad nicht neu zu erfinden. Als Entwicklungsumgebung kam Visual Studio Code samt SASS-Live Compiler Extension, in Verbindung mit VUE.JS 3.x zum Einsatz. Die Sprache kann jederzeit auf deutsch oder englisch dargestellt werden. Gulp dient mir als Task Automatisierung, um das CSS möglichst umfangreich abwärtskompatibel zu erzeugen. Getestet habe ich auf Windows 10. Ich besitze privat leider keine Browserstack Lizenz, daher war der Umfang auf Familie und Freunde begrenzt. Ein Apple Device besitze ich nicht und habe daher mobile lediglich auf Android testen können. Mir ist wohl bewusst, dass Apple so einige Eigenheiten hinsichtlich Design Elementen besitzt. In einer Produktivumgebung stünden jedefalls noch ausführliche Tests an.",
-        text3: "",
       },
+    ],
+
+    timelineDescription: [
+      "... und welche Station kommt als nächstes?",
+      "Einblicke in meinen Werdegang.",
     ],
 
     timelineItems: [
@@ -375,8 +378,7 @@ export const data = {
       },
       {
         id: "11",
-        header:
-          "Ausbildung IT-Systemkaufmann (IHK) - IQ GmbH (später Sycor IQ Solutions GmbH)",
+        header: "Ausbildung IT-Systemkaufmann - IQ GmbH",
         period: "Oktober 2009 - Juni 2012",
         subtopics: [
           "Inside Sales Umgang mit Warenwirtschaft und Geschäftsprozessen",
@@ -389,6 +391,8 @@ export const data = {
         link: "https://www.iq-gmbh.de/",
       },
     ],
+
+    referenceDescription: "Einblicke in meine bestehenden Projekte.",
 
     referenceArray: [
       {
@@ -556,7 +560,8 @@ export const data = {
     skillData: [
       {
         lable: "Languages",
-        description: "",
+        description:
+          "Below is a list of programming languages that I already master, to showcase my proficiency level.",
         items: [
           {
             id: "2",
@@ -601,7 +606,8 @@ export const data = {
       },
       {
         lable: "Frameworks & Libraries",
-        description: "",
+        description:
+          "Frameworks & libraries are essential for being productive and not reinventing the wheel. Besides my favorite, Vue.js, here is a list of other frameworks and libraries that I work with daily.",
         items: [
           {
             id: "14",
@@ -645,7 +651,8 @@ export const data = {
       },
       {
         lable: "Tools & Utility",
-        description: "",
+        description:
+          "Tools and accessories are also indispensable. I've gained enough practical experience with the following to list them here.",
         items: [
           {
             id: "18",
@@ -740,6 +747,7 @@ export const data = {
     referenceSuccessMsg: "Greatest success: ",
     modalButtonText: "Show Demo",
     timelineDetails: "[ click for details ]",
+    timelineBtnBackUp: "back to start",
     introHeader: "Curriculum Vitae",
     introHeaderTechStack: "Tech Stack",
     introHeaderTesting: "Compatibility",
@@ -751,6 +759,11 @@ export const data = {
         header: "Preamble",
         text: "This online resume was created with the intention of showcasing my current skill level in frontend development. Animated images and real code are more illustrative than a simple resume in PDF format. This project was created using the following technologies.",
       },
+    ],
+
+    timelineDescription: [
+      "... and which station is coming next?",
+      "Insights into my career.",
     ],
 
     timelineItems: [
@@ -904,8 +917,7 @@ export const data = {
       },
       {
         id: "11",
-        header:
-          "Training as IT Systems Merchant (IHK) - IQ GmbH (later Sycor IQ Solutions GmbH)",
+        header: "Training as IT Sales Consultant - IQ GmbH",
         period: "Oct 2009 - Jun 2012",
         subtopics: [
           "Inside Sales dealing with merchandise management and business processes",
@@ -918,6 +930,8 @@ export const data = {
         link: "https://www.iq-gmbh.de/",
       },
     ],
+
+    referenceDescription: "Let's have some insights in my lates projects.",
 
     referenceArray: [
       {

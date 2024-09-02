@@ -1,5 +1,14 @@
 <template>
   <div class="timeline-wrapper">
+    <div class="desc-container">
+      <h5
+        v-for="(desc, index) in timelineDescription"
+        :key="index"
+        class="timeline-description animate__animated animate__backInDown"
+      >
+        {{ desc }}
+      </h5>
+    </div>
     <div class="dev timeline-container">
       <div
         v-for="(item, itemIndex) in timelineItems"
@@ -7,11 +16,12 @@
         :id="'timeline-item' + item.id"
         class="timeline-item"
         :class="{ 'timeline-focus': itemIndex === 0 }"
+        @click="setTimelineActive"
       >
         <div class="timeline-marker"></div>
         <div class="timeline-period">{{ item.period }}</div>
         <div class="timeline-content">
-          <h3 class="timeline-header" @click="setTimelineActive">
+          <h3 class="timeline-header">
             {{ item.header }}
           </h3>
           <p class="teaser">{{ getTeaserText }}</p>
@@ -19,7 +29,7 @@
             <li
               v-for="(topic, index) in item.subtopics"
               :key="index"
-              class="topic"
+              class="topic hidden animate__animated"
             >
               {{ topic }}
             </li>
@@ -33,6 +43,7 @@
         </div>
       </div>
     </div>
+    <button class="btn-back-up" @click="scrollBackUp">{{ btnContent }}</button>
   </div>
 </template>
 <script>
@@ -41,7 +52,9 @@ import { mapGetters } from "vuex";
 export default {
   name: "TimeLine",
   props: {
+    timelineDescription: Array,
     timelineItems: Array,
+    btnContent: String,
   },
 
   data() {
@@ -71,11 +84,6 @@ export default {
 
   mounted() {
     window.addEventListener("scroll", this.setTimelineFocus);
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   },
 
   beforeUnmount() {
@@ -116,15 +124,39 @@ export default {
         return;
       }
 
+      const allTimelines = document.querySelectorAll(".timeline-item");
       const timeline = e.target.closest(".timeline-item");
+      const elementsToAnimate = timeline.querySelectorAll(".topic");
 
+      // Prevent UI error by ensuring only one timeline is active at a time
       if (timeline && timeline !== this.lastActiveTimeline) {
-        this.lastActiveTimeline?.classList.toggle("timeline-active");
-        this.lastActiveTimeline?.classList.toggle("timeline-focus");
+        allTimelines.forEach((el) => {
+          el.classList.remove("timeline-active", "timeline-focus");
+        });
+
+        timeline.classList.add("timeline-active");
+        timeline.classList.add("timeline-focus");
+
+        elementsToAnimate.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.remove("hidden");
+            el.classList.add("visible", "animate__backInLeft");
+          }, 50 * index);
+        });
+
         this.lastActiveTimeline = timeline;
+      } else if (timeline === this.lastActiveTimeline) {
+        // If the same timeline is clicked, toggle it off
+        timeline.classList.remove("timeline-active", "timeline-focus");
+        this.lastActiveTimeline = null;
       }
-      timeline.classList.toggle("timeline-active");
-      timeline.classList.toggle("timeline-focus");
+    },
+
+    scrollBackUp() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
   },
 };

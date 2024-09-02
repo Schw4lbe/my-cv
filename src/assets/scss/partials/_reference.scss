@@ -16,6 +16,16 @@
 .ref-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .ref-description {
+    padding-top: 2rem;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    color: var(--clr-secondary-dark2);
+  }
 
   .ref-container {
     max-width: 1400px;
@@ -36,9 +46,6 @@
           justify-content: start;
           align-items: center;
           flex-wrap: wrap;
-        }
-
-        &:nth-of-type(2) {
         }
 
         .ref-header {

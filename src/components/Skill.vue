@@ -20,25 +20,30 @@
         >{{ category.lable }}</label
       >
       <p class="section-description">{{ category.description }}</p>
-      <div
-        v-for="(skill, index) in category.items"
-        :key="index"
-        class="skill-container"
-      >
-        <div class="render-decider" v-if="isSectionVisible(catIndex)">
-          <div class="icon"><i :class="skill.icon" class="skill-icon"></i></div>
-          <div class="bar-container">
-            <div class="label">{{ skill.name }}</div>
-            <div class="progress-bar">
-              <div
-                :style="{
-                  width: getProgressWidth(skill.rating),
-                  animationDuration: getAnimationDuration(skill.rating),
-                }"
-                class="progress"
-                id="test"
-              >
-                <div class="glow"></div>
+
+      <div class="test">
+        <div
+          v-for="(skill, index) in category.items"
+          :key="index"
+          class="skill-container"
+        >
+          <div class="render-decider" v-if="isSectionVisible(catIndex)">
+            <div class="icon">
+              <i :class="skill.icon" class="skill-icon"></i>
+            </div>
+            <div class="bar-container">
+              <div class="label">{{ skill.name }}</div>
+              <div class="progress-bar">
+                <div
+                  :style="{
+                    width: getProgressWidth(skill.rating),
+                    animationDuration: getAnimationDuration(skill.rating),
+                  }"
+                  class="progress"
+                  id="test"
+                >
+                  <div class="glow"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -82,7 +87,9 @@ export default {
   },
 
   mounted() {
-    this.initFirstElement();
+    setTimeout(() => {
+      this.initFirstElement();
+    }, 1000);
 
     window.scrollTo({
       top: 0,
@@ -93,9 +100,10 @@ export default {
   methods: {
     initFirstElement() {
       this.showSection0 = true;
-      document
-        .querySelector(".section-label")
-        .classList.add("skill-section-open", "section0-active");
+      const element = document.querySelector(".section-label");
+      if (element) {
+        element.classList.add("skill-section-open", "section0-active");
+      }
     },
 
     setVariation(index) {
@@ -117,7 +125,7 @@ export default {
         } else {
           element.parentElement.scrollIntoView({
             behavior: "smooth",
-            block: "center",
+            block: "start",
             inline: "nearest",
           });
         }

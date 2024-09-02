@@ -1,6 +1,8 @@
 <template>
   <div class="personal-data-wrapper">
-    <h3 class="page-title">{{ getHeader }}</h3>
+    <h3 class="page-title animate__animated animate__backInDown">
+      {{ getHeader }}
+    </h3>
     <Skill :skillData="skillDataArray" />
   </div>
 </template>

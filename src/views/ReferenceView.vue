@@ -1,8 +1,13 @@
 <template>
   <div class="reference-wrapper">
     <div class="reference-data-container">
-      <h3 class="page-title">{{ getHeader }}</h3>
-      <Reference :referenceData="getReferenceData" />
+      <h3 class="page-title animate__animated animate__backInDown">
+        {{ getHeader }}
+      </h3>
+      <Reference
+        :referenceData="getReferenceData"
+        :refDescription="getRefDescription"
+      />
     </div>
   </div>
 </template>
@@ -23,6 +28,11 @@ export default {
     getReferenceData() {
       return this.$store.state.contentData[this.selectedLanguage]
         .referenceArray;
+    },
+
+    getRefDescription() {
+      return this.$store.state.contentData[this.selectedLanguage]
+        .referenceDescription;
     },
 
     getHeader() {
