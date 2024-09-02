@@ -1,12 +1,12 @@
 // import demo img to lead to fullscreen demo
-import img02a from "@/assets/img/homepage-demo.png";
-import img03a from "@/assets/img/contactform-demo.png";
-import img04a from "@/assets/img/csv-processing-demo.png";
-import img05a from "@/assets/img/unity-demo.png";
-import img06a from "@/assets/img/login-demo.png";
-import img07a from "@/assets/img/online-cv-demo.png";
-import img08a from "@/assets/img/php-login-prototype.png";
-import img09a from "@/assets/img/store-demo.png";
+import img02a from "@/assets/img/homepage-demo.jpg";
+import img03a from "@/assets/img/contactform-demo.jpg";
+import img04a from "@/assets/img/csv-processing-demo.jpg";
+import img05a from "@/assets/img/unity-demo.jpg";
+import img06a from "@/assets/img/login-demo.jpg";
+import img07a from "@/assets/img/online-cv-demo.jpg";
+import img08a from "@/assets/img/php-login-prototype.jpg";
+import img09a from "@/assets/img/store-demo.jpg";
 
 // import gif for fullscreen demo
 import img02 from "@/assets/img/homepage-demo.gif";
