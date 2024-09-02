@@ -101,9 +101,7 @@ export default {
       });
 
       focusables.forEach((focusable) => {
-        if (focusable.classList.contains("timeline-active")) {
-          console.log("active timeline");
-        } else {
+        if (!focusable.classList.contains("timeline-active")) {
           focusable.classList.remove("timeline-focus");
         }
       });

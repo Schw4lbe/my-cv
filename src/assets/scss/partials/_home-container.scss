@@ -5,8 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 100px;
-  margin-bottom: 50px;
+  padding: 100px 0;
 
   .home-container {
     height: 100%;
@@ -14,23 +13,18 @@
     width: 100%;
     color: var(--clr-secondary);
 
+    display: grid;
+    grid-template-columns: 1fr;
+
     .home-header-container {
-      padding: 5rem;
+      padding: 1rem;
+      margin-bottom: 2rem;
       width: 100%;
       display: flex;
       justify-content: center;
 
-      .home-header {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 5rem;
-      }
-
       .home-image {
-        width: 250px;
+        width: 350px;
         height: auto;
         padding: 1rem;
 
@@ -41,97 +35,89 @@
           height: auto;
         }
       }
+
+      .home-header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+
+        h2 {
+          font-size: 3rem;
+          font-family: PoppinsBold;
+          padding-left: 20px;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          letter-spacing: 3px;
+          font-family: PoppinsBold;
+          color: var(--clr-accent);
+          padding: 0 0 80px 20px;
+        }
+      }
     }
 
     .home-intro {
       text-align: center;
-      padding: 2rem;
+      padding: 0 2rem;
+
+      .intro-header {
+        color: var(--clr-accent);
+        font-size: 2rem;
+        font-family: PoppinsBold;
+        margin-bottom: 2rem;
+      }
+
       p {
-        font-size: 1.2rem;
+        font-size: 18px;
+        color: var(--clr-secondary-dark2);
       }
     }
 
     .home-tech {
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
       .tech-header {
-        padding-bottom: 1rem;
+        display: none;
+        font-size: 2rem;
+        margin-bottom: 2rem;
       }
 
       .tech-container {
+        width: 100%;
+
         .tech-list {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
           padding-left: 8px;
           list-style: none;
-          align-items: center;
-
-          li {
-            font-size: 1.1rem;
-            line-height: 2;
-            color: var(--clr-secondary);
-            font-weight: bold;
-            width: 100%;
-
-            i {
-              width: 30px;
-              font-size: 1.1rem;
-              color: var(--clr-accent);
-            }
-          }
-        }
-      }
-    }
-
-    .home-testing {
-      padding: 2rem;
-      text-align: center;
-
-      .testing-header {
-        padding-bottom: 1rem;
-      }
-
-      .testing-container {
-        .testing-list {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          padding-left: 8px;
-          list-style: none;
-          align-items: center;
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+          gap: 5px;
 
           li {
             display: flex;
             flex-direction: column;
-            font-size: 1.1rem;
+            font-size: 12px;
             line-height: 2;
             color: var(--clr-secondary);
             font-weight: bold;
             width: 100%;
+            text-align: center;
+            align-items: center;
+            text-transform: uppercase;
 
             i {
-              width: 30px;
-              font-size: 1.1rem;
+              font-size: 2rem;
+              padding: 5px;
               color: var(--clr-accent);
+              text-align: center;
             }
-          }
-        }
-      }
-    }
-
-    .home-data-container {
-      padding: 2rem;
-      margin-bottom: 50px;
-      text-align: center;
-      .home-props {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        ul {
-          padding-left: 1rem;
-          list-style: none;
-          li {
-            line-height: 2;
-            font-size: 1.1rem;
           }
         }
       }

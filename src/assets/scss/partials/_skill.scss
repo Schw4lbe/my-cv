@@ -11,7 +11,7 @@
       z-index: -1;
       &:checked ~ .skill-container {
         max-height: 10rem;
-        margin-bottom: 1rem;
+        margin-bottom: 5px;
       }
     }
 
@@ -72,27 +72,28 @@ $bar-height: 6px;
       color: var(--clr-secondary);
       font-size: 2rem;
       padding: 1rem 0 0 0;
-      max-width: 450px;
       width: max-content;
+      transition: all 0.5s;
       &::before {
         content: "\27A4";
         margin-right: 20px;
         font-size: 1rem;
         transform: rotate(90deg);
         rotate: 90deg;
+        transition: all 0.5s;
         animation: pulse 1s linear infinite;
       }
     }
 
     @keyframes pulse {
       0% {
-        transform: translateX(-5px);
+        transform: translateY(-15px);
       }
       50% {
-        transform: translateX(0px);
+        transform: translateY(10px);
       }
       100% {
-        transform: translateX(-5px);
+        transform: translateY(-15px);
       }
     }
 
@@ -136,7 +137,7 @@ $bar-height: 6px;
             font-size: 1rem;
             font-weight: 100;
             text-transform: uppercase;
-            animation: label 1s ease-out 0s forwards;
+            animation: label 1s ease-out 1s forwards;
             opacity: 0;
           }
           .progress-bar {

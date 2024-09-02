@@ -4,9 +4,6 @@
       :header="introHeader"
       subHeader="Jean-Pierre Häussler"
       :intro="introData"
-      :props="propsData"
-      :testing="testingData"
-      :hobbies="hobbiesData"
       :technologies="techData"
     />
   </div>
@@ -33,25 +30,8 @@ export default {
       return this.$store.state.contentData[this.selectedLanguage].introData;
     },
 
-    propsData() {
-      return this.$store.state.contentData[this.selectedLanguage].propsData;
-    },
-
-    testingData() {
-      return this.$store.state.contentData.testingData;
-    },
-
-    hobbiesData() {
-      return this.$store.state.contentData[this.selectedLanguage].hobbiesData;
-    },
-
     techData() {
       return this.$store.state.contentData.techData;
-    },
-
-    getHeader() {
-      return this.$store.state.contentData[this.selectedLanguage].navbarItems[2]
-        .name;
     },
   },
 
