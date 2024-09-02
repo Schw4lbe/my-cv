@@ -1,56 +1,58 @@
 @use "../abstracts/" as *;
 
-.toggle-radio {
-  margin-left: 20px;
+.toggle-button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.8rem;
+  .toggle-radio {
+    .switch {
+      position: relative;
+      width: 100px;
+      height: 30px;
+      padding: 8px 12px;
+      text-align: center;
+      background: $clr-accent;
+      transition: all 0.4s ease;
+      border-radius: 0.375rem;
 
-  .separator {
-    position: relative;
-    top: -13px;
-    font-size: 40px;
-    color: $clr-primary-light2;
-  }
-  .switch {
-    position: relative;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    background: $clr-accent;
-    transition: all 0.4s ease;
-    border-radius: 25px;
-  }
+      label {
+        font-family: PoppinsBold;
+      }
+    }
 
-  input[type="radio"] {
-    display: none;
-  }
-  .switch label {
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.2);
-    width: 60px;
-    line-height: 40px;
-    transition: all 0.4s ease;
-  }
-  label[for="de"] {
-    position: absolute;
-    left: 0px;
-    height: 20px;
-    top: -3px;
-  }
-  label[for="en"] {
-    position: absolute;
-    right: 0px;
-    top: -3px;
-  }
-  #en:checked ~ .switch {
-    background: $clr-accent-f;
-  }
-  // #en:checked ~ .switch span {
-  //   margin-left: -8px;
-  // }
+    input[type="radio"] {
+      display: none;
+    }
 
-  #de:checked ~ .switch label[for="de"] {
-    color: $clr-secondary;
-  }
-  #en:checked ~ .switch label[for="en"] {
-    color: $clr-secondary;
+    .switch label {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.2);
+      width: 60px;
+      line-height: 40px;
+      transition: all 0.4s ease;
+    }
+    label[for="de"] {
+      position: absolute;
+      left: 0px;
+      top: -4px;
+      height: 100%;
+    }
+    label[for="en"] {
+      position: absolute;
+      right: 0px;
+      top: -4px;
+      height: 100%;
+    }
+    #en:checked ~ .switch {
+      background: var(--clr-accent-f);
+    }
+
+    #de:checked ~ .switch label[for="de"] {
+      color: $clr-secondary;
+    }
+    #en:checked ~ .switch label[for="en"] {
+      color: $clr-secondary;
+    }
   }
 }

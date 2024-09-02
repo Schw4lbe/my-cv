@@ -35,12 +35,12 @@
             class="btn-container ref-animate-control animate__animated hidden"
           >
             <button class="ref-repo-btn">
-              <a :href="item.link" class="repo-link"
+              <a :href="item.link" target="_blank" class="repo-link"
                 >GitHub Repository <i class="fa-brands fa-github"></i
               ></a>
             </button>
             <button v-if="item.link2" class="ref-repo-btn">
-              <a :href="item.link2" class="repo-link"
+              <a :href="item.link2" target="_blank" class="repo-link"
                 >GitHub Repository <i class="fa-brands fa-github"></i
               ></a>
             </button>

@@ -42,7 +42,10 @@
       </div>
     </div>
   </nav>
-  <ToggleButton />
+  <div class="btn-options-container">
+    <ToggleButton />
+    <ToggleThemeBtn />
+  </div>
 </template>
 
 <script>
