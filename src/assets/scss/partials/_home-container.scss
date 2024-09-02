@@ -116,10 +116,49 @@
             i {
               font-size: 2rem;
               padding: 5px;
-              color: var(--clr-accent);
               text-align: center;
             }
           }
+        }
+
+        .tech-list li:nth-of-type(1) i {
+          color: lighten($clr-accent, 50%);
+        }
+        .tech-list li:nth-of-type(2) i {
+          color: lighten($clr-accent, 40%);
+        }
+        .tech-list li:nth-of-type(3) i {
+          color: lighten($clr-accent, 25%);
+        }
+        .tech-list li:nth-of-type(4) i {
+          color: lighten($clr-accent, 10%);
+        }
+        .tech-list li:nth-of-type(5) i {
+          color: $clr-accent;
+        }
+        .tech-list li:nth-of-type(6) i {
+          color: $clr-accent-c;
+        }
+        .tech-list li:nth-of-type(7) i {
+          color: lighten($clr-accent-c, 10%);
+        }
+        .tech-list li:nth-of-type(8) i {
+          color: lighten($clr-accent-c, 20%);
+        }
+        .tech-list li:nth-of-type(9) i {
+          color: lighten($clr-accent-c, 30%);
+        }
+        .tech-list li:nth-of-type(10) i {
+          color: lighten($clr-accent-f, 20%);
+        }
+        .tech-list li:nth-of-type(11) i {
+          color: lighten($clr-accent-f, 10%);
+        }
+        .tech-list li:nth-of-type(12) i {
+          color: lighten($clr-accent-f, 0%);
+        }
+        .tech-list li:nth-of-type(13) i {
+          color: lighten($clr-accent-f, 0%);
         }
       }
     }

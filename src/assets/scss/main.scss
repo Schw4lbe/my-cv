@@ -9,6 +9,10 @@
   font-family: Poppins;
 }
 
+body {
+  scrollbar-gutter: stable !important;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.ttf") format("truetype");
