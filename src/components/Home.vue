@@ -1,21 +1,21 @@
 <template>
   <div class="home-container">
     <div class="home-header-container">
-      <div class="home-image">
-        <img src="@/assets/img/jph.jpg" alt="" />
+      <div class="home-image animate__animated animate__fadeIn">
+        <img src="@/assets/img/jph.jpg" alt="profile image" />
       </div>
-      <div class="home-header">
+      <div class="home-header animate__animated animate__fadeIn">
         <h2>{{ header }}</h2>
         <h3>{{ subHeader }}</h3>
       </div>
     </div>
     <div class="home-intro">
-      <h3 class="intro-header">{{ intro[0].header }}</h3>
-      <p>{{ intro[0].text }}</p>
-      <p>{{ intro[0].text2 }}</p>
+      <h3 class="intro-header animate__animated hidden">
+        {{ intro[0].header }}
+      </h3>
+      <p class="intro-text animate__animated hidden">{{ intro[0].text }}</p>
     </div>
     <div class="home-tech">
-      <!-- <h3 class="tech-header">{{ setIntroHeaderTechStack }}</h3> -->
       <div class="tech-container">
         <ul class="tech-list">
           <li v-for="(tech, index) in technologies" :key="index">
@@ -54,6 +54,21 @@ export default {
       top: 0,
       behavior: "smooth",
     });
+
+    this.assignAnimations();
+  },
+
+  methods: {
+    assignAnimations() {
+      const subheader = document.querySelector(".intro-header");
+      const test = document.querySelector(".intro-text");
+      setTimeout(() => {
+        subheader.classList.remove("hidden");
+        subheader.classList.add("animate__fadeIn");
+        test.classList.remove("hidden");
+        test.classList.add("animate__fadeIn");
+      }, 1000);
+    },
   },
 };
 </script>

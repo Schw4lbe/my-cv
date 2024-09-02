@@ -9,7 +9,7 @@
       position: absolute;
       opacity: 0;
       z-index: -1;
-      &:checked ~ .test {
+      &:checked ~ .bracket {
         height: 400px;
         transition: all 0.5s;
 
@@ -28,7 +28,7 @@
       transition: all 0.5s;
     }
 
-    .test {
+    .bracket {
       height: 0px;
       overflow: hidden;
       transition: all 0.5s;

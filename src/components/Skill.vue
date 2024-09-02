@@ -21,7 +21,7 @@
       >
       <p class="section-description">{{ category.description }}</p>
 
-      <div class="test">
+      <div class="bracket">
         <div
           v-for="(skill, index) in category.items"
           :key="index"
@@ -40,7 +40,6 @@
                     animationDuration: getAnimationDuration(skill.rating),
                   }"
                   class="progress"
-                  id="test"
                 >
                   <div class="glow"></div>
                 </div>

@@ -40,7 +40,15 @@
               ></a>
             </button>
             <button v-if="item.link2" class="ref-repo-btn">
-              <a :href="item.link2" class="repo-link">DUMMY</a>
+              <a :href="item.link2" class="repo-link"
+                >GitHub Repository <i class="fa-brands fa-github"></i
+              ></a>
+            </button>
+            <button
+              class="ref-demo-btn"
+              @click="showModal({ title: item.header, media: item.media })"
+            >
+              Play Demo <i class="fa-regular fa-circle-play"></i>
             </button>
           </div>
         </div>
@@ -52,14 +60,35 @@
       </div>
     </div>
   </div>
+
+  <div v-if="viewModal === true" class="modal-render-container">
+    <VueModal
+      :title="modalTitle"
+      :media="modalMedia"
+      @close-modal="closeModal"
+    />
+  </div>
 </template>
 
 <script>
+import VueModal from "@/components/utility/VueModal.vue";
+
 export default {
   name: "Reference",
   props: {
     referenceData: Array,
     refDescription: String,
+  },
+  components: {
+    VueModal,
+  },
+
+  data() {
+    return {
+      viewModal: false,
+      modalTitle: "",
+      modalMedia: "",
+    };
   },
 
   mounted() {
@@ -72,6 +101,20 @@ export default {
   },
 
   methods: {
+    showModal(payload) {
+      document.body.classList.add("scroll-disabled");
+      this.modalTitle = payload.title;
+      this.modalMedia = payload.media;
+      this.viewModal = true;
+    },
+
+    closeModal() {
+      document.body.classList.remove("scroll-disabled");
+      this.viewModal = false;
+      this.modalTitle = "";
+      this.modalMedia = "";
+    },
+
     setupIntersectionObserver() {
       const observerOptions = {
         root: null, // Use the viewport as the root
@@ -102,7 +145,7 @@ export default {
         });
       }, observerOptions);
 
-      const items = this.$el.querySelectorAll(".ref-item");
+      const items = document.querySelectorAll(".ref-item");
       items.forEach((item) => {
         observer.observe(item);
       });

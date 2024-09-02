@@ -80,16 +80,25 @@
         .btn-container {
           width: 100%;
 
-          .ref-repo-btn {
+          .ref-repo-btn,
+          .ref-demo-btn {
             border: none;
             padding: 8px 12px;
+            margin-right: 1rem;
             border-radius: 0.375rem;
             width: max-content;
-            background: var(--clr-accent);
             .repo-link {
               color: var(--clr-primary);
               text-decoration: none;
             }
+          }
+
+          .ref-repo-btn {
+            background: var(--clr-accent);
+          }
+
+          .ref-demo-btn {
+            background: var(--clr-accent-f);
           }
         }
       }
