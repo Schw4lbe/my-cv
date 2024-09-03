@@ -6,7 +6,7 @@
     <div
       class="outro-follow-msg animate__animated animate__delay-1s animate__fadeIn"
     >
-      <a :href="link">
+      <a :href="link" target="_blank">
         {{ followMsg
         }}<i
           class="fa-brands fa-github animate__infinite animate__animated animate__pulse"

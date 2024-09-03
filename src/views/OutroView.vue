@@ -7,6 +7,7 @@
       :items="itemArr"
       :mainContent="setMainContent"
       :followMsg="setFollowMsg"
+      :link="githubUrl"
     />
   </div>
 </template>
@@ -38,6 +39,10 @@ export default {
 
     setFollowMsg() {
       return this.$store.state.contentData[this.selectedLanguage].outroFollow;
+    },
+
+    githubUrl() {
+      return this.$store.state.contentData.githubUrl;
     },
   },
 };

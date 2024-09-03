@@ -1039,6 +1039,8 @@ export const data = {
     ],
   },
 
+  githubUrl: "https://github.com/Schw4lbe/",
+
   footerItems: [
     {
       link: "https://www.linkedin.com/in/jean-pierre-h%C3%A4ussler-66019118a/",
