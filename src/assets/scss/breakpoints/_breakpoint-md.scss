@@ -61,6 +61,28 @@
     }
   }
 
+  .personal-data-wrapper {
+    .skill-data-container {
+      padding: 1rem 2rem 0 2rem;
+
+      .skill-section-container {
+        .skill-section-open {
+          transform: translateX(0px);
+        }
+        .section-description {
+          padding-left: 0 !important;
+        }
+        .bracket {
+          .skill-container {
+            .render-decider {
+              grid-template-columns: 1fr 11fr;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .reference-wrapper {
     .reference-data-container {
       .ref-wrapper {

@@ -9,7 +9,7 @@
         {{ desc }}
       </h5>
     </div>
-    <div class="dev timeline-container">
+    <div class="timeline-container">
       <div
         v-for="(item, itemIndex) in timelineItems"
         :key="item.id"
