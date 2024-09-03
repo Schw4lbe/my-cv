@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+// $bp-xl: 1200px;
+@media (max-width: $bp-xl) {
+  .navbar-wrapper {
+    .navbar {
+      .container-fluid {
+        .collapse,
+        .navbar-collapse {
+          ul {
+            justify-content: flex-start;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
