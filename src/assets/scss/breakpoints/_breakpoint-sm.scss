@@ -60,4 +60,39 @@
       }
     }
   }
+
+  // space for other components - keep order!
+
+  .outro-wrapper {
+    .page-title {
+      padding: 100px 0 2rem 0;
+      margin: 0;
+    }
+
+    .outro-container {
+      padding: 0;
+
+      .outro-content-main {
+        padding: 0 2rem;
+      }
+
+      .outro-follow-msg {
+        padding: 2rem 0;
+        a {
+          width: 100%;
+          border-radius: 0px;
+          border: none;
+          i {
+            font-size: 1.7rem;
+          }
+        }
+      }
+
+      .outro-content {
+        h5 {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
