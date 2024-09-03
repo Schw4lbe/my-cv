@@ -1,10 +1,6 @@
 @use "../abstracts/" as *;
 
 .theme-light {
-  * {
-    font-weight: 500;
-  }
-
   .navbar-wrapper {
     background: rgba($color: $clr-secondary, $alpha: 0.9);
   }
@@ -17,46 +13,54 @@
     );
   }
 
-  .home-tech {
-    .tech-container {
-      .tech-list li:nth-of-type(1) i {
-        color: lighten($clr-accent, 5%) !important;
+  .home-wrapper {
+    .home-image {
+      img {
+        box-shadow: 3px 3px 10px 0px var(--clr-secondary-dark3);
       }
-      .tech-list li:nth-of-type(2) i {
-        color: lighten($clr-accent, 0%) !important;
-      }
-      .tech-list li:nth-of-type(3) i {
-        color: darken($clr-accent, 5%) !important;
-      }
-      .tech-list li:nth-of-type(4) i {
-        color: darken($clr-accent, 10%) !important;
-      }
-      .tech-list li:nth-of-type(5) i {
-        color: darken($clr-accent, 15%) !important;
-      }
-      .tech-list li:nth-of-type(6) i {
-        color: darken($clr-accent-c, 10%) !important;
-      }
-      .tech-list li:nth-of-type(7) i {
-        color: darken($clr-accent-c, 0%) !important;
-      }
-      .tech-list li:nth-of-type(8) i {
-        color: lighten($clr-accent-c, 10%) !important;
-      }
-      .tech-list li:nth-of-type(9) i {
-        color: darken($clr-accent-f, 10%) !important;
-      }
-      .tech-list li:nth-of-type(10) i {
-        color: lighten($clr-accent-f, 5%) !important;
-      }
-      .tech-list li:nth-of-type(11) i {
-        color: lighten($clr-accent-f, 0%) !important;
-      }
-      .tech-list li:nth-of-type(12) i {
-        color: lighten($clr-accent-f, 5%) !important;
-      }
-      .tech-list li:nth-of-type(13) i {
-        color: darken($clr-accent-f, 10%) !important;
+    }
+
+    .home-tech {
+      .tech-container {
+        .tech-list li:nth-of-type(1) i {
+          color: lighten($clr-accent, 5%) !important;
+        }
+        .tech-list li:nth-of-type(2) i {
+          color: lighten($clr-accent, 0%) !important;
+        }
+        .tech-list li:nth-of-type(3) i {
+          color: darken($clr-accent, 5%) !important;
+        }
+        .tech-list li:nth-of-type(4) i {
+          color: darken($clr-accent, 10%) !important;
+        }
+        .tech-list li:nth-of-type(5) i {
+          color: darken($clr-accent, 15%) !important;
+        }
+        .tech-list li:nth-of-type(6) i {
+          color: darken($clr-accent-c, 10%) !important;
+        }
+        .tech-list li:nth-of-type(7) i {
+          color: darken($clr-accent-c, 0%) !important;
+        }
+        .tech-list li:nth-of-type(8) i {
+          color: lighten($clr-accent-c, 10%) !important;
+        }
+        .tech-list li:nth-of-type(9) i {
+          color: darken($clr-accent-f, 10%) !important;
+        }
+        .tech-list li:nth-of-type(10) i {
+          color: lighten($clr-accent-f, 5%) !important;
+        }
+        .tech-list li:nth-of-type(11) i {
+          color: lighten($clr-accent-f, 0%) !important;
+        }
+        .tech-list li:nth-of-type(12) i {
+          color: lighten($clr-accent-f, 5%) !important;
+        }
+        .tech-list li:nth-of-type(13) i {
+          color: darken($clr-accent-f, 10%) !important;
+        }
       }
     }
   }
@@ -95,6 +99,16 @@
   .ref-wrapper {
     .repo-link {
       color: var(--clr-secondary) !important;
+    }
+
+    .ref-image {
+      box-shadow: 3px 3px 10px 0px var(--clr-secondary-dark3) !important;
+    }
+  }
+
+  .modal-render-container {
+    .modal-header {
+      background: rgba($color: white, $alpha: 0.9);
     }
   }
 }
