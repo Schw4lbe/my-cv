@@ -207,7 +207,7 @@ export const data = {
     buttonLinkText: "Homepage des Unternehmens",
     accordionOpenText: "aufklappen",
     accordionCollapseText: "zuklappen",
-    referenceSuccessMsg: "Größter Erfolg: ",
+    referenceSuccessMsg: "Größter Erfolg",
     modalButtonText: "Demo ansehen",
     timelineDetails: "[ klick für mehr Infos ]",
     timelineBtnBackUp: "zurück zum Anfang",

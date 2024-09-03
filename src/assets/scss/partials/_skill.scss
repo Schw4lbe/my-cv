@@ -51,10 +51,15 @@
 
   &::before {
     transition: all 1s;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     rotate: 0deg !important;
     animation: none !important; /* Stops the animation */
     transform: none !important; /* Resets the transform property */
+  }
+
+  + .section-description {
+    padding-left: 70px !important;
+    transition: all 1s;
   }
 }
 
@@ -90,7 +95,7 @@ $bar-height: 6px;
       &::before {
         content: "\27A4";
         margin-right: 20px;
-        font-size: 1rem;
+        font-size: 14px;
         transform: rotate(90deg);
         rotate: 90deg;
         transition: all 0.5s;
@@ -112,7 +117,7 @@ $bar-height: 6px;
 
     .section-description {
       color: var(--clr-secondary-dark2);
-      font-size: 1.2rem;
+      font-size: 1rem;
       padding: 1rem 2rem;
       margin: 0;
     }

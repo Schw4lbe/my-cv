@@ -72,14 +72,15 @@
   --clr-primary: #f2f2f2;
   --clr-primary-light: #e4e4e4;
   --clr-primary-light2: #e4e4e4;
-  --clr-primary-light3: #e4e4e4;
-  --clr-primary-light4: #e4e4e4;
+  --clr-primary-light3: #ddd;
+  --clr-primary-light4: #fff;
 
   --clr-secondary: #020420;
   --clr-secondary-dark: #0f172a;
-  --clr-secondary-dark2: #222222;
+  --clr-secondary-dark2: #444;
+  --clr-secondary-dark3: #bbb;
 
-  --clr-accent: #00dc82;
+  --clr-accent: #00c16a;
   --clr-accent-a: #79ffc7;
   --clr-accent-b: #b7fde0;
   --clr-accent-c: #3bb1af;
@@ -100,7 +101,17 @@
 
   // progress bar coloring
   --bar-color: var(--clr-accent);
-  --bar-glow: var(--clr-accent-a);
+  --bar-glow: var(--clr-accent);
+
+  .variation-1 {
+    --bar-color: var(--clr-accent-c);
+    --bar-glow: var(--clr-accent-c);
+  }
+
+  .variation-2 {
+    --bar-color: var(--clr-accent-f);
+    --bar-glow: var(--clr-accent-f);
+  }
 }
 
 // for rgba use
@@ -111,25 +122,8 @@ $clr-accent-f: #6087f3;
 // used in light theme
 $clr-secondary: #f2f2f2;
 
-$clr-primary-light: #0f172a;
-$clr-primary-light2: #222222;
+// additional
 $clr-primary-light3: #4b4b4b;
-$clr-primary-light4: #757575;
-
-$clr-secondary-dark: #e4e4e4;
-$clr-secondary-dark2: #b8b8b8;
-
-$clr-accent-a: #79ffc7;
-$clr-accent-b: #b7fde0;
-$clr-accent-d: #68c5c4;
-$clr-accent-e: #91e0df;
-$clr-accent-g: #7494ee;
-$clr-accent-h: #a2b8f3;
-$clr-success-a: #00ca00;
-$clr-success-b: #6beb6b;
-$clr-success-c: #adffad;
-$clr-error: #ff6347;
-
 $midnight: $clr-primary-light3;
 $clouds: $clr-secondary;
 
