@@ -6,8 +6,8 @@
       </div>
       <router-view />
     </div>
+    <FooterMain :items="footerItems" />
   </div>
-  <FooterMain :items="footerItems" />
 </template>
 
 <script>

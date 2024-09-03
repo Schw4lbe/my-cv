@@ -4,12 +4,17 @@
       {{ refDescription }}
     </h5>
     <div class="ref-container">
-      <div
-        v-for="item in referenceData"
-        :key="item.id"
-        class="ref-item"
-        id="test"
-      >
+      <div v-for="item in referenceData" :key="item.id" class="ref-item">
+        <div class="ref-next-item-control">
+          <button
+            class="ref-next-item-btn ref-next-pending"
+            @click="nextItemScroll"
+          >
+            next item
+            <i class="fa-solid fa-arrow-down ref-next-pending-arrow"></i>
+          </button>
+        </div>
+
         <div class="grid-container">
           <h3 class="ref-header ref-animate-control animate__animated hidden">
             {{ item.header }}
@@ -115,20 +120,30 @@ export default {
       this.modalMedia = "";
     },
 
+    nextItemScroll(e) {
+      const item = e.target.closest(".ref-item");
+      item.scrollIntoView({ behavior: "smooth", block: "end" });
+      // add additional scroll distance
+      setTimeout(() => {
+        window.scrollBy(0, 150);
+      }, 500);
+    },
+
     setupIntersectionObserver() {
       const observerOptions = {
-        root: null, // Use the viewport as the root
+        root: null, // use the viewport as the root
         rootMargin: "0px",
-        threshold: 1, // Trigger when at least 100% of the element is visible
+        threshold: 0.8, // trigger when 80% of element is visible
       };
 
-      // use vue intersection observer api
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const elements = entry.target.querySelectorAll(
               ".ref-animate-control"
             );
+            const button = entry.target.querySelector(".ref-next-item-control");
+            button.classList.add("hidden");
 
             elements.forEach((el, index) => {
               if (el.classList.contains("image-container")) {

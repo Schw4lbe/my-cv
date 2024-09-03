@@ -1,9 +1,9 @@
 @use "../abstracts/" as *;
 
 .footer-main {
-  position: fixed;
+  // position: absolute;
   padding: 0.5rem;
-  bottom: 0;
+  // bottom: 0;
   height: max-content;
   width: 100%;
   background: var(--clr-primary-light2);

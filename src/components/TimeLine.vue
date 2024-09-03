@@ -15,7 +15,7 @@
         :key="item.id"
         :id="'timeline-item' + item.id"
         class="timeline-item"
-        :class="{ 'timeline-focus': itemIndex === 0 }"
+        :class="{ 'timeline-focus timeline-active': itemIndex === 0 }"
         @click="setTimelineActive"
       >
         <div class="timeline-marker"></div>
@@ -30,6 +30,7 @@
               v-for="(topic, index) in item.subtopics"
               :key="index"
               class="topic hidden animate__animated"
+              :class="{ 'visible animate__backInLeft': itemIndex === 0 }"
             >
               {{ topic }}
             </li>
@@ -84,6 +85,7 @@ export default {
 
   mounted() {
     window.addEventListener("scroll", this.setTimelineFocus);
+    this.setFirstItemAsActiveInData();
   },
 
   beforeUnmount() {
@@ -91,6 +93,11 @@ export default {
   },
 
   methods: {
+    setFirstItemAsActiveInData() {
+      // assign default value to local variable to avoide empty click event on first item
+      this.lastActiveTimeline = document.querySelector("#timeline-item1");
+    },
+
     setTimelineFocus() {
       const focusables = this.$el.querySelectorAll(".timeline-item");
       let closestElement = null;
