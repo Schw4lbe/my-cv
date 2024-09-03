@@ -38,10 +38,15 @@ export default {
   },
 
   mounted() {
-    this.initLocalStorage();
+    this.init();
   },
 
   methods: {
+    init() {
+      this.initLocalStorage();
+      this.initColorTheme();
+    },
+
     initLocalStorage() {
       // set default language to german
       if (localStorage.getItem("languageSelected") === null) {
@@ -51,6 +56,17 @@ export default {
       // set default theme
       if (localStorage.getItem("isThemeToggled") === null) {
         this.toggleTheme(false);
+      }
+    },
+
+    initColorTheme() {
+      const htmlBody = document.querySelector("#theme-control");
+      if (this.getIsThemeToggled) {
+        htmlBody.classList.remove("theme-dark");
+        htmlBody.classList.add("theme-light");
+      } else {
+        htmlBody.classList.remove("theme-light");
+        htmlBody.classList.add("theme-dark");
       }
     },
 

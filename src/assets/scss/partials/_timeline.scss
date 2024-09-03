@@ -82,6 +82,7 @@
         transition: all 0.5s;
 
         .timeline-header {
+          color: var(--clr-secondary);
           font-size: 1.1rem;
           letter-spacing: 1px;
           font-family: PoppinsBold;
@@ -225,6 +226,7 @@
         overflow: hidden;
 
         .topic {
+          color: var(--clr-secondary);
           line-height: 1.7;
           &::before {
             content: "\2022";

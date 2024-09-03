@@ -27,6 +27,15 @@ export default {
     handleToggleTheme() {
       const newBool = !this.getIsThemeToggled;
       this.toggleTheme(newBool);
+
+      const htmlBody = document.querySelector("#theme-control");
+      if (this.getIsThemeToggled) {
+        htmlBody.classList.remove("theme-dark");
+        htmlBody.classList.add("theme-light");
+      } else {
+        htmlBody.classList.remove("theme-light");
+        htmlBody.classList.add("theme-dark");
+      }
     },
   },
 };

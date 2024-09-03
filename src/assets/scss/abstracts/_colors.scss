@@ -103,26 +103,28 @@
   --bar-glow: var(--clr-accent-a);
 }
 
+// for rgba use
 $clr-primary: #030621;
+$clr-accent: #00c16a;
+$clr-accent-c: #4db7b6;
+$clr-accent-f: #6087f3;
+// used in light theme
+$clr-secondary: #f2f2f2;
+
 $clr-primary-light: #0f172a;
 $clr-primary-light2: #222222;
 $clr-primary-light3: #4b4b4b;
 $clr-primary-light4: #757575;
 
-$clr-secondary: #f2f2f2;
 $clr-secondary-dark: #e4e4e4;
 $clr-secondary-dark2: #b8b8b8;
 
-$clr-accent: #00c16a;
 $clr-accent-a: #79ffc7;
 $clr-accent-b: #b7fde0;
-$clr-accent-c: #4db7b6;
 $clr-accent-d: #68c5c4;
 $clr-accent-e: #91e0df;
-$clr-accent-f: #6087f3;
 $clr-accent-g: #7494ee;
 $clr-accent-h: #a2b8f3;
-
 $clr-success-a: #00ca00;
 $clr-success-b: #6beb6b;
 $clr-success-c: #adffad;

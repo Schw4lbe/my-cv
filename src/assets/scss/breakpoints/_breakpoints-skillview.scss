@@ -20,7 +20,7 @@
       .skill-container {
         flex-wrap: wrap !important;
         justify-content: flex-start !important;
-        border-bottom: 1px solid $clr-secondary-dark2;
+        border-bottom: 1px solid var(--clr-secondary-dark2);
         margin-bottom: 15px !important;
 
         .skill-icon {

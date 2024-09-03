@@ -15,15 +15,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    color: $clr-accent-g;
-
-    h5 {
-      margin: 0;
-      align-items: center;
-      text-align: center;
-      padding-top: 5px;
-      text-transform: uppercase;
-    }
 
     ul {
       display: flex;
@@ -41,17 +32,17 @@
           align-items: center;
           transition: 0.5s;
 
-          &:hover {
-            i {
-              transition: 0.5s;
-              color: $clr-secondary;
-            }
-          }
-
           i {
             font-size: 2rem;
             transition: 0.5s;
-            color: $clr-accent-g;
+            color: var(--clr-accent-f);
+          }
+
+          &:hover {
+            i {
+              transition: 0.5s;
+              color: var(--clr-accent-h);
+            }
           }
         }
       }

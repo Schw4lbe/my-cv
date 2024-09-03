@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.theme-light {
+  .navbar-wrapper {
+    background: rgba($color: $clr-secondary, $alpha: 0.9);
+  }
+
+  .cv-main {
+    background: var(--clr-primary);
+  }
+}

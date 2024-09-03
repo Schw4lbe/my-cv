@@ -36,7 +36,7 @@
           margin-bottom: 10px;
           margin-right: 10px;
           a {
-            box-shadow: 0 1px 0 $clr-primary-light3;
+            box-shadow: 0 1px 0 var(--clr-primary-light3);
             font-size: 1.1rem;
           }
         }
@@ -44,9 +44,9 @@
 
       .router-link-active {
         box-shadow: none !important;
-        background-color: $clr-primary-light3;
+        background-color: var(--clr-primary-light3);
         &:hover {
-          color: $clr-accent-g !important;
+          color: var(--clr-accent-g) !important;
         }
       }
     }
@@ -66,9 +66,6 @@
     }
 
     .navbar-collapse {
-      // border-top: 1px solid $clr-accent;
-      // margin-top: 10px;
-      // padding-bottom: 10px;
       text-align: center;
       a {
         padding: 0.5rem 0 !important;
@@ -84,12 +81,6 @@
         --bs-navbar-color: #f2f2f2;
         --bs-navbar-toggler-focus-width: 0.1rem;
       }
-
-      // .navbar-nav li {
-      //   a {
-      //     padding-left: 15px !important;
-      //   }
-      // }
     }
   }
 }

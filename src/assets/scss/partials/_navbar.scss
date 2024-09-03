@@ -27,11 +27,11 @@
   }
 
   a {
-    color: $clr-secondary;
+    color: var(--clr-secondary);
     font-size: 1.2rem;
     transition: 0.5s;
     &:hover {
-      color: var(--clr-accent-g);
+      color: var(--clr-secondary-dark2);
       background: var(--clr-primary-light);
       transition: 0.5s;
     }

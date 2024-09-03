@@ -146,7 +146,7 @@ $bar-height: 6px;
         .bar-container {
           padding-left: 10px;
           .label {
-            color: white;
+            color: var(--clr-secondary);
             font-size: 1rem;
             font-weight: 100;
             text-transform: uppercase;
