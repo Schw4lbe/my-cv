@@ -99,22 +99,20 @@ export default {
   mounted() {
     this.setupIntersectionObserver();
 
-    window.scrollTo({
-      top: 0,
-      behavior: "instant",
-    });
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: "instant",
+    // });
   },
 
   methods: {
     showModal(payload) {
-      document.body.classList.add("scroll-disabled");
       this.modalTitle = payload.title;
       this.modalMedia = payload.media;
       this.viewModal = true;
     },
 
     closeModal() {
-      document.body.classList.remove("scroll-disabled");
       this.viewModal = false;
       this.modalTitle = "";
       this.modalMedia = "";

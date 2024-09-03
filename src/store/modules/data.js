@@ -1,21 +1,17 @@
 // import demo img to lead to fullscreen demo
-import img02a from "@/assets/img/homepage-demo.jpg";
+import img02a from "@/assets/img/hp-kv-demo.jpg";
 import img03a from "@/assets/img/contactform-demo.jpg";
 import img04a from "@/assets/img/csv-processing-demo.jpg";
 import img05a from "@/assets/img/unity-demo.jpg";
 import img06a from "@/assets/img/login-demo.jpg";
-import img07a from "@/assets/img/online-cv-demo.jpg";
-import img08a from "@/assets/img/php-login-prototype.jpg";
 import img09a from "@/assets/img/store-demo.jpg";
 
 // import gif for fullscreen demo
-import img02 from "@/assets/img/homepage-demo.gif";
+import img02 from "@/assets/img/hp-kv-demo.gif";
 import img03 from "@/assets/img/contactform-demo.gif";
 import img04 from "@/assets/img/csv-processing-demo.gif";
 import img05 from "@/assets/img/unity-demo.gif";
 import img06 from "@/assets/img/login-demo.gif";
-import img07 from "@/assets/img/online-cv-demo.gif";
-import img08 from "@/assets/img/php-login-prototype.gif";
 import img09 from "@/assets/img/store-demo.gif";
 
 export const data = {
@@ -185,6 +181,7 @@ export const data = {
       {
         id: "item1",
         name: "Fachwissen",
+        option: "Skill Matrix",
         path: "/person",
       },
       {
@@ -195,6 +192,7 @@ export const data = {
       {
         id: "item5",
         name: "Referenzen",
+        option: "Meine Projekte",
         path: "/reference",
       },
       {
@@ -242,7 +240,7 @@ export const data = {
           "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
           "Fokus auf Clean Code Prinzipien und Nachhaltigkeit",
           "Besuch von diversen online Schulungen & Tutorials",
-          "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter PHP Entwicklung",
+          "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter Entwicklung",
         ],
         success: "Entwicklung CSV-Processing Tool für Kundeninventur",
         link: "",
@@ -394,7 +392,7 @@ export const data = {
       },
     ],
 
-    referenceDescription: "Einblicke in meine bestehenden Projekte.",
+    referenceDescription: "Einblicke in meine GitHub Repositories.",
 
     referenceArray: [
       {
@@ -417,90 +415,22 @@ export const data = {
       {
         id: "2",
         hasMedia: true,
-        header: "Dummy Homepage",
+        header: "Homepage im Aufbau",
         subheader: "Tech Stack:",
         subtopics: [
-          "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
-          "VUE Router, Bootstrap via CDN, ESLint, Prettier",
+          "VUE.JS 3, HTML, SCSS, JavaScript, ESLint, Prettier",
+          "Gulp, PostCSS, Autoprefixer, Netlify CI/CD, Decap CMS",
           "Visual Studio Code, LiveSASS Compiler",
-          "JSON-Server als Fake Backend",
+          "JSON-File für Anbindung Content via CMS",
         ],
-        text: "Im Lauf der Zeit habe ich mir eine Dummy Homepage aufgebaut. Sie ist eine Spielwiese für mich, um neue Designs zu testen. Die Dummy Page gibt mir die Möglichkeit schnell und effizient zu testen und zu lernen.",
+        text: "Im Aufbau befindliche Kundehomepage für ein neu gegründetes Unternehmen. Hosting via Netlify und Content Management über Decap CMS eingebunden. Voll automatische CI / CD Pipeline.",
         image: img02a,
         media: img02,
-        link: "https://github.com/Schw4lbe/homepage",
+        link: "https://github.com/Schw4lbe/hp-kv",
         link2: "",
       },
       {
         id: "3",
-        hasMedia: true,
-        header: "Online Lebenslauf",
-        subheader: "Tech Stack & Details:",
-        subtopics: [
-          "Für Details siehe Home Verzeichnis unter Präambel & Tech Stack.",
-        ],
-        text: "Responsive online Lebenslauf als Single Page Application für Bewerbungszwecke. Sprachen: Deutsch & Englisch. Gern auf mobilen Endgeräten testen, ich freue mich über Feedback und Verbesserungsvorschläge.",
-        image: img07a,
-        media: img07,
-        link: "https://github.com/Schw4lbe/my-cv",
-        link2: "",
-      },
-      {
-        id: "4",
-        hasMedia: true,
-        header: "Kontakt Formular",
-        subheader: "Tech Stack & Details:",
-        subtopics: [
-          "VUE.JS 3, HTML, CSS, JavaScript ES6, JSON-Server",
-          "Verifzierung Telefonnummer und E-Mail Adresse via Regex",
-          "Eigener Captcha samt Honeypot",
-          "Captcha Lösungswort & Honeypot durch CSS manipuliert",
-        ],
-        text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
-        image: img03a,
-        media: img03,
-        link: "https://github.com/Schw4lbe/vue-contactform",
-        link2: "",
-      },
-      {
-        id: "6",
-        hasMedia: true,
-        header: "Node.js Login Prototype",
-        subheader: "Tech Stack",
-        subtopics: [
-          "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
-          "Express samt Express Session & Express Flash",
-          "dotenv für Umgebungsvariablen",
-          "bcrypt zum verschlüsseln der Passwörter",
-          "passport & passport-local als Bibliothek für Anmeldedaten",
-          "method override zum überschreiben von z.B. POST durch DELETE",
-        ],
-        text: "Rudimentärer Login Prototype stark vereinfacht zur Anwendung neuer Technologien und Erweiterung des Fachwissens. Lokale Variable zur Ablage der Benutzer ist in einer Produktivumgebung durch eine Datenbank zu ersetzen.",
-        image: img06a,
-        media: img06,
-        link: "https://github.com/Schw4lbe/login-prototype",
-        link2: "",
-      },
-      {
-        id: "7",
-        hasMedia: true,
-        header: "PHP Login Prototype",
-        subheader: "Tech Stack & Info",
-        subtopics: [
-          "Visual Studio Code, PHP 8, XAMPP, MySQL, Apache",
-          "Einführung in PHP Syntax",
-          "Anbindung an MySQL Datenbank in XAMPP",
-          "Erstellung Data Table in phpMyAdmin",
-          "Einführung in Code Sanitizing & Basis Security Features",
-        ],
-        text: "Erste Praxiserfahrung im Umgang mit PHP in Verbindung mit XAMPP (MySQL, Apache). Darstellung Prototype samt Datentransfer in MySQL. Erarbeitung Best-Practice Ansätzen für Passwort Hashing, Erzeugung & Verwaltung Session Variablen, htmlspecialchars & Code Sanitizing.",
-        image: img08a,
-        media: img08,
-        link: "https://github.com/Schw4lbe/PHP-login-prototype",
-        link2: "",
-      },
-      {
-        id: "8",
         hasMedia: true,
         header: "PHP / VUE Online Store",
         subheader: "Tech Stack & Info",
@@ -519,7 +449,43 @@ export const data = {
         link2: "https://github.com/Schw4lbe/vue-php-store-prototype-backend",
       },
       {
-        id: "9",
+        id: "4",
+        hasMedia: true,
+        header: "Node.js Login Prototype",
+        subheader: "Tech Stack",
+        subtopics: [
+          "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
+          "Express samt Express Session & Express Flash",
+          "dotenv für Umgebungsvariablen",
+          "bcrypt zum verschlüsseln der Passwörter",
+          "passport & passport-local als Bibliothek für Anmeldedaten",
+          "method override zum überschreiben von z.B. POST durch DELETE",
+        ],
+        text: "Rudimentärer Login Prototype stark vereinfacht zur Anwendung neuer Technologien und Erweiterung des Fachwissens. Lokale Variable zur Ablage der Benutzer ist in einer Produktivumgebung durch eine Datenbank zu ersetzen.",
+        image: img06a,
+        media: img06,
+        link: "https://github.com/Schw4lbe/login-prototype",
+        link2: "",
+      },
+      {
+        id: "5",
+        hasMedia: true,
+        header: "Kontakt Formular",
+        subheader: "Tech Stack & Details:",
+        subtopics: [
+          "VUE.JS 3, HTML, CSS, JavaScript ES6, JSON-Server",
+          "Verifzierung Telefonnummer und E-Mail Adresse via Regex",
+          "Eigener Captcha samt Honeypot",
+          "Captcha Lösungswort & Honeypot durch CSS manipuliert",
+        ],
+        text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
+        image: img03a,
+        media: img03,
+        link: "https://github.com/Schw4lbe/vue-contactform",
+        link2: "",
+      },
+      {
+        id: "6",
         hasMedia: true,
         header: "Spiele Entwicklung",
         subheader: "Randnotizen & Tech Stack:",
@@ -725,6 +691,7 @@ export const data = {
       {
         id: "item1",
         name: "Skills",
+        option: "Skill Matrix",
         path: "/person",
       },
       {
@@ -735,6 +702,7 @@ export const data = {
       {
         id: "item5",
         name: "Reference",
+        option: "My Projects",
         path: "/reference",
       },
       {
@@ -782,7 +750,7 @@ export const data = {
           "Deepening of expertise and acquisition of new skills in front-end and back-end development",
           "Focus on clean code principles and sustainability",
           "Attending various online courses and tutorials",
-          "Gaining practical experience in procedural and object-oriented PHP development",
+          "Gaining practical experience in procedural and object-oriented development",
         ],
         success: "Development of a CSV processing tool for customer inventory",
         link: "",
@@ -936,7 +904,7 @@ export const data = {
       },
     ],
 
-    referenceDescription: "Let's have some insights in my lates projects.",
+    referenceDescription: "Let's have some insights in my Repositories.",
 
     referenceArray: [
       {
@@ -959,15 +927,15 @@ export const data = {
       {
         id: "2",
         hasMedia: true,
-        header: "Dummy Homepage",
+        header: "Homepage under construction",
         subheader: "Tech Stack:",
         subtopics: [
-          "VUE.JS 3, HTML, SCSS, JavaScript ES6, JSON-Server",
-          "VUE Router, Bootstrap via CDN, ESLint, Prettier",
+          "VUE.JS 3, HTML, SCSS, JavaScript, ESLint, Prettier",
+          "Gulp, PostCSS, Autoprefixer, Netlify CI/CD, Decap CMS",
           "Visual Studio Code, LiveSASS Compiler",
-          "JSON-Server as a fake backend",
+          "JSON-File for Content Management in Decap CMS",
         ],
-        text: "Over time, I have developed a dummy homepage. It serves as a playground for me to test new designs. The dummy page gives me the opportunity to test and learn quickly and efficiently.",
+        text: "Customer homepage under construction for a newly founded company. Hosting via Netlify and content management integrated through Decap CMS. Fully automated CI/CD pipeline.",
         image: img02a,
         media: img02,
         link: "https://github.com/Schw4lbe/homepage",
@@ -975,74 +943,6 @@ export const data = {
       },
       {
         id: "3",
-        hasMedia: true,
-        header: "Online CV",
-        subheader: "Tech Stack & Details:",
-        subtopics: [
-          "For details, see the Home directory under Preamble & Tech Stack.",
-        ],
-        text: "Responsive online resume as a Single Page Application for job application purposes. Languages: German & English. Feel free to test on mobile devices, I welcome feedback and suggestions for improvement.",
-        image: img07a,
-        media: img07,
-        link: "https://github.com/Schw4lbe/my-cv",
-        link2: "",
-      },
-      {
-        id: "4",
-        hasMedia: true,
-        header: "Contact Form",
-        subheader: "Tech Stack & Details:",
-        subtopics: [
-          "VUE.JS 3, HTML, CSS, JavaScript ES6, JSON-Server",
-          "Phone number and email address verification via Regex",
-          "Own captcha with honeypot",
-          "Captcha solution word & honeypot manipulated by CSS",
-        ],
-        text: "Creation of a custom contact form to consolidate newly acquired knowledge and as a creative playground for various styling ideas.",
-        image: img03a,
-        media: img03,
-        link: "https://github.com/Schw4lbe/vue-contactform",
-        link2: "",
-      },
-      {
-        id: "6",
-        hasMedia: true,
-        header: "Node.js Login Prototype",
-        subheader: "Tech Stack",
-        subtopics: [
-          "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
-          "Express along with Express Session & Express Flash",
-          "dotenv for environment variables",
-          "bcrypt for encrypting & hashing passwords",
-          "passport & passport-local as a library for credentials",
-          "method override to overwrite eg. POST with DELETE",
-        ],
-        text: "A rudimentary login prototype, greatly simplified for applying new technologies and expanding technical knowledge. Local variable as user Array should be replaced in production.",
-        image: img06a,
-        media: img06,
-        link: "https://github.com/Schw4lbe/login-prototype",
-        link2: "",
-      },
-      {
-        id: "7",
-        hasMedia: true,
-        header: "PHP Login Prototype",
-        subheader: "Tech Stack & Info",
-        subtopics: [
-          "Visual Studio Code, PHP 8, XAMPP, MySQL, Apache",
-          "Introduction to PHP Syntax",
-          "Connecting to a MySQL Database in XAMPP",
-          "Creating a Data Table in phpMyAdmin",
-          "Introduction to Code Sanitizing & Basic Security Features",
-        ],
-        text: "Initial practical experience in using PHP in conjunction with XAMPP (MySQL, Apache). Demonstration prototype including data transfer to MySQL. Development of best-practice approaches for password hashing, use of session variables, htmlspecialchars & code sanitizing.",
-        image: img08a,
-        media: img08,
-        link: "https://github.com/Schw4lbe/PHP-login-prototype",
-        link2: "",
-      },
-      {
-        id: "8",
         hasMedia: true,
         header: "PHP / VUE Online Store",
         subheader: "Tech Stack & Info",
@@ -1061,7 +961,43 @@ export const data = {
         link2: "https://github.com/Schw4lbe/vue-php-store-prototype-backend",
       },
       {
-        id: "9",
+        id: "4",
+        hasMedia: true,
+        header: "Node.js Login Prototype",
+        subheader: "Tech Stack",
+        subtopics: [
+          "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
+          "Express along with Express Session & Express Flash",
+          "dotenv for environment variables",
+          "bcrypt for encrypting & hashing passwords",
+          "passport & passport-local as a library for credentials",
+          "method override to overwrite eg. POST with DELETE",
+        ],
+        text: "A rudimentary login prototype, greatly simplified for applying new technologies and expanding technical knowledge. Local variable as user Array should be replaced in production.",
+        image: img06a,
+        media: img06,
+        link: "https://github.com/Schw4lbe/login-prototype",
+        link2: "",
+      },
+      {
+        id: "5",
+        hasMedia: true,
+        header: "Contact Form",
+        subheader: "Tech Stack & Details:",
+        subtopics: [
+          "VUE.JS 3, HTML, CSS, JavaScript ES6, JSON-Server",
+          "Phone number and email address verification via Regex",
+          "Own captcha with honeypot",
+          "Captcha solution word & honeypot manipulated by CSS",
+        ],
+        text: "Creation of a custom contact form to consolidate newly acquired knowledge and as a creative playground for various styling ideas.",
+        image: img03a,
+        media: img03,
+        link: "https://github.com/Schw4lbe/vue-contactform",
+        link2: "",
+      },
+      {
+        id: "6",
         hasMedia: true,
         header: "Game Development",
         subheader: "Side Notes & Tech Stack:",

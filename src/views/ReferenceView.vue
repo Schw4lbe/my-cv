@@ -37,7 +37,7 @@ export default {
 
     getHeader() {
       return this.$store.state.contentData[this.selectedLanguage].navbarItems[2]
-        .name;
+        .option;
     },
   },
 };
