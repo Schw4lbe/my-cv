@@ -2,6 +2,7 @@
 
 .navbar {
   width: clamp(840px, 100%, 1600px);
+  backdrop-filter: blur(5px);
 
   .navbar-nav {
     // same value as options navbar width -> variable?

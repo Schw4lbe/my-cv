@@ -2,7 +2,7 @@
 
 .theme-light {
   .navbar-wrapper {
-    background: rgba($color: $clr-secondary, $alpha: 0.9);
+    background: rgba($color: $clr-secondary, $alpha: 0.7);
   }
 
   .cv-main {
@@ -60,6 +60,12 @@
         }
         .tech-list li:nth-of-type(13) i {
           color: darken($clr-accent-f, 10%) !important;
+        }
+
+        .tech-list {
+          .tech-list-item {
+            font-weight: 900 !important;
+          }
         }
       }
     }
