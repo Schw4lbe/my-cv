@@ -35,7 +35,12 @@ export default {
     followMsg: String,
     link: String,
   },
+
+  mounted() {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  },
 };
 </script>
-
-<style scoped></style>
