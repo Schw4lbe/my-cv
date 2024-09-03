@@ -134,11 +134,17 @@ export default {
       const allTimelines = document.querySelectorAll(".timeline-item");
       const timeline = e.target.closest(".timeline-item");
       const elementsToAnimate = timeline.querySelectorAll(".topic");
+      const resetElementsToAnimate = document.querySelectorAll(".topic");
 
       // Prevent UI error by ensuring only one timeline is active at a time
       if (timeline && timeline !== this.lastActiveTimeline) {
         allTimelines.forEach((el) => {
           el.classList.remove("timeline-active", "timeline-focus");
+        });
+        // fixes visibility on light theme on active toggle
+        resetElementsToAnimate.forEach((el) => {
+          el.classList.remove("visible");
+          el.classList.add("hidden");
         });
 
         timeline.classList.add("timeline-active");

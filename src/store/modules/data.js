@@ -70,7 +70,7 @@ export const data = {
       {
         lable: "Frameworks & Libraries",
         description:
-          "Frameworks & Libraries sind unerlässlich um produktiv zu sein und um das Rat nicht neu zu erfinden. Neben meinem Liebling, Vue.js nachfolgend eine Liste weitere Frameworks und Bibliotheken, mit denen ich sehr oft arbeite.",
+          "Frameworks & Libraries sind unerlässlich um produktiv zu sein und um das Rat nicht neu zu erfinden. Neben meinem Liebling, Vue.js nachfolgend eine Liste weiterer Frameworks und Bibliotheken, mit denen ich bereits gearbeitet habe.",
         items: [
           {
             id: "14",
@@ -200,6 +200,7 @@ export const data = {
       {
         id: "item6",
         name: "Schlusswort",
+        option: "Bis bald.",
         path: "/outro",
       },
     ],
@@ -220,7 +221,7 @@ export const data = {
     introData: [
       {
         header: "Präambel",
-        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind aussagekräftiger als ein Schlichter Lebenslauf in PDF Format. Dieses Projekt ist mittels Eisnatz der folgenden Technologien entstanden.",
+        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind aussagekräftiger als ein Schlichter Lebenslauf in PDF Format. Dieses Projekt ist mittels Einsatz der folgenden Technologien entstanden.",
       },
     ],
 
@@ -232,17 +233,18 @@ export const data = {
     timelineItems: [
       {
         id: "1",
-        header: "Freiberufliche Webentwicklung - Weiterbildung",
+        header: "Freelancer Webdevelopment",
         period: "Juni 2023 - heute",
         subtopics: [
-          "Freiberufliche Umsetzung Webprojekte, Beratung & Konzeptionierung",
+          "Freiberufliche Umsetzung diverser Webprojekte, Beratung & Konzeptionierung",
+          "Umfang: JavaScript, Vue.js, PHP, SCSS, MySQL, Netlify und Co.",
+          "Unterstützung Geschäftsgründung und Entwurf von CI samt Logo",
           "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
-          "Verwendung neuer Technologien - siehe Schlusswort für mehr Details",
+          "Fokus auf Clean Code Prinzipien und Nachhaltigkeit",
           "Besuch von diversen online Schulungen & Tutorials",
-          "Schwerpunkt auf Backend Technologien insbesondere PHP 8",
           "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter PHP Entwicklung",
         ],
-        success: "Umsetzung Diverser Webapplikationen",
+        success: "Entwicklung CSV-Processing Tool für Kundeninventur",
         link: "",
       },
       {
@@ -537,7 +539,8 @@ export const data = {
 
     outroHeader: "Abschließende Worte...",
     outroMainContent:
-      "Vielen Dank, dass Sie sich die Zeit genommen haben, mein Werk zu betrachten. Ich freue mich jederzeit über Feedback und Fragen zu meinen Projekten.",
+      "Vielen Dank, dass Sie sich die Zeit genommen haben, mein Werk zu betrachten. Ich freue mich immer sehr über Feedback und Fragen zu meinen Projekten.",
+    outroFollow: "Neugierig? Zu meinen Projekten",
     outroItems: [
       {
         title: "Quellenangaben:",
@@ -607,7 +610,7 @@ export const data = {
       {
         lable: "Frameworks & Libraries",
         description:
-          "Frameworks & libraries are essential for being productive and not reinventing the wheel. Besides my favorite, Vue.js, here is a list of other frameworks and libraries that I work with daily.",
+          "Frameworks & libraries are essential for being productive and not reinventing the wheel. Besides my favorite, Vue.js, here is a list of other frameworks and libraries that I work with often.",
         items: [
           {
             id: "14",
@@ -737,6 +740,7 @@ export const data = {
       {
         id: "item6",
         name: "Outro",
+        option: "See you soon.",
         path: "/outro",
       },
     ],
@@ -772,14 +776,15 @@ export const data = {
         header: "Freelance Web Development - Further Education",
         period: "Jun 2023 - today",
         subtopics: [
-          "Freelance implementation of web projects, consulting, and conceptualization",
-          "Improvement of expertise and acquisition of new skills in front- and back-end development.",
-          "Use of new technologies - see the concluding outro for more details.",
-          "Participation in various online trainings & tutorials.",
-          "Focus on backend technologies, especially PHP 8",
-          "Gathering practical experience in procedural and object-oriented PHP development",
+          "Freelance implementation of various web projects, consulting, and conceptualization",
+          "Tools: JavaScript, Vue.js, PHP, SCSS, MySQL, Netlify and more",
+          "Consulting for business startup and design of corporate identity including logo",
+          "Deepening of expertise and acquisition of new skills in front-end and back-end development",
+          "Focus on clean code principles and sustainability",
+          "Attending various online courses and tutorials",
+          "Gaining practical experience in procedural and object-oriented PHP development",
         ],
-        success: "Implementation of various web applications",
+        success: "Development of a CSV processing tool for customer inventory",
         link: "",
       },
       {
@@ -1076,7 +1081,9 @@ export const data = {
 
     outroHeader: "Some closing arguments...",
     outroMainContent:
-      "I am always happy to receive feedback on my projects and am willing to address questions in detail. In the following, I would like to describe what was new to me in creating this online resume, where the biggest challenges were, and what I would like to do differently or better in future projects.",
+      "Thank you for investing your time to view my work. I always appreciate feedback and questions about my projects.",
+    outroFollow: "Curious? See my projects on GitHub!",
+
     outroItems: [
       {
         title: "Sources:",

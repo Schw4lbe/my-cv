@@ -5,8 +5,8 @@
     </h3>
     <Outro
       :items="itemArr"
-      :subHeader="setSubHeader"
       :mainContent="setMainContent"
+      :followMsg="setFollowMsg"
     />
   </div>
 </template>
@@ -24,11 +24,7 @@ export default {
 
     getHeader() {
       return this.$store.state.contentData[this.selectedLanguage].navbarItems[3]
-        .name;
-    },
-
-    setSubHeader() {
-      return this.$store.state.contentData[this.selectedLanguage].outroHeader;
+        .option;
     },
 
     setMainContent() {
@@ -38,6 +34,10 @@ export default {
 
     itemArr() {
       return this.$store.state.contentData[this.selectedLanguage].outroItems;
+    },
+
+    setFollowMsg() {
+      return this.$store.state.contentData[this.selectedLanguage].outroFollow;
     },
   },
 };

@@ -83,6 +83,10 @@
   }
 
   .timeline-wrapper {
+    .timeline-header {
+      color: var(--clr-secondary);
+    }
+
     .timeline-marker {
       &::after {
         background-color: var(--clr-secondary-dark3) !important;
