@@ -99,10 +99,10 @@ export default {
   mounted() {
     this.setupIntersectionObserver();
 
-    // window.scrollTo({
-    //   top: 0,
-    //   behavior: "instant",
-    // });
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
   },
 
   methods: {
