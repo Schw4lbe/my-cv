@@ -34,11 +34,73 @@
 }
 
 .theme-dark {
-  // later on just copy paste the root defaults
+  --clr-primary: #020420;
+  --clr-primary-light: #0f172a;
+  --clr-primary-light2: #222222;
+  --clr-primary-light3: #4b4b4b;
+  --clr-primary-light4: #757575;
+
+  --clr-secondary: #f2f2f2;
+  --clr-secondary-dark: #e4e4e4;
+  --clr-secondary-dark2: #b8b8b8;
+
+  --clr-accent: #00dc82;
+  --clr-accent-a: #79ffc7;
+  --clr-accent-b: #b7fde0;
+  --clr-accent-c: #3bb1af;
+  --clr-accent-d: #68c5c4;
+  --clr-accent-e: #b2dfde;
+  --clr-accent-f: #6087f3;
+  --clr-accent-g: #7494ee;
+  --clr-accent-h: #bbc8eb;
+
+  --clr-success-a: #00ca00;
+  --clr-success-b: #6beb6b;
+  --clr-success-c: #adffad;
+  --clr-error: #ff6347;
+
+  // accordion coloring
+  --midnight: var(--clr-primary-light3);
+  --clouds: var(--clr-secondary);
+
+  // progress bar coloring
+  --bar-color: var(--clr-accent);
+  --bar-glow: var(--clr-accent-a);
 }
 
 .theme-light {
-  // mirror dark and light while switchin color values with prim and secon.
+  --clr-primary: #f2f2f2;
+  --clr-primary-light: #e4e4e4;
+  --clr-primary-light2: #e4e4e4;
+  --clr-primary-light3: #e4e4e4;
+  --clr-primary-light4: #e4e4e4;
+
+  --clr-secondary: #020420;
+  --clr-secondary-dark: #0f172a;
+  --clr-secondary-dark2: #222222;
+
+  --clr-accent: #00dc82;
+  --clr-accent-a: #79ffc7;
+  --clr-accent-b: #b7fde0;
+  --clr-accent-c: #3bb1af;
+  --clr-accent-d: #68c5c4;
+  --clr-accent-e: #b2dfde;
+  --clr-accent-f: #6087f3;
+  --clr-accent-g: #7494ee;
+  --clr-accent-h: #bbc8eb;
+
+  --clr-success-a: #00ca00;
+  --clr-success-b: #6beb6b;
+  --clr-success-c: #adffad;
+  --clr-error: #ff6347;
+
+  // accordion coloring
+  --midnight: var(--clr-primary-light3);
+  --clouds: var(--clr-secondary);
+
+  // progress bar coloring
+  --bar-color: var(--clr-accent);
+  --bar-glow: var(--clr-accent-a);
 }
 
 $clr-primary: #030621;

@@ -1,5 +1,5 @@
 <template>
-  <div class="toggle-button-container">
+  <div class="toggle-lang-btn-container">
     <div class="toggle-radio">
       <input
         @click="setLanguageToDE"
@@ -27,7 +27,7 @@
 import { mapMutations, mapGetters } from "vuex";
 
 export default {
-  name: "ToggleButton",
+  name: "ToggleLangBtn",
 
   computed: {
     ...mapGetters(["selectedLanguage"]),

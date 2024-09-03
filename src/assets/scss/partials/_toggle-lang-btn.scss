@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+.toggle-lang-btn-container {
+  padding: 0 12px 0 5px;
+
+  .toggle-radio {
+    .switch {
+      position: relative;
+      width: 70px;
+      height: 30px;
+      text-align: center;
+      background: $clr-accent-f;
+      transition: all 0.4s ease;
+      border-radius: 0.375rem;
+
+      label {
+        font-family: PoppinsBold;
+        font-size: 14px;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .switch label {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.2);
+      width: 40px;
+      line-height: 40px;
+      transition: all 0.4s ease;
+    }
+    label[for="de"] {
+      position: absolute;
+      left: 0px;
+      top: -4px;
+      height: 100%;
+    }
+    label[for="en"] {
+      position: absolute;
+      right: 0px;
+      top: -4px;
+      height: 100%;
+    }
+    #en:checked ~ .switch {
+      background: var(--clr-accent-d);
+    }
+
+    #de:checked ~ .switch label[for="de"] {
+      color: var(--clr-primary);
+    }
+    #en:checked ~ .switch label[for="en"] {
+      color: var(--clr-primary);
+    }
+  }
+}

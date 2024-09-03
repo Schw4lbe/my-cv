@@ -41,21 +41,23 @@
         </ul>
       </div>
     </div>
+    <div class="btn-options-container">
+      <ToggleThemeBtn />
+      <ToggleLangBtn />
+    </div>
   </nav>
-  <div class="btn-options-container">
-    <ToggleButton />
-    <ToggleThemeBtn />
-  </div>
 </template>
 
 <script>
 import router from "@/router";
-import ToggleButton from "@/components/utility/ToggleButton.vue";
+import ToggleLangBtn from "@/components/utility/ToggleLangBtn.vue";
+import ToggleThemeBtn from "@/components/utility/ToggleThemeBtn.vue";
 
 export default {
   name: "NavbarMain",
   components: {
-    ToggleButton,
+    ToggleLangBtn,
+    ToggleThemeBtn,
   },
   props: {
     navbarItems: Array,

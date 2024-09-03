@@ -21,12 +21,8 @@ export default {
     FooterMain,
   },
 
-  mounted() {
-    this.$store.commit("setLanguageDE");
-  },
-
   computed: {
-    ...mapGetters(["selectedLanguage"]),
+    ...mapGetters(["selectedLanguage", "getIsThemeToggled"]),
 
     selectedLanguage() {
       return this.$store.getters.selectedLanguage;
@@ -41,18 +37,32 @@ export default {
     },
   },
 
+  mounted() {
+    this.initLocalStorage();
+  },
+
   methods: {
-    setCookieLanguage(lang) {
-      if (lang === "de") {
-        console.log("german");
+    initLocalStorage() {
+      // set default language to german
+      if (localStorage.getItem("languageSelected") === null) {
         this.$store.commit("setLanguageDE");
-      } else if (lang === "en") {
-        this.$store.commit("setLanguageEN");
-        console.log("english");
+      }
+
+      // set default theme
+      if (localStorage.getItem("isThemeToggled") === null) {
+        this.toggleTheme(false);
       }
     },
 
-    ...mapMutations(["setLanguageDE", "setLanguageEN"]),
+    setCookieLanguage(lang) {
+      if (lang === "de") {
+        this.$store.commit("setLanguageDE");
+      } else if (lang === "en") {
+        this.$store.commit("setLanguageEN");
+      }
+    },
+
+    ...mapMutations(["setLanguageDE", "setLanguageEN", "toggleTheme"]),
   },
 };
 </script>

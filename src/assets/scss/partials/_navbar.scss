@@ -1,11 +1,11 @@
 @use "../abstracts/" as *;
 
 .navbar {
-  min-width: 840px;
-  max-width: 1600px;
-  // border-right: 2px solid $clr-secondary;
+  width: clamp(840px, 100%, 1600px);
 
   .navbar-nav {
+    // same value as options navbar width -> variable?
+    padding-left: 240px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -35,5 +35,13 @@
       background: var(--clr-primary-light);
       transition: 0.5s;
     }
+  }
+
+  .btn-options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 240px;
   }
 }

@@ -7,4 +7,9 @@ export default {
     state.languageSelected = "en";
     localStorage.setItem("languageSelected", "en");
   },
+
+  toggleTheme(state, bool) {
+    state.isThemeToggled = bool;
+    localStorage.setItem("isThemeToggled", bool);
+  },
 };

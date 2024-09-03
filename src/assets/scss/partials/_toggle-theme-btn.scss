@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+.toggle-theme-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  .toggle-theme-info {
+    color: var(--clr-secondary);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 0 0 0;
+  }
+
+  button {
+    border: none;
+    padding: 3px 0.5rem 0 0.5rem;
+    background: none;
+    font-size: 1.1rem;
+  }
+
+  .toggle-theme {
+    color: var(--clr-secondary);
+  }
+}
