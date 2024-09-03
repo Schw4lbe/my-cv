@@ -15,4 +15,33 @@
       }
     }
   }
+
+  .reference-wrapper {
+    .reference-data-container {
+      .ref-wrapper {
+        .ref-container {
+          .ref-item {
+            .grid-container {
+              .grid-item-1 {
+                .ref-text {
+                  font-size: 13px;
+                }
+              }
+              .grid-item-3 {
+                .ref-subtopics {
+                  font-size: 13px;
+                }
+              }
+              .btn-container {
+                button {
+                  padding: 4px 6px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

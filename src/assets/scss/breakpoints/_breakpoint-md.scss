@@ -61,6 +61,23 @@
     }
   }
 
+  .reference-wrapper {
+    .reference-data-container {
+      .ref-wrapper {
+        .ref-container {
+          .ref-item {
+            .grid-container {
+              padding: 0 1rem;
+              .grid-item-2 {
+                padding: 1rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .footer-main {
     .footer-contact {
       ul {

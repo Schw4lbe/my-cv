@@ -61,7 +61,49 @@
     }
   }
 
-  // space for other components - keep order!
+  .reference-wrapper {
+    .reference-data-container {
+      .page-title {
+        padding: 80px 0 0 0;
+      }
+      .ref-wrapper {
+        .ref-container {
+          .ref-item {
+            .grid-container {
+              padding: 0 1rem;
+              .grid-item-1 {
+                .ref-text {
+                  margin-bottom: 2rem;
+                }
+              }
+              .grid-item-2 {
+                padding: 0;
+                margin-bottom: 2rem;
+              }
+              .grid-item-3 {
+                .ref-subtopics {
+                  margin-bottom: 2rem;
+                  font-size: 12px;
+                  .ref-topic {
+                    margin: 0;
+                  }
+                }
+
+                .btn-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  button {
+                    margin: 0 0 0.5rem 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
   .outro-wrapper {
     .page-title {

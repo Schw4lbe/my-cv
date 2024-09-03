@@ -16,51 +16,59 @@
         </div>
 
         <div class="grid-container">
-          <h3 class="ref-header ref-animate-control animate__animated hidden">
-            {{ item.header }}
-          </h3>
-          <p class="ref-text ref-animate-control animate__animated hidden">
-            {{ item.text }}
-          </p>
-          <h4
-            class="ref-subheader ref-animate-control animate__animated hidden"
-          >
-            {{ item.subheader }}
-          </h4>
-          <ul class="ref-subtopics">
-            <li
-              v-for="(topic, index) in item.subtopics"
-              :key="index"
-              class="ref-topic ref-animate-control animate__animated hidden"
-            >
-              {{ topic }}
-            </li>
-          </ul>
-          <div
-            class="btn-container ref-animate-control animate__animated hidden"
-          >
-            <button class="ref-repo-btn">
-              <a :href="item.link" target="_blank" class="repo-link"
-                >GitHub Repository <i class="fa-brands fa-github"></i
-              ></a>
-            </button>
-            <button v-if="item.link2" class="ref-repo-btn">
-              <a :href="item.link2" target="_blank" class="repo-link"
-                >GitHub Repository <i class="fa-brands fa-github"></i
-              ></a>
-            </button>
-            <button
-              class="ref-demo-btn"
-              @click="showModal({ title: item.header, media: item.media })"
-            >
-              Play Demo <i class="fa-regular fa-circle-play"></i>
-            </button>
+          <div class="grid-item-1">
+            <h3 class="ref-header ref-animate-control animate__animated hidden">
+              {{ item.header }}
+            </h3>
+            <p class="ref-text ref-animate-control animate__animated hidden">
+              {{ item.text }}
+            </p>
           </div>
-        </div>
-        <div
-          class="grid-container image-container ref-animate-control animate__animated hidden"
-        >
-          <img :src="item.image" alt="reference image" class="ref-image" />
+
+          <div class="grid-item-2">
+            <div
+              class="image-container ref-animate-control animate__animated hidden"
+            >
+              <img :src="item.image" alt="reference image" class="ref-image" />
+            </div>
+          </div>
+
+          <div class="grid-item-3">
+            <h4
+              class="ref-subheader ref-animate-control animate__animated hidden"
+            >
+              {{ item.subheader }}
+            </h4>
+            <ul class="ref-subtopics">
+              <li
+                v-for="(topic, index) in item.subtopics"
+                :key="index"
+                class="ref-topic ref-animate-control animate__animated hidden"
+              >
+                {{ topic }}
+              </li>
+            </ul>
+            <div
+              class="btn-container ref-animate-control animate__animated hidden"
+            >
+              <button class="ref-repo-btn">
+                <a :href="item.link" target="_blank" class="repo-link"
+                  >GitHub Repository <i class="fa-brands fa-github"></i
+                ></a>
+              </button>
+              <button v-if="item.link2" class="ref-repo-btn">
+                <a :href="item.link2" target="_blank" class="repo-link"
+                  >GitHub Repository <i class="fa-brands fa-github"></i
+                ></a>
+              </button>
+              <button
+                class="ref-demo-btn"
+                @click="showModal({ title: item.header, media: item.media })"
+              >
+                Play Demo <i class="fa-regular fa-circle-play"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
