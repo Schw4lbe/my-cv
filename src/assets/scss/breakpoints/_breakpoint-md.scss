@@ -109,6 +109,73 @@
     }
   }
 
+  .timeline-wrapper {
+    .timeline-container {
+      max-width: 560px;
+      padding: 2rem 0 2rem 1rem;
+
+      .timeline-item {
+        .timeline-marker {
+          &::before {
+            height: 10px;
+            width: 10px;
+            top: 0px;
+            left: -10px;
+          }
+
+          &::after {
+            width: 2px;
+            top: 24px;
+            left: -6px;
+            margin: 5px 0;
+          }
+        }
+      }
+
+      .timeline-active {
+        padding-left: 1rem !important;
+        .timeline-period {
+          font-size: 14px !important;
+        }
+
+        .timeline-content {
+          .timeline-header {
+            font-size: 1.1rem !important;
+            letter-spacing: 0px !important;
+          }
+          .subtopics {
+            line-height: 1.8;
+            padding-right: 1rem;
+            .topic {
+              text-indent: -15px; /* Pull the first line to the left */
+              padding-left: 1rem; /* Indent the entire block of text */
+
+              font-size: 12px;
+              padding-right: 0.5rem;
+            }
+          }
+
+          .success {
+            font-size: 14px;
+            height: 50px !important;
+          }
+        }
+      }
+
+      .timeline-focus {
+        padding-left: 1rem !important;
+        .timeline-period {
+          font-size: 14px !important;
+        }
+
+        .timeline-header {
+          font-size: 1.1rem !important;
+          letter-spacing: 0px !important;
+        }
+      }
+    }
+  }
+
   .reference-wrapper {
     .reference-data-container {
       .ref-wrapper {

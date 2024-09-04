@@ -303,7 +303,7 @@ export const data = {
           "Austausch mit diversen Schulungsunternehmen",
         ],
         success:
-          "Twitch Livestream vor knapp 1000 Viewern mit Schallplatten - Hosting durch bekannten Künstler",
+          "Twitch Livestream 1000 Viewer mit Schallplatten - Hosting durch bekannten Künstler",
         link: "",
       },
       {
@@ -363,8 +363,7 @@ export const data = {
       },
       {
         id: "10",
-        header:
-          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
+        header: "Consultant Software & Service - Sycor IQ Solutions GmbH",
         period: "Juli 2012 - September 2014",
         subtopics: [
           "Betreuung Bestandskunden (Microsoft Volume Licensing / HP PSG)",
@@ -875,8 +874,7 @@ export const data = {
 
       {
         id: "10",
-        header:
-          "Consultant Software & Service Volume Licensing - Sycor IQ Solutions GmbH",
+        header: "Consultant Software & Service - Sycor IQ Solutions GmbH",
         period: "Jul 2012 - Sep 2014",
         subtopics: [
           "Support of existing customers (Microsoft Volume Licensing / HP PSG)",

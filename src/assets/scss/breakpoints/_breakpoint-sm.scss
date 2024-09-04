@@ -100,6 +100,68 @@
     }
   }
 
+  .timeline-wrapper {
+    .desc-container {
+      padding: 1rem 0;
+      .timeline-description {
+        font-size: 15px;
+        padding: 0 5px;
+      }
+    }
+
+    .timeline-container {
+      .timeline-item {
+        .timeline-marker {
+          &::before {
+            height: 5px;
+            width: 5px;
+            top: 0px;
+            left: -5px;
+          }
+
+          &::after {
+            width: 1px;
+            top: 24px;
+            left: -3px;
+            margin: 5px 0;
+          }
+        }
+      }
+
+      .timeline-active {
+        .timeline-period {
+          letter-spacing: 2px !important;
+        }
+
+        .timeline-content {
+          .timeline-header {
+            padding: 0.5rem;
+            margin: 0;
+          }
+          .subtopics {
+            height: max-content !important;
+          }
+          .success {
+            font-size: 14px;
+            height: 75px !important;
+          }
+        }
+      }
+
+      .timeline-focus {
+        .timeline-period {
+          letter-spacing: 2px !important;
+        }
+        .timeline-content {
+          .timeline-header {
+            padding: 0.5rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
   .reference-wrapper {
     .reference-data-container {
       .page-title {

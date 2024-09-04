@@ -2,6 +2,47 @@
 
 // $bp-lg: 992px;
 @media (max-width: $bp-lg) {
+  .timeline-wrapper {
+    .desc-container {
+      padding: 2rem 0;
+      .timeline-description {
+        font-size: 18px;
+      }
+    }
+
+    .timeline-container {
+      max-width: 750px;
+      padding: 2rem 0 2rem 1rem;
+
+      .timeline-active {
+        border-right: none;
+        .timeline-content {
+          .timeline-header {
+            font-size: 1.3rem !important;
+            letter-spacing: 0px !important;
+          }
+          .subtopics {
+            line-height: 2;
+
+            .topic {
+              font-size: 13px;
+              line-height: 1.5;
+            }
+          }
+
+          .success {
+            font-size: 14px;
+          }
+
+          .btn-reference {
+            font-size: 14px;
+            padding: 4px 8px;
+          }
+        }
+      }
+    }
+  }
+
   .reference-wrapper {
     .reference-data-container {
       .ref-wrapper {
