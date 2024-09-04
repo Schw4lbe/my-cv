@@ -1,0 +1,58 @@
+@use "../abstracts/" as *;
+
+.loading-container {
+  background: transparent;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+
+  .loader {
+    width: 95px;
+    height: 95px;
+    line-height: 95px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .loader:before,
+  .loader:after {
+    opacity: 0;
+    box-sizing: border-box;
+    content: "\0020";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border: 1px solid rgba($clr-secondary, 1);
+    box-shadow: 0 0 25px rgba($clr-secondary, 1),
+      inset 0 0 25px rgba($clr-secondary, 1);
+  }
+
+  .loader:after {
+    z-index: 1;
+    animation: gogoloader 2s infinite 1s;
+  }
+
+  .loader:before {
+    z-index: 2;
+    animation: gogoloader 2s infinite;
+  }
+}
+
+@keyframes gogoloader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

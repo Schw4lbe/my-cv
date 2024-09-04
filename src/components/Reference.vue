@@ -129,17 +129,13 @@ export default {
     nextItemScroll(e) {
       const item = e.target.closest(".ref-item");
       item.scrollIntoView({ behavior: "smooth", block: "start" });
-      // add additional scroll distance
-      // setTimeout(() => {
-      //   window.scrollBy(0, 150);
-      // }, 500);
     },
 
     setupIntersectionObserver() {
       const observerOptions = {
-        root: null, // use the viewport as the root
+        root: null, // use the viewport as root
         rootMargin: "0px",
-        threshold: 0.4, // trigger when 80% of element is visible
+        threshold: 0.4,
       };
 
       const observer = new IntersectionObserver((entries) => {

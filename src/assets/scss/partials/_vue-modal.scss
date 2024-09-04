@@ -1,8 +1,4 @@
 @use "../abstracts/" as *;
-// helper class for scroll disabling while in full screen
-.scroll-disabled {
-  overflow: hidden !important;
-}
 
 .modal-container {
   position: fixed;
@@ -20,8 +16,10 @@
 
   .modal-image-wrapper {
     position: relative;
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,10 +54,11 @@
       background: transparent;
       border: none;
       color: var(--clr-error);
+      opacity: 0.7;
       font-size: 2rem;
       transition: all 0.3s;
       &:hover {
-        color: var(--clr-secondary);
+        opacity: 1;
       }
     }
   }
