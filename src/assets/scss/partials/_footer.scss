@@ -35,13 +35,13 @@
           i {
             font-size: 2rem;
             transition: 0.5s;
-            color: var(--clr-accent-f);
+            color: var(--clr-accent);
           }
 
           &:hover {
             i {
               transition: 0.5s;
-              color: var(--clr-accent-h);
+              color: var(--clr-accent-b);
             }
           }
         }

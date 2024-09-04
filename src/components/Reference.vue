@@ -51,7 +51,7 @@
             <div
               class="btn-container ref-animate-control animate__animated hidden"
             >
-              <button class="ref-repo-btn">
+              <button v-if="item.link" class="ref-repo-btn">
                 <a :href="item.link" target="_blank" class="repo-link"
                   >GitHub Repository <i class="fa-brands fa-github"></i
                 ></a>
@@ -128,18 +128,18 @@ export default {
 
     nextItemScroll(e) {
       const item = e.target.closest(".ref-item");
-      item.scrollIntoView({ behavior: "smooth", block: "end" });
+      item.scrollIntoView({ behavior: "smooth", block: "start" });
       // add additional scroll distance
-      setTimeout(() => {
-        window.scrollBy(0, 150);
-      }, 500);
+      // setTimeout(() => {
+      //   window.scrollBy(0, 150);
+      // }, 500);
     },
 
     setupIntersectionObserver() {
       const observerOptions = {
         root: null, // use the viewport as the root
         rootMargin: "0px",
-        threshold: 0.8, // trigger when 80% of element is visible
+        threshold: 0.4, // trigger when 80% of element is visible
       };
 
       const observer = new IntersectionObserver((entries) => {

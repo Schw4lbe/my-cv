@@ -1,6 +1,34 @@
 @use "../abstracts/" as *;
 
 .theme-light {
+  .nav-toggle-theme {
+    .toggle-theme-btn-container {
+      border: 1px solid var(--clr-secondary-dark3);
+      border-radius: 0.375rem;
+    }
+  }
+  .nav-toggle-lang {
+    .toggle-lang-btn-container {
+      .toggle-radio {
+        border: 1px solid var(--clr-secondary-dark3);
+        border-radius: 0.375rem;
+      }
+      .switch {
+        label {
+          color: var(--clr-secondary-dark3);
+        }
+      }
+      #de:checked ~ .switch label[for="de"] {
+        color: var(--clr-accent);
+        font-family: PoppinsBold;
+      }
+      #en:checked ~ .switch label[for="en"] {
+        color: var(--clr-accent);
+        font-family: PoppinsBold;
+      }
+    }
+  }
+
   .navbar-wrapper {
     background: rgba($color: $clr-secondary, $alpha: 0.9);
     .navbar {

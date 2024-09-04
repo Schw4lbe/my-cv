@@ -919,7 +919,7 @@ export const data = {
         text: "Creation of a concept work for a company. Frontend consists of VUE.JS, Vuetify, and Chartkick. Backend in PHP 8 with no framework. Backend includes search and pagination. Demo executable in Docker.",
         image: img04a,
         media: img04,
-        link: "https://github.com/Schw4lbe/vue-weatherapp",
+        link: "https://github.com/Schw4lbe/csv-processing",
         link2: "",
       },
       {
@@ -936,7 +936,7 @@ export const data = {
         text: "Customer homepage under construction for a newly founded company. Hosting via Netlify and content management integrated through Decap CMS. Fully automated CI/CD pipeline.",
         image: img02a,
         media: img02,
-        link: "https://github.com/Schw4lbe/homepage",
+        link: "https://github.com/Schw4lbe/hp-kv",
         link2: "",
       },
       {
