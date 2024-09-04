@@ -2,7 +2,25 @@
 
 .theme-light {
   .navbar-wrapper {
-    background: rgba($color: $clr-secondary, $alpha: 0.7);
+    background: rgba($color: $clr-secondary, $alpha: 0.9);
+    .navbar {
+      .container-fluid {
+        .navbar-toggler {
+          .navbar-toggler-icon {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+    .offcanvas {
+      background: rgba($color: $clr-secondary, $alpha: 0.7) !important;
+      backdrop-filter: blur(5px);
+      .offcanvas-header {
+        button {
+          filter: invert(0) !important;
+        }
+      }
+    }
   }
 
   .cv-main {
