@@ -2,6 +2,32 @@
 
 // $bp-md: 768px;
 @media (max-width: $bp-md) {
+  .navbar-wrapper {
+    justify-content: flex-start;
+
+    .container-fluid {
+      .offcanvas {
+        background: rgba($color: $clr-primary, $alpha: 0.8);
+        backdrop-filter: blur(5px);
+
+        .offcanvas-body {
+          .navbar-nav {
+            .nav-toggle-theme {
+              padding: 1.5rem 2rem 0 2rem;
+              margin-top: 1.5rem;
+              border-top: 1px solid var(--clr-secondary-dark2);
+            }
+            .nav-item {
+              a {
+                font-size: 16px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .home-wrapper {
     padding: 60px 0 0 0;
     .home-container {

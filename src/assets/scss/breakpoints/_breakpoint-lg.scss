@@ -2,17 +2,6 @@
 
 // $bp-lg: 992px;
 @media (max-width: $bp-lg) {
-  .navbar-wrapper {
-    .navbar {
-      justify-content: space-between;
-
-      .container-fluid {
-        width: auto;
-        margin: 0;
-      }
-    }
-  }
-
   .reference-wrapper {
     .reference-data-container {
       .ref-wrapper {

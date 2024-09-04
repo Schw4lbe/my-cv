@@ -1,10 +1,10 @@
 <template>
   <div class="home-container">
     <div class="home-header-container">
-      <div class="home-image animate__animated animate__fadeInLeft">
+      <div class="home-image animate__animated animate__fadeIn">
         <img src="@/assets/img/jph.jpg" alt="profile image" />
       </div>
-      <div class="home-header animate__animated animate__fadeInRight">
+      <div class="home-header animate__animated animate__fadeIn">
         <h2>{{ header }}</h2>
         <h3>{{ subHeader }}</h3>
       </div>

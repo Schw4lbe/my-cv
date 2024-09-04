@@ -1,55 +1,71 @@
 <template>
-  <nav class="navbar navbar-dark navbar-expand-lg">
+  <nav class="navbar navbar-dark navbar-expand-md bg-dark">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link
-              :to="homeLink"
-              class="nav-link"
-              aria-current="page"
-              @click="collapseNavbar"
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 pe-3">
+            <li class="nav-item">
+              <router-link
+                to="/"
+                class="nav-link"
+                aria-current="page"
+                @click="closeOffcanvas"
+              >
+                Home
+              </router-link>
+            </li>
+            <li
+              v-for="item in navbarItems"
+              :key="item.id"
+              :id="item.id"
+              class="nav-item"
             >
-              Home
-            </router-link>
-          </li>
-          <li
-            v-for="item in navbarItems"
-            :key="item.id"
-            :id="item.id"
-            class="nav-item"
-          >
-            <router-link
-              :to="item.path"
-              class="nav-link"
-              @click="collapseNavbar"
-            >
-              {{ item.name }}
-            </router-link>
-          </li>
-        </ul>
+              <router-link
+                :to="item.path"
+                class="nav-link"
+                @click="closeOffcanvas"
+              >
+                {{ item.name }}
+              </router-link>
+            </li>
+            <li class="nav-item nav-toggle-theme">
+              <ToggleThemeBtn />
+            </li>
+            <li class="nav-item nav-toggle-lang">
+              <ToggleLangBtn />
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="btn-options-container">
-      <ToggleThemeBtn />
-      <ToggleLangBtn />
     </div>
   </nav>
 </template>
 
 <script>
-import router from "@/router";
+import { Offcanvas } from "bootstrap"; // Import Offcanvas directly
 import ToggleLangBtn from "@/components/utility/ToggleLangBtn.vue";
 import ToggleThemeBtn from "@/components/utility/ToggleThemeBtn.vue";
 
@@ -62,23 +78,17 @@ export default {
   props: {
     navbarItems: Array,
   },
-  data() {
-    return {
-      homeLink: router.options.routes[0],
-    };
-  },
 
-  // workaround due to vue router conflict with bootstrap js.
   methods: {
-    collapseNavbar() {
-      const navbarToggler = document.querySelector(".navbar-toggler");
-      const navbarCollapse = document.querySelector(".navbar-collapse");
-      if (!navbarToggler.classList.contains("collapsed")) {
-        navbarToggler.classList.add("collapsed");
+    // instantiate offcanvas and control navbar collapse on menu item click
+    closeOffcanvas() {
+      const offcanvasElement = document.getElementById("offcanvasNavbar");
+      let offcanvasInstance = Offcanvas.getInstance(offcanvasElement);
+      if (!offcanvasInstance) {
+        offcanvasInstance = new Offcanvas(offcanvasElement);
       }
-      if (navbarCollapse.classList.contains("show")) {
-        navbarCollapse.classList.remove("show");
-      }
+
+      offcanvasInstance.hide();
     },
   },
 };
