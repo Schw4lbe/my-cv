@@ -422,7 +422,7 @@ export const data = {
           "Visual Studio Code, LiveSASS Compiler",
           "JSON-File für Anbindung Content via CMS",
         ],
-        text: "Im Aufbau befindliche Kundehomepage für ein neu gegründetes Unternehmen. Hosting via Netlify und Content Management über Decap CMS eingebunden. Voll automatische CI / CD Pipeline.",
+        text: "Im Aufbau befindliche Kundenhomepage für ein neu gegründetes Unternehmen. Hosting via Netlify und Content Management über Decap CMS eingebunden. Voll automatische CI / CD Pipeline.",
         image: img02a,
         media: img02,
         link: "https://github.com/Schw4lbe/hp-kv",
