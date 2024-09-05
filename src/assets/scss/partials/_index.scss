@@ -1,21 +1,27 @@
-@forward "footer";
-@forward "navbar";
+// globals:
 @forward "app-vue";
-@forward "home-container";
+@forward "themes";
+@forward "helper";
+
+// main components:
+@forward "home";
 @forward "skill";
-// @forward "accordion";
-// @forward "coding-view";
-// @forward "freelance-view";
 @forward "skill-view";
-@forward "reference-view";
+@forward "timeline";
 @forward "reference";
-// @forward "sales-view";
+@forward "reference-view";
+@forward "outro";
+
+// utilities:
+@forward "navbar";
+@forward "footer";
 @forward "vue-modal";
-@forward "outro-view";
 @forward "toggle-lang-btn";
 @forward "toggle-theme-btn";
-@forward "dev-view";
-@forward "timeline";
-@forward "helper";
-@forward "themes";
 @forward "loading-animation";
+
+//development:
+@forward "dev-view";
+
+// inactive components:
+// @forward "accordion";

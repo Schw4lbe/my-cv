@@ -66,7 +66,7 @@ export const data = {
       {
         lable: "Frameworks & Libraries",
         description:
-          "Frameworks & Libraries sind unerlässlich um produktiv zu sein und um das Rat nicht neu zu erfinden. Neben meinem Liebling, Vue.js nachfolgend eine Liste weiterer Frameworks und Bibliotheken, mit denen ich bereits gearbeitet habe.",
+          "Frameworks & Libraries sind unerlässlich, um produktiv zu sein und um das Rad nicht neu zu erfinden. Neben meinem Liebling, Vue.js nachfolgend eine Liste weiterer Frameworks und Bibliotheken, mit denen ich bereits gearbeitet habe.",
         items: [
           {
             id: "14",
@@ -219,7 +219,7 @@ export const data = {
     introData: [
       {
         header: "Präambel",
-        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind aussagekräftiger als ein Schlichter Lebenslauf in PDF Format. Dieses Projekt ist mittels Einsatz der folgenden Technologien entstanden.",
+        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind aussagekräftiger als ein Schlichter Lebenslauf in PDF-Format. Dieses Projekt ist mittels Einsatzes der folgenden Technologien entstanden.",
       },
     ],
 
@@ -403,7 +403,7 @@ export const data = {
           "VUE.JS 3, PHP 8, SCSS, Vuetify, Chart Kick, Apache, MySQL, Gulp, Docker",
           "ESLint, Prettier, LiveSASS Compiler, Visual Studio Code, Postman",
           "Anwendung des MVC (Model View Controller) Prinzips",
-          "Verwendung von Best Practice Ansätzen für Datei- & Contentvalidierung",
+          "Verwendung von Best Practice Ansätzen für Datei- & Content-Validierung",
         ],
         text: "Erstellung einer Konzeptarbeit für ein Unternehmen. Frontend bestehend aus VUE.JS, Vuetify & Chartkick. Backend in PHP 8 ohne Framework enthält eine Suche & Paginierung. Demo in Docker ausführbar.",
         image: img04a,
@@ -435,13 +435,13 @@ export const data = {
         subheader: "Tech Stack & Info",
         subtopics: [
           "Visual Studio Code, PHP 8, VUE.JS, VUEX, XAMPP, MySQL, Apache",
-          "Erstellung PHP Backend samt Interaction mit MySQL Datenbanken",
-          "PHP Backend bestehend aus Benutzerlogin, Produktverwaltung, Bestellerfassung",
+          "Erstellung PHP-Backend samt Interaction mit MySQL Datenbanken",
+          "PHP-Backend bestehend aus Benutzerlogin, Produktverwaltung, Bestellerfassung",
           "Anwendung des MVC (Model View Controller) Prinzips",
           "Frontend Erstellung samt Styling in VUE.JS & SCSS",
           "Erstes Projekt mit VUE.JS in Verbindung mit PHP 8",
         ],
-        text: "Erste Umsetzung & Verbinung von VUE.JS & PHP zusammen mit XAMPP (MySQL, Apache). Erschaffung eines fiktiven Online Shops samt Nutzerverwaltung. Einarbeitung in objektorentierte PHP Entwicklung, Transfer von Daten zwischen VUE.JS, PHP und SQL.",
+        text: "Erste Umsetzung & Verbindung von VUE.JS & PHP zusammen mit XAMPP (MySQL, Apache). Erschaffung eines fiktiven Online-Shops samt Nutzerverwaltung. Einarbeitung in objektorientierte PHP-Entwicklung, Transfer von Daten zwischen VUE.JS, PHP und SQL.",
         image: img09a,
         media: img09,
         link: "https://github.com/Schw4lbe/vue-php-store-prototype-frontend",
@@ -456,9 +456,9 @@ export const data = {
           "Visual Studio Code, Node.js, JavaScript, EJS, Nodemon",
           "Express samt Express Session & Express Flash",
           "dotenv für Umgebungsvariablen",
-          "bcrypt zum verschlüsseln der Passwörter",
+          "bcrypt zum Verschlüsseln der Passwörter",
           "passport & passport-local als Bibliothek für Anmeldedaten",
-          "method override zum überschreiben von z.B. POST durch DELETE",
+          "method override zum Überschreiben von z.B. POST durch DELETE",
         ],
         text: "Rudimentärer Login Prototype stark vereinfacht zur Anwendung neuer Technologien und Erweiterung des Fachwissens. Lokale Variable zur Ablage der Benutzer ist in einer Produktivumgebung durch eine Datenbank zu ersetzen.",
         image: img06a,
@@ -473,11 +473,11 @@ export const data = {
         subheader: "Tech Stack & Details:",
         subtopics: [
           "VUE.JS 3, HTML, CSS, JavaScript ES6, JSON-Server",
-          "Verifzierung Telefonnummer und E-Mail Adresse via Regex",
+          "Verifizierung Telefonnummer und E-Mail Adresse via Regex",
           "Eigener Captcha samt Honeypot",
           "Captcha Lösungswort & Honeypot durch CSS manipuliert",
         ],
-        text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenem Wissens, sowie kreative Spielwiese für dieverse Styling Ideen.",
+        text: "Erstellung eigenes Kontaktformular zur Festigung neu erworbenen Wissens, sowie kreative Spielwiese für diverse Styling Ideen.",
         image: img03a,
         media: img03,
         link: "https://github.com/Schw4lbe/vue-contactform",
@@ -491,7 +491,7 @@ export const data = {
         subtopics: [
           "Unity Editor & Unity Engine",
           "C# in Microsoft Visual Studio 2022",
-          "Gameconcept in Markdown",
+          "Konzeptarbeit in Markdown",
           "Item & Crafting Sprites samt Table",
         ],
         text: "Meine Passion für Computerspiele hat mich dazu verleitet, mir mittels Unity Dokumentationen, C# Dokumentationen, Youtube Tutorials, Google und Chat GPT das Programmieren in C# auf Basis der Unity Engine selbst beizubringen. Das Freizeitprojekt betrachte ich als Work in Progress und wird von mir kontinuierlich weiterentwickelt.",

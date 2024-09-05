@@ -68,7 +68,7 @@
         .skill-section-open {
           transform: translateX(0px);
           background: var(--clr-primary);
-          border-radius: 0.375rem;
+          border-radius: $border-radius;
           border: 1px solid var(--clr-primary-light);
           letter-spacing: 3px;
 

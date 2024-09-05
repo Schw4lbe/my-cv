@@ -16,11 +16,9 @@
   .accordion-container {
     margin: 1rem;
     overflow: hidden;
-    // box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
     max-width: 1250px;
     min-width: 850px;
-    border-radius: 0.375rem;
-    // border: 1px solid var(--clr-primary-light2);
+    border-radius: $border-radius;
   }
 
   .tab-control {
@@ -32,10 +30,6 @@
     cursor: pointer;
     transition: 0.4s;
     letter-spacing: 5px;
-
-    // &:nth-child(1) {
-    //   border-bottom: 1px solid var(--clr-secondary);
-    // }
 
     span {
       padding: 5px;
@@ -52,10 +46,6 @@
     color: var(--clr-secondary);
     overflow: hidden;
 
-    // input:checked + .tab-label {
-    //   border-bottom: 10px solid var(--clr-primary-light2);
-    // }
-
     .tab-label {
       display: flex;
       justify-content: space-between;
@@ -65,7 +55,6 @@
       font-weight: bold;
       cursor: pointer;
       overflow: hidden;
-      // border-bottom: 1px solid var(--clr-secondary);
 
       &:hover {
         background: darken($midnight, 10%);
@@ -108,7 +97,6 @@
           grid-column: 1/2;
           grid-row: 1/2;
           line-height: 1.8;
-          // border-bottom: 1px solid $clr-accent-a;
 
           p {
             margin: 0;
@@ -131,7 +119,7 @@
               padding-right: 0.5rem;
               text-align: center;
               text-decoration: none;
-              border-radius: 5px;
+              border-radius: $border-radius;
               transition: 0.3s;
               i {
                 padding-left: 0.5rem;
@@ -260,12 +248,11 @@
         width: max-content;
         background: var(--clr-accent);
         color: var(--clr-primary);
-        border-radius: 0.375rem;
+        border-radius: $border-radius;
         text-decoration: none;
         font-weight: bold;
         transition: 0.4s;
         padding: 10px 14px;
-        // border: 1px solid $clr-accent-e;
 
         &:hover {
           background: $clr-accent-g;
