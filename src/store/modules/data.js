@@ -239,7 +239,7 @@ export const data = {
           "Unterstützung Geschäftsgründung und Entwurf von CI samt Logo",
           "Vertiefung Fachwissen und Aneignung neuer Fähigkeiten im Front- & Backend",
           "Fokus auf Clean Code Prinzipien und Nachhaltigkeit",
-          "Besuch von diversen online Schulungen & Tutorials",
+          "Besuch von diversen online Schulungen & Seminaren",
           "Sammeln von Praxiserfahrung in prozeduraler- und objektorientierter Entwicklung",
         ],
         success: "Entwicklung CSV-Processing Tool für Kundeninventur",
