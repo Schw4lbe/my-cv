@@ -219,7 +219,7 @@ export const data = {
     introData: [
       {
         header: "Präambel",
-        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind aussagekräftiger als ein Schlichter Lebenslauf in PDF-Format. Dieses Projekt ist mittels Einsatzes der folgenden Technologien entstanden.",
+        text: "Dieser online Lebenslauf ist mit der Intention entstanden, meinen aktuellen Leistungsstand in der Frontend Entwicklung darzustellen. Bewegte Bilder und echter Code sind aussagekräftiger als ein schlichter Lebenslauf in PDF-Format. Dieses Projekt ist mittels Einsatzes der folgenden Technologien entstanden.",
       },
     ],
 
