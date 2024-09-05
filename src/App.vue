@@ -53,7 +53,7 @@ export default {
         this.$store.commit("setLanguageDE");
       }
 
-      // set default theme
+      // set default theme dark
       if (localStorage.getItem("isThemeToggled") === null) {
         this.toggleTheme(false);
       }

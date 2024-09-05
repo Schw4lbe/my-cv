@@ -136,7 +136,7 @@ export default {
       const elementsToAnimate = timeline.querySelectorAll(".topic");
       const resetElementsToAnimate = document.querySelectorAll(".topic");
 
-      // Prevent UI error by ensuring only one timeline is active at a time
+      // Prevent UI error by ensuring only ONE timeline is active at a time
       if (timeline && timeline !== this.lastActiveTimeline) {
         allTimelines.forEach((el) => {
           el.classList.remove("timeline-active", "timeline-focus");
