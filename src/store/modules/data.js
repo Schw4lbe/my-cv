@@ -417,7 +417,7 @@ export const data = {
         header: "Homepage im Aufbau",
         subheader: "Tech Stack:",
         subtopics: [
-          "VUE.JS 3, HTML, SCSS, JavaScript, ESLint, Prettier",
+          "VUE.JS 3, HTML, SCSS, JavaScript, ESLint, Bootstrap 5",
           "Gulp, PostCSS, Autoprefixer, Netlify CI/CD, Decap CMS",
           "Visual Studio Code, LiveSASS Compiler",
           "JSON-File für Anbindung Content via CMS",
@@ -928,7 +928,7 @@ export const data = {
         header: "Homepage under construction",
         subheader: "Tech Stack:",
         subtopics: [
-          "VUE.JS 3, HTML, SCSS, JavaScript, ESLint, Prettier",
+          "VUE.JS 3, HTML, SCSS, JavaScript, ESLint, Bootstrap 5",
           "Gulp, PostCSS, Autoprefixer, Netlify CI/CD, Decap CMS",
           "Visual Studio Code, LiveSASS Compiler",
           "JSON-File for Content Management in Decap CMS",
